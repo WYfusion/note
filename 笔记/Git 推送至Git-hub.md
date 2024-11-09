@@ -177,3 +177,35 @@ $
 
 ```
 
+修改后再次推送：
+
+```bash
+31530@fusion MINGW64 /d/document/202409-202509/笔记/note (document)
+$ cd ./笔记
+31530@fusion MINGW64 /d/document/202409-202509/笔记/note/笔记 (document)
+$ git add Git\ 推送至Git-hub.md
+warning: in the working copy of '笔记/Git 推送至Git-hub.md', LF will be replaced by CRLF the next time Git touches it
+
+31530@fusion MINGW64 /d/document/202409-202509/笔记/note/笔记 (document)
+$ git commit -m "Git推送至Git-hub.md添加了例子"
+[document c2476c8] Git推送至Git-hub.md添加了例子
+ 1 file changed, 106 insertions(+)
+
+31530@fusion MINGW64 /d/document/202409-202509/笔记/note/笔记 (document)
+$ git push -u origin document
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 3.03 KiB | 3.03 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/WYfusion/note.git
+   99806f9..c2476c8  document -> document
+branch 'document' set up to track 'origin/document'.
+
+31530@fusion MINGW64 /d/document/202409-202509/笔记/note/笔记 (document)
+$
+```
+
+注意，可以**使用Tab键自动补全**：在 `git add` 命令后输入文件名的前几个字符，然后按 Tab 键，看看 Git 是否能自动补全文件名。
