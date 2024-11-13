@@ -10,6 +10,12 @@
 
 如果你还没有在本地安装 Git，可以根据你的操作系统下载并安装 Git：[Git 官网](https://git-scm.com/downloads)。
 
+### 3. 克隆指定分支
+
+```bash\
+git clone -b <分支名称> <仓库URL>
+```
+
 #### 设置 Git 全局配置
 
 打开命令行（Terminal）或者bash并输入以下命令来配置你的 Git 用户信息：
