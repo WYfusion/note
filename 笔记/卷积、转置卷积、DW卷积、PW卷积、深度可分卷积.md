@@ -1,29 +1,6 @@
-# 转置卷积
+[TOC]
 
-### 转置卷积步骤
-
-1. 输入的特征图矩阵元素之间填充$stride-1$行和列的零元素
-2. 输入的特征图矩阵元素外围填充$kernel\_size-padding-1$行和列的零元素
-3. 将卷积核进行上下、左右对称翻转
-4. 做步幅为1，填充为0的正常卷积运算
-
-以下公式为**完整计算公式**的方法
-$$
-\begin{gathered}
-H_{out}=(H_{in}-1)\times stride[0]-2\times padding[0]+dilation[0]\times(kernel\_size[0]-1)+output\_padding[0]+1 \\
-W_{out}=(W_{in}-1)\times stride[1]-2\times padding[1]+dilation[1]\times(kernel\_size[1]-1)+output\_padding[1]+1 
-\end{gathered}
-$$
-其中的$dilation和output\_padding$分别常常是$1和0$
-
-以下公式为**常用计算长度**的方法：
-$$
-H_{out}=(H_{in}-1)\times stride[0]-2\times padding[0]+kernel\_size[0]\\W_{out}=(W_{in}-1)\times stride[1]-2\times padding[1]+kernel\_size[1]
-$$
-
-###### 举例解释：
-
-### 卷积展开计算
+# 卷积展开计算
 
 尺寸计算
 $$
@@ -42,7 +19,7 @@ $$
 $$
 
 
-#### 单通道单核卷积
+## 单通道单核卷积
 
 利用展平矩阵乘法的方式实现卷积
 
@@ -68,7 +45,7 @@ ___
 
 再将$(1,4)$的输出矩阵重新还原为$(2,2)$的输出矩阵：$O:\ \ \begin{array}{|c|c|}\hline2&3\\\hline1&3\\\hline\end{array}$。
 
-#### 多通道多核卷积
+## 多通道多核卷积
 
 1. 将$C$个通道的特征图一维展开
 2. $C$个对应通道的经过填充、一维展开后的$FN$个卷积核分别进行矩阵乘法。得到$(FN,C)$个一维列向量，将这$C$个一维行向量相加为$FN$个一维行向量。
@@ -80,7 +57,7 @@ ___
 
 可以通过卷积过程实现多个输入特征图通道的跨通道交互与信息整合(因为涉及相加求和了)(牵强)
 
-##### 卷积的参数
+### 卷积的参数
 
 参数量的计算公式只考虑以下因素：
 
@@ -94,14 +71,43 @@ $$
 
 其中$+1$是只在有偏置时会加上输出通道个数
 
-##### 卷积的计算量
+### 卷积的计算量
 
 卷积操作的计算量主要依赖于**输入特征图的尺寸**、**卷积核的大小**、**输入通道数**、**输出通道数**
 $$
-计算量=H_{out}×W_{out}×C_{out}×(k_h×k_w)×C_{in}
+计算量(FLOPs)=H_{out}×W_{out}×C_{out}×(k_h×k_w)×C_{in}
 $$
 
 例如：输入特征图(28×28×192)，卷积核为(5×5×192×32)，则计算量：28×28×5×5×192×32=120422400，即1.2亿次乘法运算
+
+对于分组卷积，由于分组的使用，不同分组之间不存在数据的交换，则其计算量公式应为：
+$$
+计算量(FLOPs)=H_{out}×W_{out}×C_{out}×(k_h×k_w)×C_{in}/g
+$$
+
+
+# 转置卷积
+
+### 转置卷积步骤
+
+1. 输入的特征图矩阵元素之间填充$stride-1$行和列的零元素
+2. 输入的特征图矩阵元素外围填充$kernel\_size-padding-1$行和列的零元素
+3. 将卷积核进行上下、左右对称翻转
+4. 做步幅为1，填充为0的正常卷积运算
+
+以下公式为**完整计算公式**的方法
+$$
+\begin{gathered}
+H_{out}=(H_{in}-1)\times stride[0]-2\times padding[0]+dilation[0]\times(kernel\_size[0]-1)+output\_padding[0]+1 \\
+W_{out}=(W_{in}-1)\times stride[1]-2\times padding[1]+dilation[1]\times(kernel\_size[1]-1)+output\_padding[1]+1 
+\end{gathered}
+$$
+其中的$dilation和output\_padding$分别常常是$1和0$
+
+以下公式为**常用计算长度**的方法：
+$$
+H_{out}=(H_{in}-1)\times stride[0]-2\times padding[0]+kernel\_size[0]\\W_{out}=(W_{in}-1)\times stride[1]-2\times padding[1]+kernel\_size[1]
+$$
 
 ### 转置卷积展开计算
 
@@ -223,7 +229,7 @@ ___
 
 
 
-### 分组卷积
+# 分组卷积
 
 在分组卷积中，输入通道进行分组后，卷积核也进行相应分组，且**两个类别的组数相同**、关系是**一一对应**。
 
@@ -238,17 +244,17 @@ ___
 
 
 
-### $DE$深度卷积$(Depthwise\ Conv)$
+# $DE$深度卷积$(Depthwise\ Conv)$
 
 - **特点：**卷积核的$channel$为1，**卷积核个数 = 输入特征矩阵$channel$数** **=** 输出特征矩阵$channel$数
 
-### $PW$逐点卷积$(Pointwise\ Conv)$
+# $PW$逐点卷积$(Pointwise\ Conv)$
 
 - **特点：**卷积核尺寸为(1,1)的常规卷积
 
 控制输出通道的个数
 
-### 深度可分卷积$Depthwise\ Separable\ Conv$
+# 深度可分卷积$Depthwise\ Separable\ Conv$
 
 是由$DW$和$PW$卷积一起构成的，下图上半部分为传统卷积、下半部分是深度可分卷积。体现了计算量上的减少。
 
