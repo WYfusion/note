@@ -1,0 +1,204 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "LSTM",
+      "path": "02模型/LSTM/LSTM.svg"
+    },
+    {
+      "basename": "LSTM",
+      "path": "02模型/LSTM/LSTM.drawio"
+    },
+    {
+      "basename": "LSTM",
+      "path": "02模型/LSTM/LSTM.png"
+    },
+    {
+      "basename": "主动被动声学检测",
+      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/主动被动声学检测.md"
+    },
+    {
+      "basename": "LSTM",
+      "path": "02模型/LSTM/LSTM.md"
+    },
+    {
+      "basename": "RNN",
+      "path": "02模型/循环神经网络（RNN）/RNN.md"
+    },
+    {
+      "basename": "BPTT（Backpropagation Through Time，随时间反向传播）",
+      "path": "02模型/循环神经网络（RNN）/BPTT（Backpropagation Through Time，随时间反向传播）.md"
+    },
+    {
+      "basename": "实验材料",
+      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/实验材料.md"
+    },
+    {
+      "basename": "前人工作",
+      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/前人工作.md"
+    },
+    {
+      "basename": "实验材料",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acousticcomfort in pedestrian environments/实验材料.md"
+    },
+    {
+      "basename": "Pasted image 20250401100711",
+      "path": "assets/Pasted image 20250401100711.png"
+    },
+    {
+      "basename": "Pasted image 20250401093646",
+      "path": "assets/Pasted image 20250401093646.png"
+    },
+    {
+      "basename": "Pasted image 20250320112311",
+      "path": "assets/Pasted image 20250320112311.png"
+    },
+    {
+      "basename": "讨论",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acousticcomfort in pedestrian environments/讨论.md"
+    },
+    {
+      "basename": "大纲",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acousticcomfort in pedestrian environments/大纲.md"
+    },
+    {
+      "basename": "结果分析",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acousticcomfort in pedestrian environments/结果分析.md"
+    },
+    {
+      "basename": "Pasted image 20250409171309",
+      "path": "assets/Pasted image 20250409171309.png"
+    },
+    {
+      "basename": "Pasted image 20250409201544",
+      "path": "assets/Pasted image 20250409201544.png"
+    },
+    {
+      "basename": "Screen",
+      "path": "01工具/Screen.md"
+    },
+    {
+      "basename": "CATREG 分析",
+      "path": "论文/知识点/CATREG 分析.md"
+    },
+    {
+      "basename": "Pasted image 20250409184440",
+      "path": "assets/Pasted image 20250409184440.png"
+    },
+    {
+      "basename": "GetMX临时邮箱",
+      "path": "01工具/GetMX临时邮箱.md"
+    },
+    {
+      "basename": "单纯形法",
+      "path": "课本/最优化/单纯形法.md"
+    },
+    {
+      "basename": "标准化线性规划",
+      "path": "课本/最优化/标准化线性规划.md"
+    },
+    {
+      "basename": "池化对比",
+      "path": "06层内结构/04池化/池化对比.md"
+    },
+    {
+      "basename": "Swish",
+      "path": "06层内结构/03激活函数/Swish.md"
+    },
+    {
+      "basename": "ELU（Exponential Linear Unit）",
+      "path": "06层内结构/03激活函数/ELU（Exponential Linear Unit）.md"
+    },
+    {
+      "basename": "激活函数",
+      "path": "06层内结构/03激活函数/激活函数.md"
+    },
+    {
+      "basename": "Sigmoid",
+      "path": "06层内结构/03激活函数/Sigmoid.md"
+    },
+    {
+      "basename": "Leaky ReLU",
+      "path": "06层内结构/03激活函数/Leaky ReLU.md"
+    },
+    {
+      "basename": "双曲正切激活函数tanh()",
+      "path": "06层内结构/03激活函数/双曲正切激活函数tanh().md"
+    },
+    {
+      "basename": "CrossEntropyLoss交叉熵损失",
+      "path": "06层内结构/02损失函数/CrossEntropyLoss交叉熵损失.md"
+    },
+    {
+      "basename": "鸟声特征提取常用方法",
+      "path": "08方法/数据分析/鸟声特征提取常用方法.md"
+    },
+    {
+      "basename": "凸优化",
+      "path": "课本/最优化/基本知识/凸优化.md"
+    },
+    {
+      "basename": "上确界和下确界",
+      "path": "课本/最优化/基本知识/上确界和下确界.md"
+    },
+    {
+      "basename": "方法",
+      "path": "08方法/方法.md"
+    },
+    {
+      "basename": "容器命令",
+      "path": "01工具/Docker/容器命令.md"
+    },
+    {
+      "basename": "Nividia镜像对比",
+      "path": "01工具/Docker/Nividia镜像对比.md"
+    },
+    {
+      "basename": "镜像创建",
+      "path": "01工具/Docker/镜像创建.md"
+    },
+    {
+      "basename": "Docker简单使用",
+      "path": "01工具/Docker/Docker简单使用.md"
+    },
+    {
+      "basename": "Docker安装",
+      "path": "01工具/Docker/Docker安装.md"
+    },
+    {
+      "basename": "dBA（A计权分贝）",
+      "path": "论文/知识点/dBA（A计权分贝）.md"
+    },
+    {
+      "basename": "Cronbach's α 系数",
+      "path": "论文/知识点/Cronbach's α 系数.md"
+    },
+    {
+      "basename": "KMO 值（Kaiser-Meyer-Olkin Measure）",
+      "path": "论文/知识点/KMO 值（Kaiser-Meyer-Olkin Measure）.md"
+    },
+    {
+      "basename": "Five Point Ordinal Category Scale（五点顺序类别量表）",
+      "path": "论文/知识点/Five Point Ordinal Category Scale（五点顺序类别量表）.md"
+    },
+    {
+      "basename": "Bartlett 球形检验",
+      "path": "论文/知识点/Bartlett 球形检验.md"
+    },
+    {
+      "basename": "QQ 图（Quantile-Quantile Plot）",
+      "path": "论文/知识点/正态性检验/图形检验法/QQ 图（Quantile-Quantile Plot）.md"
+    },
+    {
+      "basename": "正态性检验的意义",
+      "path": "论文/知识点/正态性检验/正态性检验的意义.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

@@ -1,0 +1,1 @@
+**卷积核的$\text{channel}$为1，**卷积核个数 = 输入特征矩阵$\text{channel}$数** **=** 输出特征矩阵$\text{channel}$数

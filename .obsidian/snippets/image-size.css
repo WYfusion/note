@@ -1,0 +1,50 @@
+/* ====== 自由控制图片大小 ====== */
+/* 编辑模式 */
+.cm-content img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* 预览模式 */
+.markdown-preview-view img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+/* 通过尺寸标记控制（示例：![alt|200x300](image.png)） */
+img[alt*="|"] {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+}
+
+/* 解析宽度标记 */
+img[alt*="|"][alt$="x"] {
+  width: calc(var(--img-width) * 1px) !important;
+  height: auto !important;
+}
+
+/* 解析高度标记 */
+img[alt*="x"][alt$="]"] {
+  height: calc(var(--img-height) * 1px) !important;
+  width: auto !important;
+}
+
+/* 点击缩放交互 */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:active {
+  transform: scale(1.8);
+  z-index: 999;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* 特殊尺寸标记（支持百分比） */
+img[alt~="|50%"] { width: 50% !important; }
+img[alt~="|full"] { width: 100% !important; }

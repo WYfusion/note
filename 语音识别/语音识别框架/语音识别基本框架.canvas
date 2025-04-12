@@ -1,0 +1,533 @@
+{
+  "edges": [
+    {
+      "fromNode": "92fbc795e17855f7",
+      "fromSide": "right",
+      "id": "8b61999f25b809e0",
+      "toNode": "277bc40ce91d402d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "92fbc795e17855f7",
+      "fromSide": "right",
+      "id": "edd6fdd54b8b643e",
+      "toNode": "afd9e3aec1ba6cb4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9009cd1107e7b27e",
+      "fromSide": "right",
+      "id": "45684f98f8d2ff35",
+      "toNode": "2e45e5cea4af520b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9009cd1107e7b27e",
+      "fromSide": "right",
+      "id": "2c6c7c95ac8eacba",
+      "toNode": "792420b46d08d68d",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "792420b46d08d68d",
+      "fromSide": "right",
+      "id": "dc24bd00fd5e754f",
+      "toNode": "aa804498b0bb51df",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9009cd1107e7b27e",
+      "fromSide": "right",
+      "id": "6d426cdc146e261d",
+      "toNode": "2887cb137fd869e7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2887cb137fd869e7",
+      "fromSide": "right",
+      "id": "88424e06b387ba94",
+      "toNode": "075e6566aa9199aa",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "2887cb137fd869e7",
+      "fromSide": "right",
+      "id": "e1ee715a44bee747",
+      "toNode": "b4fbd668476c9ebd",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "9009cd1107e7b27e",
+      "fromSide": "right",
+      "id": "48264f1b443be7e6",
+      "toNode": "998e57e9b8a12214",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "998e57e9b8a12214",
+      "fromSide": "right",
+      "id": "bdd6c6dccab0421e",
+      "toNode": "f637dbb8214ed3a7",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "998e57e9b8a12214",
+      "fromSide": "right",
+      "id": "3f4322139608cb83",
+      "toNode": "c1bafd1eef203987",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "998e57e9b8a12214",
+      "fromSide": "right",
+      "id": "c3b237947700fa33",
+      "toNode": "998327a6e2c5e7b8",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "54d6b205f8dd211c",
+      "fromSide": "right",
+      "id": "433e3f749ff021af",
+      "styleAttributes": {
+      },
+      "toNode": "1fad857386022746",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "54d6b205f8dd211c",
+      "fromSide": "right",
+      "id": "cb8583a4d220075c",
+      "styleAttributes": {
+      },
+      "toNode": "cbd04c523ae687d1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "231838e8ca6445cf",
+      "fromSide": "bottom",
+      "id": "78f96fa9841d375f",
+      "toNode": "6c30560f93578424",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "6c30560f93578424",
+      "fromSide": "bottom",
+      "id": "44fb070883a235b0",
+      "toNode": "f9d9edd5c49c006c",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "f9d9edd5c49c006c",
+      "fromSide": "bottom",
+      "id": "d5e6a27b16f73339",
+      "toNode": "3a6b9e4df0c3e25b",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "28e17e2d073d9644",
+      "fromSide": "bottom",
+      "id": "4cfe79dffb5ae16c",
+      "toNode": "231838e8ca6445cf",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "54fd2bc2d9abd571",
+      "fromSide": "bottom",
+      "id": "7eec3f7323007134",
+      "toNode": "28e17e2d073d9644",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "da4fdcc9b7a6e3a2",
+      "fromSide": "bottom",
+      "id": "57558c19ab93dcf8",
+      "toNode": "7fea99ae0f62038b",
+      "toSide": "top"
+    },
+    {
+      "fromNode": "7fea99ae0f62038b",
+      "fromSide": "bottom",
+      "id": "7bbb508bbf949840",
+      "toNode": "3a6b9e4df0c3e25b",
+      "toSide": "right"
+    },
+    {
+      "color": "4",
+      "fromNode": "3a6b9e4df0c3e25b",
+      "fromSide": "bottom",
+      "id": "87a93ef8aa983c0b",
+      "toNode": "1d9a3d9dda792db7",
+      "toSide": "top"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "#d0a9a9",
+      "height": 560,
+      "id": "799ca9b21ec765b5",
+      "label": "传统语音识别",
+      "styleAttributes": {
+        "border": "dashed"
+      },
+      "type": "group",
+      "width": 984,
+      "x": -1720,
+      "y": -1300
+    },
+    {
+      "color": "#c3c0de",
+      "height": 780,
+      "id": "653bc108d967226e",
+      "label": "语音识别框架",
+      "styleAttributes": {
+        "border": "dotted"
+      },
+      "type": "group",
+      "width": 528,
+      "x": -1900,
+      "y": -380
+    },
+    {
+      "color": "#7b81db",
+      "height": 175,
+      "id": "c3788cc1cda3edf2",
+      "label": "传统显式建模不同级别的信号转化",
+      "styleAttributes": {
+      },
+      "type": "group",
+      "width": 380,
+      "x": -1680,
+      "y": -1215
+    },
+    {
+      "height": 50,
+      "id": "92fbc795e17855f7",
+      "styleAttributes": {
+      },
+      "text": "特征提取部分",
+      "type": "text",
+      "width": 191,
+      "x": -1320,
+      "y": -350
+    },
+    {
+      "height": 60,
+      "id": "afd9e3aec1ba6cb4",
+      "styleAttributes": {
+      },
+      "text": "相对频谱变换-感知线性预测PLP",
+      "type": "text",
+      "width": 385,
+      "x": -1005,
+      "y": -302
+    },
+    {
+      "height": 60,
+      "id": "2e45e5cea4af520b",
+      "styleAttributes": {
+      },
+      "text": "混合高斯模型——隐马尔可夫模型",
+      "type": "text",
+      "width": 371,
+      "x": -1019,
+      "y": -156
+    },
+    {
+      "height": 60,
+      "id": "9009cd1107e7b27e",
+      "styleAttributes": {
+      },
+      "text": "声学模型",
+      "type": "text",
+      "width": 140,
+      "x": -1294,
+      "y": -156
+    },
+    {
+      "height": 60,
+      "id": "aa804498b0bb51df",
+      "styleAttributes": {
+      },
+      "text": "最大似然准测ML",
+      "type": "text",
+      "width": 220,
+      "x": -790,
+      "y": -70
+    },
+    {
+      "height": 60,
+      "id": "075e6566aa9199aa",
+      "styleAttributes": {
+      },
+      "text": "最小分类错误MPE",
+      "type": "text",
+      "width": 250,
+      "x": -680,
+      "y": 20
+    },
+    {
+      "height": 60,
+      "id": "b4fbd668476c9ebd",
+      "styleAttributes": {
+      },
+      "text": "最小音素错误MPE",
+      "type": "text",
+      "width": 250,
+      "x": -680,
+      "y": 90
+    },
+    {
+      "height": 60,
+      "id": "792420b46d08d68d",
+      "styleAttributes": {
+      },
+      "text": "准测",
+      "type": "text",
+      "width": 111,
+      "x": -1019,
+      "y": -69
+    },
+    {
+      "height": 60,
+      "id": "2887cb137fd869e7",
+      "styleAttributes": {
+      },
+      "text": "序列鉴别性训练算法",
+      "type": "text",
+      "width": 240,
+      "x": -1019,
+      "y": 60
+    },
+    {
+      "height": 60,
+      "id": "f637dbb8214ed3a7",
+      "styleAttributes": {
+      },
+      "text": "深层神经网络DNN",
+      "type": "text",
+      "width": 232,
+      "x": -680,
+      "y": 170
+    },
+    {
+      "height": 60,
+      "id": "c1bafd1eef203987",
+      "styleAttributes": {
+      },
+      "text": "卷积神经网络CNN",
+      "type": "text",
+      "width": 232,
+      "x": -680,
+      "y": 250
+    },
+    {
+      "height": 60,
+      "id": "998327a6e2c5e7b8",
+      "styleAttributes": {
+      },
+      "text": "循环神经网络RNN",
+      "type": "text",
+      "width": 232,
+      "x": -680,
+      "y": 330
+    },
+    {
+      "height": 60,
+      "id": "998e57e9b8a12214",
+      "styleAttributes": {
+      },
+      "text": "分类鉴别性模型",
+      "type": "text",
+      "width": 217,
+      "x": -1016,
+      "y": 250
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "28e17e2d073d9644",
+      "styleAttributes": {
+      },
+      "text": "信号处理和特征提取",
+      "type": "text",
+      "width": 250,
+      "x": -1880,
+      "y": -249
+    },
+    {
+      "color": "1",
+      "height": 50,
+      "id": "231838e8ca6445cf",
+      "styleAttributes": {
+      },
+      "text": "特征",
+      "type": "text",
+      "width": 105,
+      "x": -1808,
+      "y": -140
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "54fd2bc2d9abd571",
+      "styleAttributes": {
+      },
+      "text": "音频信号",
+      "type": "text",
+      "width": 146,
+      "x": -1828,
+      "y": -362
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "6c30560f93578424",
+      "styleAttributes": {
+      },
+      "text": "声学模型",
+      "type": "text",
+      "width": 159,
+      "x": -1835,
+      "y": -40
+    },
+    {
+      "color": "5",
+      "height": 62,
+      "id": "da4fdcc9b7a6e3a2",
+      "styleAttributes": {
+      },
+      "text": "语言模型",
+      "type": "text",
+      "width": 153,
+      "x": -1561,
+      "y": -40
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "f9d9edd5c49c006c",
+      "styleAttributes": {
+      },
+      "text": "声学模型得分",
+      "type": "text",
+      "width": 188,
+      "x": -1849,
+      "y": 80
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "7fea99ae0f62038b",
+      "styleAttributes": {
+      },
+      "text": "语言模型得分",
+      "type": "text",
+      "width": 185,
+      "x": -1577,
+      "y": 80
+    },
+    {
+      "color": "5",
+      "height": 60,
+      "id": "3a6b9e4df0c3e25b",
+      "styleAttributes": {
+      },
+      "text": "解码搜索",
+      "type": "text",
+      "width": 154,
+      "x": -1832,
+      "y": 200
+    },
+    {
+      "color": "1",
+      "height": 60,
+      "id": "1d9a3d9dda792db7",
+      "styleAttributes": {
+      },
+      "text": " 识别结果",
+      "type": "text",
+      "width": 156,
+      "x": -1834,
+      "y": 320
+    },
+    {
+      "height": 71,
+      "id": "1fad857386022746",
+      "styleAttributes": {
+      },
+      "text": "构建过程中需要更多的人为干预，包含声学单元、词汇、发音模型等的设计。",
+      "type": "text",
+      "width": 415,
+      "x": -1355,
+      "y": -1000
+    },
+    {
+      "height": 35,
+      "id": "bade48df54a406ba",
+      "styleAttributes": {
+      },
+      "text": "音频到声学单元的声学模型",
+      "type": "text",
+      "width": 304,
+      "x": -1652,
+      "y": -1195
+    },
+    {
+      "height": 35,
+      "id": "de97ccc12b608e78",
+      "styleAttributes": {
+      },
+      "text": "声学单元到单词的发音模型",
+      "type": "text",
+      "width": 304,
+      "x": -1652,
+      "y": -1140
+    },
+    {
+      "height": 35,
+      "id": "4d7e3120ee9b36a5",
+      "styleAttributes": {
+      },
+      "text": "单词到句子的语言模型",
+      "type": "text",
+      "width": 264,
+      "x": -1632,
+      "y": -1080
+    },
+    {
+      "color": "1",
+      "height": 35,
+      "id": "54d6b205f8dd211c",
+      "styleAttributes": {
+        "border": null
+      },
+      "text": "混合模型的缺点",
+      "type": "text",
+      "width": 204,
+      "x": -1660,
+      "y": -929
+    },
+    {
+      "height": 109,
+      "id": "cbd04c523ae687d1",
+      "styleAttributes": {
+      },
+      "text": "准确的混合系统通常伴随着更高的计算复杂性和内存消耗的成本，从而增加了在设备上语音识别等资源有限的场景中部署混合系统的难度。",
+      "type": "text",
+      "width": 500,
+      "x": -1355,
+      "y": -894
+    },
+    {
+      "height": 50,
+      "id": "277bc40ce91d402d",
+      "styleAttributes": {
+      },
+      "text": "梅尔倒谱系数MFCC",
+      "type": "text",
+      "width": 250,
+      "x": -1005,
+      "y": -400
+    }
+  ]
+}

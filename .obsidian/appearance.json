@@ -1,0 +1,23 @@
+{
+  "cssTheme": "Blue Topaz",
+  "theme": "moonstone",
+  "accentColor": "#1e526c",
+  "baseFontSize": 24,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "preview-origin",
+    "paragraph",
+    "paragraph-list-control",
+    "header-color",
+    "math",
+    "image-center",
+    "image-size",
+    "default-theme",
+    "beautiful-headings"
+  ],
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "showRibbon": true,
+  "interfaceFontFamily": "寒蝉团圆体_圆体",
+  "textFontFamily": "霞鹜文楷 GB Medium"
+}

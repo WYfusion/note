@@ -1,0 +1,18 @@
+{
+  "strictLineBreaks": false,
+  "useTab": false,
+  "readableLineLength": false,
+  "trashOption": "local",
+  "attachmentFolderPath": "assets",
+  "newFileLocation": "current",
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true,
+  "propertiesInDocument": "visible",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": true,
+    "margin": "2",
+    "downscalePercent": 60
+  }
+}

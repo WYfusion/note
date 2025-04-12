@@ -1,0 +1,49 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "twemoji",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiAccessibility",
+      "LiArrowDown",
+      "LiAlignEndHorizontal",
+      "LiBadgeInfo",
+      "LiAArrowDown",
+      "LiAperture"
+    ],
+    "recentlyUsedIconsSize": 15,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Deep perceptual embeddings for unlabelled animal sound events/论文笔记.md": {
+    "iconName": "LiAperture",
+    "iconColor": "#e8a1a1"
+  },
+  "Binaural source separation using auditory attention for salient and non-salient sounds-第一次组会王岩/滤波抵消相位延迟.md": "LiAArrowDown",
+  "assets": {
+    "iconName": "LiAccessibility",
+    "iconColor": "#c28e8e"
+  },
+  "08方法/数据分析": "LiAlignEndHorizontal",
+  "08方法/降维": "LiBadgeInfo"
+}

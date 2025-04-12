@@ -1,0 +1,95 @@
+/* ===== 标题基础框架 ===== */
+:root {
+  /* 更新颜色变量，选择更鲜明但高雅的色彩 */
+  --h1-color: #3a6ea5;         /* 深蓝偏靛蓝，高贵冷静 */
+  --h2-color: #5e81ac;         /* 中蓝色，沉稳又不失亮度 */
+  --h3-color: #6d90c0;         /* 略浅的蓝紫色，与前两级形成层次 */
+  --line-color: rgba(94, 129, 172, 0.2);
+}
+
+/* 统一标题容器 */
+.HyperMD-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  font-family: 'LXGW WenKai', sans-serif;
+  margin: 1.2em auto;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  font-weight: 600;    /* 增加字重使标题更加突出 */
+}
+
+/* ===== 层级样式 ===== */
+/* 一级标题 */
+h1, .HyperMD-header-1 {
+  font-size: 1.5em;
+  color: var(--h1-color);
+  text-align: center;
+  padding: 0.8em 0;
+  position: relative;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.05);  /* 微妙阴影增加立体感 */
+}
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+                             transparent, 
+                             var(--h1-color) 20%, 
+                             var(--h1-color) 80%, 
+                             transparent);
+  opacity: 0.6;
+}
+
+/* 二级标题 */
+h2, .HyperMD-header-2 {
+  font-size: 1.3em;
+  color: var(--h2-color);
+  padding-left: 1.2em;
+  margin-left: -0.8em;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(94, 129, 172, 0.08) 10%,
+    transparent 100%
+  );
+  border-left: 3px solid var(--h2-color);
+}
+
+/* 三级标题 */
+h3, .HyperMD-header-3 {
+  font-size: 1.1em;
+  color: var(--h3-color);
+  padding: 0.3em 1em;
+  border-radius: 4px;
+  background: rgba(94, 129, 172, 0.06);
+  border-bottom: 1px dotted rgba(94, 129, 172, 0.3);
+}
+
+/* ===== 动态优化 ===== */
+@media (max-width: 768px) {
+  h1 { font-size: 1.4em; }
+  h2 { margin-left: 0; }
+}
+
+.HyperMD-header:hover {
+  opacity: 0.85;
+  cursor: text;
+}
+
+/* 增加标题悬停效果 */
+h1:hover, .HyperMD-header-1:hover {
+  color: #2c5282;  /* 悬停时颜色略深 */
+}
+
+h2:hover, .HyperMD-header-2:hover {
+  color: #4a699a;  /* 悬停时颜色略深 */
+}
+
+h3:hover, .HyperMD-header-3:hover {
+  color: #5577aa;  /* 悬停时颜色略深 */
+}
