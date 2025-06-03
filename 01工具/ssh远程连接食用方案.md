@@ -56,7 +56,9 @@ New-NetFirewallRule -Name "SSH-AltPort" -DisplayName "SSH Alternate Port" -Enabl
 Get-NetTCPConnection -LocalPort 22 -State Listen
 ```
 - 若端口未显示，可能服务未正确启动或防火墙规则未生效
-    
+    ```powershell
+Get-Service sshd  # 检查状态
+```
 4. **重启 SSH 服务**：
 ```Powershell
 Restart-Service sshd
@@ -66,11 +68,15 @@ Restart-Service sshd
 C:\Windows\System32\sc.exe config sshd start= auto
 ```
 
+
 开启sshd服务
 ```powershell
 net start sshd
 ```
 
+```powershell
+Start-Service sshd
+```
 
 可通过防火墙高级设置界面快速定位端口：
 1. 打开 **控制面板 → 系统和安全 → Windows Defender防火墙 → 高级设置**

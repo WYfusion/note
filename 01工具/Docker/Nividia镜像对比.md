@@ -1,7 +1,5 @@
-
-
-
 ## NVIDIA Docker容器镜像类型对比
+[nvidia/cuda Tags | Docker Hub](https://hub.docker.com/r/nvidia/cuda/tags)
 
 NVIDIA提供了多种不同类型的Docker容器镜像，每种类型针对不同的使用场景和需求。以下是这些镜像之间的主要区别：
 #### 1. base（基础版本）

@@ -11,7 +11,7 @@
 ---
 ### **2. GAN中的散度形式**
 #### 2.1 **JS散度**（Jensen-Shannon Divergence）
-在原始GAN的论文中，生成器和判别器的对抗训练被证明等价于最小化 **Jensen-Shannon散度（JS Divergence）**：$$\mathrm{JS}(P_{\mathrm{data}}\parallel P_G)=\frac{1}{2}\mathrm{KL}\left(P_{\mathrm{data}}\parallel\frac{P_{\mathrm{data}}+P_G}{2}\right)+\frac{1}{2}\mathrm{KL}\left(P_G\parallel\frac{P_{\mathrm{data}}+P_G}{2}\right)$$其中 $KL$ 是 **Kullback-Leibler散度**。
+在原始GAN的论文中，生成器和判别器的对抗训练被证明等价于最小化 **Jensen-Shannon散度（JS Divergence）**：$$\mathrm{JS}(P_{\mathrm{data}}\parallel P_G)=\frac{1}{2}\mathrm{KL}\left(P_{\mathrm{data}}\parallel\frac{P_{\mathrm{data}}+P_G}{2}\right)+\frac{1}{2}\mathrm{KL}\left(P_G\parallel\frac{P_{\mathrm{data}}+P_G}{2}\right)$$其中 $KL$ 是 **Kullback-Leibler散度**。 ^28d1be
 - 使用JS散度中**GAN中的问题**：
     - $P_{G}$和$P_{data}$这两个分布之间的重合很少
     - $P_{G}$和$P_{data}$是二维低维特征，当在高维空间中展示时的重叠往往少到可以忽略。

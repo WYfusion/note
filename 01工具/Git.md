@@ -14,7 +14,15 @@ git config --global user.email "fusion_wy@163.com"
 ##### 创建ssh连接密钥公钥
 作用：使用ssh克隆git-hub上的项目
 
-#### 1. 生成 SSH 密钥
+#### 1. 生成 SSH 密钥packet-beta
+title UDP Packet
+0-15: "Source Port"
+16-31: "Destination Port"
+32-47: "Length"
+48-63: "Checksum"
+64-95: "Data (variable length)"
+
+
 
 如果你还没有生成 SSH 密钥，需要先生成一个。在命令行（例如 Git Bash）中输入以下命令来生成 SSH 密钥：
 
@@ -122,6 +130,26 @@ git add test.py
 
 ```bash
 git add .
+```
+
+```bash
+git checkout -b main # 创建并进入main分支
+```
+
+```bash
+git branch main # 创建main分支
+```
+
+```bash
+git branch | cat # 检查所有分支
+```
+
+```bash
+git checkout main # 进入main分支
+```
+
+```bash
+git switch main # 进入main分支
 ```
 
 ```shell

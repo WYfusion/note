@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net" modified="2023-08-19T12:34:56.789Z" agent="5.0 (Windows)" etag="abcdefgh-1234-5678-9abc-defghijklmno" version="15.0.0" type="device">
+  <diagram id="dialog_system_architecture" name="对话系统架构">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- 三个主要区域 -->
+        <!-- I/O层 -->
+        <mxCell id="io_layer" value="I/O层" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#666666;verticalAlign=bottom;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="200" height="320" as="geometry" />
+        </mxCell>
+        
+        <!-- 控制层 -->
+        <mxCell id="control_layer" value="控制层" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#666666;verticalAlign=bottom;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="280" height="320" as="geometry" />
+        </mxCell>
+        
+        <!-- 知识层 -->
+        <mxCell id="knowledge_layer" value="知识层" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;strokeWidth=2;strokeColor=#666666;verticalAlign=bottom;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="200" height="320" as="geometry" />
+        </mxCell>
+        
+        <!-- 用户图标 -->
+        <mxCell id="user_icon" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="40" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- I/O层组件 -->
+        <mxCell id="asr" value="自动语音&#xa;识别" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="90" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tts" value="语音合成" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="220" y="340" width="90" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 控制层组件 -->
+        <mxCell id="slu" value="口语理解" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="160" width="90" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="dm" value="对话管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="260" width="90" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nlg" value="自然语言生成" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 知识层组件 -->
+        <mxCell id="km" value="知识管理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="690" y="260" width="90" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="kb" value="知识库" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#E6E6E6;strokeColor=#000000;fontSize=14;align=center;" vertex="1" parent="1">
+          <mxGeometry x="705" y="370" width="60" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- 连接箭头 -->
+        <!-- 用户到ASR -->
+        <mxCell id="user_to_asr" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="user_icon" target="asr">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="270" as="sourcePoint" />
+            <mxPoint x="250" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ASR到SLU -->
+        <mxCell id="asr_to_slu" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="asr" target="slu">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="190" as="sourcePoint" />
+            <mxPoint x="370" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- SLU到DM -->
+        <mxCell id="slu_to_dm" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="slu" target="dm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="460" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- DM到NLG -->
+        <mxCell id="dm_to_nlg" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="dm" target="nlg">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="350" as="sourcePoint" />
+            <mxPoint x="460" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- NLG到TTS -->
+        <mxCell id="nlg_to_tts" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="nlg" target="tts">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="400" as="sourcePoint" />
+            <mxPoint x="400" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- TTS到用户 -->
+        <mxCell id="tts_to_user" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="tts" target="user_icon">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="430" as="sourcePoint" />
+            <mxPoint x="250" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- DM到KM -->
+        <mxCell id="dm_to_km" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="dm" target="km">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="310" as="sourcePoint" />
+            <mxPoint x="580" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- KM到DM -->
+        <mxCell id="km_to_dm" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="km" target="dm">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="240" as="sourcePoint" />
+            <mxPoint x="700" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- KM到KB -->
+        <mxCell id="km_to_kb" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;" edge="1" parent="1" source="km" target="kb">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="430" as="sourcePoint" />
+            <mxPoint x="700" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

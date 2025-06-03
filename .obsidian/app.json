@@ -5,9 +5,9 @@
   "trashOption": "local",
   "attachmentFolderPath": "assets",
   "newFileLocation": "current",
-  "showInlineTitle": true,
+  "showInlineTitle": false,
   "alwaysUpdateLinks": true,
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "hidden",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "A4",

@@ -1,0 +1,163 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1712" dy="997" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-0" target="9eslR-U4CzoEH0Ju1LOf-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.621;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-0" target="9eslR-U4CzoEH0Ju1LOf-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-0" target="9eslR-U4CzoEH0Ju1LOf-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="681.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-0" value="录制鸟声" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-3" value="MossForms2&lt;div&gt;预处理去噪/分离&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="260" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-4" value="效果不是特别好，但是可以分离出来些" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="250" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-5" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="240" as="sourcePoint" />
+            <mxPoint x="480" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-6" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-3" target="9eslR-U4CzoEH0Ju1LOf-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-7" target="9eslR-U4CzoEH0Ju1LOf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.807;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-7" target="9eslR-U4CzoEH0Ju1LOf-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="520" as="targetPoint" />
+            <mxPoint x="610.14" y="204.27999999999997" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="610" y="198" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-7" value="略微干净的鸟声" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="480" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-12" target="9eslR-U4CzoEH0Ju1LOf-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-12" value="Ecapa-tdnn" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="640" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-16" target="9eslR-U4CzoEH0Ju1LOf-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-24" value="挑选" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9eslR-U4CzoEH0Ju1LOf-19">
+          <mxGeometry x="0.1481" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-16" target="9eslR-U4CzoEH0Ju1LOf-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="366" />
+              <mxPoint x="780" y="681" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-16" value="鸟声类别" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="675" y="341" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-18" value="含噪鸟声" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="665" y="450" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.333;entryY=0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-25" target="9eslR-U4CzoEH0Ju1LOf-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-25" value="略微干净的鸟声" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-30" value="获取时段" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="402" width="120" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-32" value="噪声" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="450" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-33" value="少量纯净鸟声" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="450" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.635;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-30" target="9eslR-U4CzoEH0Ju1LOf-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="532" y="449" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.533;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.852;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-30" target="9eslR-U4CzoEH0Ju1LOf-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="460" as="sourcePoint" />
+            <mxPoint x="590" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="9eslR-U4CzoEH0Ju1LOf-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="681" as="targetPoint" />
+            <mxPoint x="620" y="517" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-36" value="MossForms2去噪增强" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="520" width="260" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.003;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-3" target="9eslR-U4CzoEH0Ju1LOf-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-38" value="预训练" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9eslR-U4CzoEH0Ju1LOf-37">
+          <mxGeometry x="0.6057" y="-1" relative="1" as="geometry">
+            <mxPoint x="32" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.136;entryY=-0.023;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-32" target="9eslR-U4CzoEH0Ju1LOf-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.423;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-33" target="9eslR-U4CzoEH0Ju1LOf-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.808;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-18" target="9eslR-U4CzoEH0Ju1LOf-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="9eslR-U4CzoEH0Ju1LOf-43" target="9eslR-U4CzoEH0Ju1LOf-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="811" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-43" value="获取大量各自&lt;div&gt;类别干净音频&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="555" y="651" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eslR-U4CzoEH0Ju1LOf-49" value="检测最低频&lt;div&gt;(目前仅AU直接观察)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="560" y="761" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
