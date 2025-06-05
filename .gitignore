@@ -1,0 +1,28 @@
+# 忽略临时上传/下载文件
+.tmp.driveupload/
+.tmp.drivedownload/
+
+# 忽略Obsidian配置和缓存文件
+.obsidian/workspace.json
+.obsidian/cache/
+.obsidian/plugins/recent-files-obsidian/data.json
+.trash/
+
+# 忽略同步文件
+sync.ffs_db
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略大型二进制文件，如果有
+*.mp4
+*.mov
+*.zip
+*.rar
+*.7z
+
+# 临时文件
+*.tmp
+*.bak
+*.swp 
