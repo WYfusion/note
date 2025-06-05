@@ -1,28 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "凸集",
+      "path": "课本/最优化/优化数学基础——凸集/凸集.md"
+    },
+    {
+      "basename": "范数",
+      "path": "课本/最优化/优化数学基础——凸集/范数.md"
+    },
+    {
+      "basename": "整数规划问题求解(分支定界法)",
+      "path": "课本/最优化/线性规划/整数规划问题求解(分支定界法).md"
+    },
+    {
       "basename": "标准化线性规划",
       "path": "课本/最优化/线性规划/标准化线性规划.md"
     },
     {
-      "basename": "凸优化",
-      "path": "课本/最优化/基本知识/凸优化.md"
+      "basename": "基可行解",
+      "path": "课本/最优化/线性规划/基可行解.md"
     },
     {
       "basename": "单纯形法",
       "path": "课本/最优化/线性规划/单纯形法.md"
     },
     {
-      "basename": "收敛",
-      "path": "课本/最优化/基本知识/收敛.md"
+      "basename": "GAU门控注意力单元",
+      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md"
     },
     {
-      "basename": "Mossformer2",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md"
+      "basename": "从优化的角度理解BFGS",
+      "path": "课本/最优化/线性规划/从优化的角度理解BFGS.md"
+    },
+    {
+      "basename": "凸优化",
+      "path": "课本/最优化/基本知识/凸优化.md"
+    },
+    {
+      "basename": "全连接层",
+      "path": "06层内结构/01卷积/全连接层.md"
     },
     {
       "basename": "上确界和下确界",
       "path": "课本/最优化/基本知识/上确界和下确界.md"
+    },
+    {
+      "basename": "收敛",
+      "path": "课本/最优化/基本知识/收敛.md"
+    },
+    {
+      "basename": "奇异矩阵",
+      "path": "运算/常规知识/奇异矩阵.md"
+    },
+    {
+      "basename": "乘法",
+      "path": "运算/乘法.md"
+    },
+    {
+      "basename": "内积",
+      "path": "运算/内积.md"
+    },
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "Mossformer2",
+      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md"
     },
     {
       "basename": "删除环境",
@@ -83,10 +127,6 @@
     {
       "basename": "DE深度卷积Depthwise Conv",
       "path": "06层内结构/01卷积/DE深度卷积Depthwise Conv.md"
-    },
-    {
-      "basename": "GAU门控注意力单元",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md"
     },
     {
       "basename": "实验设置与效果展示",
@@ -159,46 +199,6 @@
     {
       "basename": "线性瓶颈结构（Linear Bottlenecks）",
       "path": "07层间结构/模块/线性瓶颈结构（Linear Bottlenecks）.md"
-    },
-    {
-      "basename": "容器命令",
-      "path": "01工具/Docker/容器命令.md"
-    },
-    {
-      "basename": "Docker安装",
-      "path": "01工具/Docker/Docker安装.md"
-    },
-    {
-      "basename": "Docker简单使用",
-      "path": "01工具/Docker/Docker简单使用.md"
-    },
-    {
-      "basename": "GRU(门控循环单元)",
-      "path": "02模型/循环神经网络（RNN）/GRU(门控循环单元).md"
-    },
-    {
-      "basename": "LSTM",
-      "path": "02模型/LSTM/LSTM.md"
-    },
-    {
-      "basename": "Self-attention",
-      "path": "02模型/Transformer/Self-attention.md"
-    },
-    {
-      "basename": "Positional coding",
-      "path": "02模型/Transformer/Positional coding.md"
-    },
-    {
-      "basename": "BLEU Score",
-      "path": "02模型/Transformer/BLEU Score.md"
-    },
-    {
-      "basename": "Cross Attention",
-      "path": "02模型/Transformer/Cross Attention.md"
-    },
-    {
-      "basename": "Transformer",
-      "path": "02模型/Transformer/Transformer.md"
     }
   ],
   "omittedPaths": [],
