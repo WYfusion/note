@@ -9,6 +9,34 @@
       "path": "课本/最优化/优化数学基础——凸集/范数.md"
     },
     {
+      "basename": "仿射组合和仿射包",
+      "path": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md"
+    },
+    {
+      "basename": "单纯形法",
+      "path": "课本/最优化/线性规划/单纯形法.md"
+    },
+    {
+      "basename": "从优化的角度理解BFGS",
+      "path": "课本/最优化/线性规划/从优化的角度理解BFGS.md"
+    },
+    {
+      "basename": "Mossformer2",
+      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md"
+    },
+    {
+      "basename": "RNN-Free循环模块",
+      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md"
+    },
+    {
+      "basename": "FSMN与cFSMN",
+      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md"
+    },
+    {
+      "basename": "线性子空间",
+      "path": "运算/常规知识/线性子空间.md"
+    },
+    {
       "basename": "整数规划问题求解(分支定界法)",
       "path": "课本/最优化/线性规划/整数规划问题求解(分支定界法).md"
     },
@@ -21,16 +49,8 @@
       "path": "课本/最优化/线性规划/基可行解.md"
     },
     {
-      "basename": "单纯形法",
-      "path": "课本/最优化/线性规划/单纯形法.md"
-    },
-    {
       "basename": "GAU门控注意力单元",
       "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md"
-    },
-    {
-      "basename": "从优化的角度理解BFGS",
-      "path": "课本/最优化/线性规划/从优化的角度理解BFGS.md"
     },
     {
       "basename": "凸优化",
@@ -65,10 +85,6 @@
       "path": "01工具/Git.md"
     },
     {
-      "basename": "Mossformer2",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md"
-    },
-    {
       "basename": "删除环境",
       "path": "01工具/Anaconda/删除环境.md"
     },
@@ -91,14 +107,6 @@
     {
       "basename": "Mossformer模型",
       "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/Mossformer模型.md"
-    },
-    {
-      "basename": "RNN-Free循环模块",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md"
-    },
-    {
-      "basename": "FSMN与cFSMN",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md"
     },
     {
       "basename": "Ubuntu文件夹挂载到Windows",
@@ -191,14 +199,6 @@
     {
       "basename": "卷积计算量",
       "path": "06层内结构/01卷积/卷积计算量.md"
-    },
-    {
-      "basename": "反卷积",
-      "path": "06层内结构/01卷积/反卷积.md"
-    },
-    {
-      "basename": "线性瓶颈结构（Linear Bottlenecks）",
-      "path": "07层间结构/模块/线性瓶颈结构（Linear Bottlenecks）.md"
     }
   ],
   "omittedPaths": [],

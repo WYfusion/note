@@ -4,116 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "3c41b9dcc698b5bc",
+        "id": "63019d9c90ee85f3",
         "type": "tabs",
         "children": [
           {
-            "id": "4e01414f7eee64a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "GAU门控注意力单元"
-            }
-          },
-          {
-            "id": "85700c1754edb10c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/实验设置与效果展示.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "实验设置与效果展示"
-            }
-          },
-          {
-            "id": "0ad004997166cafd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "FSMN与cFSMN"
-            }
-          },
-          {
-            "id": "854ef9bf31bcbd17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "RNN-Free循环模块"
-            }
-          },
-          {
-            "id": "a5158d3f82f10847",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Mossformer2"
-            }
-          },
-          {
-            "id": "12d3c6cb886e116e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/最优化/线性规划/从优化的角度理解BFGS.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "从优化的角度理解BFGS"
-            }
-          },
-          {
-            "id": "028980498834d7b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/最优化/线性规划/单纯形法.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "单纯形法"
-            }
-          },
-          {
             "id": "a7cb4bf0d90f8daa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "仿射组合和仿射包"
+            }
+          },
+          {
+            "id": "60af81f70fc12973",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -126,9 +36,24 @@
               "icon": "lucide-file",
               "title": "凸集"
             }
+          },
+          {
+            "id": "3dfc6dbf1af9ddd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "课本/最优化/优化数学基础——凸集/范数.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "范数"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386
+    "width": 386,
+    "collapsed": true
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -325,27 +251,32 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "a7cb4bf0d90f8daa",
+  "active": "60af81f70fc12973",
   "lastOpenFiles": [
     "课本/最优化/优化数学基础——凸集/范数.md",
     "课本/最优化/优化数学基础——凸集/凸集.md",
+    "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md",
+    "assets/Pasted image 20250606214658.png",
+    "assets/Pasted image 20250606214250.png",
+    "课本/最优化/线性规划/单纯形法.md",
+    "课本/最优化/线性规划/从优化的角度理解BFGS.md",
+    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md",
+    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md",
+    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md",
+    "assets/Pasted image 20250606213235.png",
+    "assets/Pasted image 20250606212017.png",
+    "运算/常规知识/线性子空间.md",
     "assets/Pasted image 20250605214709.png",
     "assets/Pasted image 20250605214702.png",
     "assets/Pasted image 20250605214641.png",
     "assets/Pasted image 20250605214535.png",
     "assets/Pasted image 20250605214520.png",
     "assets/Pasted image 20250605214514.png",
-    "assets/Pasted image 20250605214442.png",
-    "assets/Pasted image 20250605214350.png",
-    "assets/Pasted image 20250605214339.png",
-    "assets/Pasted image 20250605214326.png",
     "课本/最优化/线性规划/整数规划问题求解(分支定界法).md",
     "课本/最优化/优化数学基础——凸集",
     "课本/最优化/线性规划/标准化线性规划.md",
     "课本/最优化/线性规划/基可行解.md",
-    "课本/最优化/线性规划/单纯形法.md",
     "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md",
-    "课本/最优化/线性规划/从优化的角度理解BFGS.md",
     "课本/最优化/基本知识/凸优化.md",
     "06层内结构/01卷积/全连接层.md",
     "课本/最优化/基本知识/上确界和下确界.md",
@@ -356,15 +287,10 @@
     "运算/常规知识",
     "01工具/Git.md",
     "课本/最优化/线性规划",
-    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md",
     "01工具/Anaconda/删除环境.md",
     "02模型/Transformer/Multi-Head Self-Attention.md",
     "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/混合注意力块.md",
     "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/Mossformer模型.md",
-    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md",
-    "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md",
-    "01工具/挂载/Ubuntu文件夹挂载到Windows.md",
-    "01工具/Tensorboard/log打开方式.md",
     "02模型/元学习",
     "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation",
     "01工具/挂载",
