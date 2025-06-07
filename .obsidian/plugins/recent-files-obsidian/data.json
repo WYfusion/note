@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "凸函数判定定理",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定定理.md"
+    },
+    {
+      "basename": "仿射变换",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/仿射变换.md"
+    },
+    {
+      "basename": "广义不等式",
+      "path": "课本/最优化/优化数学基础——凸集/广义不等式.md"
+    },
+    {
+      "basename": "对偶锥",
+      "path": "课本/最优化/优化数学基础——凸集/对偶锥.md"
+    },
+    {
+      "basename": "保凸运算",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算.md"
+    },
+    {
       "basename": "凸集",
       "path": "课本/最优化/优化数学基础——凸集/凸集.md"
+    },
+    {
+      "basename": "锥组合(Conic Combination)和凸锥(Convex Cone)",
+      "path": "课本/最优化/优化数学基础——凸集/锥组合(Conic Combination)和凸锥(Convex Cone).md"
     },
     {
       "basename": "范数",
@@ -11,6 +35,54 @@
     {
       "basename": "仿射组合和仿射包",
       "path": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md"
+    },
+    {
+      "basename": "强凸函数(Strong Convex Function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md"
+    },
+    {
+      "basename": "凸函数(convex function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数(convex function).md"
+    },
+    {
+      "basename": "矩阵变量函数的导数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md"
+    },
+    {
+      "basename": "梯度",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/梯度.md"
+    },
+    {
+      "basename": "闭函数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md"
+    },
+    {
+      "basename": "下水平集合上方图(epigraph)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/下水平集合上方图(epigraph).md"
+    },
+    {
+      "basename": "海瑟矩阵(Hesse Matrix)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/海瑟矩阵(Hesse Matrix).md"
+    },
+    {
+      "basename": "超平面和半空间",
+      "path": "课本/最优化/优化数学基础——凸集/超平面和半空间.md"
+    },
+    {
+      "basename": "Pasted image 20250607143509",
+      "path": "assets/Pasted image 20250607143509.png"
+    },
+    {
+      "basename": "Pasted image 20250607143448",
+      "path": "assets/Pasted image 20250607143448.png"
+    },
+    {
+      "basename": "适当锥",
+      "path": "课本/最优化/优化数学基础——凸集/适当锥.md"
+    },
+    {
+      "basename": "Pasted image 20250607100903",
+      "path": "assets/Pasted image 20250607100903.png"
     },
     {
       "basename": "单纯形法",
@@ -127,78 +199,6 @@
     {
       "basename": "Meta learning学习如何学习",
       "path": "02模型/元学习/Meta learning学习如何学习.md"
-    },
-    {
-      "basename": "网络模型",
-      "path": "01工具/Tensorboard/网络模型.md"
-    },
-    {
-      "basename": "DE深度卷积Depthwise Conv",
-      "path": "06层内结构/01卷积/DE深度卷积Depthwise Conv.md"
-    },
-    {
-      "basename": "实验设置与效果展示",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/实验设置与效果展示.md"
-    },
-    {
-      "basename": "Pasted image 20250514162508",
-      "path": "assets/Pasted image 20250514162508.png"
-    },
-    {
-      "basename": "Pasted image 20250509193711",
-      "path": "assets/Pasted image 20250509193711.png"
-    },
-    {
-      "basename": "2018到2023年左右的分离进程",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/2018到2023年左右的分离进程.md"
-    },
-    {
-      "basename": "残差结构（Residual Block）",
-      "path": "07层间结构/模块/残差结构（Residual Block）.md"
-    },
-    {
-      "basename": "常规卷积",
-      "path": "06层内结构/01卷积/常规卷积.md"
-    },
-    {
-      "basename": "深度可分卷积Depthwise Separable Conv",
-      "path": "06层内结构/01卷积/深度可分卷积Depthwise Separable Conv.md"
-    },
-    {
-      "basename": "空洞卷积（Dilated Convolution）",
-      "path": "06层内结构/01卷积/空洞卷积（Dilated Convolution）.md"
-    },
-    {
-      "basename": "感受野计算",
-      "path": "06层内结构/01卷积/感受野计算.md"
-    },
-    {
-      "basename": "分组卷积",
-      "path": "06层内结构/01卷积/分组卷积.md"
-    },
-    {
-      "basename": "标准化卷积层（StdConv2d）",
-      "path": "06层内结构/01卷积/标准化卷积层（StdConv2d）.md"
-    },
-    {
-      "basename": "PW逐点卷积Pointwise Conv",
-      "path": "06层内结构/01卷积/PW逐点卷积Pointwise Conv.md"
-    },
-    {
-      "basename": "设计模型的指标",
-      "path": "06层内结构/01卷积/设计模型的指标.md"
-    },
-    {
-      "basename": "卷积的参数",
-      "path": "06层内结构/01卷积/卷积的参数.md"
-    },
-    {
-      "basename": "转置卷积",
-      "path": "06层内结构/01卷积/转置卷积.md"
-    },
-    {
-      "basename": "卷积计算量",
-      "path": "06层内结构/01卷积/卷积计算量.md"
     }
   ],
   "omittedPaths": [],

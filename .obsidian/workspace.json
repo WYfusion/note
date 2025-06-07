@@ -4,56 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "63019d9c90ee85f3",
+        "id": "66ee4d3a1254c814",
         "type": "tabs",
         "children": [
           {
-            "id": "a7cb4bf0d90f8daa",
+            "id": "11fa49a80b5eb635",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md",
+                "file": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定定理.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "仿射组合和仿射包"
-            }
-          },
-          {
-            "id": "60af81f70fc12973",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/最优化/优化数学基础——凸集/凸集.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "凸集"
-            }
-          },
-          {
-            "id": "3dfc6dbf1af9ddd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/最优化/优化数学基础——凸集/范数.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "范数"
+              "title": "凸函数判定定理"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 386,
-    "collapsed": true
+    "width": 438.5
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -251,53 +219,53 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "60af81f70fc12973",
+  "active": "11fa49a80b5eb635",
   "lastOpenFiles": [
-    "课本/最优化/优化数学基础——凸集/范数.md",
+    "课本/最优化/优化数学基础——凸集/凸函数/仿射变换.md",
+    "课本/最优化/优化数学基础——凸集/广义不等式.md",
+    "课本/最优化/优化数学基础——凸集/对偶锥.md",
+    "课本/最优化/优化数学基础——凸集/保凸运算.md",
     "课本/最优化/优化数学基础——凸集/凸集.md",
+    "课本/最优化/优化数学基础——凸集/锥组合(Conic Combination)和凸锥(Convex Cone).md",
+    "课本/最优化/优化数学基础——凸集/范数.md",
     "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md",
-    "assets/Pasted image 20250606214658.png",
-    "assets/Pasted image 20250606214250.png",
+    "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定定理.md",
+    "assets/Pasted image 20250607204737.png",
+    "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md",
+    "assets/Pasted image 20250607204257.png",
+    "课本/最优化/优化数学基础——凸集/凸函数/凸函数(convex function).md",
+    "assets/Pasted image 20250607202745.png",
+    "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md",
+    "课本/最优化/优化数学基础——凸集/凸函数/梯度.md",
+    "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md",
+    "课本/最优化/优化数学基础——凸集/凸函数/下水平集合上方图(epigraph).md",
+    "assets/Pasted image 20250607201409.png",
+    "assets/Pasted image 20250607195552.png",
+    "assets/Pasted image 20250607194440.png",
+    "assets/Pasted image 20250607194241.png",
+    "课本/最优化/优化数学基础——凸集/凸函数/海瑟矩阵(Hesse Matrix).md",
+    "assets/Pasted image 20250607145705.png",
+    "assets/Pasted image 20250607145659.png",
+    "assets/Pasted image 20250607145652.png",
+    "课本/最优化/优化数学基础——凸集/凸函数",
+    "课本/最优化/优化数学基础——凸集/超平面和半空间.md",
+    "课本/最优化/优化数学基础——凸集/适当锥.md",
     "课本/最优化/线性规划/单纯形法.md",
     "课本/最优化/线性规划/从优化的角度理解BFGS.md",
     "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md",
     "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md",
     "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md",
-    "assets/Pasted image 20250606213235.png",
-    "assets/Pasted image 20250606212017.png",
     "运算/常规知识/线性子空间.md",
-    "assets/Pasted image 20250605214709.png",
-    "assets/Pasted image 20250605214702.png",
-    "assets/Pasted image 20250605214641.png",
-    "assets/Pasted image 20250605214535.png",
-    "assets/Pasted image 20250605214520.png",
-    "assets/Pasted image 20250605214514.png",
     "课本/最优化/线性规划/整数规划问题求解(分支定界法).md",
     "课本/最优化/优化数学基础——凸集",
-    "课本/最优化/线性规划/标准化线性规划.md",
-    "课本/最优化/线性规划/基可行解.md",
-    "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md",
-    "课本/最优化/基本知识/凸优化.md",
-    "06层内结构/01卷积/全连接层.md",
-    "课本/最优化/基本知识/上确界和下确界.md",
-    "课本/最优化/基本知识/收敛.md",
-    "运算/常规知识/奇异矩阵.md",
-    "运算/乘法.md",
-    "运算/内积.md",
     "运算/常规知识",
-    "01工具/Git.md",
     "课本/最优化/线性规划",
-    "01工具/Anaconda/删除环境.md",
-    "02模型/Transformer/Multi-Head Self-Attention.md",
-    "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/混合注意力块.md",
-    "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/Mossformer模型.md",
     "02模型/元学习",
     "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation",
     "01工具/挂载",
     "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer",
     "论文/自看论文/分离降噪",
     "课本/现代信号处理/现代数学信号处理基本概念",
-    "课本/现代信号处理",
     "论文/知识点/统计/未命名.canvas",
     "语音识别/语音识别框架/语音识别基本框架.canvas",
     "07层间结构/未命名.canvas",
