@@ -2,7 +2,7 @@
 ### 下水平集合（α- 下水平集）
 $\overline{\mathbb{R}}$ 表示 **扩展实数集**（Extended Real Numbers），其定义为：$\overline{\mathbb{R}} = \mathbb{R} \cup \{ -\infty, +\infty \}$  
 即实数集 $\mathbb{R}$ 添加了正无穷 $+\infty$ 和负无穷 $-\infty$。
-- **定义**：对于广义实值函数 $f: \mathbb{R}^n \to \overline{\mathbb{R}}$，其 **α- 下水平集** 为 $C_\alpha = \{ x \mid f(x) \leq \alpha \}$，即定义域中函数值不超过 $\alpha$ 的点的集合。
+- **定义**：对于广义实值函数 $f: \mathbb{R}^n \to \overline{\mathbb{R}}$，其 **α- 下水平集** 为 $C_\alpha = \{ x \mid f(x) \leq \alpha \}$，即**定义域中**函数值不超过 $\alpha$ 的点的集合。
 - **理解**：将函数在定义域空间中按 “函数值的高度大小” 切片，$C_\alpha$ 表示函数值 “不超过 $\alpha$” 的区域。例如，对 $f(x) = x^2$，$C_\alpha = [-\sqrt{\alpha}, \sqrt{\alpha}]$（$\alpha \geq 0$），是实数轴上的区间。
 - **作用**：
     - **连续性与可测性**：函数下半连续当且仅当其所有下水平集为闭集；可测函数的下水平集具有可测性。
