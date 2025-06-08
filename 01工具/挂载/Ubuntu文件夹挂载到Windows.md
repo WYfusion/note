@@ -32,12 +32,18 @@ sudo systemctl restart smbd
 # Windows端
 
 ^6abc70
+![[Pasted image 20250607214623.png|800]]
 
 ## 访问共享路径
 下面二选一
 ### 图形界面映射网络驱动器
 打开「此电脑」→点击「计算机」选项卡→选择「映射网络驱动器」  
+![[Pasted image 20250607214642.png|400]]
     `\\<Ubuntu_IP>\shared_folder`（例如 `\\192.168.1.100\dataset`）。
+    `\\172.22.210.39\BirdDB`
+    wj_synology
+    WJwj503a
+    
 ### 命令行快速挂载
 按下`Win+R`输入`cmd`，执行命令：
 ```bash

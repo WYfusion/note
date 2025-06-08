@@ -1,72 +1,180 @@
 {
   "recentFiles": [
     {
-      "basename": "凸函数判定定理",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定定理.md"
+      "basename": "共轭函数(conjugate function)",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/共轭函数(conjugate function).md"
     },
     {
-      "basename": "仿射变换",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/仿射变换.md"
+      "basename": "矩阵求导公式",
+      "path": "课本/最优化/对偶理论/矩阵求导公式.md"
+    },
+    {
+      "basename": "弱对偶性和强对偶性",
+      "path": "课本/最优化/对偶理论/弱对偶性和强对偶性.md"
     },
     {
       "basename": "广义不等式",
       "path": "课本/最优化/优化数学基础——凸集/广义不等式.md"
     },
     {
-      "basename": "对偶锥",
-      "path": "课本/最优化/优化数学基础——凸集/对偶锥.md"
+      "basename": "适当锥",
+      "path": "课本/最优化/优化数学基础——凸集/适当锥.md"
     },
     {
-      "basename": "保凸运算",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算.md"
+      "basename": "拉格朗日对偶问题",
+      "path": "课本/最优化/对偶理论/拉格朗日对偶问题.md"
     },
     {
-      "basename": "凸集",
-      "path": "课本/最优化/优化数学基础——凸集/凸集.md"
+      "basename": "透视函数(Perspective function)",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/透视函数(Perspective function).md"
     },
     {
-      "basename": "锥组合(Conic Combination)和凸锥(Convex Cone)",
-      "path": "课本/最优化/优化数学基础——凸集/锥组合(Conic Combination)和凸锥(Convex Cone).md"
-    },
-    {
-      "basename": "范数",
-      "path": "课本/最优化/优化数学基础——凸集/范数.md"
+      "basename": "超平面和半空间",
+      "path": "课本/最优化/优化数学基础——凸集/超平面和半空间.md"
     },
     {
       "basename": "仿射组合和仿射包",
       "path": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md"
     },
     {
-      "basename": "强凸函数(Strong Convex Function)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md"
+      "basename": "范数",
+      "path": "课本/最优化/优化数学基础——凸集/范数.md"
     },
     {
-      "basename": "凸函数(convex function)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数(convex function).md"
+      "basename": "锥组合(Conic Combination)和凸锥(Convex Cone)",
+      "path": "课本/最优化/优化数学基础——凸集/锥组合(Conic Combination)和凸锥(Convex Cone).md"
     },
     {
-      "basename": "矩阵变量函数的导数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md"
+      "basename": "对偶锥",
+      "path": "课本/最优化/优化数学基础——凸集/对偶锥.md"
     },
     {
-      "basename": "梯度",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/梯度.md"
+      "basename": "凸集",
+      "path": "课本/最优化/优化数学基础——凸集/凸集.md"
     },
     {
-      "basename": "闭函数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md"
+      "basename": "一般优化问题",
+      "path": "课本/最优化/对偶理论/一般优化问题.md"
     },
     {
-      "basename": "下水平集合上方图(epigraph)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/下水平集合上方图(epigraph).md"
+      "basename": "拉格朗日函数",
+      "path": "课本/最优化/对偶理论/拉格朗日函数.md"
+    },
+    {
+      "basename": "拉格朗日对偶问题求解流程",
+      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
     },
     {
       "basename": "海瑟矩阵(Hesse Matrix)",
       "path": "课本/最优化/优化数学基础——凸集/凸函数/海瑟矩阵(Hesse Matrix).md"
     },
     {
-      "basename": "超平面和半空间",
-      "path": "课本/最优化/优化数学基础——凸集/超平面和半空间.md"
+      "basename": "矩阵变量函数的导数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md"
+    },
+    {
+      "basename": "闭函数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md"
+    },
+    {
+      "basename": "梯度",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/梯度.md"
+    },
+    {
+      "basename": "凸函数(convex function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数(convex function).md"
+    },
+    {
+      "basename": "仿射变换",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/仿射变换.md"
+    },
+    {
+      "basename": "强凸函数(Strong Convex Function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md"
+    },
+    {
+      "basename": "Jessen不等式",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/Jessen不等式.md"
+    },
+    {
+      "basename": "下水平集合上方图(epigraph)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/下水平集合上方图(epigraph).md"
+    },
+    {
+      "basename": "拟凸函数(Quasi-Convex function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/拟凸函数(Quasi-Convex function).md"
+    },
+    {
+      "basename": "凸函数判定的一阶条件",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的一阶条件.md"
+    },
+    {
+      "basename": "凸函数判定的梯度单调性条件",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的梯度单调性条件.md"
+    },
+    {
+      "basename": "凸函数判定定理",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定定理.md"
+    },
+    {
+      "basename": "判定一个函数是否为凸函数的方法小结",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/判定一个函数是否为凸函数的方法小结.md"
+    },
+    {
+      "basename": "凸函数判定的二阶条件",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的二阶条件.md"
+    },
+    {
+      "basename": "广义不等式意义下的凸函数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/广义不等式意义下的凸函数.md"
+    },
+    {
+      "basename": "对数凸函数",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/对数凸函数.md"
+    },
+    {
+      "basename": "上确界和下确界",
+      "path": "课本/最优化/基本知识/上确界和下确界.md"
+    },
+    {
+      "basename": "取下确界",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/取下确界.md"
+    },
+    {
+      "basename": "与向量函数的复合",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/与向量函数的复合.md"
+    },
+    {
+      "basename": "与标量函数的复合",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/与标量函数的复合.md"
+    },
+    {
+      "basename": "逐点取上界",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取上界.md"
+    },
+    {
+      "basename": "逐点取最大值",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
+    },
+    {
+      "basename": "非负加权和与仿射函数的复合",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/非负加权和与仿射函数的复合.md"
+    },
+    {
+      "basename": "透视变换和分式线性变换的保凸性",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/透视变换和分式线性变换的保凸性.md"
+    },
+    {
+      "basename": "仿射变换的保凸性",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/仿射变换的保凸性.md"
+    },
+    {
+      "basename": "Ubuntu文件夹挂载到Windows",
+      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+    },
+    {
+      "basename": "Windows文件挂载到Windows",
+      "path": "01工具/挂载/Windows文件挂载到Windows.md"
     },
     {
       "basename": "Pasted image 20250607143509",
@@ -75,10 +183,6 @@
     {
       "basename": "Pasted image 20250607143448",
       "path": "assets/Pasted image 20250607143448.png"
-    },
-    {
-      "basename": "适当锥",
-      "path": "课本/最优化/优化数学基础——凸集/适当锥.md"
     },
     {
       "basename": "Pasted image 20250607100903",
@@ -91,114 +195,6 @@
     {
       "basename": "从优化的角度理解BFGS",
       "path": "课本/最优化/线性规划/从优化的角度理解BFGS.md"
-    },
-    {
-      "basename": "Mossformer2",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/Mossformer2.md"
-    },
-    {
-      "basename": "RNN-Free循环模块",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md"
-    },
-    {
-      "basename": "FSMN与cFSMN",
-      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/FSMN与cFSMN.md"
-    },
-    {
-      "basename": "线性子空间",
-      "path": "运算/常规知识/线性子空间.md"
-    },
-    {
-      "basename": "整数规划问题求解(分支定界法)",
-      "path": "课本/最优化/线性规划/整数规划问题求解(分支定界法).md"
-    },
-    {
-      "basename": "标准化线性规划",
-      "path": "课本/最优化/线性规划/标准化线性规划.md"
-    },
-    {
-      "basename": "基可行解",
-      "path": "课本/最优化/线性规划/基可行解.md"
-    },
-    {
-      "basename": "GAU门控注意力单元",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/GAU门控注意力单元.md"
-    },
-    {
-      "basename": "凸优化",
-      "path": "课本/最优化/基本知识/凸优化.md"
-    },
-    {
-      "basename": "全连接层",
-      "path": "06层内结构/01卷积/全连接层.md"
-    },
-    {
-      "basename": "上确界和下确界",
-      "path": "课本/最优化/基本知识/上确界和下确界.md"
-    },
-    {
-      "basename": "收敛",
-      "path": "课本/最优化/基本知识/收敛.md"
-    },
-    {
-      "basename": "奇异矩阵",
-      "path": "运算/常规知识/奇异矩阵.md"
-    },
-    {
-      "basename": "乘法",
-      "path": "运算/乘法.md"
-    },
-    {
-      "basename": "内积",
-      "path": "运算/内积.md"
-    },
-    {
-      "basename": "Git",
-      "path": "01工具/Git.md"
-    },
-    {
-      "basename": "删除环境",
-      "path": "01工具/Anaconda/删除环境.md"
-    },
-    {
-      "basename": "Pasted image 20250602163939",
-      "path": "assets/Pasted image 20250602163939.png"
-    },
-    {
-      "basename": "Pasted image 20250602163909",
-      "path": "assets/Pasted image 20250602163909.png"
-    },
-    {
-      "basename": "Multi-Head Self-Attention",
-      "path": "02模型/Transformer/Multi-Head Self-Attention.md"
-    },
-    {
-      "basename": "混合注意力块",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/混合注意力块.md"
-    },
-    {
-      "basename": "Mossformer模型",
-      "path": "论文/自看论文/分离降噪/MossFormer-Pushing the Performance Limit of Monaural Speech Separation using Gated Single-head Transformer with Convolution-augmented Joint Self-AttentionsMossFormer/Mossformer模型.md"
-    },
-    {
-      "basename": "Ubuntu文件夹挂载到Windows",
-      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
-    },
-    {
-      "basename": "log打开方式",
-      "path": "01工具/Tensorboard/log打开方式.md"
-    },
-    {
-      "basename": "超参数和指标对比 (add_hparams)",
-      "path": "01工具/Tensorboard/超参数和指标对比 (add_hparams).md"
-    },
-    {
-      "basename": "创建环境",
-      "path": "01工具/Anaconda/创建环境.md"
-    },
-    {
-      "basename": "Meta learning学习如何学习",
-      "path": "02模型/元学习/Meta learning学习如何学习.md"
     }
   ],
   "omittedPaths": [],
