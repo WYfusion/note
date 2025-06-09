@@ -1,8 +1,160 @@
 {
   "recentFiles": [
     {
+      "basename": "LASSO问题求解",
+      "path": "课本/最优化/次梯度算法/LASSO问题求解.md"
+    },
+    {
+      "basename": "次梯度算法总结",
+      "path": "课本/最优化/次梯度算法/次梯度算法总结.md"
+    },
+    {
+      "basename": "次梯度算法收敛性证明",
+      "path": "课本/最优化/次梯度算法/次梯度算法收敛性证明.md"
+    },
+    {
+      "basename": "次梯度算法收敛性分析",
+      "path": "课本/最优化/次梯度算法/次梯度算法收敛性分析.md"
+    },
+    {
+      "basename": "次梯度算法在不同步长下的收敛性分析",
+      "path": "课本/最优化/次梯度算法/次梯度算法在不同步长下的收敛性分析.md"
+    },
+    {
+      "basename": "次梯度算法结构",
+      "path": "课本/最优化/次梯度算法/次梯度算法结构.md"
+    },
+    {
+      "basename": "次梯度Subgradient",
+      "path": "课本/最优化/次梯度算法/次梯度Subgradient.md"
+    },
+    {
+      "basename": "问题假设",
+      "path": "课本/最优化/次梯度算法/问题假设.md"
+    },
+    {
+      "basename": "次梯度算法收敛性——假设条件",
+      "path": "课本/最优化/次梯度算法/次梯度算法收敛性——假设条件.md"
+    },
+    {
+      "basename": "LASSO问题求解",
+      "path": "课本/最优化/梯度下降算法——梯度下降法/LASSO问题求解.md"
+    },
+    {
+      "basename": "收敛",
+      "path": "课本/最优化/基本知识/收敛.md"
+    },
+    {
+      "basename": "梯度法在凸函数上的收敛性",
+      "path": "课本/最优化/梯度下降算法——梯度下降法/梯度法在凸函数上的收敛性.md"
+    },
+    {
+      "basename": "二次函数的收敛定理",
+      "path": "课本/最优化/梯度下降算法——梯度下降法/二次函数的收敛定理.md"
+    },
+    {
+      "basename": "强凸函数(Strong Convex Function)",
+      "path": "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md"
+    },
+    {
+      "basename": "上确界和下确界",
+      "path": "课本/最优化/基本知识/上确界和下确界.md"
+    },
+    {
+      "basename": "凸优化",
+      "path": "课本/最优化/基本知识/凸优化.md"
+    },
+    {
+      "basename": "线搜索算法的收敛性",
+      "path": "课本/最优化/梯度下降算法——线搜索一般收敛性分析/线搜索算法的收敛性.md"
+    },
+    {
+      "basename": "Zoutendijk定理",
+      "path": "课本/最优化/梯度下降算法——线搜索一般收敛性分析/Zoutendijk定理.md"
+    },
+    {
+      "basename": "梯度下降法",
+      "path": "课本/最优化/梯度下降算法——梯度下降法/梯度下降法.md"
+    },
+    {
+      "basename": "梯度Lipschitz连续",
+      "path": "课本/最优化/梯度下降算法——梯度下降法/梯度Lipschitz连续.md"
+    },
+    {
+      "basename": "07非单调线搜索准则",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/07非单调线搜索准则.md"
+    },
+    {
+      "basename": "05线搜索回退法",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/05线搜索回退法.md"
+    },
+    {
+      "basename": "04非精确线搜索：Armijo准则",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/04非精确线搜索：Armijo准则.md"
+    },
+    {
+      "basename": "06Wolfe准则",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/06Wolfe准则.md"
+    },
+    {
+      "basename": "03步长的选取：精确线搜索算法",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/03步长的选取：精确线搜索算法.md"
+    },
+    {
+      "basename": "02线搜索算法：盲人下山",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/02线搜索算法：盲人下山.md"
+    },
+    {
+      "basename": "01基本问题",
+      "path": "课本/最优化/梯度下降算法——线搜索准则/01基本问题.md"
+    },
+    {
       "basename": "二阶最优性条件",
       "path": "课本/最优化/最优性理论/无约束可微问题的最优性理论/二阶最优性条件.md"
+    },
+    {
+      "basename": "Sigmoid",
+      "path": "06层内结构/03激活函数/Sigmoid.md"
+    },
+    {
+      "basename": "L1Loss",
+      "path": "06层内结构/02损失函数/L1Loss.md"
+    },
+    {
+      "basename": "CrossEntropyLoss交叉熵损失",
+      "path": "06层内结构/02损失函数/CrossEntropyLoss交叉熵损失.md"
+    },
+    {
+      "basename": "空洞卷积（Dilated Convolution）",
+      "path": "06层内结构/01卷积/空洞卷积（Dilated Convolution）.md"
+    },
+    {
+      "basename": "反卷积",
+      "path": "06层内结构/01卷积/反卷积.md"
+    },
+    {
+      "basename": "DE深度卷积Depthwise Conv",
+      "path": "06层内结构/01卷积/DE深度卷积Depthwise Conv.md"
+    },
+    {
+      "basename": "PW逐点卷积Pointwise Conv",
+      "path": "06层内结构/01卷积/PW逐点卷积Pointwise Conv.md"
+    },
+    {
+      "basename": "全连接层",
+      "path": "06层内结构/01卷积/全连接层.md"
+    },
+    {
+      "basename": "分组卷积",
+      "path": "06层内结构/01卷积/分组卷积.md"
+    },
+    {
+      "basename": "卷积的参数",
+      "path": "06层内结构/01卷积/卷积的参数.md"
+    },
+    {
+      "basename": "Leaky ReLU",
+      "path": "06层内结构/03激活函数/Leaky ReLU.md"
     },
     {
       "basename": "自适应能量检测（AED）",
@@ -47,158 +199,6 @@
     {
       "basename": "一阶充要条件",
       "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/一阶充要条件.md"
-    },
-    {
-      "basename": "Slater约束品性",
-      "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/Slater约束品性.md"
-    },
-    {
-      "basename": "对数凸函数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/对数凸函数.md"
-    },
-    {
-      "basename": "相对内点",
-      "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/相对内点.md"
-    },
-    {
-      "basename": "弱对偶性和强对偶性",
-      "path": "课本/最优化/对偶理论/弱对偶性和强对偶性.md"
-    },
-    {
-      "basename": "非负加权和与仿射函数的复合",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/非负加权和与仿射函数的复合.md"
-    },
-    {
-      "basename": "适当函数",
-      "path": "课本/最优化/优化数学基础——凸集/适当函数.md"
-    },
-    {
-      "basename": "适当锥",
-      "path": "课本/最优化/优化数学基础——凸集/适当锥.md"
-    },
-    {
-      "basename": "带约束凸优化问题",
-      "path": "课本/最优化/最优性理论/带约束凸优化问题.md"
-    },
-    {
-      "basename": "共轭函数(conjugate function)",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/共轭函数(conjugate function).md"
-    },
-    {
-      "basename": "矩阵求导公式",
-      "path": "课本/最优化/对偶理论/矩阵求导公式.md"
-    },
-    {
-      "basename": "广义不等式",
-      "path": "课本/最优化/优化数学基础——凸集/广义不等式.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题.md"
-    },
-    {
-      "basename": "透视函数(Perspective function)",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/透视函数(Perspective function).md"
-    },
-    {
-      "basename": "超平面和半空间",
-      "path": "课本/最优化/优化数学基础——凸集/超平面和半空间.md"
-    },
-    {
-      "basename": "仿射组合和仿射包",
-      "path": "课本/最优化/优化数学基础——凸集/仿射组合和仿射包.md"
-    },
-    {
-      "basename": "范数",
-      "path": "课本/最优化/优化数学基础——凸集/范数.md"
-    },
-    {
-      "basename": "锥组合(Conic Combination)和凸锥(Convex Cone)",
-      "path": "课本/最优化/优化数学基础——凸集/锥组合(Conic Combination)和凸锥(Convex Cone).md"
-    },
-    {
-      "basename": "对偶锥",
-      "path": "课本/最优化/优化数学基础——凸集/对偶锥.md"
-    },
-    {
-      "basename": "凸集",
-      "path": "课本/最优化/优化数学基础——凸集/凸集.md"
-    },
-    {
-      "basename": "一般优化问题",
-      "path": "课本/最优化/对偶理论/一般优化问题.md"
-    },
-    {
-      "basename": "拉格朗日函数",
-      "path": "课本/最优化/对偶理论/拉格朗日函数.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题求解流程",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
-    },
-    {
-      "basename": "海瑟矩阵(Hesse Matrix)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/海瑟矩阵(Hesse Matrix).md"
-    },
-    {
-      "basename": "矩阵变量函数的导数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md"
-    },
-    {
-      "basename": "闭函数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md"
-    },
-    {
-      "basename": "梯度",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/梯度.md"
-    },
-    {
-      "basename": "凸函数(convex function)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数(convex function).md"
-    },
-    {
-      "basename": "仿射变换",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/仿射变换.md"
-    },
-    {
-      "basename": "强凸函数(Strong Convex Function)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md"
-    },
-    {
-      "basename": "Jessen不等式",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/Jessen不等式.md"
-    },
-    {
-      "basename": "拟凸函数(Quasi-Convex function)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/拟凸函数(Quasi-Convex function).md"
-    },
-    {
-      "basename": "凸函数判定的一阶条件",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的一阶条件.md"
-    },
-    {
-      "basename": "凸函数判定的梯度单调性条件",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的梯度单调性条件.md"
-    },
-    {
-      "basename": "凸函数判定定理",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定定理.md"
-    },
-    {
-      "basename": "判定一个函数是否为凸函数的方法小结",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/判定一个函数是否为凸函数的方法小结.md"
-    },
-    {
-      "basename": "凸函数判定的二阶条件",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/凸函数判定/凸函数判定的二阶条件.md"
-    },
-    {
-      "basename": "广义不等式意义下的凸函数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/广义不等式意义下的凸函数.md"
-    },
-    {
-      "basename": "上确界和下确界",
-      "path": "课本/最优化/基本知识/上确界和下确界.md"
     }
   ],
   "omittedPaths": [],
