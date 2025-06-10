@@ -1,0 +1,10 @@
+![[Pasted image 20250610152138.png|800]]
+![[Pasted image 20250610152233.png|800]]
+![[Pasted image 20250610152249.png|800]]
+
+![[Pasted image 20250610152347.png|800]]
+![[Pasted image 20250610152430.png|800]]
+![[Pasted image 20250610152449.png|800]]
+![[Pasted image 20250610152457.png|800]]
+![[Pasted image 20250610152506.png|800]]
+![[Pasted image 20250610152516.png|800]]

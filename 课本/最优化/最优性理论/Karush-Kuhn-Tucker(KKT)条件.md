@@ -7,16 +7,16 @@ $\begin{cases} \min\ f(x) \\ \text{s.t.}\ g_i(x) \leq 0\ (i=1,\dots,m),\ h_j(x) 
 其中 $f, g_i, h_j$ 可微。KKT 条件是该问题局部最优解 $x^*$ 的一阶必要条件，由拉格朗日函数 $L(x, \lambda, \mu) = f(x) + \sum \lambda_i g_i(x) + \sum \mu_j h_j(x)$（$\lambda \geq 0$）导出。
 #### 2. KKT 条件的组成（必要条件）
 1. **梯度条件（驻点条件）**：
-    $\nabla_x L(x^*, \lambda^*, \mu^*) = \nabla f(x^*) + \sum_\limits{i=1}^m \lambda_i^* \nabla g_i(x^*) + \sum_\limits{j=1}^p \mu_j^* \nabla h_j(x^*) = 0.$
+    $$\nabla_x L(x^*, \lambda^*, \mu^*) = \nabla f(x^*) + \sum_\limits{i=1}^m \lambda_i^* \nabla g_i(x^*) + \sum_\limits{j=1}^p \mu_j^* \nabla h_j(x^*) = 0.$$
     （目标与约束梯度线性组合为零，类似拉格朗日乘子法的推广，确保无改进方向）
 2. **原始可行性条件**：
-    $g_i(x^*) \leq 0\ (\forall i),\ \ h_j(x^*) = 0\ (\forall j).$
+    $$g_i(x^*) \leq 0\ (\forall i),\ \ h_j(x^*) = 0\ (\forall j).$$
     （解满足原始约束）
 3. **对偶可行性条件**：
-    $\lambda_i^* \geq 0\ (\forall i).$
+    $$\lambda_i^* \geq 0\ (\forall i).$$
     （不等式约束的对偶变量非负，对应 “惩罚” 权重非负）
 4. **互补松弛条件**：
-    $\lambda_i^* g_i(x^*) = 0\ (\forall i).$
+    $$\lambda_i^* g_i(x^*) = 0\ (\forall i).$$
 - 紧约束（$\lambda_i > 0$） ⇨ $g_i(x) = 0$（约束生效，无松弛）；
 - 松约束（$g_i(x) < 0$） ⇨ $\lambda_i = 0$（约束无效，乘子为零）。
 ###### 核心作用
@@ -39,9 +39,9 @@ $\begin{cases} \min\ f(x) \\ \text{s.t.}\ g_i(x) \leq 0\ (i=1,\dots,m),\ h_j(x) 
 KKT 条件将约束优化转化为方程组（梯度 + 互补松弛 + 可行性），通过数值方法（如内点法、SQP）求解。对于凸问题，解唯一且全局最优；非凸问题中，KKT 点需验证是否为局部最优。
 ### 总结公式
 对优化问题
-$\begin{cases} \min\ f(x) \\ g_i(x) \leq 0,\ h_j(x)=0, \end{cases}$
+$$\begin{cases} \min\ f(x) \\ g_i(x) \leq 0,\ h_j(x)=0, \end{cases}$$
 KKT 条件为：
-$\left\{ \begin{aligned} &\nabla f + \sum\lambda_i \nabla g_i + \sum\mu_j \nabla h_j = 0, \\ &g_i \leq 0,\ h_j = 0, \\ &\lambda_i \geq 0, \\ &\lambda_i g_i = 0, \end{aligned} \right.$
+$$\left\{ \begin{aligned} &\nabla f + \sum\lambda_i \nabla g_i + \sum\mu_j \nabla h_j = 0, \\ &g_i \leq 0,\ h_j = 0, \\ &\lambda_i \geq 0, \\ &\lambda_i g_i = 0, \end{aligned} \right.$$
 其中 $\lambda \in \mathbb{R}^m_+$，$\mu \in \mathbb{R}^p$。
 ### 示例：凸优化中的 KKT 应用（如 SVM）
 SVM 的优化问题为凸二次规划，KKT 条件确保：
