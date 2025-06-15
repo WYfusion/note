@@ -25,7 +25,7 @@
 
 #### 2.2 **KL散度**（Kullback-Leibler Divergence）
 $$\mathrm{KL}(P\parallel Q)=\sum P(x)\log\frac{P(x)}{Q(x)}$$
-**问题**：不对称性$\mathrm{KL}(P\parallel Q)\neq\mathrm{KL}(Q\parallel P)$，且当$Q(x)=0$而$P(x)>0$时发散（趋于无穷大），导致训练不稳定。
+**问题**：不对称性$\mathrm{KL}(P\parallel Q)\neq\mathrm{KL}(Q\parallel P)$，且当$Q(x)=0$而$P(x)>0$时发散（趋于无穷大），导致训练不稳定。 ^dd4e09
 
 #### 2.3 **Wasserstein距离**（Earth-Mover Distance）
 针对于JS散度无法考量当 $p_{G}$​ 和 $p_{data}$​  无重叠时的梯度消失问题(数值不再变化了)，使用Wasserstein距离可以通过距离的形式体现分布的相似度。

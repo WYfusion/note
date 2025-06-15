@@ -1,16 +1,148 @@
 {
   "recentFiles": [
     {
-      "basename": "网络的发展趋势",
-      "path": "课本/通信网理论/第1章 通信网概述/网络的发展趋势.md"
+      "basename": "如何获得测试集",
+      "path": "课本/机器学习/如何获得测试集.md"
+    },
+    {
+      "basename": "数据划分与模型评估",
+      "path": "课本/机器学习/数据划分与模型评估.md"
+    },
+    {
+      "basename": "Slater约束品性",
+      "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/Slater约束品性.md"
+    },
+    {
+      "basename": "评估指标",
+      "path": "课本/机器学习/评估指标.md"
+    },
+    {
+      "basename": "集成学习",
+      "path": "课本/机器学习/集成学习.md"
+    },
+    {
+      "basename": "深度学习早期研究",
+      "path": "课本/机器学习/深度学习早期研究.md"
+    },
+    {
+      "basename": "人工神经网络训练的小节",
+      "path": "课本/机器学习/人工神经网络训练的小节.md"
+    },
+    {
+      "basename": "线性回归模型的正则化",
+      "path": "课本/机器学习/线性回归模型的正则化.md"
+    },
+    {
+      "basename": "决策树",
+      "path": "课本/机器学习/决策树.md"
+    },
+    {
+      "basename": "单纯形法",
+      "path": "课本/最优化/线性规划/单纯形法.md"
+    },
+    {
+      "basename": "固定电话网的质量要求",
+      "path": "课本/通信网理论/第1章 通信网概述/通信网的质量要求/固定电话网的质量要求.md"
+    },
+    {
+      "basename": "一般通信网的质量要求",
+      "path": "课本/通信网理论/第1章 通信网概述/通信网的质量要求/一般通信网的质量要求.md"
+    },
+    {
+      "basename": "构成要素",
+      "path": "课本/通信网理论/第1章 通信网概述/概念/构成要素.md"
+    },
+    {
+      "basename": "概念",
+      "path": "课本/通信网理论/第1章 通信网概述/概念/概念.md"
     },
     {
       "basename": "基本组成",
       "path": "课本/通信网理论/第1章 通信网概述/概念/基本组成.md"
     },
     {
-      "basename": "构成要素",
-      "path": "课本/通信网理论/第1章 通信网概述/概念/构成要素.md"
+      "basename": "生成的多样性判断",
+      "path": "02模型/生成对抗网络GAN/生成的多样性判断.md"
+    },
+    {
+      "basename": "生成式神经网络",
+      "path": "02模型/生成对抗网络GAN/生成式神经网络.md"
+    },
+    {
+      "basename": "生成对抗的训练算法",
+      "path": "02模型/生成对抗网络GAN/生成对抗的训练算法.md"
+    },
+    {
+      "basename": "生成器Generator",
+      "path": "02模型/生成对抗网络GAN/生成器Generator.md"
+    },
+    {
+      "basename": "判别器Discriminator",
+      "path": "02模型/生成对抗网络GAN/判别器Discriminator.md"
+    },
+    {
+      "basename": "GRU(门控循环单元)",
+      "path": "02模型/循环神经网络（RNN）/GRU(门控循环单元).md"
+    },
+    {
+      "basename": "乘法",
+      "path": "运算/乘法.md"
+    },
+    {
+      "basename": "RNN",
+      "path": "02模型/循环神经网络（RNN）/RNN.md"
+    },
+    {
+      "basename": "BPTT（Backpropagation Through Time，随时间反向传播）",
+      "path": "02模型/循环神经网络（RNN）/BPTT（Backpropagation Through Time，随时间反向传播）.md"
+    },
+    {
+      "basename": "循环神经网络的结构.excalidraw",
+      "path": "02模型/循环神经网络（RNN）/循环神经网络的结构.excalidraw.md"
+    },
+    {
+      "basename": "常规卷积",
+      "path": "06层内结构/01卷积/常规卷积.md"
+    },
+    {
+      "basename": "残差结构（Residual Block）",
+      "path": "07层间结构/模块/残差结构（Residual Block）.md"
+    },
+    {
+      "basename": "倒残差结构（Inverted residual block）",
+      "path": "07层间结构/模块/倒残差结构（Inverted residual block）.md"
+    },
+    {
+      "basename": "卷积结构表",
+      "path": "07层间结构/模块/卷积结构表.md"
+    },
+    {
+      "basename": "线性瓶颈结构（Linear Bottlenecks）",
+      "path": "07层间结构/模块/线性瓶颈结构（Linear Bottlenecks）.md"
+    },
+    {
+      "basename": "通信网的分层结构",
+      "path": "课本/通信网理论/第1章 通信网概述/概念/通信网的分层结构.md"
+    },
+    {
+      "basename": "RNN-Free循环模块",
+      "path": "论文/自看论文/分离降噪/MossFormer2-Combining Transformer and RNN-Free Recurrent Network for Enhanced Time-Domain Monaural Speech Separation/RNN-Free循环模块.md"
+    },
+    {
+      "basename": "线搜索Newton-CG法",
+      "path": "课本/最优化/牛顿类算法/非精确牛顿法/线搜索Newton-CG法.md"
+    },
+    {
+      "basename": "Sigmoid",
+      "path": "06层内结构/03激活函数/Sigmoid.md"
+    },
+    {
+      "basename": "散度(divergence)",
+      "path": "02模型/生成对抗网络GAN/散度(divergence).md"
+    },
+    {
+      "basename": "网络的发展趋势",
+      "path": "课本/通信网理论/第1章 通信网概述/网络的发展趋势.md"
     },
     {
       "basename": "其他质量要求",
@@ -23,14 +155,6 @@
     {
       "basename": "移动通信网的质量要求",
       "path": "课本/通信网理论/第1章 通信网概述/通信网的质量要求/移动通信网的质量要求.md"
-    },
-    {
-      "basename": "固定电话网的质量要求",
-      "path": "课本/通信网理论/第1章 通信网概述/通信网的质量要求/固定电话网的质量要求.md"
-    },
-    {
-      "basename": "一般通信网的质量要求",
-      "path": "课本/通信网理论/第1章 通信网概述/通信网的质量要求/一般通信网的质量要求.md"
     },
     {
       "basename": "组网结构类别",
@@ -75,130 +199,6 @@
     {
       "basename": "激活函数",
       "path": "06层内结构/03激活函数/激活函数.md"
-    },
-    {
-      "basename": "优化器",
-      "path": "06层内结构/06优化器/优化器.md"
-    },
-    {
-      "basename": "MAC",
-      "path": "06层内结构/01卷积/MAC.md"
-    },
-    {
-      "basename": "通信网分类",
-      "path": "课本/通信网理论/第1章 通信网概述/概念/通信网分类.md"
-    },
-    {
-      "basename": "通信网的分层结构",
-      "path": "课本/通信网理论/第1章 通信网概述/概念/通信网的分层结构.md"
-    },
-    {
-      "basename": "单纯形法",
-      "path": "课本/最优化/线性规划/单纯形法.md"
-    },
-    {
-      "basename": "LASSO问题求解",
-      "path": "课本/最优化/梯度下降算法——梯度下降法/LASSO问题求解.md"
-    },
-    {
-      "basename": "概念",
-      "path": "课本/通信网理论/第1章 通信网概述/概念/概念.md"
-    },
-    {
-      "basename": "Karush-Kuhn-Tucker(KKT)条件",
-      "path": "课本/最优化/最优性理论/Karush-Kuhn-Tucker(KKT)条件.md"
-    },
-    {
-      "basename": "拉格朗日函数",
-      "path": "课本/最优化/对偶理论/拉格朗日函数.md"
-    },
-    {
-      "basename": "一般优化问题",
-      "path": "课本/最优化/对偶理论/一般优化问题.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题求解流程",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
-    },
-    {
-      "basename": "弱对偶性和强对偶性",
-      "path": "课本/最优化/对偶理论/弱对偶性和强对偶性.md"
-    },
-    {
-      "basename": "基本问题介绍",
-      "path": "课本/最优化/信赖域算法/基本问题介绍.md"
-    },
-    {
-      "basename": "梯度",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/梯度.md"
-    },
-    {
-      "basename": "广义不等式",
-      "path": "课本/最优化/优化数学基础——凸集/广义不等式.md"
-    },
-    {
-      "basename": "适当锥",
-      "path": "课本/最优化/优化数学基础——凸集/适当锥.md"
-    },
-    {
-      "basename": "超平面和半空间",
-      "path": "课本/最优化/优化数学基础——凸集/超平面和半空间.md"
-    },
-    {
-      "basename": "凸集",
-      "path": "课本/最优化/优化数学基础——凸集/凸集.md"
-    },
-    {
-      "basename": "闭函数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/闭函数.md"
-    },
-    {
-      "basename": "矩阵变量函数的导数",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/矩阵变量函数的导数.md"
-    },
-    {
-      "basename": "带约束凸优化问题",
-      "path": "课本/最优化/最优性理论/带约束凸优化问题.md"
-    },
-    {
-      "basename": "Slater约束品性",
-      "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/Slater约束品性.md"
-    },
-    {
-      "basename": "矩阵求导公式",
-      "path": "课本/最优化/对偶理论/矩阵求导公式.md"
-    },
-    {
-      "basename": "信赖域子问题d的求解",
-      "path": "课本/最优化/信赖域算法/信赖域子问题d的求解.md"
-    },
-    {
-      "basename": "二次函数的收敛定理",
-      "path": "课本/最优化/梯度下降算法——梯度下降法/二次函数的收敛定理.md"
-    },
-    {
-      "basename": "逐点取最大值",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
-    },
-    {
-      "basename": "次梯度Subgradient",
-      "path": "课本/最优化/次梯度算法/次梯度Subgradient.md"
-    },
-    {
-      "basename": "次梯度算法在不同步长下的收敛性分析",
-      "path": "课本/最优化/次梯度算法/次梯度算法在不同步长下的收敛性分析.md"
-    },
-    {
-      "basename": "下水平集合上方图(epigraph)",
-      "path": "课本/最优化/优化数学基础——凸集/凸函数/下水平集合上方图(epigraph).md"
-    },
-    {
-      "basename": "仿射变换的保凸性",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/仿射变换的保凸性.md"
     }
   ],
   "omittedPaths": [],
