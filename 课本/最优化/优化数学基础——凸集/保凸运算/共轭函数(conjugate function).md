@@ -1,7 +1,7 @@
 ![[Pasted image 20250608104822.png]]
 ![[Pasted image 20250608104829.png]]
 
-设 $\|\cdot\|$ 为范数，其共轭函数为： $\|\cdot\|^*(y) = \begin{cases} 0 & \|y\|_* \leq 1 \\ +\infty & \text{否则} \end{cases}$ 其中 $\|\cdot\|_*$ 是对偶范数（如 $\ell_p$ 与 $\ell_q$ 对偶，$1/p + 1/q = 1$）。
+设 $\|\cdot\|$ 为范数，其共轭函数为： $\|\cdot\|_*(y) = \begin{cases} 0 & \|y\|_* \leq 1 \\ +\infty & \text{否则} \end{cases}$ 其中 $\|\cdot\|_*$ 是对偶范数（如 $\ell_p$ 与 $\ell_q$ 对偶，$1/p + 1/q = 1$）。
 
 
 对于：$L = -\frac{1}{2}\|\lambda\|^2 + \mu\|x\|_1 - (A^T\lambda)^T x + b^T\lambda$
