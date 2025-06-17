@@ -4,49 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "cead005630290ca4",
+        "id": "34d46abcb8483077",
         "type": "tabs",
         "children": [
           {
-            "id": "e083277484c7ba83",
+            "id": "dd7463dc69b12919",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "课本/最优化/罚函数.md",
+                "file": "课本/通信网理论/第2章 网络规划设计基础/流量分配/流量分配的相关概念.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "罚函数"
-            }
-          },
-          {
-            "id": "17c66fda391f2954",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/Pasted image 20250616153455.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250616153455"
-            }
-          },
-          {
-            "id": "6ca5f92377ddba73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/通信网理论/第2章 网络规划设计基础/图的生成树及其求法.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "图的生成树及其求法"
+              "title": "流量分配的相关概念"
             }
           }
         ]
@@ -245,44 +218,45 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "e083277484c7ba83",
+  "active": "dd7463dc69b12919",
   "lastOpenFiles": [
-    "课本/最优化/梯度下降算法——线搜索准则/06Wolfe准则.md",
-    "课本/最优化/罚函数.md",
-    "课本/最优化/次梯度算法/次梯度算法收敛性分析.md",
-    "课本/最优化/次梯度算法/次梯度算法总结.md",
-    "课本/最优化/次梯度算法/LASSO问题求解.md",
-    "课本/最优化/次梯度算法/次梯度算法在不同步长下的收敛性分析.md",
-    "课本/最优化/优化数学基础——凸集/保凸运算/共轭函数(conjugate function).md",
-    "课本/最优化/牛顿类算法/非精确牛顿法/非精确牛顿法.md",
-    "课本/最优化/优化数学基础——凸集/适当函数.md",
-    "课本/最优化/牛顿类算法/非精确牛顿法/线搜索Newton-CG法.md",
-    "课本/最优化/对偶理论/一般优化问题.md",
-    "02模型/Transformer/BLEU Score.md",
-    "课本/最优化/最优性理论/Karush-Kuhn-Tucker(KKT)条件.md",
-    "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md",
-    "课本/最优化/次梯度算法/问题假设.md",
-    "课本/最优化/次梯度算法/次梯度算法结构.md",
-    "课本/最优化/次梯度算法/次梯度算法收敛性证明.md",
-    "课本/最优化/次梯度算法/次梯度算法收敛性——假设条件.md",
-    "课本/最优化/牛顿类算法/经典牛顿/经典牛顿法.md",
-    "课本/最优化/信赖域算法/信赖域子问题d的求解.md",
-    "assets/Pasted image 20250616204521.png",
-    "课本/最优化/信赖域算法/基本问题介绍.md",
-    "课本/最优化/牛顿类算法/拟牛顿法/秩一更新（SR1）.md",
+    "assets/Pasted image 20250617231441.png",
+    "assets/Pasted image 20250617230839.png",
+    "assets/Snipaste_2025-06-17_23-08-09.png",
+    "assets/Pasted image 20250617230432.png",
+    "assets/Pasted image 20250617230342.png",
+    "assets/Pasted image 20250617230313.png",
+    "assets/Pasted image 20250617230256.png",
+    "课本/通信网理论/第2章 网络规划设计基础/第K条最短路径选择问题.md",
+    "课本/通信网理论/第2章 网络规划设计基础/流量分配/流量分配的相关概念.md",
+    "课本/通信网理论/第2章 网络规划设计基础/流量分配",
+    "课本/通信网理论/第2章 网络规划设计基础/路径选择算法.md",
+    "assets/Pasted image 20250617224153.png",
+    "assets/Pasted image 20250617224121.png",
+    "assets/Pasted image 20250617224110.png",
+    "assets/Pasted image 20250617223651.png",
+    "课本/通信网理论/第2章 网络规划设计基础/最小生成树算法.md",
+    "课本/通信网理论/第2章 网络规划设计基础/图的矩阵表示.md",
+    "课本/通信网理论/第2章 网络规划设计基础/图的概念.md",
     "课本/最优化/优化数学基础——凸集/凸函数/强凸函数(Strong Convex Function).md",
     "课本/最优化/梯度下降算法——梯度下降法/梯度Lipschitz连续.md",
+    "课本/最优化/梯度下降算法——梯度下降法/LASSO问题求解.md",
+    "课本/最优化/梯度下降算法——梯度下降法/二次函数的收敛定理.md",
     "课本/最优化/梯度下降算法——梯度下降法/梯度法在凸函数上的收敛性.md",
     "课本/最优化/梯度下降算法——梯度下降法/梯度下降法.md",
-    "assets/Pasted image 20250616153455.png",
-    "assets/Pasted image 20250616173406.png",
-    "assets/Pasted image 20250616173335.png",
-    "assets/Pasted image 20250616172104.png",
-    "assets/Pasted image 20250616173242.png",
-    "assets/Pasted image 20250616173149.png",
-    "assets/Pasted image 20250616173147.png",
-    "assets/Pasted image 20250616173029.png",
-    "assets/Pasted image 20250616172947.png",
+    "课本/最优化/梯度下降算法——线搜索一般收敛性分析/Zoutendijk定理.md",
+    "课本/最优化/梯度下降算法——线搜索一般收敛性分析/线搜索算法的收敛性.md",
+    "课本/最优化/梯度下降算法——线搜索准则/06Wolfe准则.md",
+    "课本/通信网理论/第2章 网络规划设计基础/图的生成树及其求法.md",
+    "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/概述.md",
+    "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/数学原理.md",
+    "课本/最优化/增广拉格朗日函数法.md",
+    "课本/最优化/罚函数.md",
+    "课本/最优化/对偶理论/拉格朗日函数.md",
+    "课本/最优化/次梯度算法/LASSO问题求解.md",
+    "课本/最优化/次梯度算法/次梯度算法结构.md",
+    "课本/最优化/次梯度算法/问题假设.md",
+    "课本/最优化/对偶理论/一般优化问题.md",
     "课本/通信网理论/第2章 网络规划设计基础/图的概念",
     "课本/通信网理论/第2章 网络规划设计基础",
     "课本/机器学习/未命名",
@@ -292,7 +266,6 @@
     "课本/通信网理论/第1章 通信网概述/通信网组网结构/基本组网结构形式",
     "课本/通信网理论/第1章 通信网概述/通信网组网结构/基本组网结构",
     "课本/通信网理论/第1章 通信网概述/通信网组网结构",
-    "课本/通信网理论/第1章 通信网概述/概念",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",
     "语音识别/语音识别框架/语音识别基本框架.canvas",
