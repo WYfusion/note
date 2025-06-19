@@ -8,33 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dd7463dc69b12919",
+            "id": "7971fdc16484b15c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "课本/通信网理论/第3章 排队论/M-M-m (n).md",
+                "file": "课本/机器学习/集成学习.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "M-M-m (n)"
-            }
-          },
-          {
-            "id": "858b34f84fc93df9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课本/通信网理论/第3章 排队论/M-M-1排队系统.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "M-M-1排队系统"
+              "title": "集成学习"
             }
           }
         ]
@@ -104,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 444.5,
-    "collapsed": true
+    "width": 444.5
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -234,46 +218,46 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "dd7463dc69b12919",
+  "active": "7971fdc16484b15c",
   "lastOpenFiles": [
-    "assets/Pasted image 20250619021523.png",
-    "课本/通信网理论/第3章 排队论/M-M-1排队系统.md",
-    "课本/通信网理论/第3章 排队论/M-M-m (n).md",
-    "assets/Pasted image 20250619021307.png",
-    "assets/Pasted image 20250619020916.png",
-    "assets/Pasted image 20250619020752.png",
-    "assets/Pasted image 20250619020735.png",
-    "assets/Pasted image 20250619014231.png",
-    "assets/Pasted image 20250619014205.png",
-    "课本/通信网理论/第3章 排队论/排队系统的主要性能指标.md",
+    "课本/机器学习/深度学习早期研究.md",
+    "课本/机器学习/数据划分与模型评估.md",
+    "课本/机器学习/如何获得测试集.md",
+    "课本/机器学习/评估指标.md",
+    "课本/机器学习/人工神经网络训练的小节.md",
+    "课本/机器学习/集成学习.md",
+    "课本/机器学习/决策树.md",
+    "06层内结构/01卷积/常规卷积.md",
+    "06层内结构/02损失函数/CrossEntropyLoss交叉熵损失.md",
+    "06层内结构/03激活函数/Sigmoid.md",
+    "课本/通信网理论/第1章 通信网概述/概念/通信网的分层结构.md",
+    "课本/通信网理论/第1章 通信网概述/概念/通信网分类.md",
+    "课本/机器学习/线性回归模型的正则化.md",
+    "运算/乘法.md",
+    "运算/内积.md",
+    "运算/Dot-product.md",
+    "运算/Additive.md",
     "课本/通信网理论/第3章 排队论/生灭过程.md",
     "课本/通信网理论/第3章 排队论/概率模型.md",
     "课本/通信网理论/第3章 排队论/最简单流.md",
     "课本/通信网理论/第3章 排队论/排队论基础.md",
-    "assets/Pasted image 20250619014057.png",
-    "assets/Pasted image 20250619014009.png",
-    "assets/Pasted image 20250619013905.png",
-    "assets/Pasted image 20250619013043.png",
-    "课本/通信网理论/第3章 排队论/未命名",
-    "课本/通信网理论/第2章 网络规划设计基础/流量分配/网络最大流算法——标号法.md",
-    "课本/通信网理论/第3章 排队论",
-    "课本/通信网理论/第2章 网络规划设计基础/流量分配/最佳流问题.md",
-    "课本/通信网理论/第2章 网络规划设计基础/流量分配/流量分配的相关概念.md",
-    "课本/通信网理论/第2章 网络规划设计基础/图的概念.md",
-    "课本/通信网理论/第1章 通信网概述/网络的发展趋势.md",
-    "课本/通信网理论/第1章 通信网概述/通信网组网结构/组网结构类别.md",
-    "课本/通信网理论/第1章 通信网概述/概念/基本组成.md",
-    "课本/通信网理论/第1章 通信网概述/概念/构成要素.md",
-    "课本/通信网理论/第1章 通信网概述/概念/通信网分类.md",
-    "课本/通信网理论/第1章 通信网概述/概念/通信网的分层结构.md",
+    "课本/通信网理论/第3章 排队论/排队系统的主要性能指标.md",
+    "课本/通信网理论/第3章 排队论/M-M-m (n).md",
+    "课本/通信网理论/第3章 排队论/M-M-1排队系统.md",
     "课本/通信网理论/第2章 网络规划设计基础/路径选择算法.md",
-    "08方法/模型分析/分布漂移/Domain Shift.md",
-    "课本/通信网理论/第2章 网络规划设计基础/第K条最短路径选择问题.md",
-    "课本/通信网理论/第2章 网络规划设计基础/最小生成树算法.md",
-    "课本/最优化/梯度下降算法——线搜索准则/04非精确线搜索：Armijo准则.md",
-    "课本/最优化/梯度下降算法——线搜索一般收敛性分析/线搜索算法的收敛性.md",
-    "课本/最优化/梯度下降算法——线搜索准则/06Wolfe准则.md",
-    "课本/最优化/牛顿类算法/BFGS公式/从优化的角度理解BFGS.md",
+    "课本/通信网理论/第2章 网络规划设计基础/流量分配/网络最大流算法——标号法.md",
+    "assets/Pasted image 20250619084856.png",
+    "assets/Pasted image 20250619084739.png",
+    "assets/Pasted image 20250619084601.png",
+    "assets/Pasted image 20250619084530.png",
+    "assets/Pasted image 20250619084416.png",
+    "assets/Pasted image 20250619084401.png",
+    "assets/Pasted image 20250619084343.png",
+    "assets/Pasted image 20250619084130.png",
+    "assets/Pasted image 20250619080808.png",
+    "assets/Pasted image 20250619080606.png",
+    "课本/通信网理论/第3章 排队论/未命名",
+    "课本/通信网理论/第3章 排队论",
     "课本/通信网理论/第2章 网络规划设计基础/流量分配",
     "课本/通信网理论/第2章 网络规划设计基础/图的概念",
     "课本/通信网理论/第2章 网络规划设计基础",

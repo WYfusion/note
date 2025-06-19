@@ -19,3 +19,6 @@
 ![[Pasted image 20250619020916.png|600]]
 
 
+##### 例子
+![[Pasted image 20250619084739.png|600]]
+![[Pasted image 20250619084856.png|600]]
