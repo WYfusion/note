@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "概念/音频/端点检测.md",
+                "file": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/前人工作.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "端点检测"
+              "title": "前人工作"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "滤波器",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,8 @@
               "title": "Plugin no longer active"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -220,12 +221,18 @@
   },
   "active": "7971fdc16484b15c",
   "lastOpenFiles": [
-    "概念/音频/稳定谐波结构.md",
+    "08方法/基频估计Fundamental frequency (F0) estimation/基于修正自相关的 YIN 方法.md",
+    "08方法/滤波器/滤波器类别.md",
+    "论文/知识点/声学基础/𝐿𝐴𝑒𝑞​ （等效连续A计权声级）.md",
     "概念/音频/端点检测.md",
+    "语音/人工智能语音识别书籍.md",
     "08方法/方法.md",
+    "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理.md",
+    "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/概述.md",
+    "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果",
+    "概念/音频/稳定谐波结构.md",
     "08方法/周期性信号/时域平均（Time-domain Averaging, TDA）提取周期性信号.md",
     "08方法/周期性信号",
-    "08方法/基频估计Fundamental frequency (F0) estimation/基于修正自相关的 YIN 方法.md",
     "08方法/基频估计Fundamental frequency (F0) estimation",
     "课本/机器学习/集成学习.md",
     "概念/音频",
@@ -245,11 +252,6 @@
     "课本/最优化/线性最小二乘问题的定义与推导.md",
     "课本/最优化/梯度下降算法——线搜索准则/最速下降法.md",
     "课本/最优化/牛顿类算法/带线搜索的修正牛顿/带线搜索的修正牛顿法.md",
-    "课本/最优化/牛顿类算法/带线搜索的修正牛顿/带线搜索的修正牛顿法的B矩阵修复步长后依旧正定的确定.md",
-    "课本/最优化/牛顿类算法/带线搜索的修正牛顿/带线搜索的修正牛顿法的全局收敛性分析.md",
-    "课本/最优化/对偶理论/一般优化问题.md",
-    "课本/最优化/对偶理论/拉格朗日函数.md",
-    "课本/最优化/对偶理论/拉格朗日对偶问题.md",
     "决策树.pdf",
     "assets/Pasted image 20250620000444.png",
     "assets/Pasted image 20250619084856.png",
@@ -265,10 +267,9 @@
     "课本/通信网理论/第3章 排队论",
     "课本/通信网理论/第2章 网络规划设计基础/流量分配",
     "课本/通信网理论/第2章 网络规划设计基础/图的概念",
-    "课本/通信网理论/第2章 网络规划设计基础",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",
-    "语音识别/语音识别框架/语音识别基本框架.canvas",
+    "语音/语音识别框架/语音识别基本框架.canvas",
     "07层间结构/未命名.canvas",
     "04卷积/CNN流程.canvas",
     "RNN/循环神经网络的结构.canvas"
