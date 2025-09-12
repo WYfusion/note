@@ -1,8 +1,100 @@
 {
   "recentFiles": [
     {
+      "basename": "UV",
+      "path": "01工具/UV.md"
+    },
+    {
+      "basename": "文件夹压缩",
+      "path": "01工具/linux/文件夹压缩.md"
+    },
+    {
+      "basename": "ssh远程连接食用方案",
+      "path": "01工具/ssh远程连接食用方案.md"
+    },
+    {
+      "basename": "stft",
+      "path": "运算/常规知识/stft.md"
+    },
+    {
+      "basename": "GetMX临时邮箱",
+      "path": "01工具/GetMX临时邮箱.md"
+    },
+    {
+      "basename": "WSL（Windows Subsystem for Linux）",
+      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
+    },
+    {
+      "basename": "Screen",
+      "path": "01工具/Screen.md"
+    },
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "概述",
+      "path": "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/概述.md"
+    },
+    {
+      "basename": "数学原理",
+      "path": "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/数学原理.md"
+    },
+    {
+      "basename": "实验材料",
+      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/实验材料.md"
+    },
+    {
       "basename": "前人工作",
       "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/前人工作.md"
+    },
+    {
+      "basename": "大纲",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acoustic comfort in pedestrian environments/大纲.md"
+    },
+    {
+      "basename": "结果分析",
+      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acoustic comfort in pedestrian environments/结果分析.md"
+    },
+    {
+      "basename": "概述",
+      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/概述.md"
+    },
+    {
+      "basename": "MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理",
+      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理.md"
+    },
+    {
+      "basename": "伪影",
+      "path": "运算/常规知识/伪影.md"
+    },
+    {
+      "basename": "评估指标",
+      "path": "课本/机器学习/评估指标.md"
+    },
+    {
+      "basename": "数据划分与模型评估",
+      "path": "课本/机器学习/数据划分与模型评估.md"
+    },
+    {
+      "basename": "MCRA算法",
+      "path": "黄茅海/降噪/MCRA算法.md"
+    },
+    {
+      "basename": "连续谱最小值跟踪",
+      "path": "黄茅海/降噪/连续谱最小值跟踪.md"
+    },
+    {
+      "basename": "Algorithm2",
+      "path": "黄茅海/Algorithm2.md"
+    },
+    {
+      "basename": "思维框图",
+      "path": "黄茅海/思维框图.drawio"
+    },
+    {
+      "basename": "频率变换（Frequency Warping）",
+      "path": "黄茅海/已有方法/滤波器/频率变换（Frequency Warping）.md"
     },
     {
       "basename": "基于修正自相关的 YIN 方法",
@@ -27,14 +119,6 @@
     {
       "basename": "方法",
       "path": "08方法/方法.md"
-    },
-    {
-      "basename": "MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理",
-      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理.md"
-    },
-    {
-      "basename": "概述",
-      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/概述.md"
     },
     {
       "basename": "稳定谐波结构",
@@ -65,16 +149,8 @@
       "path": "课本/机器学习/深度学习早期研究.md"
     },
     {
-      "basename": "评估指标",
-      "path": "课本/机器学习/评估指标.md"
-    },
-    {
       "basename": "如何获得测试集",
       "path": "课本/机器学习/如何获得测试集.md"
-    },
-    {
-      "basename": "数据划分与模型评估",
-      "path": "课本/机器学习/数据划分与模型评估.md"
     },
     {
       "basename": "常规卷积",
@@ -123,82 +199,6 @@
     {
       "basename": "拉格朗日函数",
       "path": "课本/最优化/对偶理论/拉格朗日函数.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题求解流程",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
-    },
-    {
-      "basename": "矩阵求导公式",
-      "path": "课本/最优化/对偶理论/矩阵求导公式.md"
-    },
-    {
-      "basename": "问题假设",
-      "path": "课本/最优化/次梯度算法/问题假设.md"
-    },
-    {
-      "basename": "次梯度算法结构",
-      "path": "课本/最优化/次梯度算法/次梯度算法结构.md"
-    },
-    {
-      "basename": "次梯度算法收敛性证明",
-      "path": "课本/最优化/次梯度算法/次梯度算法收敛性证明.md"
-    },
-    {
-      "basename": "次梯度算法收敛性分析",
-      "path": "课本/最优化/次梯度算法/次梯度算法收敛性分析.md"
-    },
-    {
-      "basename": "次梯度算法收敛性——假设条件",
-      "path": "课本/最优化/次梯度算法/次梯度算法收敛性——假设条件.md"
-    },
-    {
-      "basename": "次梯度算法总结",
-      "path": "课本/最优化/次梯度算法/次梯度算法总结.md"
-    },
-    {
-      "basename": "LASSO问题求解",
-      "path": "课本/最优化/次梯度算法/LASSO问题求解.md"
-    },
-    {
-      "basename": "次梯度Subgradient",
-      "path": "课本/最优化/次梯度算法/次梯度Subgradient.md"
-    },
-    {
-      "basename": "次梯度算法在不同步长下的收敛性分析",
-      "path": "课本/最优化/次梯度算法/次梯度算法在不同步长下的收敛性分析.md"
-    },
-    {
-      "basename": "弱对偶性和强对偶性",
-      "path": "课本/最优化/对偶理论/弱对偶性和强对偶性.md"
-    },
-    {
-      "basename": "Slater约束品性",
-      "path": "课本/最优化/最优性理论/Slater约束品性与强对偶原理/Slater约束品性.md"
-    },
-    {
-      "basename": "无约束可微问题的最优性理论",
-      "path": "课本/最优化/最优性理论/无约束可微问题的最优性理论/无约束可微问题的最优性理论.md"
-    },
-    {
-      "basename": "二阶最优性条件",
-      "path": "课本/最优化/最优性理论/无约束可微问题的最优性理论/二阶最优性条件.md"
-    },
-    {
-      "basename": "一阶必要条件的下降方向",
-      "path": "课本/最优化/最优性理论/无约束可微问题的最优性理论/一阶必要条件的下降方向.md"
-    },
-    {
-      "basename": "拟牛顿法",
-      "path": "课本/最优化/牛顿类算法/拟牛顿法/拟牛顿法.md"
-    },
-    {
-      "basename": "Karush-Kuhn-Tucker(KKT)条件",
-      "path": "课本/最优化/最优性理论/Karush-Kuhn-Tucker(KKT)条件.md"
     }
   ],
   "omittedPaths": [],

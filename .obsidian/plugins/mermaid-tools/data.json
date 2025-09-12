@@ -805,7 +805,15 @@
       "content": "architecture-beta\n    group api(cloud)[API]\n\n    service db(database)[Database] in api\n    service disk1(disk)[Storage] in api\n    service disk2(disk)[Storage] in api\n    service server(server)[Server] in api\n\n    db:L -- R:server\n    disk1:T -- B:server\n    disk2:T -- B:db\n",
       "sortingOrder": 0,
       "isPinned": false
+    },
+    {
+      "id": "fef38656-b1bf-4f2f-821b-352f94b03baf",
+      "description": "New element",
+      "content": "graph TD\n    subgraph \"输入 (Input)\"\n        A[1分钟音频<br/>(32kHz)]\n    end\n\n    subgraph \"阶段一：宏观兴趣区域检测 (Stage 1: Macro ROI Gating)\"\n        B[滑动窗口<br/>(5s窗长, 2.5s步长)] --> C{ECAPA-TDNN<br/>检测与分类模型}\n        C --> D{计算兴趣分<br/>S = P_detect * max(P_species)}\n        D --> E[筛选候选区域 (ROI)<br/>(S > 阈值 T_interest)]\n    end\n\n    subgraph \"阶段二：高精度特征提取 (Stage 2: High-Res Feature Extraction)\"\n        F[对ROI计算<br/>高精度<b>线性</b>频谱图]\n    end\n\n    subgraph \"阶段三：精细分割与事件提取 (Stage 3: Segmentation & Extraction)\"\n        G{<b>单一多类别 U-Net</b><br/>(一次性预测所有物种)}\n        H[生成多通道概率图<br/>M_k(f, t)]\n        I[<b>概率图阈值化<br/>& 连通域分析</b>]\n        J[提取时频边界框<br/>(start_t, end_t, min_f, max_f)]\n    end\n\n    subgraph \"输出 (Output)\"\n        L[结构化鸟鸣事件列表<br/>(JSON)]\n    end\n\n    A --> B\n    E --> F\n    F --> G\n    G --> H\n    H --> I\n    I --> J\n    J --> L",
+      "category": "ClassDiagram",
+      "sortingOrder": 98,
+      "isPinned": false
     }
   ],
-  "selectedCategory": "RequirementDiagram"
+  "selectedCategory": "ClassDiagram"
 }
