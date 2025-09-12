@@ -4,22 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "34d46abcb8483077",
+        "id": "be0b266cf5651b7a",
         "type": "tabs",
         "children": [
           {
-            "id": "7971fdc16484b15c",
+            "id": "f449e4a4e895158a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01工具/UV.md",
+                "file": "语音/增强/传统增强/维纳滤波.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "UV"
+              "title": "维纳滤波"
+            }
+          },
+          {
+            "id": "9e2813ae503d24cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "运算/常规知识/stft.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "stft"
             }
           }
         ]
@@ -54,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#音乐噪声",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 444.5
+    "width": 444.5,
+    "collapsed": true
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -196,7 +212,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -210,15 +225,27 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "7971fdc16484b15c",
+  "active": "f449e4a4e895158a",
   "lastOpenFiles": [
+    "语音/增强/传统增强/谱减法.md",
+    "语音/增强/传统增强/维纳滤波.md",
+    "assets/Pasted image 20250912191144.png",
+    "assets/Pasted image 20250912154548.png",
+    "运算/常规知识/stft.md",
+    "assets/Pasted image 20250912153825.png",
+    "assets/Pasted image 20250912153716.png",
+    "assets/Pasted image 20250912143700.png",
+    "01工具/WSL（Windows Subsystem for Linux）.md",
+    "01工具/UV.md",
+    "assets/Pasted image 20250912115431.png",
+    "语音/增强/传统增强/语音增强的含义.md",
+    "语音/增强/深度学习增强",
+    "语音/增强/传统增强",
+    "语音/增强",
     "01工具/linux/文件夹压缩.md",
     "01工具/ssh远程连接食用方案.md",
     "01工具/linux",
-    "01工具/UV.md",
-    "运算/常规知识/stft.md",
     "01工具/GetMX临时邮箱.md",
-    "01工具/WSL（Windows Subsystem for Linux）.md",
     "01工具/Screen.md",
     "01工具/Git.md",
     "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/概述.md",
@@ -240,24 +267,11 @@
     "黄茅海/思维框图.drawio",
     "黄茅海/思维框图.png",
     "黄茅海/总体思维框图.drawio",
-    "黄茅海/已有方法/滤波器/频率变换（Frequency Warping）.md",
     "黄茅海/已有方法/滤波器",
-    "08方法/基频估计Fundamental frequency (F0) estimation/基于修正自相关的 YIN 方法.md",
-    "08方法/滤波器/滤波器类别.md",
-    "论文/知识点/声学基础/𝐿𝐴𝑒𝑞​ （等效连续A计权声级）.md",
     "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果",
     "08方法/周期性信号",
-    "08方法/基频估计Fundamental frequency (F0) estimation",
-    "概念/音频",
-    "概念",
     "assets/Pasted image 20250620000444.png",
     "assets/Pasted image 20250619084856.png",
-    "assets/Pasted image 20250619084739.png",
-    "assets/Pasted image 20250619084601.png",
-    "assets/Pasted image 20250619084530.png",
-    "assets/Pasted image 20250619084416.png",
-    "assets/Pasted image 20250619084401.png",
-    "assets/Pasted image 20250619084343.png",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",
     "语音/语音识别框架/语音识别基本框架.canvas",

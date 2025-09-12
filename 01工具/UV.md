@@ -45,10 +45,20 @@ source /home/gzhu/data1/wy/Data_processing/.venv/bin/activate
 ```
 
 ### Windows:
+Windows PowerShell 有严格的执行策略（默认是 `Restricted`），防止未授权的脚本运行。虚拟环境的 `activate.ps1` 是一个 PowerShell 脚本，因此被默认阻止。
+临时方法：临时允许运行脚本（仅对当前窗口有效，关闭后恢复默认设置）
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force
+```
+这个命令的作用是：在当前进程（PowerShell 窗口）中，临时将执行策略改为 `Bypass`（绕过限制），不会影响系统全局设置，安全性较高。
 ```powershell
 .\venv\Scripts\activate
 ```
 
+如果要永久修改执行策略(不推荐，保持系统默认的安全策略)
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 ## 查看venv环境中依赖关系树
 ```bash

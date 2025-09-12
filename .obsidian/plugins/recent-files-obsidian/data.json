@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "维纳滤波",
+      "path": "语音/增强/传统增强/维纳滤波.md"
+    },
+    {
+      "basename": "谱减法",
+      "path": "语音/增强/传统增强/谱减法.md"
+    },
+    {
+      "basename": "stft",
+      "path": "运算/常规知识/stft.md"
+    },
+    {
+      "basename": "WSL（Windows Subsystem for Linux）",
+      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
+    },
+    {
       "basename": "UV",
       "path": "01工具/UV.md"
+    },
+    {
+      "basename": "语音增强的含义",
+      "path": "语音/增强/传统增强/语音增强的含义.md"
     },
     {
       "basename": "文件夹压缩",
@@ -13,16 +33,8 @@
       "path": "01工具/ssh远程连接食用方案.md"
     },
     {
-      "basename": "stft",
-      "path": "运算/常规知识/stft.md"
-    },
-    {
       "basename": "GetMX临时邮箱",
       "path": "01工具/GetMX临时邮箱.md"
-    },
-    {
-      "basename": "WSL（Windows Subsystem for Linux）",
-      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
     },
     {
       "basename": "Screen",
@@ -187,18 +199,6 @@
     {
       "basename": "带线搜索的修正牛顿法的B矩阵修复步长后依旧正定的确定",
       "path": "课本/最优化/牛顿类算法/带线搜索的修正牛顿/带线搜索的修正牛顿法的B矩阵修复步长后依旧正定的确定.md"
-    },
-    {
-      "basename": "带线搜索的修正牛顿法的全局收敛性分析",
-      "path": "课本/最优化/牛顿类算法/带线搜索的修正牛顿/带线搜索的修正牛顿法的全局收敛性分析.md"
-    },
-    {
-      "basename": "一般优化问题",
-      "path": "课本/最优化/对偶理论/一般优化问题.md"
-    },
-    {
-      "basename": "拉格朗日函数",
-      "path": "课本/最优化/对偶理论/拉格朗日函数.md"
     }
   ],
   "omittedPaths": [],
