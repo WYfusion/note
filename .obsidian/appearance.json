@@ -2,7 +2,7 @@
   "cssTheme": "Blue Topaz",
   "theme": "moonstone",
   "accentColor": "#1e526c",
-  "baseFontSize": 21,
+  "baseFontSize": 24,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "preview-origin",

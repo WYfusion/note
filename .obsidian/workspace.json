@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "语音/增强/传统增强/维纳滤波.md",
+                "file": "语音/增强/传统增强/最小均方误差估计MMSE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "维纳滤波"
+              "title": "最小均方误差估计MMSE"
             }
           },
           {
@@ -96,8 +96,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
@@ -121,8 +121,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "课本/最优化/次梯度算法/次梯度算法收敛性分析.md",
-                "collapseAll": false,
+                "file": "语音/增强/传统增强/最小均方误差估计MMSE.md",
+                "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -131,7 +131,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "次梯度算法收敛性分析 的反向链接列表"
+              "title": "最小均方误差估计MMSE 的反向链接列表"
             }
           },
           {
@@ -140,12 +140,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "课本/最优化/次梯度算法/次梯度算法收敛性分析.md",
+                "file": "语音/增强/传统增强/最小均方误差估计MMSE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "次梯度算法收敛性分析 的出链列表"
+              "title": "最小均方误差估计MMSE 的出链列表"
             }
           },
           {
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "课本/最优化/次梯度算法/次梯度算法收敛性分析.md",
+                "file": "语音/增强/传统增强/最小均方误差估计MMSE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "次梯度算法收敛性分析 的大纲"
+              "title": "最小均方误差估计MMSE 的大纲"
             }
           },
           {
@@ -212,6 +212,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -227,17 +228,26 @@
   },
   "active": "f449e4a4e895158a",
   "lastOpenFiles": [
-    "语音/增强/传统增强/谱减法.md",
+    "assets/Pasted image 20250914221405.png",
+    "assets/Pasted image 20250914221200.png",
     "语音/增强/传统增强/维纳滤波.md",
+    "语音/增强/传统增强/最小均方误差估计MMSE.md",
+    "assets/Pasted image 20250914200547.png",
+    "assets/Snipaste_2025-09-14_16-58-29.png",
+    "运算/常规知识/贝叶斯公式.md",
+    "assets/Pasted image 20250914163038.png",
+    "assets/Pasted image 20250914161609.png",
+    "运算/常规知识/高斯、复高斯分布.md",
+    "assets/Pasted image 20250914141555.png",
+    "语音/增强/传统增强/未命名",
+    "语音/增强/传统增强/谱减法.md",
     "assets/Pasted image 20250912191144.png",
     "assets/Pasted image 20250912154548.png",
     "运算/常规知识/stft.md",
     "assets/Pasted image 20250912153825.png",
     "assets/Pasted image 20250912153716.png",
-    "assets/Pasted image 20250912143700.png",
     "01工具/WSL（Windows Subsystem for Linux）.md",
     "01工具/UV.md",
-    "assets/Pasted image 20250912115431.png",
     "语音/增强/传统增强/语音增强的含义.md",
     "语音/增强/深度学习增强",
     "语音/增强/传统增强",
@@ -259,19 +269,11 @@
     "运算/常规知识/伪影.md",
     "课本/机器学习/评估指标.md",
     "课本/机器学习/数据划分与模型评估.md",
-    "黄茅海/降噪/MCRA算法.md",
-    "assets/Pasted image 20250808170443.png",
-    "黄茅海/降噪/连续谱最小值跟踪.md",
-    "黄茅海/Algorithm2.md",
     "黄茅海/降噪",
     "黄茅海/思维框图.drawio",
-    "黄茅海/思维框图.png",
     "黄茅海/总体思维框图.drawio",
     "黄茅海/已有方法/滤波器",
     "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果",
-    "08方法/周期性信号",
-    "assets/Pasted image 20250620000444.png",
-    "assets/Pasted image 20250619084856.png",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",
     "语音/语音识别框架/语音识别基本框架.canvas",
