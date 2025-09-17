@@ -1,40 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "最小均方误差估计MMSE",
-      "path": "语音/增强/传统增强/最小均方误差估计MMSE.md"
-    },
-    {
-      "basename": "维纳滤波",
-      "path": "语音/增强/传统增强/维纳滤波.md"
-    },
-    {
-      "basename": "贝叶斯公式",
-      "path": "运算/常规知识/贝叶斯公式.md"
-    },
-    {
-      "basename": "高斯、复高斯分布",
-      "path": "运算/常规知识/高斯、复高斯分布.md"
-    },
-    {
-      "basename": "谱减法",
-      "path": "语音/增强/传统增强/谱减法.md"
-    },
-    {
-      "basename": "stft",
-      "path": "运算/常规知识/stft.md"
-    },
-    {
-      "basename": "WSL（Windows Subsystem for Linux）",
-      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
-    },
-    {
       "basename": "UV",
       "path": "01工具/UV.md"
     },
     {
-      "basename": "语音增强的含义",
-      "path": "语音/增强/传统增强/语音增强的含义.md"
+      "basename": "贝叶斯公式",
+      "path": "运算/常规知识/贝叶斯公式.md"
     },
     {
       "basename": "文件夹压缩",
@@ -43,6 +15,102 @@
     {
       "basename": "ssh远程连接食用方案",
       "path": "01工具/ssh远程连接食用方案.md"
+    },
+    {
+      "basename": "stft",
+      "path": "运算/常规知识/stft.md"
+    },
+    {
+      "basename": "cmd使用conda环境",
+      "path": "01工具/Anaconda/cmd使用conda环境.md"
+    },
+    {
+      "basename": "常规卷积",
+      "path": "06层内结构/01卷积/常规卷积.md"
+    },
+    {
+      "basename": "反卷积",
+      "path": "06层内结构/01卷积/反卷积.md"
+    },
+    {
+      "basename": "Meta learning学习如何学习",
+      "path": "02模型/元学习/Meta learning学习如何学习.md"
+    },
+    {
+      "basename": "Windows文件挂载到Windows",
+      "path": "01工具/挂载/Windows文件挂载到Windows.md"
+    },
+    {
+      "basename": "Ubuntu文件夹挂载到Windows",
+      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+    },
+    {
+      "basename": "维纳滤波",
+      "path": "语音/增强/传统增强/维纳滤波.md"
+    },
+    {
+      "basename": "语音增强的含义",
+      "path": "语音/增强/传统增强/语音增强的含义.md"
+    },
+    {
+      "basename": "谱减法",
+      "path": "语音/增强/传统增强/谱减法.md"
+    },
+    {
+      "basename": "子空间降噪",
+      "path": "语音/增强/传统增强/子空间降噪.md"
+    },
+    {
+      "basename": "线性子空间",
+      "path": "运算/常规知识/线性子空间.md"
+    },
+    {
+      "basename": "奇异矩阵",
+      "path": "运算/常规知识/奇异矩阵.md"
+    },
+    {
+      "basename": "伪影",
+      "path": "运算/常规知识/伪影.md"
+    },
+    {
+      "basename": "Additive",
+      "path": "运算/Additive.md"
+    },
+    {
+      "basename": "Dot-product",
+      "path": "运算/Dot-product.md"
+    },
+    {
+      "basename": "乘法",
+      "path": "运算/乘法.md"
+    },
+    {
+      "basename": "内积",
+      "path": "运算/内积.md"
+    },
+    {
+      "basename": "CTC算法(Connectionist temporal classification)",
+      "path": "08方法/数据整理/CTC算法(Connectionist temporal classification).md"
+    },
+    {
+      "basename": "STFT 幅度谱",
+      "path": "08方法/数据分析/STFT 幅度谱.md"
+    },
+    {
+      "basename": "Mel频率倒谱系数(MFCC)",
+      "path": "08方法/数据分析/Mel频率倒谱系数(MFCC).md"
+    },
+    {
+      "basename": "最小均方误差估计MMSE",
+      "path": "语音/增强/传统增强/最小均方误差估计MMSE.md"
+    },
+    {
+      "basename": "高斯、复高斯分布",
+      "path": "运算/常规知识/高斯、复高斯分布.md"
+    },
+    {
+      "basename": "WSL（Windows Subsystem for Linux）",
+      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
     },
     {
       "basename": "GetMX临时邮箱",
@@ -89,10 +157,6 @@
       "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理.md"
     },
     {
-      "basename": "伪影",
-      "path": "运算/常规知识/伪影.md"
-    },
-    {
       "basename": "评估指标",
       "path": "课本/机器学习/评估指标.md"
     },
@@ -135,66 +199,6 @@
     {
       "basename": "端点检测",
       "path": "概念/音频/端点检测.md"
-    },
-    {
-      "basename": "人工智能语音识别书籍",
-      "path": "语音/人工智能语音识别书籍.md"
-    },
-    {
-      "basename": "方法",
-      "path": "08方法/方法.md"
-    },
-    {
-      "basename": "稳定谐波结构",
-      "path": "概念/音频/稳定谐波结构.md"
-    },
-    {
-      "basename": "时域平均（Time-domain Averaging, TDA）提取周期性信号",
-      "path": "08方法/周期性信号/时域平均（Time-domain Averaging, TDA）提取周期性信号.md"
-    },
-    {
-      "basename": "集成学习",
-      "path": "课本/机器学习/集成学习.md"
-    },
-    {
-      "basename": "决策树",
-      "path": "课本/机器学习/决策树.md"
-    },
-    {
-      "basename": "人工神经网络训练的小节",
-      "path": "课本/机器学习/人工神经网络训练的小节.md"
-    },
-    {
-      "basename": "线性回归模型的正则化",
-      "path": "课本/机器学习/线性回归模型的正则化.md"
-    },
-    {
-      "basename": "深度学习早期研究",
-      "path": "课本/机器学习/深度学习早期研究.md"
-    },
-    {
-      "basename": "如何获得测试集",
-      "path": "课本/机器学习/如何获得测试集.md"
-    },
-    {
-      "basename": "常规卷积",
-      "path": "06层内结构/01卷积/常规卷积.md"
-    },
-    {
-      "basename": "单纯形法",
-      "path": "课本/最优化/线性规划/单纯形法.md"
-    },
-    {
-      "basename": "线搜索Newton-CG法",
-      "path": "课本/最优化/牛顿类算法/非精确牛顿法/线搜索Newton-CG法.md"
-    },
-    {
-      "basename": "收敛性分析",
-      "path": "课本/最优化/牛顿类算法/非精确牛顿法/收敛性分析.md"
-    },
-    {
-      "basename": "非精确牛顿法",
-      "path": "课本/最优化/牛顿类算法/非精确牛顿法/非精确牛顿法.md"
     }
   ],
   "omittedPaths": [],

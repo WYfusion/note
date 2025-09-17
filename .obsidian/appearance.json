@@ -10,9 +10,7 @@
     "paragraph-list-control",
     "header-color",
     "math",
-    "image-center",
-    "image-size",
-    "default-theme"
+    "image-size"
   ],
   "nativeMenus": false,
   "showViewHeader": true,

@@ -38,7 +38,7 @@ $\xi_k(m)=\frac{E\{X_k^2(m)\}}{\lambda_d(k,m)}$ 第m帧的先验信噪比，$\be
 
 ### MMSE 与 维纳滤波之间的区别
 ![[Pasted image 20250914200547.png|1600]]
-$\gamma_k - 1 = \frac{|X_k|^2 - \sigma_N^2}{\sigma_N^2}$（$|X_k|^2$是带噪语音功率，$\sigma_N^2$是噪声功率），反映 **“当前带噪语音中，超出噪声的能量占噪声的比例”**：
+后验信噪比 $\gamma_k - 1 = \frac{|X_k|^2 - \sigma_N^2}{\sigma_N^2}$（$|X_k|^2$是带噪语音功率，$\sigma_N^2$是噪声功率），反映 **“当前带噪语音中，超出噪声的能量占噪声的比例”**：
 - $\gamma_k - 1$越小 → 当前带噪语音中 “语音能量” 越弱，甚至被噪声完全淹没；
 - $\gamma_k - 1$越大 → 当前带噪语音中 “语音能量” 越强，噪声占比低。
 ##### “保语音” 比 “极致噪声抑制” 更重要
@@ -50,7 +50,7 @@ $\gamma_k - 1 = \frac{|X_k|^2 - \sigma_N^2}{\sigma_N^2}$（$|X_k|^2$是带噪语
 $E\{(\log X_k-\log\hat{X}_k)^2\}$ 根据最小均方误差估计：$\begin{aligned}&\log\hat{X}_{k}=E\{\log X_{k}|Y(\omega_{k})\}\\&\hat{X}_{k}=\exp(E\{\log X_{k}\mid Y(\omega_{k})\})\end{aligned}$，但是直接计算比较困难，且当前形式与矩母函数形式很贴近，因此引入矩母函数
 ![[Pasted image 20250914221405.png|600]]
 通过泰勒展开后再求导后引入的 $t=0$ 仅保留 $E(x)$ 
-1. 令 $Z_k=\log X_k$ ，矩母函数 $\exp[\mu Z_k]$ 于 $\Phi_{Z_k|Y(\omega_k)}(\mu)=E\{\exp[\mu Z_k]|Y(\omega_k)\}=E\left\{X_{k}^{\mu}\mid Y(\omega_{k})\right\}$ 中(其中的 $\mu$ 就是上图的 $t$，$Z_k=\log X_k$ 就是上图的 $x$)，于是有 $E\{\log X_k\mid Y(\omega_k)\}=\frac{d}{d\mu}\Phi_{Z_k\mid Y(\omega_k)}(\mu)|_{\mu=0}$ 
+1. 令 $Z_k=\log X_k$ ，矩母函数 $e^{\mu Z_k}$ 于 $\Phi_{Z_k|Y(\omega_k)}(\mu)=E\{e^{\mu Z_k}|Y(\omega_k)\}=E\left\{X_{k}^{\mu}\mid Y(\omega_{k})\right\}$ 中(其中的 $\mu$ 就是上图的 $t$，$Z_k=\log X_k$ 就是上图的 $x$)，于是有 $E\{\log X_k\mid Y(\omega_k)\}=\frac{d}{d\mu}\Phi_{Z_k\mid Y(\omega_k)}(\mu)|_{\mu=0}$ 
 2. 对 $\Phi_{Z_{k}|Y(\omega_{k})}(\mu)$ 进行推导计算，利用贝叶斯公式：$$\begin{aligned}\Phi_{Z_{k}|Y(\omega_{k})}(\mu)&=E\left\{X_{k}^{\mu}\mid Y(\omega_{k})\right\}\\&=\frac{\int_{0}^{\infty}\int_{0}^{2\pi}x_{k}^{\mu}p(Y(\omega_{k})\mid x_{k},\theta_{x})p(x_{k},\theta_{x})d\theta_{x}dx_{k}}{\int_{0}^{\infty}\int_{0}^{2\pi}p(Y(\omega_{k})\mid x_{k},\theta_{x})p(x_{k},\theta_{x})d\theta_{x}dx_{k}}\\&=\lambda_k^{\mu/2}\Gamma\left(\frac{\mu}{2}+1\right)\Phi\left(-\frac{\mu}{2},1;-\nu_k\right)\end{aligned}$$
 3. 对 $\mu$ 求导并置 $\mu=0$ 得：$$E\{\log X_k\mid Y(\omega_k)\}=\frac{1}{2}\log\lambda_k+\frac{1}{2}\log\nu_k+\frac{1}{2}\int_{\nu_k}^\infty\frac{e^{-t}}{t}dt$$
 4. 带入 $\hat{X}_{k}=\exp(E\{\log X_{k}\mid Y(\omega_{k})\})$  有$$\begin{aligned}\hat{X}_{k}&=\frac{\xi_{k}}{\xi_{k}+1}\exp\left\{\frac{1}{2}\int_{\nu_{k}}^{\infty}\frac{e^{-t}}{t}dt\right\}Y_{k}\\&\triangleq G_{LSA}(\xi_{k},\nu_{k})Y_{k}\end{aligned}$$
