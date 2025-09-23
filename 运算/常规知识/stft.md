@@ -1,3 +1,12 @@
+## STFT公式
+$$\mathrm{X}(k)=\sum_{n=0}^{N-1}x(n)e^{-j\frac{2\pi kn}{N}}=\sum_{n=0}^{N-1}x(n)W_N^{nk}$$
+stft写成矩阵形式：
+$$\mathrm{X=}[x(0),x(1),...,x(N-1)]\begin{bmatrix}\mathrm{W}_N^{0*0}&\mathrm{W}_N^{0*1}&.&\mathrm{W}_N^{0*(N-1)}\\\mathrm{W}_N^{1*0}&\mathrm{W}_N^{1*1}&.&\mathrm{W}_N^{1*(N-1)}\\.&.&.&.\\W_N^{(N-1)*0}&\mathrm{W}_N^{(N-1)*1}&.&\mathrm{W}_N^{(N-1)*(N-1)}\end{bmatrix}$$
+维度尺寸是
+$$[\mathrm{T,N\_fft}]=[\mathrm{T,N\_fft}]\times[\mathrm{N\_fft,N\_fft}]$$
+
+
+
 在短时傅里叶变换 (STFT) 中，`N_FFT` 和 `N_HOP` 是两个重要的参数：
 
 ## N_FFT (FFT Length)

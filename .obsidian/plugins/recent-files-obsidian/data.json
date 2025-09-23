@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "查看进程",
+      "path": "01工具/命令/查看进程.md"
+    },
+    {
+      "basename": "删除",
+      "path": "01工具/linux/删除.md"
+    },
+    {
+      "basename": "检测",
+      "path": "01工具/linux/检测.md"
+    },
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "文件夹压缩",
+      "path": "01工具/linux/文件夹压缩.md"
+    },
+    {
+      "basename": "stft",
+      "path": "运算/常规知识/stft.md"
+    },
+    {
       "basename": "UV",
       "path": "01工具/UV.md"
     },
@@ -9,16 +33,8 @@
       "path": "运算/常规知识/贝叶斯公式.md"
     },
     {
-      "basename": "文件夹压缩",
-      "path": "01工具/linux/文件夹压缩.md"
-    },
-    {
       "basename": "ssh远程连接食用方案",
       "path": "01工具/ssh远程连接食用方案.md"
-    },
-    {
-      "basename": "stft",
-      "path": "运算/常规知识/stft.md"
     },
     {
       "basename": "cmd使用conda环境",
@@ -121,10 +137,6 @@
       "path": "01工具/Screen.md"
     },
     {
-      "basename": "Git",
-      "path": "01工具/Git.md"
-    },
-    {
       "basename": "概述",
       "path": "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/概述.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "基于修正自相关的 YIN 方法",
       "path": "08方法/基频估计Fundamental frequency (F0) estimation/基于修正自相关的 YIN 方法.md"
-    },
-    {
-      "basename": "滤波器类别",
-      "path": "08方法/滤波器/滤波器类别.md"
-    },
-    {
-      "basename": "𝐿𝐴𝑒𝑞​ （等效连续A计权声级）",
-      "path": "论文/知识点/声学基础/𝐿𝐴𝑒𝑞​ （等效连续A计权声级）.md"
-    },
-    {
-      "basename": "端点检测",
-      "path": "概念/音频/端点检测.md"
     }
   ],
   "omittedPaths": [],

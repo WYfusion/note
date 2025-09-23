@@ -260,9 +260,12 @@ Hi WYfusion! You've successfully authenticated, but GitHub does not provide shel
 ##### 忽略指定文件夹
 创建`.gitignore`隐藏文件
 在其中添加欲隐藏的文件夹即可，注意这会忽略项目中所有名为所列文件名的文件夹(无论在哪个文件夹下)
-```shell
-data/
+```gitignore
+data/    # 只会看到该文件夹，直接用也行，可以排除该文件夹的全部内容
 dataset/
 logs/
 .obsidian/
+bak/*    # 会进入bak文件夹内部查看子项，便于后续排除不想放置于Gitignore中的项
+!bak/test/ # 该文件依旧会被记录，也即排除在Gitignore的记录中
+!bak/sub/ # 同理，该操作会直接排除该子项文件夹于gitignore中
 ```
