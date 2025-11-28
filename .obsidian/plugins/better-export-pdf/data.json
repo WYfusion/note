@@ -11,6 +11,7 @@
   "debug": false,
   "isTimestamp": false,
   "enabledCss": false,
+  "concurrency": "5",
   "prevConfig": {
     "pageSize": "A4",
     "marginType": "1",
@@ -23,7 +24,7 @@
     "marginLeft": "10",
     "marginRight": "10",
     "displayHeader": false,
-    "displayFooter": false,
+    "displayFooter": true,
     "cssSnippet": "0"
   }
 }

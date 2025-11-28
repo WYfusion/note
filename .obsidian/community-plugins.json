@@ -1,17 +1,15 @@
 [
-  "obsidian-style-settings",
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
   "dataview",
   "drawio-obsidian",
   "file-explorer-note-count",
   "recent-files-obsidian",
-  "obsidian-mind-map",
   "better-export-pdf",
   "advanced-canvas",
   "table-editor-obsidian",
   "quick-explorer",
   "mermaid-tools",
-  "obsidian-minimal-settings",
-  "obsidian-tikzjax"
+  "obsidian-tikzjax",
+  "obsidian-style-settings"
 ]

@@ -1,204 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "查看进程",
-      "path": "01工具/命令/查看进程.md"
+      "basename": "Fused-MBConv结构",
+      "path": "07层间结构/模块/Fused-MBConv结构.md"
     },
     {
-      "basename": "删除",
-      "path": "01工具/linux/删除.md"
+      "basename": "SE注意力模块（SELayer）",
+      "path": "07层间结构/模块/SE注意力模块（SELayer）.md"
     },
     {
-      "basename": "检测",
-      "path": "01工具/linux/检测.md"
+      "basename": "随机深度方法（Stochastic Depth）",
+      "path": "07层间结构/模块/随机深度方法（Stochastic Depth）.md"
     },
     {
-      "basename": "Git",
-      "path": "01工具/Git.md"
+      "basename": "DW深度卷积Depthwise Conv",
+      "path": "06NN系列/01卷积/DW深度卷积Depthwise Conv.md"
     },
     {
-      "basename": "文件夹压缩",
-      "path": "01工具/linux/文件夹压缩.md"
+      "basename": "深度可分卷积Depthwise Separable Conv",
+      "path": "06NN系列/01卷积/深度可分卷积Depthwise Separable Conv.md"
     },
     {
-      "basename": "stft",
-      "path": "运算/常规知识/stft.md"
+      "basename": "PW逐点卷积Pointwise Conv",
+      "path": "06NN系列/01卷积/PW逐点卷积Pointwise Conv.md"
     },
     {
-      "basename": "UV",
-      "path": "01工具/UV.md"
+      "basename": "拉格朗日对偶问题求解流程",
+      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
     },
     {
-      "basename": "贝叶斯公式",
-      "path": "运算/常规知识/贝叶斯公式.md"
+      "basename": "时间卷积模块TCM",
+      "path": "07层间结构/模块/时间卷积模块TCM.md"
     },
     {
-      "basename": "ssh远程连接食用方案",
-      "path": "01工具/ssh远程连接食用方案.md"
+      "basename": "Inception",
+      "path": "07层间结构/模块/Inception.md"
     },
     {
-      "basename": "cmd使用conda环境",
-      "path": "01工具/Anaconda/cmd使用conda环境.md"
+      "basename": "残差结构（Residual Block）",
+      "path": "07层间结构/模块/残差结构（Residual Block）.md"
     },
     {
-      "basename": "常规卷积",
-      "path": "06层内结构/01卷积/常规卷积.md"
+      "basename": "倒残差结构（Inverted residual block）",
+      "path": "07层间结构/模块/倒残差结构（Inverted residual block）.md"
     },
     {
-      "basename": "反卷积",
-      "path": "06层内结构/01卷积/反卷积.md"
+      "basename": "通道重排（Channel Shuffle）",
+      "path": "07层间结构/模块/通道重排（Channel Shuffle）.md"
     },
     {
-      "basename": "Meta learning学习如何学习",
-      "path": "02模型/元学习/Meta learning学习如何学习.md"
+      "basename": "01_BSS数学基础",
+      "path": "语音/多通道/BSS/01_BSS数学基础.md"
     },
     {
-      "basename": "Windows文件挂载到Windows",
-      "path": "01工具/挂载/Windows文件挂载到Windows.md"
+      "basename": "sftp",
+      "path": "01工具/sftp.md"
     },
     {
-      "basename": "Ubuntu文件夹挂载到Windows",
-      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+      "basename": "README",
+      "path": "课本/现代信号处理/自适应滤波/README.md"
     },
     {
-      "basename": "维纳滤波",
-      "path": "语音/增强/传统增强/维纳滤波.md"
+      "basename": "03_RLS算法",
+      "path": "课本/现代信号处理/自适应滤波/03_RLS算法.md"
     },
     {
-      "basename": "语音增强的含义",
-      "path": "语音/增强/传统增强/语音增强的含义.md"
+      "basename": "02_LMS自适应算法",
+      "path": "课本/现代信号处理/自适应滤波/02_LMS自适应算法.md"
     },
     {
-      "basename": "谱减法",
-      "path": "语音/增强/传统增强/谱减法.md"
+      "basename": "01_Kalman滤波器",
+      "path": "课本/现代信号处理/自适应滤波/01_Kalman滤波器.md"
     },
     {
-      "basename": "子空间降噪",
-      "path": "语音/增强/传统增强/子空间降噪.md"
+      "basename": "05_MUSIC算法",
+      "path": "语音/多通道/SourceLocalization/05_MUSIC算法.md"
     },
     {
-      "basename": "线性子空间",
-      "path": "运算/常规知识/线性子空间.md"
+      "basename": "00_语音增强概述",
+      "path": "语音/多通道/SpeechEnhancement/00_语音增强概述.md"
     },
     {
-      "basename": "奇异矩阵",
-      "path": "运算/常规知识/奇异矩阵.md"
+      "basename": "10_DL_掩码引导波束形成",
+      "path": "语音/多通道/Beamforming/10_DL_掩码引导波束形成.md"
     },
     {
-      "basename": "伪影",
-      "path": "运算/常规知识/伪影.md"
+      "basename": "05_差分麦克风阵列",
+      "path": "语音/多通道/Beamforming/05_差分麦克风阵列.md"
     },
     {
-      "basename": "Additive",
-      "path": "运算/Additive.md"
+      "basename": "08_LCMV线性约束",
+      "path": "语音/多通道/Beamforming/08_LCMV线性约束.md"
     },
     {
-      "basename": "Dot-product",
-      "path": "运算/Dot-product.md"
+      "basename": "00_波束形成概述",
+      "path": "语音/多通道/Beamforming/00_波束形成概述.md"
     },
     {
-      "basename": "乘法",
-      "path": "运算/乘法.md"
+      "basename": "06_MVDR波束形成",
+      "path": "语音/多通道/Beamforming/06_MVDR波束形成.md"
     },
     {
-      "basename": "内积",
-      "path": "运算/内积.md"
+      "basename": "07_GSC广义旁瓣相消",
+      "path": "语音/多通道/Beamforming/07_GSC广义旁瓣相消.md"
     },
     {
-      "basename": "CTC算法(Connectionist temporal classification)",
-      "path": "08方法/数据整理/CTC算法(Connectionist temporal classification).md"
+      "basename": "04_超指向性波束形成",
+      "path": "语音/多通道/Beamforming/04_超指向性波束形成.md"
     },
     {
-      "basename": "STFT 幅度谱",
-      "path": "08方法/数据分析/STFT 幅度谱.md"
+      "basename": "03_延迟求和波束形成",
+      "path": "语音/多通道/Beamforming/03_延迟求和波束形成.md"
     },
     {
-      "basename": "Mel频率倒谱系数(MFCC)",
-      "path": "08方法/数据分析/Mel频率倒谱系数(MFCC).md"
+      "basename": "波束形成基础",
+      "path": "语音/多通道/波束形成基础.md"
     },
     {
-      "basename": "最小均方误差估计MMSE",
-      "path": "语音/增强/传统增强/最小均方误差估计MMSE.md"
+      "basename": "01_波束形成数学基础",
+      "path": "语音/多通道/Beamforming/01_波束形成数学基础.md"
     },
     {
-      "basename": "高斯、复高斯分布",
-      "path": "运算/常规知识/高斯、复高斯分布.md"
+      "basename": "多通道音频信号处理入门",
+      "path": "语音/多通道/多通道音频信号处理入门.md"
     },
     {
-      "basename": "WSL（Windows Subsystem for Linux）",
-      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
+      "basename": "基于深度学习的多通道语音增强",
+      "path": "语音/多通道/基于深度学习的多通道语音增强.md"
     },
     {
-      "basename": "GetMX临时邮箱",
-      "path": "01工具/GetMX临时邮箱.md"
+      "basename": "00_去混响概述",
+      "path": "语音/多通道/Dereverberation/00_去混响概述.md"
     },
     {
-      "basename": "Screen",
-      "path": "01工具/Screen.md"
+      "basename": "00_说话人追踪概述",
+      "path": "语音/多通道/SpeakerTracking/00_说话人追踪概述.md"
     },
     {
-      "basename": "概述",
-      "path": "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/概述.md"
+      "basename": "00_声源定位概述",
+      "path": "语音/多通道/SourceLocalization/00_声源定位概述.md"
     },
     {
-      "basename": "数学原理",
-      "path": "论文/自看论文/A structure for representation of localized time-frequency distributions in presence of noise/数学原理.md"
+      "basename": "盲源分离BSS",
+      "path": "语音/多通道/BSS/盲源分离BSS.md"
     },
     {
-      "basename": "实验材料",
-      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/实验材料.md"
+      "basename": "02_ICA独立成分分析",
+      "path": "语音/多通道/BSS/02_ICA独立成分分析.md"
     },
     {
-      "basename": "前人工作",
-      "path": "论文/自看论文/Avian vocalizations in Huangmaohai sea-crossing channel Automatic birdsong recognition and ecological impact analysis based on deep learning/前人工作.md"
+      "basename": "10_DL_SepFormer",
+      "path": "语音/多通道/BSS/10_DL_SepFormer.md"
     },
     {
-      "basename": "大纲",
-      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acoustic comfort in pedestrian environments/大纲.md"
+      "basename": "09_DL_DualPath",
+      "path": "语音/多通道/BSS/09_DL_DualPath.md"
     },
     {
-      "basename": "结果分析",
-      "path": "论文/组会论文/How visible street greenery moderates traffic noise to improve acoustic comfort in pedestrian environments/结果分析.md"
+      "basename": "03_JADE算法",
+      "path": "语音/多通道/BSS/03_JADE算法.md"
     },
     {
-      "basename": "概述",
-      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/概述.md"
+      "basename": "04_IVA独立向量分析",
+      "path": "语音/多通道/BSS/04_IVA独立向量分析.md"
     },
     {
-      "basename": "MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理",
-      "path": "论文/组会论文/噪声消除算法在语音处理应用中的作用：综合研究及部分实验结果/MCRA、IMCRA、CTFSPR、MMSE-SPZC、MAP 和 SMPR 的核心原理.md"
+      "basename": "08_DL_ConvTasNet",
+      "path": "语音/多通道/BSS/08_DL_ConvTasNet.md"
     },
     {
-      "basename": "评估指标",
-      "path": "课本/机器学习/评估指标.md"
+      "basename": "07_DL_TasNet",
+      "path": "语音/多通道/BSS/07_DL_TasNet.md"
     },
     {
-      "basename": "数据划分与模型评估",
-      "path": "课本/机器学习/数据划分与模型评估.md"
+      "basename": "06_ILRMA算法",
+      "path": "语音/多通道/BSS/06_ILRMA算法.md"
     },
     {
-      "basename": "MCRA算法",
-      "path": "黄茅海/降噪/MCRA算法.md"
+      "basename": "00_BSS概述与目录",
+      "path": "语音/多通道/BSS/00_BSS概述与目录.md"
     },
     {
-      "basename": "连续谱最小值跟踪",
-      "path": "黄茅海/降噪/连续谱最小值跟踪.md"
+      "basename": "RTF估计方法",
+      "path": "语音/多通道/RTF估计方法.md"
     },
     {
-      "basename": "Algorithm2",
-      "path": "黄茅海/Algorithm2.md"
+      "basename": "相对传输函数RTF",
+      "path": "语音/多通道/相对传输函数RTF.md"
     },
     {
-      "basename": "思维框图",
-      "path": "黄茅海/思维框图.drawio"
+      "basename": "空间相关矩阵SCM",
+      "path": "语音/多通道/空间相关矩阵SCM.md"
     },
     {
-      "basename": "频率变换（Frequency Warping）",
-      "path": "黄茅海/已有方法/滤波器/频率变换（Frequency Warping）.md"
+      "basename": "自适应波束形成",
+      "path": "语音/多通道/自适应波束形成.md"
     },
     {
-      "basename": "基于修正自相关的 YIN 方法",
-      "path": "08方法/基频估计Fundamental frequency (F0) estimation/基于修正自相关的 YIN 方法.md"
+      "basename": "补充：曲率条件",
+      "path": "课本/最优化/牛顿类算法/BFGS公式/补充：曲率条件.md"
     }
   ],
   "omittedPaths": [],
