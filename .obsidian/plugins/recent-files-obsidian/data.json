@@ -1,6 +1,186 @@
 {
   "recentFiles": [
     {
+      "basename": "sftp",
+      "path": "01工具/sftp.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.base"
+    },
+    {
+      "basename": "逐点取最大值",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
+    },
+    {
+      "basename": "Screen",
+      "path": "01工具/Screen.md"
+    },
+    {
+      "basename": "50系显卡conda环境设置",
+      "path": "01工具/Anaconda/50系显卡conda环境设置.md"
+    },
+    {
+      "basename": "创建环境",
+      "path": "01工具/Anaconda/创建环境.md"
+    },
+    {
+      "basename": "更新conda",
+      "path": "01工具/Anaconda/更新conda.md"
+    },
+    {
+      "basename": "删除环境",
+      "path": "01工具/Anaconda/删除环境.md"
+    },
+    {
+      "basename": "cmd使用conda环境",
+      "path": "01工具/Anaconda/cmd使用conda环境.md"
+    },
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "EPD",
+      "path": "语音/语音框架/01_前端信号处理/分割/EPD.md"
+    },
+    {
+      "basename": "嵌入和波束形成：用于多通道语音增强的全神经因果波束形成",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/嵌入和波束形成：用于多通道语音增强的全神经因果波束形成.md"
+    },
+    {
+      "basename": "Beamforming",
+      "path": "语音/语音框架/01_前端信号处理/多通道处理/Beamforming.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/06_自监督预训练/README.md"
+    },
+    {
+      "basename": "语音系统架构",
+      "path": "语音/语音系统架构.drawio"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/05_端到端模型/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/04_响应生成/TTS/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/04_响应生成/NLG/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/04_响应生成/AudioCodec/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/03_对话与知识/NLU/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/03_对话与知识/LLM/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/03_对话与知识/DM/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/03_对话与知识/知识层/README.md"
+    },
+    {
+      "basename": "SER",
+      "path": "语音/语音框架/02_语音理解/语音属性/SER.md"
+    },
+    {
+      "basename": "LID",
+      "path": "语音/语音框架/02_语音理解/语音属性/LID.md"
+    },
+    {
+      "basename": "AED",
+      "path": "语音/语音框架/02_语音理解/语音属性/AED.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/02_语音理解/语音分离/README.md"
+    },
+    {
+      "basename": "SID",
+      "path": "语音/语音框架/02_语音理解/说话人分析/SID.md"
+    },
+    {
+      "basename": "SV",
+      "path": "语音/语音框架/02_语音理解/说话人分析/SV.md"
+    },
+    {
+      "basename": "Diarization",
+      "path": "语音/语音框架/02_语音理解/说话人分析/Diarization.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/01_前端信号处理/README.md"
+    },
+    {
+      "basename": "降噪_NS",
+      "path": "语音/语音框架/01_前端信号处理/语音增强/降噪_NS.md"
+    },
+    {
+      "basename": "去混响_WPE",
+      "path": "语音/语音框架/01_前端信号处理/语音增强/去混响_WPE.md"
+    },
+    {
+      "basename": "Fbank_MFCC",
+      "path": "语音/语音框架/01_前端信号处理/特征提取/Fbank_MFCC.md"
+    },
+    {
+      "basename": "VAD",
+      "path": "语音/语音框架/01_前端信号处理/检测与唤醒/VAD.md"
+    },
+    {
+      "basename": "KWS",
+      "path": "语音/语音框架/01_前端信号处理/检测与唤醒/KWS.md"
+    },
+    {
+      "basename": "AEC",
+      "path": "语音/语音框架/01_前端信号处理/多通道处理/AEC.md"
+    },
+    {
+      "basename": "新型网络与技术",
+      "path": "课本/通信网理论/第1章 通信网概述/新型网络与技术.md"
+    },
+    {
+      "basename": "复合网（辐射汇接制）",
+      "path": "课本/通信网理论/第1章 通信网概述/通信网组网结构/非基本组网结构形式/复合网（辐射汇接制）.md"
+    },
+    {
+      "basename": "决策树",
+      "path": "课本/机器学习/决策树.md"
+    },
+    {
+      "basename": "07_GSC广义旁瓣相消",
+      "path": "语音/多通道/Beamforming/07_GSC广义旁瓣相消.md"
+    },
+    {
+      "basename": "04_超指向性波束形成",
+      "path": "语音/多通道/Beamforming/04_超指向性波束形成.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/多通道/README.md"
+    },
+    {
+      "basename": "HRTF",
+      "path": "语音/多通道/HRTF.md"
+    },
+    {
+      "basename": "门控线性单元GLU",
+      "path": "06NN系列/01卷积/门控线性单元GLU.md"
+    },
+    {
       "basename": "Fused-MBConv结构",
       "path": "07层间结构/模块/Fused-MBConv结构.md"
     },
@@ -19,186 +199,6 @@
     {
       "basename": "深度可分卷积Depthwise Separable Conv",
       "path": "06NN系列/01卷积/深度可分卷积Depthwise Separable Conv.md"
-    },
-    {
-      "basename": "PW逐点卷积Pointwise Conv",
-      "path": "06NN系列/01卷积/PW逐点卷积Pointwise Conv.md"
-    },
-    {
-      "basename": "拉格朗日对偶问题求解流程",
-      "path": "课本/最优化/对偶理论/拉格朗日对偶问题求解流程.md"
-    },
-    {
-      "basename": "时间卷积模块TCM",
-      "path": "07层间结构/模块/时间卷积模块TCM.md"
-    },
-    {
-      "basename": "Inception",
-      "path": "07层间结构/模块/Inception.md"
-    },
-    {
-      "basename": "残差结构（Residual Block）",
-      "path": "07层间结构/模块/残差结构（Residual Block）.md"
-    },
-    {
-      "basename": "倒残差结构（Inverted residual block）",
-      "path": "07层间结构/模块/倒残差结构（Inverted residual block）.md"
-    },
-    {
-      "basename": "通道重排（Channel Shuffle）",
-      "path": "07层间结构/模块/通道重排（Channel Shuffle）.md"
-    },
-    {
-      "basename": "01_BSS数学基础",
-      "path": "语音/多通道/BSS/01_BSS数学基础.md"
-    },
-    {
-      "basename": "sftp",
-      "path": "01工具/sftp.md"
-    },
-    {
-      "basename": "README",
-      "path": "课本/现代信号处理/自适应滤波/README.md"
-    },
-    {
-      "basename": "03_RLS算法",
-      "path": "课本/现代信号处理/自适应滤波/03_RLS算法.md"
-    },
-    {
-      "basename": "02_LMS自适应算法",
-      "path": "课本/现代信号处理/自适应滤波/02_LMS自适应算法.md"
-    },
-    {
-      "basename": "01_Kalman滤波器",
-      "path": "课本/现代信号处理/自适应滤波/01_Kalman滤波器.md"
-    },
-    {
-      "basename": "05_MUSIC算法",
-      "path": "语音/多通道/SourceLocalization/05_MUSIC算法.md"
-    },
-    {
-      "basename": "00_语音增强概述",
-      "path": "语音/多通道/SpeechEnhancement/00_语音增强概述.md"
-    },
-    {
-      "basename": "10_DL_掩码引导波束形成",
-      "path": "语音/多通道/Beamforming/10_DL_掩码引导波束形成.md"
-    },
-    {
-      "basename": "05_差分麦克风阵列",
-      "path": "语音/多通道/Beamforming/05_差分麦克风阵列.md"
-    },
-    {
-      "basename": "08_LCMV线性约束",
-      "path": "语音/多通道/Beamforming/08_LCMV线性约束.md"
-    },
-    {
-      "basename": "00_波束形成概述",
-      "path": "语音/多通道/Beamforming/00_波束形成概述.md"
-    },
-    {
-      "basename": "06_MVDR波束形成",
-      "path": "语音/多通道/Beamforming/06_MVDR波束形成.md"
-    },
-    {
-      "basename": "07_GSC广义旁瓣相消",
-      "path": "语音/多通道/Beamforming/07_GSC广义旁瓣相消.md"
-    },
-    {
-      "basename": "04_超指向性波束形成",
-      "path": "语音/多通道/Beamforming/04_超指向性波束形成.md"
-    },
-    {
-      "basename": "03_延迟求和波束形成",
-      "path": "语音/多通道/Beamforming/03_延迟求和波束形成.md"
-    },
-    {
-      "basename": "波束形成基础",
-      "path": "语音/多通道/波束形成基础.md"
-    },
-    {
-      "basename": "01_波束形成数学基础",
-      "path": "语音/多通道/Beamforming/01_波束形成数学基础.md"
-    },
-    {
-      "basename": "多通道音频信号处理入门",
-      "path": "语音/多通道/多通道音频信号处理入门.md"
-    },
-    {
-      "basename": "基于深度学习的多通道语音增强",
-      "path": "语音/多通道/基于深度学习的多通道语音增强.md"
-    },
-    {
-      "basename": "00_去混响概述",
-      "path": "语音/多通道/Dereverberation/00_去混响概述.md"
-    },
-    {
-      "basename": "00_说话人追踪概述",
-      "path": "语音/多通道/SpeakerTracking/00_说话人追踪概述.md"
-    },
-    {
-      "basename": "00_声源定位概述",
-      "path": "语音/多通道/SourceLocalization/00_声源定位概述.md"
-    },
-    {
-      "basename": "盲源分离BSS",
-      "path": "语音/多通道/BSS/盲源分离BSS.md"
-    },
-    {
-      "basename": "02_ICA独立成分分析",
-      "path": "语音/多通道/BSS/02_ICA独立成分分析.md"
-    },
-    {
-      "basename": "10_DL_SepFormer",
-      "path": "语音/多通道/BSS/10_DL_SepFormer.md"
-    },
-    {
-      "basename": "09_DL_DualPath",
-      "path": "语音/多通道/BSS/09_DL_DualPath.md"
-    },
-    {
-      "basename": "03_JADE算法",
-      "path": "语音/多通道/BSS/03_JADE算法.md"
-    },
-    {
-      "basename": "04_IVA独立向量分析",
-      "path": "语音/多通道/BSS/04_IVA独立向量分析.md"
-    },
-    {
-      "basename": "08_DL_ConvTasNet",
-      "path": "语音/多通道/BSS/08_DL_ConvTasNet.md"
-    },
-    {
-      "basename": "07_DL_TasNet",
-      "path": "语音/多通道/BSS/07_DL_TasNet.md"
-    },
-    {
-      "basename": "06_ILRMA算法",
-      "path": "语音/多通道/BSS/06_ILRMA算法.md"
-    },
-    {
-      "basename": "00_BSS概述与目录",
-      "path": "语音/多通道/BSS/00_BSS概述与目录.md"
-    },
-    {
-      "basename": "RTF估计方法",
-      "path": "语音/多通道/RTF估计方法.md"
-    },
-    {
-      "basename": "相对传输函数RTF",
-      "path": "语音/多通道/相对传输函数RTF.md"
-    },
-    {
-      "basename": "空间相关矩阵SCM",
-      "path": "语音/多通道/空间相关矩阵SCM.md"
-    },
-    {
-      "basename": "自适应波束形成",
-      "path": "语音/多通道/自适应波束形成.md"
-    },
-    {
-      "basename": "补充：曲率条件",
-      "path": "课本/最优化/牛顿类算法/BFGS公式/补充：曲率条件.md"
     }
   ],
   "omittedPaths": [],
