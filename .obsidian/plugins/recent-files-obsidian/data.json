@@ -1,28 +1,148 @@
 {
   "recentFiles": [
     {
-      "basename": "sftp",
-      "path": "01工具/sftp.md"
+      "basename": "lftp",
+      "path": "01工具/lftp.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.base"
+      "basename": "创建环境",
+      "path": "01工具/Anaconda/创建环境.md"
     },
     {
-      "basename": "逐点取最大值",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
-    },
-    {
-      "basename": "Screen",
-      "path": "01工具/Screen.md"
+      "basename": "WSL安装miniAnaconda",
+      "path": "01工具/Anaconda/WSL安装miniAnaconda.md"
     },
     {
       "basename": "50系显卡conda环境设置",
       "path": "01工具/Anaconda/50系显卡conda环境设置.md"
     },
     {
-      "basename": "创建环境",
-      "path": "01工具/Anaconda/创建环境.md"
+      "basename": "rsync",
+      "path": "01工具/rsync.md"
+    },
+    {
+      "basename": "Ubuntu文件夹挂载到Windows",
+      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+    },
+    {
+      "basename": "Windows文件挂载到Windows",
+      "path": "01工具/挂载/Windows文件挂载到Windows.md"
+    },
+    {
+      "basename": "sftp",
+      "path": "01工具/sftp.md"
+    },
+    {
+      "basename": "Screen",
+      "path": "01工具/Screen.md"
+    },
+    {
+      "basename": "04_模型设计效率综述",
+      "path": "06NN系列/08计算效率/04_模型设计效率综述.md"
+    },
+    {
+      "basename": "03_访存成本_MAC",
+      "path": "06NN系列/08计算效率/03_访存成本_MAC.md"
+    },
+    {
+      "basename": "02_计算量_FLOPs",
+      "path": "06NN系列/08计算效率/02_计算量_FLOPs.md"
+    },
+    {
+      "basename": "01_参数量_Params",
+      "path": "06NN系列/08计算效率/01_参数量_Params.md"
+    },
+    {
+      "basename": "设计模型的指标",
+      "path": "06NN系列/01卷积/设计模型的指标.md"
+    },
+    {
+      "basename": "感受野计算",
+      "path": "06NN系列/01卷积/感受野计算.md"
+    },
+    {
+      "basename": "卷积的参数",
+      "path": "06NN系列/01卷积/卷积的参数.md"
+    },
+    {
+      "basename": "常规卷积",
+      "path": "06NN系列/01卷积/常规卷积.md"
+    },
+    {
+      "basename": "标准化卷积层（StdConv2d）",
+      "path": "06NN系列/01卷积/标准化卷积层（StdConv2d）.md"
+    },
+    {
+      "basename": "分组卷积",
+      "path": "06NN系列/01卷积/分组卷积.md"
+    },
+    {
+      "basename": "卷积计算量",
+      "path": "06NN系列/01卷积/卷积计算量.md"
+    },
+    {
+      "basename": "MAC",
+      "path": "06NN系列/01卷积/MAC.md"
+    },
+    {
+      "basename": "GRU(门控循环单元)",
+      "path": "02模型/循环神经网络（RNN）/GRU(门控循环单元).md"
+    },
+    {
+      "basename": "BPTT（Backpropagation Through Time，随时间反向传播）",
+      "path": "02模型/循环神经网络（RNN）/BPTT（Backpropagation Through Time，随时间反向传播）.md"
+    },
+    {
+      "basename": "循环神经网络的结构.excalidraw",
+      "path": "02模型/循环神经网络（RNN）/循环神经网络的结构.excalidraw.md"
+    },
+    {
+      "basename": "Git",
+      "path": "01工具/Git.md"
+    },
+    {
+      "basename": "WSL（Windows Subsystem for Linux）",
+      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
+    },
+    {
+      "basename": "移动与重命名",
+      "path": "01工具/linux/移动与重命名.md"
+    },
+    {
+      "basename": "复制",
+      "path": "01工具/linux/复制.md"
+    },
+    {
+      "basename": "删除",
+      "path": "01工具/linux/删除.md"
+    },
+    {
+      "basename": "导航与创建",
+      "path": "01工具/linux/导航与创建.md"
+    },
+    {
+      "basename": "00_场景预设",
+      "path": "01工具/linux/00_场景预设.md"
+    },
+    {
+      "basename": "权限管理",
+      "path": "01工具/linux/权限管理.md"
+    },
+    {
+      "basename": "管道与重定向",
+      "path": "01工具/linux/管道与重定向.md"
+    },
+    {
+      "basename": "文件夹压缩",
+      "path": "01工具/linux/文件夹压缩.md"
+    },
+    {
+      "basename": "检测",
+      "path": "01工具/linux/检测.md"
+    },
+    {
+      "basename": "导出导入环境",
+      "path": "01工具/Anaconda/导出导入环境.md"
     },
     {
       "basename": "更新conda",
@@ -37,8 +157,16 @@
       "path": "01工具/Anaconda/cmd使用conda环境.md"
     },
     {
-      "basename": "Git",
-      "path": "01工具/Git.md"
+      "basename": "修复Markdown中重复的LaTeX错误",
+      "path": "01工具/修复Markdown中重复的LaTeX错误.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.base"
+    },
+    {
+      "basename": "逐点取最大值",
+      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
     },
     {
       "basename": "EPD",
@@ -71,134 +199,6 @@
     {
       "basename": "README",
       "path": "语音/语音框架/04_响应生成/NLG/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/04_响应生成/AudioCodec/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/03_对话与知识/NLU/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/03_对话与知识/LLM/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/03_对话与知识/DM/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/03_对话与知识/知识层/README.md"
-    },
-    {
-      "basename": "SER",
-      "path": "语音/语音框架/02_语音理解/语音属性/SER.md"
-    },
-    {
-      "basename": "LID",
-      "path": "语音/语音框架/02_语音理解/语音属性/LID.md"
-    },
-    {
-      "basename": "AED",
-      "path": "语音/语音框架/02_语音理解/语音属性/AED.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/02_语音理解/语音分离/README.md"
-    },
-    {
-      "basename": "SID",
-      "path": "语音/语音框架/02_语音理解/说话人分析/SID.md"
-    },
-    {
-      "basename": "SV",
-      "path": "语音/语音框架/02_语音理解/说话人分析/SV.md"
-    },
-    {
-      "basename": "Diarization",
-      "path": "语音/语音框架/02_语音理解/说话人分析/Diarization.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/01_前端信号处理/README.md"
-    },
-    {
-      "basename": "降噪_NS",
-      "path": "语音/语音框架/01_前端信号处理/语音增强/降噪_NS.md"
-    },
-    {
-      "basename": "去混响_WPE",
-      "path": "语音/语音框架/01_前端信号处理/语音增强/去混响_WPE.md"
-    },
-    {
-      "basename": "Fbank_MFCC",
-      "path": "语音/语音框架/01_前端信号处理/特征提取/Fbank_MFCC.md"
-    },
-    {
-      "basename": "VAD",
-      "path": "语音/语音框架/01_前端信号处理/检测与唤醒/VAD.md"
-    },
-    {
-      "basename": "KWS",
-      "path": "语音/语音框架/01_前端信号处理/检测与唤醒/KWS.md"
-    },
-    {
-      "basename": "AEC",
-      "path": "语音/语音框架/01_前端信号处理/多通道处理/AEC.md"
-    },
-    {
-      "basename": "新型网络与技术",
-      "path": "课本/通信网理论/第1章 通信网概述/新型网络与技术.md"
-    },
-    {
-      "basename": "复合网（辐射汇接制）",
-      "path": "课本/通信网理论/第1章 通信网概述/通信网组网结构/非基本组网结构形式/复合网（辐射汇接制）.md"
-    },
-    {
-      "basename": "决策树",
-      "path": "课本/机器学习/决策树.md"
-    },
-    {
-      "basename": "07_GSC广义旁瓣相消",
-      "path": "语音/多通道/Beamforming/07_GSC广义旁瓣相消.md"
-    },
-    {
-      "basename": "04_超指向性波束形成",
-      "path": "语音/多通道/Beamforming/04_超指向性波束形成.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/多通道/README.md"
-    },
-    {
-      "basename": "HRTF",
-      "path": "语音/多通道/HRTF.md"
-    },
-    {
-      "basename": "门控线性单元GLU",
-      "path": "06NN系列/01卷积/门控线性单元GLU.md"
-    },
-    {
-      "basename": "Fused-MBConv结构",
-      "path": "07层间结构/模块/Fused-MBConv结构.md"
-    },
-    {
-      "basename": "SE注意力模块（SELayer）",
-      "path": "07层间结构/模块/SE注意力模块（SELayer）.md"
-    },
-    {
-      "basename": "随机深度方法（Stochastic Depth）",
-      "path": "07层间结构/模块/随机深度方法（Stochastic Depth）.md"
-    },
-    {
-      "basename": "DW深度卷积Depthwise Conv",
-      "path": "06NN系列/01卷积/DW深度卷积Depthwise Conv.md"
-    },
-    {
-      "basename": "深度可分卷积Depthwise Separable Conv",
-      "path": "06NN系列/01卷积/深度可分卷积Depthwise Separable Conv.md"
     }
   ],
   "omittedPaths": [],

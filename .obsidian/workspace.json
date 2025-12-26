@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01工具/sftp.md",
+                "file": "01工具/lftp.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "sftp"
+              "title": "lftp"
             }
           }
         ]
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 319.5023624897003
+    "width": 413.5004062652588
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -196,7 +196,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -205,6 +204,7 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "random-note:开始漫游笔记": false,
       "workspaces:管理工作区布局": false,
+      "bases:创建新数据库": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "mermaid-tools:Open Mermaid Toolbar": false
@@ -212,33 +212,35 @@
   },
   "active": "c816e06be4d7512c",
   "lastOpenFiles": [
-    "未命名.base",
-    "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md",
-    "01工具/Screen.md",
-    "01工具/Anaconda/50系显卡conda环境设置.md",
     "01工具/Anaconda/创建环境.md",
-    "01工具/Anaconda/更新conda.md",
-    "01工具/Anaconda/删除环境.md",
-    "01工具/Anaconda/cmd使用conda环境.md",
-    "01工具/Git.md",
+    "01工具/Anaconda/WSL安装miniAnaconda.md",
+    "01工具/Anaconda/50系显卡conda环境设置.md",
+    "01工具/lftp.md",
+    "01工具/rsync.md",
+    "01工具/挂载/Ubuntu文件夹挂载到Windows.md",
+    "01工具/挂载/Windows文件挂载到Windows.md",
     "01工具/sftp.md",
-    "语音/语音框架/01_前端信号处理/分割/EPD.md",
-    "语音/语音框架/前端信号处理层/多通道处理/嵌入和波束形成：用于多通道语音增强的全神经因果波束形成.md",
-    "语音/语音框架/01_前端信号处理/多通道处理/Beamforming.md",
-    "语音/语音框架/06_自监督预训练/README.md",
+    "01工具/Screen.md",
+    "06NN系列/08计算效率/04_模型设计效率综述.md",
+    "06NN系列/08计算效率/03_访存成本_MAC.md",
+    "06NN系列/08计算效率/02_计算量_FLOPs.md",
+    "06NN系列/08计算效率/01_参数量_Params.md",
+    "06NN系列/01卷积/设计模型的指标.md",
+    "06NN系列/08计算效率",
+    "06NN系列/01卷积/感受野计算.md",
+    "06NN系列/01卷积/卷积的参数.md",
+    "06NN系列/01卷积/常规卷积.md",
+    "06NN系列/01卷积/标准化卷积层（StdConv2d）.md",
+    "06NN系列/01卷积/分组卷积.md",
+    "06NN系列/01卷积/卷积计算量.md",
+    "06NN系列/01卷积/MAC.md",
+    "02模型/循环神经网络（RNN）/GRU(门控循环单元).md",
+    "02模型/循环神经网络（RNN）/BPTT（Backpropagation Through Time，随时间反向传播）.md",
+    "02模型/循环神经网络（RNN）/循环神经网络的结构.excalidraw.md",
+    "01工具/Git.md",
+    "01工具/WSL（Windows Subsystem for Linux）.md",
+    "未命名.base",
     "语音/语音系统架构.drawio",
-    "语音/语音框架/05_端到端模型/README.md",
-    "语音/语音框架/04_响应生成/TTS/README.md",
-    "语音/语音框架/04_响应生成/NLG/README.md",
-    "语音/语音框架/04_响应生成/AudioCodec/README.md",
-    "语音/语音框架/03_对话与知识/NLU/README.md",
-    "语音/语音框架/03_对话与知识/LLM/README.md",
-    "语音/语音框架/03_对话与知识/DM/README.md",
-    "语音/语音框架/03_对话与知识/知识层/README.md",
-    "语音/语音框架/02_语音理解/语音属性/SER.md",
-    "语音/语音框架/02_语音理解/语音属性/LID.md",
-    "语音/语音框架/02_语音理解/语音属性/AED.md",
-    "语音/语音框架/02_语音理解/语音分离/README.md",
     "语音/语音.drawio",
     "语音/语音框架/自然语音生成层",
     "语音/语音框架/语音合成层",
@@ -246,10 +248,8 @@
     "语音/语音框架/对话管理层",
     "语音/语音框架/自然语音理解层",
     "语音/语音框架/前端信号处理层",
-    "语音/语音框架/语音理解层",
     "语音/语音识别框架/语音识别基本框架.canvas",
     "assets/image-20241015210459378.png",
-    "课本/现代信号处理/自适应滤波/03_RLS算法_代码.ipynb",
     "波束方向图_极坐标_LCMV_M_8_d_mic_1_phi_0.png",
     "assets/architecture.png",
     "assets/Pasted image 20250915214917.png",
