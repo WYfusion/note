@@ -1,6 +1,182 @@
 {
   "recentFiles": [
     {
+      "basename": "03-Ollama完整部署实战",
+      "path": "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md"
+    },
+    {
+      "basename": "02-ollama镜像、容器获取",
+      "path": "01工具/Docker/12-使用ollama部署大模型/02-ollama镜像、容器获取.md"
+    },
+    {
+      "basename": "01-NVIDIA Container Toolkit的缺失",
+      "path": "01工具/Docker/12-使用ollama部署大模型/01-NVIDIA Container Toolkit的缺失.md"
+    },
+    {
+      "basename": "01-Volume与Bind Mount",
+      "path": "01工具/Docker/06-存储/01-Volume与Bind Mount.md"
+    },
+    {
+      "basename": "Multi-query attention(多查询注意力)、Grouped-query attention(分组查询注意力)",
+      "path": "02模型/Transformer/Multi-query attention(多查询注意力)、Grouped-query attention(分组查询注意力).md"
+    },
+    {
+      "basename": "Multi-Head Self-Attention",
+      "path": "02模型/Transformer/Multi-Head Self-Attention.md"
+    },
+    {
+      "basename": "基础知识",
+      "path": "课本/现代信号处理/现代数学信号处理基本概念/基础知识.md"
+    },
+    {
+      "basename": "00-术语表",
+      "path": "01工具/Docker/00-术语表.md"
+    },
+    {
+      "basename": "Docker 笔记索引",
+      "path": "01工具/Docker/Docker 笔记索引.md"
+    },
+    {
+      "basename": "说话人追踪 (Speaker Tracking)",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/SpeakerTracking/说话人追踪 (Speaker Tracking).md"
+    },
+    {
+      "basename": "去混响 (Dereverberation)",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/去混响 (Dereverberation).md"
+    },
+    {
+      "basename": "盲源分离BSS",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/BSS/盲源分离BSS.md"
+    },
+    {
+      "basename": "README",
+      "path": "语音/语音框架/README.md"
+    },
+    {
+      "basename": "自适应滤波",
+      "path": "课本/现代信号处理/自适应滤波/自适应滤波.md"
+    },
+    {
+      "basename": "Cross Attention",
+      "path": "02模型/Transformer/Cross Attention.md"
+    },
+    {
+      "basename": "BLEU Score",
+      "path": "02模型/Transformer/BLEU Score.md"
+    },
+    {
+      "basename": "02-containerd与镜像概念",
+      "path": "01工具/Docker/11-与K8s云原生衔接（可选）/02-containerd与镜像概念.md"
+    },
+    {
+      "basename": "02-compose.yaml规范与最佳实践",
+      "path": "01工具/Docker/07-Compose/02-compose.yaml规范与最佳实践.md"
+    },
+    {
+      "basename": "03-开发环境模板",
+      "path": "01工具/Docker/07-Compose/03-开发环境模板.md"
+    },
+    {
+      "basename": "01-DockerCompose快速上手",
+      "path": "01工具/Docker/07-Compose/01-DockerCompose快速上手.md"
+    },
+    {
+      "basename": "02-数据备份与迁移",
+      "path": "01工具/Docker/06-存储/02-数据备份与迁移.md"
+    },
+    {
+      "basename": "03-Windows路径挂载注意事项",
+      "path": "01工具/Docker/06-存储/03-Windows路径挂载注意事项.md"
+    },
+    {
+      "basename": "03-DNS与服务发现",
+      "path": "01工具/Docker/05-网络/03-DNS与服务发现.md"
+    },
+    {
+      "basename": "02-端口映射与连通性",
+      "path": "01工具/Docker/05-网络/02-端口映射与连通性.md"
+    },
+    {
+      "basename": "01-Docker网络模型",
+      "path": "01工具/Docker/05-网络/01-Docker网络模型.md"
+    },
+    {
+      "basename": "01-容器命令",
+      "path": "01工具/Docker/04-容器/01-容器命令.md"
+    },
+    {
+      "basename": "02-容器生命周期与状态机",
+      "path": "01工具/Docker/04-容器/02-容器生命周期与状态机.md"
+    },
+    {
+      "basename": "04-日志与可观测性",
+      "path": "01工具/Docker/04-容器/04-日志与可观测性.md"
+    },
+    {
+      "basename": "03-资源限制与隔离",
+      "path": "01工具/Docker/04-容器/03-资源限制与隔离.md"
+    },
+    {
+      "basename": "02-Docker安装-Linux",
+      "path": "01工具/Docker/01-安装与环境/02-Docker安装-Linux.md"
+    },
+    {
+      "basename": "03-Docker版本与组件",
+      "path": "01工具/Docker/01-安装与环境/03-Docker版本与组件.md"
+    },
+    {
+      "basename": "04-镜像加速与代理",
+      "path": "01工具/Docker/01-安装与环境/04-镜像加速与代理.md"
+    },
+    {
+      "basename": "01-镜像创建查询删除",
+      "path": "01工具/Docker/03-镜像/01-镜像创建查询删除.md"
+    },
+    {
+      "basename": "01-Docker安装-Windows-WSL2",
+      "path": "01工具/Docker/01-安装与环境/01-Docker安装-Windows-WSL2.md"
+    },
+    {
+      "basename": "06-清理与磁盘占用治理",
+      "path": "01工具/Docker/04-容器/06-清理与磁盘占用治理.md"
+    },
+    {
+      "basename": "05-排障清单",
+      "path": "01工具/Docker/04-容器/05-排障清单.md"
+    },
+    {
+      "basename": "07-镜像安全与扫描",
+      "path": "01工具/Docker/03-镜像/07-镜像安全与扫描.md"
+    },
+    {
+      "basename": "06-镜像导入导出与迁移",
+      "path": "01工具/Docker/03-镜像/06-镜像导入导出与迁移.md"
+    },
+    {
+      "basename": "05-镜像标签与版本策略",
+      "path": "01工具/Docker/03-镜像/05-镜像标签与版本策略.md"
+    },
+    {
+      "basename": "04-构建缓存与BuildKit",
+      "path": "01工具/Docker/03-镜像/04-构建缓存与BuildKit.md"
+    },
+    {
+      "basename": "03-多阶段构建与精简镜像",
+      "path": "01工具/Docker/03-镜像/03-多阶段构建与精简镜像.md"
+    },
+    {
+      "basename": "02-Dockerfile语法速查",
+      "path": "01工具/Docker/03-镜像/02-Dockerfile语法速查.md"
+    },
+    {
+      "basename": "03-命名空间与Cgroups速记",
+      "path": "01工具/Docker/02-基础概念/03-命名空间与Cgroups速记.md"
+    },
+    {
+      "basename": "01-Docker简单使用",
+      "path": "01工具/Docker/02-基础概念/01-Docker简单使用.md"
+    },
+    {
       "basename": "lftp",
       "path": "01工具/lftp.md"
     },
@@ -23,182 +199,6 @@
     {
       "basename": "Ubuntu文件夹挂载到Windows",
       "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
-    },
-    {
-      "basename": "Windows文件挂载到Windows",
-      "path": "01工具/挂载/Windows文件挂载到Windows.md"
-    },
-    {
-      "basename": "sftp",
-      "path": "01工具/sftp.md"
-    },
-    {
-      "basename": "Screen",
-      "path": "01工具/Screen.md"
-    },
-    {
-      "basename": "04_模型设计效率综述",
-      "path": "06NN系列/08计算效率/04_模型设计效率综述.md"
-    },
-    {
-      "basename": "03_访存成本_MAC",
-      "path": "06NN系列/08计算效率/03_访存成本_MAC.md"
-    },
-    {
-      "basename": "02_计算量_FLOPs",
-      "path": "06NN系列/08计算效率/02_计算量_FLOPs.md"
-    },
-    {
-      "basename": "01_参数量_Params",
-      "path": "06NN系列/08计算效率/01_参数量_Params.md"
-    },
-    {
-      "basename": "设计模型的指标",
-      "path": "06NN系列/01卷积/设计模型的指标.md"
-    },
-    {
-      "basename": "感受野计算",
-      "path": "06NN系列/01卷积/感受野计算.md"
-    },
-    {
-      "basename": "卷积的参数",
-      "path": "06NN系列/01卷积/卷积的参数.md"
-    },
-    {
-      "basename": "常规卷积",
-      "path": "06NN系列/01卷积/常规卷积.md"
-    },
-    {
-      "basename": "标准化卷积层（StdConv2d）",
-      "path": "06NN系列/01卷积/标准化卷积层（StdConv2d）.md"
-    },
-    {
-      "basename": "分组卷积",
-      "path": "06NN系列/01卷积/分组卷积.md"
-    },
-    {
-      "basename": "卷积计算量",
-      "path": "06NN系列/01卷积/卷积计算量.md"
-    },
-    {
-      "basename": "MAC",
-      "path": "06NN系列/01卷积/MAC.md"
-    },
-    {
-      "basename": "GRU(门控循环单元)",
-      "path": "02模型/循环神经网络（RNN）/GRU(门控循环单元).md"
-    },
-    {
-      "basename": "BPTT（Backpropagation Through Time，随时间反向传播）",
-      "path": "02模型/循环神经网络（RNN）/BPTT（Backpropagation Through Time，随时间反向传播）.md"
-    },
-    {
-      "basename": "循环神经网络的结构.excalidraw",
-      "path": "02模型/循环神经网络（RNN）/循环神经网络的结构.excalidraw.md"
-    },
-    {
-      "basename": "Git",
-      "path": "01工具/Git.md"
-    },
-    {
-      "basename": "WSL（Windows Subsystem for Linux）",
-      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
-    },
-    {
-      "basename": "移动与重命名",
-      "path": "01工具/linux/移动与重命名.md"
-    },
-    {
-      "basename": "复制",
-      "path": "01工具/linux/复制.md"
-    },
-    {
-      "basename": "删除",
-      "path": "01工具/linux/删除.md"
-    },
-    {
-      "basename": "导航与创建",
-      "path": "01工具/linux/导航与创建.md"
-    },
-    {
-      "basename": "00_场景预设",
-      "path": "01工具/linux/00_场景预设.md"
-    },
-    {
-      "basename": "权限管理",
-      "path": "01工具/linux/权限管理.md"
-    },
-    {
-      "basename": "管道与重定向",
-      "path": "01工具/linux/管道与重定向.md"
-    },
-    {
-      "basename": "文件夹压缩",
-      "path": "01工具/linux/文件夹压缩.md"
-    },
-    {
-      "basename": "检测",
-      "path": "01工具/linux/检测.md"
-    },
-    {
-      "basename": "导出导入环境",
-      "path": "01工具/Anaconda/导出导入环境.md"
-    },
-    {
-      "basename": "更新conda",
-      "path": "01工具/Anaconda/更新conda.md"
-    },
-    {
-      "basename": "删除环境",
-      "path": "01工具/Anaconda/删除环境.md"
-    },
-    {
-      "basename": "cmd使用conda环境",
-      "path": "01工具/Anaconda/cmd使用conda环境.md"
-    },
-    {
-      "basename": "修复Markdown中重复的LaTeX错误",
-      "path": "01工具/修复Markdown中重复的LaTeX错误.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.base"
-    },
-    {
-      "basename": "逐点取最大值",
-      "path": "课本/最优化/优化数学基础——凸集/保凸运算/逐点取最大值.md"
-    },
-    {
-      "basename": "EPD",
-      "path": "语音/语音框架/01_前端信号处理/分割/EPD.md"
-    },
-    {
-      "basename": "嵌入和波束形成：用于多通道语音增强的全神经因果波束形成",
-      "path": "语音/语音框架/前端信号处理层/多通道处理/嵌入和波束形成：用于多通道语音增强的全神经因果波束形成.md"
-    },
-    {
-      "basename": "Beamforming",
-      "path": "语音/语音框架/01_前端信号处理/多通道处理/Beamforming.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/06_自监督预训练/README.md"
-    },
-    {
-      "basename": "语音系统架构",
-      "path": "语音/语音系统架构.drawio"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/05_端到端模型/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/04_响应生成/TTS/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "语音/语音框架/04_响应生成/NLG/README.md"
     }
   ],
   "omittedPaths": [],
