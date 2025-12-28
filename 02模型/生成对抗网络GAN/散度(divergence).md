@@ -24,6 +24,9 @@
     - 这是原始GAN训练不稳定的重要原因之一。
 
 #### 2.2 **KL散度**（Kullback-Leibler Divergence）
+
+^10719f
+
 $$\mathrm{KL}(P\parallel Q)=\sum P(x)\log\frac{P(x)}{Q(x)}$$
 **问题**：不对称性$\mathrm{KL}(P\parallel Q)\neq\mathrm{KL}(Q\parallel P)$，且当$Q(x)=0$而$P(x)>0$时发散（趋于无穷大），导致训练不稳定。 ^dd4e09
 

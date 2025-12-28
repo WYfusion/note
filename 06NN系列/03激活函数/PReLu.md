@@ -1,13 +1,48 @@
-### PReLU（参数化 ReLU，Parametric ReLU）
+# PReLU 激活函数 (Parametric ReLU)
 
-**提出时间**：2015 年由何凯明等人在论文《Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification》中提出。
-和[[Leaky ReLU]]激活函数很像，但是这里将固定的$\alpha$变成了可学习的参数了$$f(x)=\begin{cases}x,&\mathrm{if~}x\geq0\\\alpha x,&\mathrm{if~}x<0&&\end{cases}$$
-其中 **α 是一个可学习的参数**（通常初始化为 0，通过反向传播优化）。
-- **特点**：
-    - α 可以是**全局参数**（所有神经元共享一个 α），也可以是**按通道 / 按神经元的局部参数**（如 ResNet 中每个通道有独立的 α）。
-    - 自适应学习负区间斜率，理论上能更好拟合数据分布，避免固定斜率的经验性偏差。
-    - 增加了少量计算量（需优化 α 参数），但在深层网络中效果显著（如 ImageNet 分类任务中性能提升）。
-- **变种**：
-    - **CPReLU**：对称的 PReLU（α 在正负区间对称，较少使用）。
-    - **APReLU**：自适应 PReLU，α 在训练过程中动态调整。
+## 1. 定义与公式
+**PReLU (Parametric Rectified Linear Unit)** 是 Leaky ReLU 的改进版。它将负区间的斜率 $\alpha$ 作为一个**可学习的参数**，而不是固定的超参数。
+
+**公式**：
+$$
+f(x) = \begin{cases}
+x, & x \geq 0 \\
+\alpha x, & x < 0
+\end{cases}
+$$
+其中 $\alpha$ 是通过反向传播学习得到的参数。
+
+## 2. 导函数
+
+**对输入 $x$ 的导数**：
+$$
+\frac{\partial f(x)}{\partial x} = \begin{cases}
+1, & x \geq 0 \\
+\alpha, & x < 0
+\end{cases}
+$$
+
+**对参数 $\alpha$ 的导数**（用于更新 $\alpha$）：
+$$
+\frac{\partial f(x)}{\partial \alpha} = \begin{cases}
+0, & x \geq 0 \\
+x, & x < 0
+\end{cases}
+$$
+这意味着只有当输入为负时，$\alpha$ 才会得到更新。
+
+## 3. 优缺点分析
+
+### 优点
+1.  **自适应性**：模型可以根据数据自动学习最佳的负区间斜率，避免了人工选择 $\alpha$ 的盲目性。
+2.  **性能提升**：在 ImageNet 等大型数据集上，PReLU 证明了比 ReLU 和 Leaky ReLU 有更好的性能（何凯明等，2015）。
+3.  **计算代价小**：增加的参数量和计算量非常小（每个通道仅增加一个参数）。
+
+### 缺点
+1.  **过拟合风险**：由于引入了额外的参数，在小数据集上可能会增加过拟合的风险（尽管风险较小）。
+2.  **实现稍复杂**：相比无参的 ReLU，需要维护参数 $\alpha$ 的更新。
+
+## 4. 变种
+-   **Channel-wise PReLU**：每个通道共享一个 $\alpha$（最常用）。
+-   **Element-wise PReLU**：每个神经元有一个独立的 $\alpha$。
 
