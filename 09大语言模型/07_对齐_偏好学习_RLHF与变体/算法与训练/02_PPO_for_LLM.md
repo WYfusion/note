@@ -1,4 +1,4 @@
-# PPO (Proximal Policy Optimization) for LLM
+# PPO (Proximal Policy Optimization，近端策略优化) for LLM
 
 ## 1. RLHF 核心流程
 RLHF（Reinforcement Learning from Human Feedback）通常包含三个阶段：SFT -> RM Training -> PPO。
@@ -20,7 +20,7 @@ $$ A_t = \delta_t + (\gamma \lambda) \delta_{t+1} + \dots $$
 
 ### 2.3 PPO Clip Loss
 $$ \mathcal{L}^{CLIP}(\theta) = \mathbb{E}_t [\min(r_t(\theta)A_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon)A_t)] $$
-其中 (\theta)$ 是新旧策略的概率比。
+其中 $(\theta)$ 是新旧策略的概率比。
 
 ## 3. 语音生成中的 PPO (Audio PPO)
 将 PPO 应用于 Audio LLM（如 AudioGen, MusicGen, VALL-E）时存在特定挑战。

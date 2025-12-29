@@ -1,7 +1,7 @@
 # RLHF 算法与训练
 
 本章节涵盖了从奖励模型训练到强化学习优化的全流程，详细解析了 PPO 算法及其变体 DPO，并针对语音大模型的长序列与多模态特性提供了优化方案。
-
+## 基于人类反馈的强化学习(Reinforcement Learning From Human Feedback,RLHF)
 ## 目录
 
 ### [01_RewardModel_训练与校准.md](./01_RewardModel_训练与校准.md)

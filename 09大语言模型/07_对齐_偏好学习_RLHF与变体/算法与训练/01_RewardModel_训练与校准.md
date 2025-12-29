@@ -6,7 +6,7 @@
 ### 1.1 Bradley-Terry 模型
 假设人类在两个选项 $ 和 $ 之间选择 $ 的概率由两者的奖励差决定：
 $$ P(y_w \succ y_l | x) = \sigma(r_\phi(x, y_w) - r_\phi(x, y_l)) $$
-其中 $\sigma$ 是 Sigmoid 函数， \phi$ 是参数为 $\phi$ 的奖励模型。
+其中 $\sigma$ 是 Sigmoid 函数， $\phi$ 是参数为 $\phi$ 的奖励模型。
 
 ### 1.2 损失函数
 训练 RM 的目标是最小化负对数似然（Negative Log-Likelihood）：

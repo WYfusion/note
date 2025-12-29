@@ -1,16 +1,164 @@
 {
   "recentFiles": [
     {
-      "basename": "UV",
-      "path": "01工具/UV.md"
+      "basename": "01_RewardModel_训练与校准",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/01_RewardModel_训练与校准.md"
     },
     {
-      "basename": "01_常见基准_MMLU_GSM8K_HELLASWAG",
-      "path": "09大语言模型/12_评测_安全_可靠性/评测体系/01_常见基准_MMLU_GSM8K_HELLASWAG.md"
+      "basename": "索引_RLHF算法与训练",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/索引_RLHF算法与训练.md"
+    },
+    {
+      "basename": "索引_对齐与偏好学习_RLHF",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/索引_对齐与偏好学习_RLHF.md"
+    },
+    {
+      "basename": "01_偏好对_排序_标注一致性",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/01_偏好对_排序_标注一致性.md"
+    },
+    {
+      "basename": "01_KVCache_原理与显存",
+      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/01_KVCache_原理与显存.md"
+    },
+    {
+      "basename": "01_Greedy_BeamSearch",
+      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/01_Greedy_BeamSearch.md"
+    },
+    {
+      "basename": "01_评测全景_自动与人工",
+      "path": "09大语言模型/12_评测_安全_可靠性/01_评测全景_自动与人工.md"
+    },
+    {
+      "basename": "索引_安全与红队",
+      "path": "09大语言模型/12_评测_安全_可靠性/安全与红队/索引_安全与红队.md"
     },
     {
       "basename": "01_提示注入_越狱_数据泄露",
       "path": "09大语言模型/12_评测_安全_可靠性/安全与红队/01_提示注入_越狱_数据泄露.md"
+    },
+    {
+      "basename": "01_通用语言模型基准",
+      "path": "09大语言模型/12_评测_安全_可靠性/评测体系/01_通用语言模型基准.md"
+    },
+    {
+      "basename": "02_PPO_for_LLM",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/02_PPO_for_LLM.md"
+    },
+    {
+      "basename": "04_IA3",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/04_IA3.md"
+    },
+    {
+      "basename": "03_Adapter_Tuning",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/03_Adapter_Tuning.md"
+    },
+    {
+      "basename": "02_PromptTuning_PrefixTuning_P_Tuning",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/02_PromptTuning_PrefixTuning_P_Tuning.md"
+    },
+    {
+      "basename": "索引_指令微调与参数高效微调",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/索引_指令微调与参数高效微调.md"
+    },
+    {
+      "basename": "01_SFT总览_目标与范式",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/01_SFT总览_目标与范式.md"
+    },
+    {
+      "basename": "02_模板化_ChatML_系统提示词",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/02_模板化_ChatML_系统提示词.md"
+    },
+    {
+      "basename": "01_指令数据设计_单轮多轮_角色",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/01_指令数据设计_单轮多轮_角色.md"
+    },
+    {
+      "basename": "01_LoRA_QLoRA",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/01_LoRA_QLoRA.md"
+    },
+    {
+      "basename": "索引_PEFT方法",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/索引_PEFT方法.md"
+    },
+    {
+      "basename": "02_语音大模型基准",
+      "path": "09大语言模型/12_评测_安全_可靠性/评测体系/02_语音大模型基准.md"
+    },
+    {
+      "basename": "语音大模型评价指标",
+      "path": "09大语言模型/12_评测_安全_可靠性/指标/语音大模型评价指标.md"
+    },
+    {
+      "basename": "WER_CER",
+      "path": "09大语言模型/12_评测_安全_可靠性/指标/WER_CER.md"
+    },
+    {
+      "basename": "ROUGE",
+      "path": "09大语言模型/12_评测_安全_可靠性/指标/ROUGE.md"
+    },
+    {
+      "basename": "BLEU Score",
+      "path": "09大语言模型/12_评测_安全_可靠性/指标/BLEU Score.md"
+    },
+    {
+      "basename": "02_去重_清洗_过滤_质量指标",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/数据工程/02_去重_清洗_过滤_质量指标.md"
+    },
+    {
+      "basename": "01_从统计语言模型到神经LM",
+      "path": "09大语言模型/02_发展史与关键里程碑/01_从统计语言模型到神经LM.md"
+    },
+    {
+      "basename": "索引_评测_安全_可靠性",
+      "path": "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md"
+    },
+    {
+      "basename": "索引_SFT数据与格式",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/索引_SFT数据与格式.md"
+    },
+    {
+      "basename": "04_核心术语表与缩写",
+      "path": "09大语言模型/01_概览与学习路线/04_核心术语表与缩写.md"
+    },
+    {
+      "basename": "03_ZeRO_FSDP_显存优化",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/03_ZeRO_FSDP_显存优化.md"
+    },
+    {
+      "basename": "02_TensorParallel_PipelineParallel",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/02_TensorParallel_PipelineParallel.md"
+    },
+    {
+      "basename": "01_DataParallel_DDP",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/01_DataParallel_DDP.md"
+    },
+    {
+      "basename": "索引_分布式与并行",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/索引_分布式与并行.md"
+    },
+    {
+      "basename": "01_RoPE扩展_NTK_Scaling",
+      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/01_RoPE扩展_NTK_Scaling.md"
+    },
+    {
+      "basename": "02_TopK_TopP_温度_重复惩罚",
+      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/02_TopK_TopP_温度_重复惩罚.md"
+    },
+    {
+      "basename": "02_T5类_EncoderDecoder",
+      "path": "09大语言模型/04_Transformer核心结构/模型家族_Encoder_Decoder_DecoderOnly/02_T5类_EncoderDecoder.md"
+    },
+    {
+      "basename": "02_位置编码_绝对_相对_RoPE_ALiBi",
+      "path": "09大语言模型/03_语言建模与Token基础/Embedding与位置编码/02_位置编码_绝对_相对_RoPE_ALiBi.md"
+    },
+    {
+      "basename": "02_去噪自编码_Denoising_T5",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/训练目标与任务/02_去噪自编码_Denoising_T5.md"
+    },
+    {
+      "basename": "UV",
+      "path": "01工具/UV.md"
     },
     {
       "basename": "01_TreeOfThought_SelfConsistency",
@@ -51,154 +199,6 @@
     {
       "basename": "02_模型导出与构建_权重转换流程",
       "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/TensorRT-LLM/02_模型导出与构建_权重转换流程.md"
-    },
-    {
-      "basename": "03_插件与算子_GEMM_Attention",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/TensorRT-LLM/03_插件与算子_GEMM_Attention.md"
-    },
-    {
-      "basename": "01_TensorRT-LLM定位_与ONNX_TensorRT区别",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/TensorRT-LLM/01_TensorRT-LLM定位_与ONNX_TensorRT区别.md"
-    },
-    {
-      "basename": "索引_HF_Transformers与PyTorch",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/索引_HF_Transformers与PyTorch.md"
-    },
-    {
-      "basename": "06_工程化_权重格式与safetensors",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/06_工程化_权重格式与safetensors.md"
-    },
-    {
-      "basename": "04_KVCache与attention_mask实践",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/04_KVCache与attention_mask实践.md"
-    },
-    {
-      "basename": "03_批处理与吞吐_DataLoader与动态padding",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/03_批处理与吞吐_DataLoader与动态padding.md"
-    },
-    {
-      "basename": "01_模型加载_AutoModel_AutoTokenizer",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/01_模型加载_AutoModel_AutoTokenizer.md"
-    },
-    {
-      "basename": "02_generate解码参数_采样策略",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/02_generate解码参数_采样策略.md"
-    },
-    {
-      "basename": "01_从训练到上线_Release流程",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/01_从训练到上线_Release流程.md"
-    },
-    {
-      "basename": "索引_系统工程与部署_MLOps",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/索引_系统工程与部署_MLOps.md"
-    },
-    {
-      "basename": "01_代码生成_测试_重构_审查",
-      "path": "09大语言模型/14_行业应用与方案/代码与软件工程/01_代码生成_测试_重构_审查.md"
-    },
-    {
-      "basename": "01_KVCache_原理与显存",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/01_KVCache_原理与显存.md"
-    },
-    {
-      "basename": "02_PagedAttention_vLLM思路",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/02_PagedAttention_vLLM思路.md"
-    },
-    {
-      "basename": "索引_KVCache与加速",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/索引_KVCache与加速.md"
-    },
-    {
-      "basename": "02_检索增强_RAG与长上下文的关系",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/02_检索增强_RAG与长上下文的关系.md"
-    },
-    {
-      "basename": "01_RoPE扩展_NTK_Scaling",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/01_RoPE扩展_NTK_Scaling.md"
-    },
-    {
-      "basename": "02_TopK_TopP_温度_重复惩罚",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/02_TopK_TopP_温度_重复惩罚.md"
-    },
-    {
-      "basename": "01_Greedy_BeamSearch",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/01_Greedy_BeamSearch.md"
-    },
-    {
-      "basename": "01_偏好对_排序_标注一致性",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/01_偏好对_排序_标注一致性.md"
-    },
-    {
-      "basename": "索引_偏好数据与标注",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/索引_偏好数据与标注.md"
-    },
-    {
-      "basename": "01_RewardModel_训练与校准",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/01_RewardModel_训练与校准.md"
-    },
-    {
-      "basename": "02_PPO_for_LLM",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/02_PPO_for_LLM.md"
-    },
-    {
-      "basename": "03_DPO_IPO_KTO_ORPO_SimPO",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/03_DPO_IPO_KTO_ORPO_SimPO.md"
-    },
-    {
-      "basename": "索引_RLHF算法与训练",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/索引_RLHF算法与训练.md"
-    },
-    {
-      "basename": "索引_解码策略",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/索引_解码策略.md"
-    },
-    {
-      "basename": "索引_PEFT方法",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/索引_PEFT方法.md"
-    },
-    {
-      "basename": "02_PrefixTuning_PromptTuning_P_Tuning",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/02_PrefixTuning_PromptTuning_P_Tuning.md"
-    },
-    {
-      "basename": "01_LoRA_QLoRA",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/01_LoRA_QLoRA.md"
-    },
-    {
-      "basename": "02_学习率计划_Warmup_Cosine",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/训练稳定性与监控/02_学习率计划_Warmup_Cosine.md"
-    },
-    {
-      "basename": "索引_训练稳定性与监控",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/训练稳定性与监控/索引_训练稳定性与监控.md"
-    },
-    {
-      "basename": "01_DataParallel_DDP",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/01_DataParallel_DDP.md"
-    },
-    {
-      "basename": "01_指令数据设计_单轮多轮_角色",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/01_指令数据设计_单轮多轮_角色.md"
-    },
-    {
-      "basename": "索引_SFT数据与格式",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/索引_SFT数据与格式.md"
-    },
-    {
-      "basename": "03_GPT类_DecoderOnly",
-      "path": "09大语言模型/04_Transformer核心结构/模型家族_Encoder_Decoder_DecoderOnly/03_GPT类_DecoderOnly.md"
-    },
-    {
-      "basename": "02_Decoder_Only_GPT_VALL-E",
-      "path": "09大语言模型/04_Transformer核心结构/模型家族/02_Decoder_Only_GPT_VALL-E.md"
-    },
-    {
-      "basename": "03_优化器与数值稳定_AdamW_Lion_FusedAdam",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/03_优化器与数值稳定_AdamW_Lion_FusedAdam.md"
-    },
-    {
-      "basename": "02_ScalingLaws_Chinchilla_计算预算",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/02_ScalingLaws_Chinchilla_计算预算.md"
     }
   ],
   "omittedPaths": [],

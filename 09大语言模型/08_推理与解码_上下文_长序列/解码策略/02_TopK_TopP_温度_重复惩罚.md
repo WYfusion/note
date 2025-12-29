@@ -4,7 +4,7 @@
 与 Greedy/Beam Search 不同，采样策略根据概率分布随机选择下一个 Token，赋予模型创造力。
 
 ### 1.1 温度 (Temperature)
-通过调整 Softmax 前的 Logits 来控制分布的平滑程度：
+通过调整 Softmax 前的 Logits 来控制**分布**的平滑程度：
 $$ P_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 - **$T < 1$**：分布变尖（Sharpen），高概率 Token 被放大，生成更保守、确定。
 - **$T > 1$**：分布变平（Flatten），低概率 Token 机会增加，生成更多样、随机。
@@ -14,7 +14,7 @@ $$ P_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 - **作用**：切断长尾（Long Tail），防止生成极低概率的离谱内容。
 
 ### 1.3 Top-P (Nucleus) 采样
-从累积概率达到 $P$（如 0.9）的最小 Token 集合中采样。
+从累积概率达到 $P$（如 0.9）的**最小 Token 集合**中采样。
 - **优势**：相比 Top-K，Top-P 的候选集合大小是动态的。在确定性高时候选少，不确定时候选多。
 
 ## 2. 惩罚机制

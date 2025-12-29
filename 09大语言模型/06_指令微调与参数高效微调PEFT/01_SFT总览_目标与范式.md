@@ -1,6 +1,6 @@
 # SFT 总览：目标与范式
 
-预训练（Pre-training）赋予了模型广泛的知识，而**有监督微调（Supervised Fine-Tuning, SFT）**则教会模型如何遵循指令、进行对话以及完成特定任务。
+预训练（Pre-training）赋予了模型广泛的知识，而**有监督微调**（Supervised Fine-Tuning, SFT）则教会模型如何遵循指令、进行对话以及完成特定任务。
 
 ## 1. SFT 的核心目标
 
@@ -29,9 +29,9 @@ $$ \max_{\theta} \sum_{(x, y) \in \mathcal{D}} \log P(y | x; \theta) $$
 ### 2.2 语音指令微调 (Speech Instruction Tuning)
 *   **目标**: 让模型能执行包含语音的复杂指令。
 *   **数据**: 
-    *   Instruction: "请总结这段录音的内容：<Audio>"
-    *   Response: "这段录音讨论了量子力学的基本原理..."
-*   **全量微调 vs PEFT**: 通常使用 LoRA 微调 LLM 部分，或者同时微调 Projector。
+    *   Instruction: "请总结这段录音的内容：Audio
+    - Response: "这段录音讨论了量子力学的基本原理..."
+**全量微调 vs PEFT**: 通常使用 LoRA 微调 LLM 部分，或者同时微调 Projector。
 *   **代表模型**: Qwen-Audio, Speech-LLaMA。
 
 ### 2.3 语音生成微调 (TTS SFT)
