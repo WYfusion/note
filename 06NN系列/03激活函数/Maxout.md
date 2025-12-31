@@ -10,13 +10,14 @@ $$ f(x) = \max_{j \in [1, k]} (x^T W_j + b_j) $$
 
 通常 $k=2$ 时，Maxout 可以拟合 ReLU、Leaky ReLU、Abs 等函数。
 例如，如果 $W_1=1, b_1=0, W_2=0, b_2=0$，则 $f(x) = \max(x, 0) = \text{ReLU}(x)$。
+![[Pasted image 20251230105224.png|800]]
 
 ## 2. 导函数
 Maxout 的导数取决于哪个线性变换产生了最大值。
 $$ \frac{\partial f}{\partial x} = W_{m} $$
 其中 $m = \text{argmax}_{j} (x^T W_j + b_j)$。
 这类似于 ReLU 的分段线性梯度。
-
+![[Pasted image 20251230105231.png|800]]
 ## 3. 优缺点分析
 
 ### 优点

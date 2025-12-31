@@ -15,6 +15,7 @@ $$ \text{GLU}(x) = \sigma(xW + b) \otimes (xV + c) $$
 -   $\otimes$ 表示逐元素乘法 (Element-wise product / Hadamard product)。
 
 简单来说，GLU 学习决定哪些信息应该保留（门控值为 1），哪些应该被抑制（门控值为 0）。
+![[Pasted image 20251230105309.png|800]]
 
 ## 2. 导函数
 令 $g = xW+b$ (门控路径), $l = xV+c$ (线性路径)。
@@ -26,7 +27,7 @@ $$ \text{GLU}(x) = \sigma(xW + b) \otimes (xV + c) $$
     这表明如果门控打开（接近 1），梯度可以无损地通过线性路径反向传播，这有助于缓解梯度消失问题。
 2.  **通过门控路径 $g$ 的梯度**：
     $$ \frac{\partial y}{\partial g} = \sigma'(g) \odot l = \sigma(g)(1-\sigma(g)) \odot l $$
-
+![[Pasted image 20251230105320.png|800]]
 ## 3. 优缺点分析
 
 ### 优点

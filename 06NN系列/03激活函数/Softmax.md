@@ -11,6 +11,8 @@ $$ \text{Softmax}(z)_i = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}} $$
 在实际计算中，为了防止 $e^{z_i}$ 溢出，通常会减去输入向量中的最大值：
 $$ \text{Softmax}(z)_i = \frac{e^{z_i - \max(z)}}{\sum_{j=1}^{K} e^{z_j - \max(z)}} $$
 
+![[Pasted image 20251230105047.png|800]]
+
 ## 2. 导函数
 Softmax 的导数是一个雅可比矩阵（Jacobian Matrix）。
 令 $a_i = \text{Softmax}(z)_i$。
@@ -19,6 +21,7 @@ Softmax 的导数是一个雅可比矩阵（Jacobian Matrix）。
 $$ \frac{\partial a_i}{\partial z_j} = \begin{cases} a_i(1 - a_i), & \text{if } i = j \\ -a_i a_j, & \text{if } i \neq j \end{cases} $$
 可以用 Kronecker delta 符号表示为：
 $$ \frac{\partial a_i}{\partial z_j} = a_i (\delta_{ij} - a_j) $$
+![[Pasted image 20251230105057.png|800]]
 
 ## 3. 优缺点分析
 

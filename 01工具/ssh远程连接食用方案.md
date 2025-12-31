@@ -172,3 +172,49 @@ Host A5000
   Port 22
   IdentityFile ~/.ssh/id_rsa
 ```
+
+
+
+### 创建密钥
+```bash
+ssh-keygen -t rsa
+```
+这里可以设置路径、密钥名。设置完推荐不设置密码
+
+### 密钥公钥传输到目标主机
+- linux:
+```bash
+ssh-copy-id -p 2222 rtx5090@172.22.176.12
+```
+
+- windows
+```powershell
+ type $env:USERPROFILE\.ssh\id_rsa_wy_to_5090.pub | ssh -p 2222 rtx5090@172.22.176.12 "cat >> .ssh/authorized_keys"
+```
+也可以用其他方式，比如先查看公钥信息，然后向日葵等工具远程后黏贴到对应的文件的最后一行(追加的形式)
+### 发送端设置私钥信息
+```bash
+nano ~/.ssh/config
+```
+
+Host是任意取得名字、User是目标主机得用户名
+```bash
+Host rtx5090
+    HostName 172.22.176.12
+    User rtx5090
+    Port 2222
+    IdentityFile /home/gzhu/.ssh/id_rsa_3090-to-5090
+```
+
+### 设置配置文件权限
+```bash
+chmod 600 ~/.ssh/config
+```
+
+### 链接测试
+```bash
+ssh rtx5090
+```
+
+### 若复制私钥公钥到其他主机上
+Windows的私钥权限必须**仅用户**且权限是*只勾选***读取**就行

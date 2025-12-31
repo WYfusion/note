@@ -8,7 +8,7 @@ $$ f(x) = \ln(1 + e^x) $$
 
 **图像**：
 (Softplus 图像类似于 ReLU，但没有尖角，且在负区间平滑趋近于 0)
-
+![[Pasted image 20251230105118.png|800]]
 ## 2. 导函数
 Softplus 的导数恰好是 **Sigmoid** 函数。
 
@@ -17,6 +17,7 @@ $$ f'(x) = \frac{1}{1 + e^{-x}} = \sigma(x) $$
 
 **推导**：
 $$ (\ln(1+e^x))' = \frac{1}{1+e^x} \cdot (e^x) = \frac{e^x}{1+e^x} = \frac{1}{e^{-x} + 1} $$
+![[Pasted image 20251230105136.png|800]]
 
 ## 3. 优缺点分析
 
