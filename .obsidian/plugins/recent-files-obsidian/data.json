@@ -1,8 +1,160 @@
 {
   "recentFiles": [
     {
+      "basename": "Pasted image 20260105170705",
+      "path": "assets/Pasted image 20260105170705.png"
+    },
+    {
+      "basename": "wav2vec1、2",
+      "path": "02模型/自监督预训练/wav2vec1、2.md"
+    },
+    {
+      "basename": "删除环境",
+      "path": "01工具/Anaconda/删除环境.md"
+    },
+    {
+      "basename": "Gumbel-Softmax（Gumbel Softmax）",
+      "path": "02模型/自监督预训练/VAE/Gumbel-Softmax（Gumbel Softmax）.md"
+    },
+    {
+      "basename": "04_模型设计效率综述",
+      "path": "06NN系列/08计算效率/04_模型设计效率综述.md"
+    },
+    {
+      "basename": "03_访存成本_MAC",
+      "path": "06NN系列/08计算效率/03_访存成本_MAC.md"
+    },
+    {
+      "basename": "02_计算量_FLOPs",
+      "path": "06NN系列/08计算效率/02_计算量_FLOPs.md"
+    },
+    {
+      "basename": "01_参数量_Params",
+      "path": "06NN系列/08计算效率/01_参数量_Params.md"
+    },
+    {
+      "basename": "Decoder",
+      "path": "02模型/Transformer/Decoder.md"
+    },
+    {
+      "basename": "Encoder",
+      "path": "02模型/Transformer/Encoder.md"
+    },
+    {
+      "basename": "Cross Attention",
+      "path": "02模型/Transformer/Cross Attention.md"
+    },
+    {
+      "basename": "LSTM",
+      "path": "02模型/LSTM/LSTM.drawio"
+    },
+    {
+      "basename": "Self-supervised Learning Framework",
+      "path": "02模型/自监督预训练/Self-supervised Learning Framework.md"
+    },
+    {
+      "basename": "BERT（Bidirectional Encoder Representations from Transformers）",
+      "path": "02模型/自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）.md"
+    },
+    {
+      "basename": "特征解缠(Feature Disentanglement)",
+      "path": "02模型/自监督预训练/自监督基础/特征解缠(Feature Disentanglement).md"
+    },
+    {
+      "basename": "离散潜在表示(Discrete Latent Representation)",
+      "path": "02模型/自监督预训练/自监督基础/离散潜在表示(Discrete Latent Representation).md"
+    },
+    {
+      "basename": "异常检测Anomaly Detection",
+      "path": "02模型/自监督预训练/自监督基础/异常检测Anomaly Detection.md"
+    },
+    {
+      "basename": "Auto-encoder",
+      "path": "02模型/自监督预训练/自监督基础/Auto-encoder.md"
+    },
+    {
+      "basename": "VQ-VAE（Vector Quantized Variational Autoencoder，向量量化变分自编码器）",
+      "path": "02模型/自监督预训练/VAE/VQ-VAE（Vector Quantized Variational Autoencoder，向量量化变分自编码器）.md"
+    },
+    {
+      "basename": "VAE（Variational Autoencoder）",
+      "path": "02模型/自监督预训练/VAE/VAE（Variational Autoencoder）.md"
+    },
+    {
+      "basename": "02_TopK_TopP_温度_重复惩罚",
+      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/02_TopK_TopP_温度_重复惩罚.md"
+    },
+    {
+      "basename": "01_已有前置与本章边界",
+      "path": "09大语言模型/01_概览与学习路线/01_已有前置与本章边界.md"
+    },
+    {
+      "basename": "WER_CER",
+      "path": "09大语言模型/12_评测_安全_可靠性/指标/WER_CER.md"
+    },
+    {
+      "basename": "索引_评测_安全_可靠性",
+      "path": "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md"
+    },
+    {
+      "basename": "02_去重_清洗_过滤_质量指标",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/数据工程/02_去重_清洗_过滤_质量指标.md"
+    },
+    {
+      "basename": "02_混响对语音的影响",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/02_混响对语音的影响.md"
+    },
+    {
+      "basename": "01_RAG评估_命中率_忠实度_幻觉",
+      "path": "09大语言模型/09_RAG_检索增强生成/评估与调优/01_RAG评估_命中率_忠实度_幻觉.md"
+    },
+    {
+      "basename": "01_INT8_INT4_GPTQ_AWQ",
+      "path": "09大语言模型/13_系统工程与部署_MLOps/性能优化_量化_蒸馏/01_INT8_INT4_GPTQ_AWQ.md"
+    },
+    {
+      "basename": "01_Agent范式_ReAct_Reflexion",
+      "path": "09大语言模型/10_Agent与工具调用/01_Agent范式_ReAct_Reflexion.md"
+    },
+    {
+      "basename": "00_声源定位概述",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/SourceLocalization/00_声源定位概述.md"
+    },
+    {
+      "basename": "01_代码生成_测试_重构_审查",
+      "path": "09大语言模型/14_行业应用与方案/代码与软件工程/01_代码生成_测试_重构_审查.md"
+    },
+    {
+      "basename": "00_去混响概述",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/00_去混响概述.md"
+    },
+    {
+      "basename": "01_偏好对_排序_标注一致性",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/01_偏好对_排序_标注一致性.md"
+    },
+    {
+      "basename": "01_预训练全流程概览",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/01_预训练全流程概览.md"
+    },
+    {
+      "basename": "01_评测全景_自动与人工",
+      "path": "09大语言模型/12_评测_安全_可靠性/01_评测全景_自动与人工.md"
+    },
+    {
+      "basename": "04_量化_INT8_INT4_FP8流程",
+      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/TensorRT-LLM/04_量化_INT8_INT4_FP8流程.md"
+    },
+    {
       "basename": "02_PPO_for_LLM",
       "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/02_PPO_for_LLM.md"
+    },
+    {
+      "basename": "03_DPO_IPO_KTO_ORPO_SimPO",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/03_DPO_IPO_KTO_ORPO_SimPO.md"
+    },
+    {
+      "basename": "代理命令行",
+      "path": "01工具/同步传输工具/代理命令行.md"
     },
     {
       "basename": "Critic Model",
@@ -11,10 +163,6 @@
     {
       "basename": "PPO_RLHF_Comprehensive_Guide",
       "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/PPO_RLHF_Comprehensive_Guide.md"
-    },
-    {
-      "basename": "03_DPO_IPO_KTO_ORPO_SimPO",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/03_DPO_IPO_KTO_ORPO_SimPO.md"
     },
     {
       "basename": "索引_RLHF算法与训练",
@@ -31,10 +179,6 @@
     {
       "basename": "ssh远程连接食用方案",
       "path": "01工具/ssh远程连接食用方案.md"
-    },
-    {
-      "basename": "代理命令行",
-      "path": "01工具/同步传输工具/代理命令行.md"
     },
     {
       "basename": "Git",
@@ -55,150 +199,6 @@
     {
       "basename": "02_Chunking策略_滑窗_语义分块",
       "path": "09大语言模型/09_RAG_检索增强生成/索引与向量库/02_Chunking策略_滑窗_语义分块.md"
-    },
-    {
-      "basename": "03_批处理与吞吐_DataLoader与动态padding",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/03_批处理与吞吐_DataLoader与动态padding.md"
-    },
-    {
-      "basename": "索引_对齐与偏好学习_RLHF",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/索引_对齐与偏好学习_RLHF.md"
-    },
-    {
-      "basename": "rsync",
-      "path": "01工具/同步传输工具/rsync.md"
-    },
-    {
-      "basename": "Screen",
-      "path": "01工具/Screen.md"
-    },
-    {
-      "basename": "散度(divergence)",
-      "path": "02模型/生成对抗网络GAN/散度(divergence).md"
-    },
-    {
-      "basename": "深度学习早期研究",
-      "path": "课本/机器学习/深度学习早期研究.md"
-    },
-    {
-      "basename": "01_为什么需要对齐_价值与风险",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/01_为什么需要对齐_价值与风险.md"
-    },
-    {
-      "basename": "索引_偏好数据与标注",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/索引_偏好数据与标注.md"
-    },
-    {
-      "basename": "01_SFT总览_目标与范式",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/01_SFT总览_目标与范式.md"
-    },
-    {
-      "basename": "01_RewardModel_训练与校准",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/01_RewardModel_训练与校准.md"
-    },
-    {
-      "basename": "03_学习路线_从入门到精通",
-      "path": "09大语言模型/01_概览与学习路线/03_学习路线_从入门到精通.md"
-    },
-    {
-      "basename": "Softmax",
-      "path": "06NN系列/03激活函数/Softmax.md"
-    },
-    {
-      "basename": "GLU",
-      "path": "06NN系列/03激活函数/GLU.md"
-    },
-    {
-      "basename": "ELU（Exponential Linear Unit）",
-      "path": "06NN系列/03激活函数/ELU（Exponential Linear Unit）.md"
-    },
-    {
-      "basename": "GELU",
-      "path": "06NN系列/03激活函数/GELU.md"
-    },
-    {
-      "basename": "Maxout",
-      "path": "06NN系列/03激活函数/Maxout.md"
-    },
-    {
-      "basename": "PReLu",
-      "path": "06NN系列/03激活函数/PReLu.md"
-    },
-    {
-      "basename": "Softplus",
-      "path": "06NN系列/03激活函数/Softplus.md"
-    },
-    {
-      "basename": "ReLU",
-      "path": "06NN系列/03激活函数/ReLU.md"
-    },
-    {
-      "basename": "激活函数",
-      "path": "06NN系列/03激活函数/激活函数.md"
-    },
-    {
-      "basename": "双曲正切激活函数tanh()",
-      "path": "06NN系列/03激活函数/双曲正切激活函数tanh().md"
-    },
-    {
-      "basename": "Swish",
-      "path": "06NN系列/03激活函数/Swish.md"
-    },
-    {
-      "basename": "Sigmoid",
-      "path": "06NN系列/03激活函数/Sigmoid.md"
-    },
-    {
-      "basename": "SELU（Scaled Exponential Linear Unit）",
-      "path": "06NN系列/03激活函数/SELU（Scaled Exponential Linear Unit）.md"
-    },
-    {
-      "basename": "Mish",
-      "path": "06NN系列/03激活函数/Mish.md"
-    },
-    {
-      "basename": "Leaky ReLU",
-      "path": "06NN系列/03激活函数/Leaky ReLU.md"
-    },
-    {
-      "basename": "01_偏好对_排序_标注一致性",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/01_偏好对_排序_标注一致性.md"
-    },
-    {
-      "basename": "01_KVCache_原理与显存",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/01_KVCache_原理与显存.md"
-    },
-    {
-      "basename": "01_Greedy_BeamSearch",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/01_Greedy_BeamSearch.md"
-    },
-    {
-      "basename": "01_评测全景_自动与人工",
-      "path": "09大语言模型/12_评测_安全_可靠性/01_评测全景_自动与人工.md"
-    },
-    {
-      "basename": "索引_安全与红队",
-      "path": "09大语言模型/12_评测_安全_可靠性/安全与红队/索引_安全与红队.md"
-    },
-    {
-      "basename": "01_提示注入_越狱_数据泄露",
-      "path": "09大语言模型/12_评测_安全_可靠性/安全与红队/01_提示注入_越狱_数据泄露.md"
-    },
-    {
-      "basename": "01_通用语言模型基准",
-      "path": "09大语言模型/12_评测_安全_可靠性/评测体系/01_通用语言模型基准.md"
-    },
-    {
-      "basename": "04_IA3",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/04_IA3.md"
-    },
-    {
-      "basename": "03_Adapter_Tuning",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/03_Adapter_Tuning.md"
-    },
-    {
-      "basename": "02_PromptTuning_PrefixTuning_P_Tuning",
-      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/02_PromptTuning_PrefixTuning_P_Tuning.md"
     }
   ],
   "omittedPaths": [],
