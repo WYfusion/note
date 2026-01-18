@@ -80,6 +80,12 @@ fpsync -n 8 -o "-av --delete" /data/src/ /data/dst/
 # 启用数据压缩 (-z)
 fpsync -n 4 -o "-avz" /data/src/ root@192.168.1.100:/backup/dst/
 ```
+
+拉取到本地
+```bash
+fpsync -n 16 -v -o "-W --inplace --size-only" "/home/gzhu/Nas/黄茅海数据/2025/3-5/" /home/gzhu/data4/2025/3-5/
+```
+
 #### 查看磁盘负载
 ```bash
 iostat -dx 1

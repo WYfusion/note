@@ -53,13 +53,24 @@ $$ R(x, y) = r_\phi(x, y) - \beta \log \frac{\pi_\theta(y|x)}{\pi_{ref}(y|x)} $$
     *   **保持语言能力**：$\pi_{ref}$（SFT 模型）拥有良好的语言通顺度，约束 $\pi_\theta$ 靠近它能防止语言崩坏。
     *  **保持多样性和流利度：** 我们希望模型在学习“人类偏好”的同时，**不要忘记**它在预训练（Pre-training）和监督微调（SFT）阶段学到的语法、逻辑和世界知识。$\pi_{ref}$（Reference Model，通常是冻结的SFT模型）就是这个“锚点”。
 
+### 2.3 避免奖励黑客 (Avoiding Reward Hacking)
+常见“骗分”现象：输出语义无效、模板化或极端重复的内容，却能让 RM 打高分。缓解手段：
+* **KL/对数比惩罚**：保持与 $\pi_{ref}$ 接近，限制奇异分布（已体现在目标函数中）。
+* **熵奖励与温度下限**：通过熵奖励、下限温度或 top-p 下限，避免过早塌缩到单一“刷分”模式。
+* **长度/重复惩罚**：对异常短/长或高重复率输出加惩罚，避免模板刷分。
+* **混合或多源奖励**：将 RM 分数与规则/过滤器（安全、事实性、格式正确性）加权组合；在 RM 前增加拒答或安全过滤。
+* **动态 KL 系数/早停**：监控 KL、困惑度、毒性等指标，超阈值时提高 $\beta$ 或早停；训练中期可调节 $\beta$ 以平衡探索与回归。
+* **对抗与困难样本**：在 rollout 或评测中加入对抗 prompt，检查并惩罚“花式骗分”行为；定期刷新对抗集。
+* **RM 校准**：对 RM 做再标定（如温度缩放、分箱校准），减少高分尾部被滥用；必要时多 RM 取平均或取最小值。
+* **人工抽查与离线指标**：定期人工抽样，结合 BLEU/ROUGE/毒性/事实性等指标，防止只追 RM 分数。
+
 ---
 
 ## 3. PPO 完整训练过程概述
 
 ### Step 1: 采样 (Rollout)
 1.  从 Prompt 数据集中采样一个批次 $x$。
-2.  使用当前 Policy $\pi_{\theta_{old}}$ 生成响应 $y = [y_1, ..., y_T]$。
+2.  使用当前 Policy $\pi_{\theta_{old}}$ 生成响应 $y = [y_1, ..., y_T]$。指的是**上一次 PPO 迭代结束后冻结下来的策略参数**。
 3.  记录所有时刻的 $(s_t, a_t)$ 以及对数概率 $\log \pi_{\theta_{old}}(a_t|s_t)$。
 
 ### Step 2: 计算奖励 (Reward Calculation)
@@ -78,10 +89,17 @@ $$ R(x, y) = r_\phi(x, y) - \beta \log \frac{\pi_\theta(y|x)}{\pi_{ref}(y|x)} $$
 1.  计算新旧策略比率: $r_t(\theta) = \frac{\pi_\theta(a_t|s_t)}{\pi_{\theta_{old}}(a_t|s_t)}$。
 2.  **计算 Policy Loss (Actor 损失)**: 用于更新策略模型 $\pi_\theta$。
     $$ L^{CLIP} = \min(r_t \hat{A}_t, \text{clip}(r_t, 1-\epsilon, 1+\epsilon)\hat{A}_t) $$
-3.  **计算 Value Loss (Critic 损失)**: 用于更新评价模型 $V_\psi$。
+$\text{clip}(r_t, 1-\epsilon, 1+\epsilon)$ 部分：限制新策略要在一定的程度内更新迭代，即$r_t(\theta)$是有界的$[1-\epsilon, 1+\epsilon]$。见下文描述。
+3.  **加入熵奖励 (Entropy Bonus)**: 提升策略的探索性，避免概率过度塌缩。  
+    $$ L^{ENT} = - \alpha \cdot \mathbb{E}_t[ H(\pi_\theta(\cdot|s_t)) ] $$  
+    其中 $\alpha$ 是熵系数（常用 0.01-0.1），$H$ 表示策略分布的熵。
+4.  **计算 Value Loss (Critic 损失)**: 用于更新评价模型 $V_\psi$。
     $$ L^{VF} = (V_\psi(s_t) - V_{target})^2 $$
-    其中 $V_{target} = \hat{A}_t + V_{old}(s_t)$。
-4.  梯度下降更新 $\theta$ 和 $\psi$。
+    其中 $V_{target} = \hat{A}_t + V_{old}(s_t)$。  
+5.  **组合总损失并加权**:  
+    $$ L_{\text{total}} = -\mathbb{E}_t[L^{CLIP}] + c_v \cdot L^{VF} + c_e \cdot L^{ENT} $$  
+    * $c_v$ 控制价值损失权重（常用 0.5），$c_e$ 控制熵奖励权重（可与 $\alpha$ 相同或设置为 1）。  
+6.  梯度下降更新 $\theta$ 和 $\psi$。
 ---
 
 ## 4. PPO 算法核心推导 (Derivation)

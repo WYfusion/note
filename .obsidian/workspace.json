@@ -4,53 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "c7f60deee5638e51",
+        "id": "8b7aa2ba74d86235",
         "type": "tabs",
         "children": [
           {
-            "id": "c816e06be4d7512c",
+            "id": "f02e67ff197e3e2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01工具/同步传输工具/fpsync.md",
+                "file": "02模型/Transformer/07_序列对齐与CTC/02_核心机制_Blank与路径映射.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "fpsync"
-            }
-          },
-          {
-            "id": "bc7580088623f05f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "索引_评测_安全_可靠性"
-            }
-          },
-          {
-            "id": "bf1d3991c48c80c1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "assets/Pasted image 20260105170705.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260105170705"
+              "title": "02_核心机制_Blank与路径映射"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +55,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -181,13 +153,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01工具/UV.md",
+                "file": "02模型/自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "UV 的大纲"
+              "title": "BERT（Bidirectional Encoder Representations from Transformers） 的大纲"
             }
           },
           {
@@ -213,9 +185,19 @@
               "icon": "spreadsheet",
               "title": "Advanced Tables"
             }
+          },
+          {
+            "id": "bfc291a04768f1c4",
+            "type": "leaf",
+            "state": {
+              "type": "agent-chat-view",
+              "state": {},
+              "icon": "brain-cog",
+              "title": "Chat with agent"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -224,6 +206,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -232,60 +215,61 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "random-note:开始漫游笔记": false,
       "workspaces:管理工作区布局": false,
-      "bases:创建新数据库": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "ai-agent:Chat with Agent": false
     }
   },
-  "active": "4c09073e6e73543a",
+  "active": "f02e67ff197e3e2d",
   "lastOpenFiles": [
-    "02模型/自监督预训练/wav2vec1、2.md",
-    "01工具/Anaconda/删除环境.md",
+    "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md",
+    "AGENTS.md",
+    "新建文件夹",
+    "01工具/Docker/04-容器/01-容器命令.md",
+    "01工具/Docker/03-镜像/01-镜像创建查询删除.md",
+    "01工具/Docker/12-使用ollama部署大模型/02-ollama镜像、容器获取.md",
+    "01工具/Docker/12-使用ollama部署大模型/01-NVIDIA Container Toolkit的缺失.md",
+    "01工具/Docker/02-基础概念/01-Docker简单使用.md",
+    "01工具/Docker/01-安装与环境/01-Docker安装-Windows-WSL2.md",
+    "02模型/Transformer/07_序列对齐与CTC/01_背景_不定长序列对齐.md",
+    "Chats/chat-2026-01-18T12-18-05-906Z.md",
+    "Chats",
+    "Chats/chat-2026-01-18T02-16-41-913Z.md",
+    "Chats/chat-2026-01-18T02-16-41-485Z.md",
+    "Chats/chat-2026-01-18T02-16-40-887Z.md",
+    "Chats/chat-2026-01-13T00-54-11-318Z.md",
+    "09大语言模型/03_语言建模与Token基础/02_自回归AR_自编码AE_序列到序列Seq2Seq对比.md",
+    "02模型/自监督预训练/自监督预训练.canvas",
+    "01工具/同步传输工具/fpsync.md",
+    "02模型/Transformer/07_序列对齐与CTC/04_解码策略_从Greedy到BeamSearch.md",
+    "02模型/Transformer/07_序列对齐与CTC/03_算法原理_前向后向计算.md",
+    "02模型/Transformer/07_序列对齐与CTC/02_核心机制_Blank与路径映射.md",
+    "02模型/Transformer/07_序列对齐与CTC/05_CTC_vs_Attention_与总结.md",
+    "02模型/Transformer/00_阅读指引.md",
+    "02模型/Transformer/01_任务与范式/02_自回归与非自回归.md",
+    "01工具/Anaconda/50系显卡conda环境设置.md",
+    "02模型/Transformer/07_序列对齐与CTC",
+    "01工具/Anaconda/cmd使用conda环境.md",
+    "01工具/挂载/Ubuntu文件夹挂载到Windows.md",
+    "01工具/挂载/Windows文件挂载到Windows.md",
+    "02模型/Transformer/06_效率与扩展",
+    "02模型/Transformer/05_训练与推理",
+    "02模型/Transformer/04_模块与整体结构",
+    "02模型/Transformer/02_输入表示",
+    "02模型/Transformer/03_注意力机制",
+    "02模型/Transformer/01_任务与范式",
+    "02模型/Transformer",
+    "assets/Pasted image 20260109094448.png",
+    "assets/Pasted image 20260106210102.png",
+    "Pasted image 20260106210102.png",
     "assets/Pasted image 20260105170705.png",
-    "02模型/自监督预训练/VAE/Gumbel-Softmax（Gumbel Softmax）.md",
-    "06NN系列/08计算效率/04_模型设计效率综述.md",
-    "02模型/自监督预训练/未命名",
-    "02模型/自监督预训练/wav2vec",
-    "06NN系列/08计算效率/03_访存成本_MAC.md",
-    "06NN系列/08计算效率/02_计算量_FLOPs.md",
-    "06NN系列/08计算效率/01_参数量_Params.md",
-    "02模型/Transformer/Decoder.md",
-    "02模型/Transformer/Encoder.md",
-    "02模型/Transformer/Cross Attention.md",
-    "02模型/LSTM/LSTM.drawio",
-    "02模型/自监督预训练/Self-supervised Learning Framework.md",
-    "02模型/自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）.md",
-    "02模型/自监督预训练/自监督基础/特征解缠(Feature Disentanglement).md",
-    "02模型/自监督预训练/自监督基础/离散潜在表示(Discrete Latent Representation).md",
-    "02模型/自监督预训练/自监督基础/异常检测Anomaly Detection.md",
-    "02模型/自监督预训练/自监督基础/Auto-encoder.md",
-    "02模型/自监督预训练/自监督基础",
-    "02模型/自监督预训练/VAE/VQ-VAE（Vector Quantized Variational Autoencoder，向量量化变分自编码器）.md",
-    "02模型/自监督预训练/VAE/VAE（Variational Autoencoder）.md",
-    "09大语言模型/08_推理与解码_上下文_长序列/解码策略/02_TopK_TopP_温度_重复惩罚.md",
-    "09大语言模型/01_概览与学习路线/01_已有前置与本章边界.md",
-    "09大语言模型/12_评测_安全_可靠性/指标/WER_CER.md",
-    "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md",
-    "09大语言模型/05_预训练_数据_规模化训练/数据工程/02_去重_清洗_过滤_质量指标.md",
-    "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/02_混响对语音的影响.md",
-    "09大语言模型/09_RAG_检索增强生成/评估与调优/01_RAG评估_命中率_忠实度_幻觉.md",
-    "09大语言模型/13_系统工程与部署_MLOps/性能优化_量化_蒸馏/01_INT8_INT4_GPTQ_AWQ.md",
-    "01工具/同步传输工具",
     "Pasted image 20251230105831.png",
     "assets/Pasted image 20251230105320.png",
     "assets/Pasted image 20251230105309.png",
     "assets/Pasted image 20251230105231.png",
     "assets/Pasted image 20251230105224.png",
     "assets/Pasted image 20251230105200.png",
-    "assets/Pasted image 20251230105150.png",
-    "assets/Pasted image 20251230105136.png",
-    "assets/Pasted image 20251230105118.png",
-    "09大语言模型/12_评测_安全_可靠性/指标",
-    "09大语言模型/04_Transformer核心结构/高效注意力",
-    "09大语言模型/04_Transformer核心结构/模型家族",
-    "09大语言模型/03_语言建模与Token基础/Embedding与位置编码",
-    "09大语言模型/03_语言建模与Token基础/多模态Token化",
     "语音/语音识别框架/语音识别基本框架.canvas",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",

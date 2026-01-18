@@ -22,6 +22,12 @@ conda install cudnn -c nvidia
 ## 最后直接安装pytorch就行
 ```bash
 pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
+pip install --pre torchcodec --index-url https://download.pytorch.org/whl/nightly/cu128
 ```
 
 主要需要 CUDA Toolkit 支持sm_120
+
+
+```bash
+conda install -c conda-forge ffmpeg -y
+```

@@ -1,148 +1,168 @@
 {
   "recentFiles": [
     {
-      "basename": "Pasted image 20260105170705",
-      "path": "assets/Pasted image 20260105170705.png"
+      "basename": "02_核心机制_Blank与路径映射",
+      "path": "02模型/Transformer/07_序列对齐与CTC/02_核心机制_Blank与路径映射.md"
     },
     {
-      "basename": "wav2vec1、2",
-      "path": "02模型/自监督预训练/wav2vec1、2.md"
+      "basename": "03-Ollama完整部署实战",
+      "path": "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md"
     },
     {
-      "basename": "删除环境",
-      "path": "01工具/Anaconda/删除环境.md"
+      "basename": "01-容器命令",
+      "path": "01工具/Docker/04-容器/01-容器命令.md"
     },
     {
-      "basename": "Gumbel-Softmax（Gumbel Softmax）",
-      "path": "02模型/自监督预训练/VAE/Gumbel-Softmax（Gumbel Softmax）.md"
+      "basename": "01-镜像创建查询删除",
+      "path": "01工具/Docker/03-镜像/01-镜像创建查询删除.md"
     },
     {
-      "basename": "04_模型设计效率综述",
-      "path": "06NN系列/08计算效率/04_模型设计效率综述.md"
+      "basename": "02-ollama镜像、容器获取",
+      "path": "01工具/Docker/12-使用ollama部署大模型/02-ollama镜像、容器获取.md"
     },
     {
-      "basename": "03_访存成本_MAC",
-      "path": "06NN系列/08计算效率/03_访存成本_MAC.md"
+      "basename": "01-NVIDIA Container Toolkit的缺失",
+      "path": "01工具/Docker/12-使用ollama部署大模型/01-NVIDIA Container Toolkit的缺失.md"
     },
     {
-      "basename": "02_计算量_FLOPs",
-      "path": "06NN系列/08计算效率/02_计算量_FLOPs.md"
+      "basename": "01-Docker简单使用",
+      "path": "01工具/Docker/02-基础概念/01-Docker简单使用.md"
     },
     {
-      "basename": "01_参数量_Params",
-      "path": "06NN系列/08计算效率/01_参数量_Params.md"
+      "basename": "01-Docker安装-Windows-WSL2",
+      "path": "01工具/Docker/01-安装与环境/01-Docker安装-Windows-WSL2.md"
     },
     {
-      "basename": "Decoder",
-      "path": "02模型/Transformer/Decoder.md"
+      "basename": "01_背景_不定长序列对齐",
+      "path": "02模型/Transformer/07_序列对齐与CTC/01_背景_不定长序列对齐.md"
     },
     {
-      "basename": "Encoder",
-      "path": "02模型/Transformer/Encoder.md"
+      "basename": "02_自回归AR_自编码AE_序列到序列Seq2Seq对比",
+      "path": "09大语言模型/03_语言建模与Token基础/02_自回归AR_自编码AE_序列到序列Seq2Seq对比.md"
     },
     {
-      "basename": "Cross Attention",
-      "path": "02模型/Transformer/Cross Attention.md"
+      "basename": "自监督预训练",
+      "path": "02模型/自监督预训练/自监督预训练.canvas"
     },
     {
-      "basename": "LSTM",
-      "path": "02模型/LSTM/LSTM.drawio"
+      "basename": "fpsync",
+      "path": "01工具/同步传输工具/fpsync.md"
     },
     {
-      "basename": "Self-supervised Learning Framework",
-      "path": "02模型/自监督预训练/Self-supervised Learning Framework.md"
+      "basename": "04_解码策略_从Greedy到BeamSearch",
+      "path": "02模型/Transformer/07_序列对齐与CTC/04_解码策略_从Greedy到BeamSearch.md"
+    },
+    {
+      "basename": "03_算法原理_前向后向计算",
+      "path": "02模型/Transformer/07_序列对齐与CTC/03_算法原理_前向后向计算.md"
+    },
+    {
+      "basename": "05_CTC_vs_Attention_与总结",
+      "path": "02模型/Transformer/07_序列对齐与CTC/05_CTC_vs_Attention_与总结.md"
+    },
+    {
+      "basename": "00_阅读指引",
+      "path": "02模型/Transformer/00_阅读指引.md"
+    },
+    {
+      "basename": "02_自回归与非自回归",
+      "path": "02模型/Transformer/01_任务与范式/02_自回归与非自回归.md"
+    },
+    {
+      "basename": "50系显卡conda环境设置",
+      "path": "01工具/Anaconda/50系显卡conda环境设置.md"
+    },
+    {
+      "basename": "cmd使用conda环境",
+      "path": "01工具/Anaconda/cmd使用conda环境.md"
+    },
+    {
+      "basename": "Ubuntu文件夹挂载到Windows",
+      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+    },
+    {
+      "basename": "Windows文件挂载到Windows",
+      "path": "01工具/挂载/Windows文件挂载到Windows.md"
+    },
+    {
+      "basename": "rsync",
+      "path": "01工具/同步传输工具/rsync.md"
+    },
+    {
+      "basename": "lftp",
+      "path": "01工具/同步传输工具/lftp.md"
+    },
+    {
+      "basename": "ssh远程连接食用方案",
+      "path": "01工具/ssh远程连接食用方案.md"
+    },
+    {
+      "basename": "WSL（Windows Subsystem for Linux）",
+      "path": "01工具/WSL（Windows Subsystem for Linux）.md"
+    },
+    {
+      "basename": "UV",
+      "path": "01工具/UV.md"
     },
     {
       "basename": "BERT（Bidirectional Encoder Representations from Transformers）",
       "path": "02模型/自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）.md"
     },
     {
-      "basename": "特征解缠(Feature Disentanglement)",
-      "path": "02模型/自监督预训练/自监督基础/特征解缠(Feature Disentanglement).md"
+      "basename": "索引_PEFT方法",
+      "path": "09大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/索引_PEFT方法.md"
     },
     {
-      "basename": "离散潜在表示(Discrete Latent Representation)",
-      "path": "02模型/自监督预训练/自监督基础/离散潜在表示(Discrete Latent Representation).md"
+      "basename": "01_BPE_WordPiece_Unigram",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/01_BPE_WordPiece_Unigram.md"
     },
     {
-      "basename": "异常检测Anomaly Detection",
-      "path": "02模型/自监督预训练/自监督基础/异常检测Anomaly Detection.md"
+      "basename": "02_特殊Token_对齐与模板的影响",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/02_特殊Token_对齐与模板的影响.md"
     },
     {
-      "basename": "Auto-encoder",
-      "path": "02模型/自监督预训练/自监督基础/Auto-encoder.md"
+      "basename": "03_OOV_长度膨胀_多语言与代码",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/03_OOV_长度膨胀_多语言与代码.md"
     },
     {
-      "basename": "VQ-VAE（Vector Quantized Variational Autoencoder，向量量化变分自编码器）",
-      "path": "02模型/自监督预训练/VAE/VQ-VAE（Vector Quantized Variational Autoencoder，向量量化变分自编码器）.md"
+      "basename": "索引_Tokenizer与分词",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/索引_Tokenizer与分词.md"
     },
     {
-      "basename": "VAE（Variational Autoencoder）",
-      "path": "02模型/自监督预训练/VAE/VAE（Variational Autoencoder）.md"
+      "basename": "04_Tokenizer的训练与构建流程",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/04_Tokenizer的训练与构建流程.md"
     },
     {
-      "basename": "02_TopK_TopP_温度_重复惩罚",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/02_TopK_TopP_温度_重复惩罚.md"
+      "basename": "05_中文分词与多语言挑战",
+      "path": "09大语言模型/03_语言建模与Token基础/Tokenizer与分词/05_中文分词与多语言挑战.md"
     },
     {
-      "basename": "01_已有前置与本章边界",
-      "path": "09大语言模型/01_概览与学习路线/01_已有前置与本章边界.md"
+      "basename": "01_分词与词表",
+      "path": "02模型/Transformer/02_输入表示/01_分词与词表.md"
     },
     {
-      "basename": "WER_CER",
-      "path": "09大语言模型/12_评测_安全_可靠性/指标/WER_CER.md"
+      "basename": "01_自注意力基础",
+      "path": "02模型/Transformer/03_注意力机制/01_自注意力基础.md"
     },
     {
-      "basename": "索引_评测_安全_可靠性",
-      "path": "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md"
+      "basename": "Dot-product",
+      "path": "运算/Dot-product.md"
     },
     {
-      "basename": "02_去重_清洗_过滤_质量指标",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/数据工程/02_去重_清洗_过滤_质量指标.md"
+      "basename": "01_绝对位置编码_Sinusoidal_Embedding",
+      "path": "09大语言模型/04_Transformer核心结构/位置编码与序列建模/01_绝对位置编码_Sinusoidal_Embedding.md"
     },
     {
-      "basename": "02_混响对语音的影响",
-      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/02_混响对语音的影响.md"
+      "basename": "03_Encoder_Decoder_T5_Whisper",
+      "path": "09大语言模型/04_Transformer核心结构/模型家族/03_Encoder_Decoder_T5_Whisper.md"
     },
     {
-      "basename": "01_RAG评估_命中率_忠实度_幻觉",
-      "path": "09大语言模型/09_RAG_检索增强生成/评估与调优/01_RAG评估_命中率_忠实度_幻觉.md"
+      "basename": "Pasted image 20260109094448",
+      "path": "assets/Pasted image 20260109094448.png"
     },
     {
-      "basename": "01_INT8_INT4_GPTQ_AWQ",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/性能优化_量化_蒸馏/01_INT8_INT4_GPTQ_AWQ.md"
-    },
-    {
-      "basename": "01_Agent范式_ReAct_Reflexion",
-      "path": "09大语言模型/10_Agent与工具调用/01_Agent范式_ReAct_Reflexion.md"
-    },
-    {
-      "basename": "00_声源定位概述",
-      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/SourceLocalization/00_声源定位概述.md"
-    },
-    {
-      "basename": "01_代码生成_测试_重构_审查",
-      "path": "09大语言模型/14_行业应用与方案/代码与软件工程/01_代码生成_测试_重构_审查.md"
-    },
-    {
-      "basename": "00_去混响概述",
-      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/Dereverberation/00_去混响概述.md"
-    },
-    {
-      "basename": "01_偏好对_排序_标注一致性",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/偏好数据与标注/01_偏好对_排序_标注一致性.md"
-    },
-    {
-      "basename": "01_预训练全流程概览",
-      "path": "09大语言模型/05_预训练_数据_规模化训练/01_预训练全流程概览.md"
-    },
-    {
-      "basename": "01_评测全景_自动与人工",
-      "path": "09大语言模型/12_评测_安全_可靠性/01_评测全景_自动与人工.md"
-    },
-    {
-      "basename": "04_量化_INT8_INT4_FP8流程",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/TensorRT-LLM/04_量化_INT8_INT4_FP8流程.md"
+      "basename": "04_KVCache与attention_mask实践",
+      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/HuggingFace_Transformers_PyTorch/04_KVCache与attention_mask实践.md"
     },
     {
       "basename": "02_PPO_for_LLM",
@@ -153,52 +173,32 @@
       "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/03_DPO_IPO_KTO_ORPO_SimPO.md"
     },
     {
-      "basename": "代理命令行",
-      "path": "01工具/同步传输工具/代理命令行.md"
+      "basename": "01_为什么需要对齐_价值与风险",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/01_为什么需要对齐_价值与风险.md"
     },
     {
-      "basename": "Critic Model",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/Critic Model.md"
+      "basename": "索引_评测_安全_可靠性",
+      "path": "09大语言模型/12_评测_安全_可靠性/索引_评测_安全_可靠性.md"
     },
     {
-      "basename": "PPO_RLHF_Comprehensive_Guide",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/PPO_RLHF_Comprehensive_Guide.md"
+      "basename": "VAE（Variational Autoencoder）",
+      "path": "02模型/自监督预训练/VAE/VAE（Variational Autoencoder）.md"
     },
     {
-      "basename": "索引_RLHF算法与训练",
-      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/索引_RLHF算法与训练.md"
+      "basename": "02_离散视觉Token_VQVAE与dVAE",
+      "path": "09大语言模型/03_语言建模与Token基础/多模态Token化/02_离散视觉Token_VQVAE与dVAE.md"
     },
     {
-      "basename": "fpsync",
-      "path": "01工具/同步传输工具/fpsync.md"
+      "basename": "03_音频Token_AudioCodec与Whisper",
+      "path": "09大语言模型/03_语言建模与Token基础/多模态Token化/03_音频Token_AudioCodec与Whisper.md"
     },
     {
-      "basename": "SwiGLU",
-      "path": "06NN系列/03激活函数/SwiGLU.md"
+      "basename": "10_DL_SepFormer",
+      "path": "语音/语音框架/前端信号处理层/多通道处理/多通道/BSS/10_DL_SepFormer.md"
     },
     {
-      "basename": "ssh远程连接食用方案",
-      "path": "01工具/ssh远程连接食用方案.md"
-    },
-    {
-      "basename": "Git",
-      "path": "01工具/同步传输工具/Git.md"
-    },
-    {
-      "basename": "sftp",
-      "path": "01工具/同步传输工具/sftp.md"
-    },
-    {
-      "basename": "lftp",
-      "path": "01工具/同步传输工具/lftp.md"
-    },
-    {
-      "basename": "01_vLLM核心概念_PagedAttention_连续批处理",
-      "path": "09大语言模型/13_系统工程与部署_MLOps/推理框架与引擎对比/vLLM/01_vLLM核心概念_PagedAttention_连续批处理.md"
-    },
-    {
-      "basename": "02_Chunking策略_滑窗_语义分块",
-      "path": "09大语言模型/09_RAG_检索增强生成/索引与向量库/02_Chunking策略_滑窗_语义分块.md"
+      "basename": "装饰器学习笔记未命名",
+      "path": "01工具/python/@装饰器/装饰器学习笔记未命名.md"
     }
   ],
   "omittedPaths": [],

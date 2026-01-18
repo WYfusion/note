@@ -56,9 +56,10 @@ New-NetFirewallRule -Name "SSH-AltPort" -DisplayName "SSH Alternate Port" -Enabl
 Get-NetTCPConnection -LocalPort 22 -State Listen
 ```
 - 若端口未显示，可能服务未正确启动或防火墙规则未生效
-    ```powershell
+```powershell
 Get-Service sshd  # 检查状态
 ```
+
 4. **重启 SSH 服务**：
 ```Powershell
 Restart-Service sshd
