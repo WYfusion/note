@@ -1,3 +1,20 @@
+---
+tags:
+  - 机器学习
+  - 深度学习
+  - Gumbel-Softmax
+  - 离散采样
+  - 可微采样
+  - VAE
+created: 2025-01-18
+modified: 2025-01-18
+difficulty: 中高
+related:
+  - [[自监督预训练/Self-supervised Learning Framework]]
+  - [[生成对抗网络GAN/生成式神经网络]]
+  - [[生成对抗网络GAN/散度(divergence)]]
+---
+
 # Gumbel-Softmax（又名 Concrete）笔记
 
 ## 0. 一句话直觉

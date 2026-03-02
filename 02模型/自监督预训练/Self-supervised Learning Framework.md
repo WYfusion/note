@@ -1,3 +1,18 @@
+---
+tags:
+  - 机器学习
+  - 深度学习
+  - 自监督学习
+  - 预训练
+  - 统一框架
+created: 2025-01-18
+modified: 2025-01-18
+difficulty: 中高
+related:
+  - [[自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）]]
+  - [[Transformer]]
+---
+
 ```dataview
 list
 from "02模型/自监督预训练"
@@ -10,31 +25,33 @@ LIMIT 10
 
 ## 0. 一句话直觉
 
-自监督预训练 = 用**海量无标注数据**先学一个“通用表征/生成能力”，再用少量标注（或提示）把能力迁移到下游任务。
+自监督预训练 = 用**海量无标注数据**先学一个"通用表征/生成能力"，再用少量标注（或提示）把能力迁移到下游任务。
 
 ---
 
-## 1. 什么是“自监督”？什么是“预训练”？
+## 1. 什么是"自监督"？什么是"预训练"？
 
 ### 1.1 自监督（Self-Supervised）
 
-**监督学习**需要人工标注 $(x,y)$（如“这张图是猫”）。  
+**监督学习**需要人工标注 $(x,y)$（如"这张图是猫"）。
+
 **自监督学习**不依赖人工标签，而是从数据本身构造训练信号：
 
 - 把输入的一部分遮住，要求模型预测被遮住的部分（填空/补全）
-- 把数据做两种增强，要求模型判断“两种视图来自同一个样本”（对比学习）
+- 把数据做两种增强，要求模型判断"两种视图来自同一个样本"（对比学习）
 - 把数据做扰动，要求模型恢复原始数据（去噪/重建）
 
-这类任务本身可能不是最终目的，但它迫使模型学到“有用的表示”。
+这类任务本身可能不是最终目的，但它迫使模型学到"有用的表示"。
 
 ### 1.2 预训练（Pretraining）
 
-预训练指训练流程中的第一阶段：在大规模通用数据上训练出一个基础模型（Foundation Model）。  
+预训练指训练流程中的第一阶段：在大规模通用数据上训练出一个基础模型（Foundation Model）。
+
 然后通过：
 
 - **微调（fine-tuning）**：用下游标注数据继续训练
 - **线性探测（linear probing）**：冻结 backbone，只训练一个小头
-- **提示学习/指令微调（prompting / instruction tuning）**（在LLM中常见）
+- **提示学习/指令微调（prompting / instruction tuning）**（在 LLM 中常见）
 
 把预训练能力迁移到具体任务。
 
@@ -50,89 +67,96 @@ LIMIT 10
 
 给定 $x$，最大化 $\log p_\theta(x)$ 或某个条件似然：
 
-- **自回归（预测下一个）**：
-  $$
-  \max_\theta \sum_{t}\log p_\theta(x_t|x_{<t})
-  $$
-- **去噪/补全（输入被破坏的版本）**：令 $\tilde{x}=c(x)$（corruption），
-  $$
-  \max_\theta \log p_\theta(x|\tilde{x})
-  $$
+#### 自回归（预测下一个）
+
+$$
+\max_\theta \sum_{t} \log p_\theta(x_t | x_{<t})
+$$
+
+#### 去噪/补全（输入被破坏的版本）
+
+令 $\tilde{x} = c(x)$（corruption），
+
+$$
+\max_\theta \log p_\theta(x | \tilde{x})
+$$
 
 ### 2.2 掩码建模（Masked Modeling）：预测被遮住的部分
 
 随机选掩码位置集合 $M$，只对被遮住部分做预测：
 
 $$
-\max_\theta \sum_{t\in M}\log p_\theta(x_t|x_{\setminus M})
+\max_\theta \sum_{t \in M} \log p_\theta(x_t | x_{\setminus M})
 $$
 
-### 2.3 对比式（Contrastive）：拉近“同一语义”，推远“不同语义”
+### 2.3 对比式（Contrastive）：拉近"同一语义"，推远"不同语义"
 
 给同一样本构造两个视图 $v, v^+$，得到表示 $h, h^+$；其他样本视图为负样本 $\{h^-\}$。经典 InfoNCE 形式：
 
 $$
-\mathcal{L}_{\text{InfoNCE}}
-=-\log \frac{\exp(\mathrm{sim}(h,h^+)/\tau)}{\exp(\mathrm{sim}(h,h^+)/\tau)+\sum_{h^-}\exp(\mathrm{sim}(h,h^-)/\tau)}
+\mathcal{L}_{\text{InfoNCE}} = -\log \frac{\exp(\text{sim}(h, h^+)/\tau)}{\exp(\text{sim}(h, h^+)/\tau) + \sum_{h^-} \exp(\text{sim}(h, h^-)/\tau)}
 $$
 
-其中 $\mathrm{sim}(\cdot,\cdot)$ 常用余弦相似度，$\tau$ 是温度。
+其中 $\text{sim}(\cdot, \cdot)$ 常用余弦相似度，$\tau$ 是温度。
 
-> 你可以把它理解为：  
-> **“同一个东西的两种看法应该很像，不同东西应该不一样”。**
+> 你可以把它理解为：
+> **"同一个东西的两种看法应该很像，不同东西应该不一样"。**
 
 ---
 
 ## 3. 自然语言（NLP）里的主流自监督预训练
 
-文本天然是“离散 token 序列”，因此最主流的是各种“语言建模”。
+文本天然是"离散 token 序列"，因此最主流的是各种"语言建模"。
 
-### 3.1 自回归语言模型（Causal/Autoregressive LM）——GPT路线
+### 3.1 自回归语言模型（Causal/Autoregressive LM）—— GPT 路线
 
-**任务**：预测下一个 token。  
+**任务**：预测下一个 token。
+
 **目标**：
 
 $$
-\max_\theta \sum_{t=1}^{T}\log p_\theta(x_t|x_{<t})
+\max_\theta \sum_{t=1}^{T} \log p_\theta(x_t | x_{<t})
 $$
 
 **特点**：
 
 - 训练和生成方式一致（训练学预测下一个，推理时就能逐步生成）
-- 很适合“生成类任务”和“通用推理”，也是现代 LLM 的主流路线之一
+- 很适合"生成类任务"和"通用推理"，也是现代 LLM 的主流路线之一
 
-### 3.2 掩码语言模型（Masked LM）——BERT路线
+### 3.2 掩码语言模型（Masked LM）—— BERT 路线
 
-**任务**：把句子里部分 token mask 掉，预测被 mask 的 token。  
-**目标（只在 mask 位置算loss）**：
+**任务**：把句子里部分 token mask 掉，预测被 mask 的 token。
+
+**目标（只在 mask 位置算 loss）**：
 
 $$
-\max_\theta \sum_{t\in M}\log p_\theta(x_t|x_{\setminus M})
+\max_\theta \sum_{t \in M} \log p_\theta(x_t | x_{\setminus M})
 $$
 
 **特点**：
 
 - 利用双向上下文（看得到左右文）
-- 更偏向“理解/表征”，在分类、抽取等任务上很强
+- 更偏向"理解/表征"，在分类、抽取等任务上很强
 
-可参考：`[[BERT（Bidirectional Encoder Representations from Transformers）]]`
+可参考：`[[自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）]]`
 
-### 3.3 去噪序列到序列（Denoising Seq2Seq）——T5/BART路线
+### 3.3 去噪序列到序列（Denoising Seq2Seq）—— T5/BART 路线
 
-**任务**：把输入做噪声（删除/打乱/span mask 等），再恢复原句。  
+**任务**：把输入做噪声（删除/打乱/span mask 等），再恢复原句。
+
 **目标**：
 
 $$
-\max_\theta \log p_\theta(x|c(x))
+\max_\theta \log p_\theta(x | c(x))
 $$
 
 **特点**：
 
-- 统一成“输入→输出”的形式，天然适配翻译、摘要、问答等生成式下游任务
+- 统一成"输入→输出"的形式，天然适配翻译、摘要、问答等生成式下游任务
 
 ### 3.4 句向量/检索方向的对比学习（可选补充）
 
-在“语义检索/匹配”任务中，常用对比学习直接把句子映射到向量空间，让同义句更近、不同句更远（InfoNCE 思路）。
+在"语义检索/匹配"任务中，常用对比学习直接把句子映射到向量空间，让同义句更近、不同句更远（InfoNCE 思路）。
 
 ---
 
@@ -142,33 +166,39 @@ $$
 
 ### 4.1 对比学习（SimCLR / MoCo / BYOL / DINO）
 
-**核心做法**：对同一图像做两种随机增强（裁剪、颜色抖动、模糊等），得到两个视图 $v,v^+$，让它们的表示接近，同时远离其他图像的表示。
+**核心做法**：对同一图像做两种随机增强（裁剪、颜色抖动、模糊等），得到两个视图 $v, v^+$，让它们的表示接近，同时远离其他图像的表示。
 
 **特点**：
 
 - 强依赖数据增强（augmentation 的设计非常关键）
 - 学到的表示适合分类/检索/检测等理解任务
 
-### 4.2 掩码图像建模（Masked Image Modeling, MIM）——MAE/BEiT路线
+### 4.2 掩码图像建模（Masked Image Modeling, MIM）—— MAE/BEiT 路线
 
 **核心做法**：随机遮住大量 patch，让模型根据可见 patch 预测被遮住的部分。
 
-两种常见预测目标：
+#### 两种常见预测目标
 
-- **像素回归（MAE）**：直接回归被遮住 patch 的像素（或其线性投影）
-  $$
-  \min_\theta \sum_{p\in M}\|x_p-\hat{x}_p\|^2
-  $$
-- **离散token分类（BEiT 类）**：先用一个 tokenizer（如 VQ-VAE）把 patch 变成离散码字，再预测码字（交叉熵）
+##### 像素回归（MAE）
+
+直接回归被遮住 patch 的像素（或其线性投影）
+
+$$
+\min_\theta \sum_{p \in M} \|x_p - \hat{x}_p\|^2
+$$
+
+##### 离散 token 分类（BEiT 类）
+
+先用一个 tokenizer（如 VQ-VAE）把 patch 变成离散码字，再预测码字（交叉熵）
 
 **特点**：
 
 - 不依赖强数据增强，训练更稳定
-- 与 NLP 的 MLM 在结构上非常类似（“遮住 → 预测”）
+- 与 NLP 的 MLM 在结构上非常类似（"遮住 → 预测"）
 
 ### 4.3 与生成模型的关系（简短提示）
 
-扩散模型、GAN 等也能用无标注图像训练，但它们更多是“显式生成建模”。在视觉表征预训练上，当前主流仍以对比学习与MIM为核心。
+扩散模型、GAN 等也能用无标注图像训练，但它们更多是"显式生成建模"。在视觉表征预训练上，当前主流仍以对比学习与 MIM 为核心。
 
 ---
 
@@ -178,29 +208,31 @@ $$
 
 ### 5.1 wav2vec 2.0：掩码 + 对比（代表性路线）
 
-简化理解：
+#### 简化理解
 
 1. 用特征编码器把语音变成帧级表示 $z_t$
 2. 随机 mask 一些时间步，让上下文网络输出上下文表示 $c_t$
 3. 把真实目标（例如量化后的表示）当作正样本，其它时间步当作负样本，做对比学习
 
-核心是：让 $c_t$ 能“从上下文中猜对被遮住的真实内容”。
+核心是：让 $c_t$ 能"从上下文中猜对被遮住的真实内容"。
 
-### 5.2 HuBERT：先聚类出“伪标签”，再做掩码分类
+### 5.2 HuBERT：先聚类出"伪标签"，再做掩码分类
 
-关键思想：语音没有天然离散 token（不像文本），那就先用聚类（如 k-means）把帧特征聚成离散簇ID，当作伪标签 $y_t$：
+#### 关键思想
+
+语音没有天然离散 token（不像文本），那就先用聚类（如 k-means）把帧特征聚成离散簇 ID，当作伪标签 $y_t$：
 
 $$
-y_t \in \{1,\dots,K\}
+y_t \in \{1, \dots, K\}
 $$
 
 然后做 BERT 类似的掩码预测：
 
 $$
-\max_\theta \sum_{t\in M}\log p_\theta(y_t|\text{上下文})
+\max_\theta \sum_{t \in M} \log p_\theta(y_t | \text{上下文})
 $$
 
-这可以被看作“先把语音变成离散符号，再做 MLM”。
+这可以被看作"先把语音变成离散符号，再做 MLM"。
 
 ### 5.3 WavLM / data2vec：更强的统一表征学习
 
@@ -210,38 +242,54 @@ $$
 
 ## 6. 三个模态放在一起看：共性与差异（最重要的对比）
 
-### 6.1 共性：都是“从数据内部构造监督信号”
+### 6.1 共性：都是"从数据内部构造监督信号"
 
 - 文本：token 天然离散 → 预测 token 很自然
-- 图像：patch 可当“视觉 token” → 预测 patch/码字
+- 图像：patch 可当"视觉 token" → 预测 patch/码字
 - 语音：先做帧/离散化（聚类/量化）→ 再预测
 
-### 6.2 差异：token 的“天然离散性”不同
+### 6.2 差异：token 的"天然离散性"不同
 
-- NLP：token 原生离散（字/词/子词）
-- Vision：像素连续，但可用 patch/tokenizer 离散化
-- Speech：波形连续，离散单位需要模型或聚类“发明出来”（如音素式单位、码本）
+- **NLP**：token 原生离散（字/词/子词）
+- **Vision**：像素连续，但可用 patch/tokenizer 离散化
+- **Speech**：波形连续，离散单位需要模型或聚类"发明出来"（如音素式单位、码本）
 
 ### 6.3 选方法的经验法则（给小白的快速指南）
 
-- 你需要强生成能力（写作/对话/逐步生成）→ 更偏自回归（GPT路线）
-- 你更关心通用表征（分类/检索/下游迁移）→ 视觉常用对比或MIM；NLP 常用 MLM/denoising
-- 你的数据是连续信号但想要“符号化”表示 → 语音用 HuBERT 类；视觉/音频也常用 VQ-VAE 式码本
+- 你需要强生成能力（写作/对话/逐步生成）→ 更偏自回归（GPT 路线）
+- 你更关心通用表征（分类/检索/下游迁移）→ 视觉常用对比或 MIM；NLP 常用 MLM/denoising
+- 你的数据是连续信号但想要"符号化"表示 → 语音用 HuBERT 类；视觉/音频也常用 VQ-VAE 式码本
 
 ---
 
 ## 7. 训练后怎么用：下游迁移的三种常见方式
 
 1. **Fine-tuning**：全模型继续训练，效果通常最好但成本高
-2. **Linear probing**：冻结主干，只训练分类头，用于评估“表示质量”
+2. **Linear probing**：冻结主干，只训练分类头，用于评估"表示质量"
 3. **Prompting / In-context**：主要在大语言模型中，用提示直接做任务（不改参数或少量改参数）
 
 ---
 
 ## 8. 小结
 
-自监督预训练的核心不是“任务本身有用”，而是：  
-通过“预测缺失/对齐视图/去噪重建”等方式，把数据的结构压进模型参数里，从而让模型具备通用能力。
+自监督预训练的核心不是"任务本身有用"，而是：
+
+通过"预测缺失/对齐视图/去噪重建"等方式，把数据的结构压进模型参数里，从而让模型具备通用能力。
 
 （可选）你可以把下图当成一个直观总览：
+
 ![[Pasted image 20250318105908.png|600]]
+
+---
+
+## 相关链接
+
+- [[自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）]] - BERT 详解
+- [[Transformer]] - Transformer 架构基础
+- [[自监督预训练/VAE/Gumbel-Softmax（Gumbel Softmax）]] - 离散变量处理
+
+## 参考资料
+
+- He, K., et al. (2020). Momentum Contrast for Unsupervised Visual Representation Learning. *CVPR* (MoCo)
+- Chen, T., et al. (2020). A Simple Framework for Contrastive Learning of Visual Representations. *ICML* (SimCLR)
+- Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *NAACL*

@@ -31,3 +31,20 @@ pip install --pre torchcodec --index-url https://download.pytorch.org/whl/nightl
 ```bash
 conda install -c conda-forge ffmpeg -y
 ```
+
+### VPN
+```bash
+sudo nano /usr/local/etc/xray/config.json
+```
+
+```bash
+systemctl status xray
+```
+
+```bash
+sudo systemctl restart xray
+```
+
+```bash
+sudo systemctl stop xray
+```

@@ -4,25 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "8b7aa2ba74d86235",
+        "id": "1d43e208551cbc39",
         "type": "tabs",
         "children": [
           {
-            "id": "f02e67ff197e3e2d",
+            "id": "03f1e04f6c92dde8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02模型/Transformer/07_序列对齐与CTC/02_核心机制_Blank与路径映射.md",
+                "file": "黄茅海/Algorithm2.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02_核心机制_Blank与路径映射"
+              "title": "Algorithm2"
+            }
+          },
+          {
+            "id": "73ced12717883023",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "09大语言模型/13_系统工程与部署_MLOps/ollama部署/本地ollama部署.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "本地ollama部署"
+            }
+          },
+          {
+            "id": "59de36c1e04678ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "09大语言模型/13_系统工程与部署_MLOps/ollama部署/本地ollama部署.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "本地ollama部署"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -182,22 +213,12 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "bfc291a04768f1c4",
-            "type": "leaf",
-            "state": {
-              "type": "agent-chat-view",
-              "state": {},
-              "icon": "brain-cog",
-              "title": "Chat with agent"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -217,49 +238,48 @@
       "workspaces:管理工作区布局": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "ai-agent:Chat with Agent": false
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f02e67ff197e3e2d",
+  "active": "59de36c1e04678ae",
   "lastOpenFiles": [
-    "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md",
-    "AGENTS.md",
-    "新建文件夹",
-    "01工具/Docker/04-容器/01-容器命令.md",
-    "01工具/Docker/03-镜像/01-镜像创建查询删除.md",
-    "01工具/Docker/12-使用ollama部署大模型/02-ollama镜像、容器获取.md",
-    "01工具/Docker/12-使用ollama部署大模型/01-NVIDIA Container Toolkit的缺失.md",
+    "01工具/Anaconda/创建环境.md",
+    "01工具/Anaconda/删除环境.md",
     "01工具/Docker/02-基础概念/01-Docker简单使用.md",
+    "fastapi/00-总览.md",
+    "fastapi/03Agent应用/14-Agent部署.md",
+    "fastapi/03Agent应用/multi_agent.py",
+    "fastapi/03Agent应用/13-多Agent协作.md",
+    "fastapi/03Agent应用/mcp_integration.py",
+    "fastapi/03Agent应用/12-MCP集成.md",
+    "fastapi/03Agent应用/streaming.py",
+    "fastapi/03Agent应用/11-流式响应.md",
+    "fastapi/03Agent应用/tools.py",
+    "fastapi/03Agent应用/10-Tool定义和调用.md",
+    "fastapi/03Agent应用/agent_framework.py",
+    "fastapi/03Agent应用/09-Agent架构基础.md",
+    "fastapi/02中级/auth.py",
+    "fastapi/02中级/08-认证授权.md",
+    "fastapi/02中级/database.py",
+    "fastapi/02中级/07-数据库集成.md",
+    "fastapi/02中级/error_handling.py",
+    "fastapi/02中级/06-错误处理.md",
+    "fastapi/02中级/middleware.py",
+    "fastapi/02中级/05-中间件.md",
+    "fastapi/01基础/dependencies.py",
+    "fastapi/01基础/04-依赖注入.md",
+    "fastapi/01基础/03-请求体和响应.md",
+    "fastapi/01基础/02-路由和参数.md",
+    "fastapi/01基础/01-FastAPI基础.md",
+    "01工具/Docker/01-安装与环境/04-镜像加速与代理.md",
     "01工具/Docker/01-安装与环境/01-Docker安装-Windows-WSL2.md",
-    "02模型/Transformer/07_序列对齐与CTC/01_背景_不定长序列对齐.md",
-    "Chats/chat-2026-01-18T12-18-05-906Z.md",
-    "Chats",
-    "Chats/chat-2026-01-18T02-16-41-913Z.md",
-    "Chats/chat-2026-01-18T02-16-41-485Z.md",
-    "Chats/chat-2026-01-18T02-16-40-887Z.md",
-    "Chats/chat-2026-01-13T00-54-11-318Z.md",
-    "09大语言模型/03_语言建模与Token基础/02_自回归AR_自编码AE_序列到序列Seq2Seq对比.md",
-    "02模型/自监督预训练/自监督预训练.canvas",
-    "01工具/同步传输工具/fpsync.md",
+    "01工具/Docker/01-安装与环境/02-Docker安装-Linux.md",
+    "01工具/WSL（Windows Subsystem for Linux）.md",
+    "01工具/同步传输工具/rsync.md",
+    "01工具/同步传输工具/rclone.md",
+    "01工具/linux/代理.md",
     "02模型/Transformer/07_序列对齐与CTC/04_解码策略_从Greedy到BeamSearch.md",
-    "02模型/Transformer/07_序列对齐与CTC/03_算法原理_前向后向计算.md",
-    "02模型/Transformer/07_序列对齐与CTC/02_核心机制_Blank与路径映射.md",
-    "02模型/Transformer/07_序列对齐与CTC/05_CTC_vs_Attention_与总结.md",
-    "02模型/Transformer/00_阅读指引.md",
-    "02模型/Transformer/01_任务与范式/02_自回归与非自回归.md",
-    "01工具/Anaconda/50系显卡conda环境设置.md",
-    "02模型/Transformer/07_序列对齐与CTC",
-    "01工具/Anaconda/cmd使用conda环境.md",
-    "01工具/挂载/Ubuntu文件夹挂载到Windows.md",
-    "01工具/挂载/Windows文件挂载到Windows.md",
-    "02模型/Transformer/06_效率与扩展",
-    "02模型/Transformer/05_训练与推理",
-    "02模型/Transformer/04_模块与整体结构",
-    "02模型/Transformer/02_输入表示",
-    "02模型/Transformer/03_注意力机制",
-    "02模型/Transformer/01_任务与范式",
-    "02模型/Transformer",
+    "02模型/自监督预训练/自监督预训练.canvas",
     "assets/Pasted image 20260109094448.png",
     "assets/Pasted image 20260106210102.png",
     "Pasted image 20260106210102.png",

@@ -60,11 +60,24 @@ rsync [选项] 源路径 目标路径
 将本地的 `project` 代码库同步到服务器，排除 `.git` 目录和 `logs` 文件夹。
 
 ```bash
-rsync -avzP --exclude '.git' --exclude 'logs/' \
-    -e 'ssh -p 22' \
-    ./project/ user@192.168.1.100:/home/user/app/project
+rsync -avzP --exclude '.git' --exclude 'logs/' -e 'ssh -p 22'     ./project/ user@192.168.1.100:/home/user/app/project
 ```
 *   注意 `./project/` 带斜杠，表示将内容同步到 `/home/user/app/project` 里面。
+
+```bash
+rsync -avzP  -e 'ssh -p 22' /home/gzhu/data1/wy/vad/ 5090://home/rtx5090/data/wy/vad
+```
+
+### 传输单个文件
+```bash
+rsync -lptgoD -v --numeric-ids -u --mkpath \
+/home/gzhu/data1/wy/Data_processing/experiment/xeno-ebird0.5h-AU-se_vad-nobug/seg_info_spec_sub.csv \
+5090:/home/rtx5090/data/wy/SEtrain/exp/nohave/
+```
+
+```bash
+rsync -avzP  -e 'ssh -p 2222' /home/gzhu/data1/wy/vad/ 5090://home/rtx5090/data/wy/vad
+```
 
 ### 场景二：从服务器下载文件 (Pull)
 从服务器拉取训练好的模型权重。
@@ -74,6 +87,8 @@ rsync -avzP -e 'ssh -p 2222' \
     user@192.168.1.100:/data/models/checkpoint_v1.pt \
     ./local_models/
 ```
+
+
 
 ### 场景三：制作完全镜像 (慎用 --delete)
 **目标**：让备份目录 `/backup` 和源目录 `/source` **一模一样**。如果 `/source` 删除了某个文件，`/backup` 也要自动删除对应文件。
@@ -104,6 +119,17 @@ rsync -avP --existing source/ dest/
 如果服务器 SSH 端口不是默认的 22，必须使用 `-e` 参数：
 ```bash
 rsync -avP -e 'ssh -p 2222' source/ user@host:/dest/
+```
+
+##### 下载同步
+```bash
+rsync -avP -e 'ssh -p 2222' --delete --exclude 'env312/' 5090:/home/rtx5090/data/wy/llm/mashi/ /home/gzhu/data1/wy/llm/mashi/
+```
+
+
+##### 上传同步
+```bash
+rsync -avP -e 'ssh -p 2222' --delete --exclude 'env312/' /home/gzhu/data1/wy/llm/mashi/ 5090:/home/rtx5090/data/wy/llm/mashi/
 ```
 
 ### 5.2 限制带宽

@@ -95,6 +95,11 @@ iostat -dx 1
 ```bash
 fpsync -n 128 -v -o "-av" /home/gzhu/data3/cutstandardrename/W9/ rtx5090_target:/home/rtx5090/data/cut/W9
 ```
+
+```bash
+fpsync -n 48 -v -o "-lptgoD -v --numeric-ids -u" /home/gzhu/data1/wy/Data_processing/experiment/xeno-ebird0.5h-AU-se_vad-nobug/noisy_wav/ 5090:/home/rtx5090/data/wy/SEtrain/exp/nohave/
+```
+
 ### 6.5. 针对海量小文件的优化
 
 对于包含数亿小文件的目录，文件列表的生成本身就很耗时。可以调整 `-f` 和 `-s` 来平衡分片大小。
