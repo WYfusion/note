@@ -2,43 +2,7 @@
 
 ## 项目概述
 
-这是一个基于Obsidian的个人学习笔记仓库，包含机器学习、深度学习、强化学习、工具使用等多个领域的知识整理。项目使用中文进行笔记记录，采用Obsidian特有的Markdown语法进行知识管理。
-
-## 构建和开发命令
-
-### 基础命令
-```bash
-# 查看仓库状态
-git status
-
-# 添加所有更改
-git add .
-
-# 提交更改
-git commit -m "描述性提交信息"
-
-# 推送到远程仓库
-git push
-
-# 拉取最新更改
-git pull
-```
-
-### Obsidian相关
-```bash
-# 本项目不需要构建命令，直接使用Obsidian打开
-# 启动Obsidian并打开此仓库
-obsidian://open?vault=note
-```
-
-### 测试命令
-```bash
-# 本项目为笔记仓库，无传统测试
-# 验证Markdown语法：
-# 1. 使用Obsidian实时预览功能
-# 2. 检查内部链接是否有效
-# 3. 验证数学公式渲染
-```
+这是一个基于Obsidian的个人学习笔记仓库。项目使用中文进行笔记记录，采用Obsidian特有的Markdown语法进行知识管理。
 
 ## 代码风格指南
 
@@ -57,23 +21,7 @@ obsidian://open?vault=note
 #### 四级标题 - 细节说明
 ```
 
-#### 2. 代码块规范
-- **bash命令**: 使用bash语言标识
-- **Python代码**: 使用python语言标识
-- **配置文件**: 使用相应语言标识（json, yaml等）
-
-```bash
-# 系统命令示例
-conda install cuda-toolkit=12.8
-```
-
-```python
-# Python代码示例
-import torch
-print(torch.__version__)
-```
-
-#### 3. 内部链接规范
+#### 2. 内部链接规范
 ```markdown
 # 基本链接
 [[相关笔记名称]]
@@ -88,7 +36,7 @@ print(torch.__version__)
 ![[被嵌入的笔记名称]]
 ```
 
-#### 4. 列表规范
+#### 3. 列表规范
 ```markdown
 ## 无序列表
 - 主要内容
@@ -108,7 +56,7 @@ print(torch.__version__)
 - [x] 已完成任务
 ```
 
-#### 5. 强调和格式
+#### 4. 强调和格式
 ```markdown
 **重要内容** - 粗体强调
 *关键词* - 斜体强调
@@ -117,7 +65,7 @@ print(torch.__version__)
 ~~删除内容~~ - 删除线
 ```
 
-#### 6. 引用和提示框
+#### 5. 引用和提示框
 ```markdown
 # 普通引用
 > 这是引用内容
@@ -211,46 +159,6 @@ graph TD
 | batch_size | int | 批次大小 | 32 |
 | epochs | int | 训练轮数 | 100 |
 ```
-
-### 错误处理和调试
-
-#### 1. 错误信息记录
-```markdown
-## 错误处理
-
-### 常见错误1
-**错误信息**: `CUDA out of memory`
-
-**解决方案**:
-1. 减少batch size
-2. 使用梯度累积
-3. 清理GPU缓存
-```bash
-torch.cuda.empty_cache()
-```
-```
-
-#### 2. 调试技巧
-- 使用print语句进行调试
-- 记录关键变量的值
-- 提供问题排查步骤
-
-### 版本控制规范
-
-#### 1. 提交信息格式
-```bash
-# 格式：类型: 简短描述
-feat: 添加新的机器学习笔记
-fix: 修复代码示例中的错误
-docs: 更新文档说明
-refactor: 重构笔记结构
-```
-
-#### 2. 忽略文件规则
-- Obsidian工作区文件：`.obsidian/workspace.json`
-- 缓存文件：`.obsidian/cache/`
-- 临时文件：`.tmp/`
-- 大型媒体文件：`*.mp4`, `*.zip`
 
 ### 最佳实践
 

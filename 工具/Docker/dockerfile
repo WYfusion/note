@@ -1,0 +1,115 @@
+# =============================================================================
+# 深度学习开发环境 Dockerfile (优化版)
+# 包含：CUDA 11.8, CuDNN 8, Miniconda, PyTorch 2.3, SSH, TensorBoard
+# 优化点：层合并、缓存清理、ENTRYPOINT 启动服务、国内源配置
+# =============================================================================
+
+# 1. 基础镜像：选用 devel 版本以支持可能的源码编译 (如 flash-attention)
+# 如果不需要编译 CUDA 扩展，建议换成 runtime 版本以减小体积
+FROM nvcr.io/nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+
+# 2. 全局环境变量
+ENV TZ=Asia/Shanghai \
+    DEBIAN_FRONTEND=noninteractive \
+    LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    # Conda 路径
+    PATH=/opt/conda/bin:$PATH \
+    # 默认环境名
+    CONDA_ENV_NAME=unet
+
+WORKDIR /root
+
+# 3. 系统基础配置 (合并层，减少镜像体积)
+# - 替换清华源
+# - 安装基础工具 (ssh, git, vim, etc.)
+# - 配置 SSH 服务
+# - 清理 apt 缓存
+RUN sed -i 's@//.*archive.ubuntu.com@//mirrors.tuna.tsinghua.edu.cn@g' /etc/apt/sources.list \
+    && sed -i 's@//.*security.ubuntu.com@//mirrors.tuna.tsinghua.edu.cn@g' /etc/apt/sources.list \
+    && apt-get update && apt-get install -y --no-install-recommends \
+       ssh vim git net-tools wget tzdata curl ca-certificates \
+       ffmpeg libsm6 libxext6 \
+    && ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime \
+    && echo ${TZ} > /etc/timezone \
+    # 配置 SSH
+    && mkdir -p /var/run/sshd \
+    && echo 'root:root' | chpasswd \
+    && sed -i 's/^#PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config \
+    && sed -i 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config \
+    # 清理
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# 4. 安装 Miniconda (比 Anaconda 更轻量，避免安装大量无用包)
+# 使用清华源下载 Miniconda
+RUN wget --quiet https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh \
+    && /bin/bash ~/miniconda.sh -b -p /opt/conda \
+    && rm ~/miniconda.sh \
+    # 配置 Conda 镜像源 (清华源)
+    && conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ \
+    && conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ \
+    && conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ \
+    && conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ \
+    && conda config --set show_channel_urls yes \
+    && conda config --set auto_activate_base false
+
+# 5. 创建 Python 环境并安装 PyTorch
+# 使用 SHELL 指令激活 conda 环境，避免每个 RUN 都要 source
+SHELL ["/bin/bash", "--login", "-c"]
+
+RUN conda create -n ${CONDA_ENV_NAME} python=3.9 -y \
+    && conda activate ${CONDA_ENV_NAME} \
+    # 安装 PyTorch (指定 index-url 使用官方源或清华源，这里为了稳定使用官方 wheel 配合清华 pip 源)
+    && pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
+    && pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118 \
+    # 安装其他依赖
+    && pip install --no-cache-dir \
+       pydantic pandas pillow matplotlib comet_ml openpyxl opencv-python \
+       torchmetrics lightning scikit-learn scikit-image albumentations \
+       segmentation-models-pytorch tensorboard easydict packaging timm \
+       einops yarl typing_extensions thop ptflops ml_collections tensorboardX \
+    # 清理 Conda 和 Pip 缓存
+    && conda clean -ya \
+    && pip cache purge
+
+# 6. 创建启动脚本 (Entrypoint)
+# 作用：容器启动时自动开启 SSH 和 TensorBoard，然后执行 CMD
+COPY <<EOF /usr/local/bin/entrypoint.sh
+#!/bin/bash
+set -e
+
+# 启动 SSH 服务
+service ssh start
+
+# 启动 TensorBoard (后台运行)
+# 检查是否已有 tensorboard 进程，没有则启动
+if ! pgrep -x "tensorboard" > /dev/null; then
+    echo "Starting TensorBoard..."
+    # 激活环境并运行
+    source /opt/conda/etc/profile.d/conda.sh
+    conda activate ${CONDA_ENV_NAME}
+    nohup tensorboard --logdir /gemini/logs --bind_all --port 6006 > /root/tensorboard.log 2>&1 &
+fi
+
+# 激活 Conda 环境供交互式 Shell 使用
+source /opt/conda/etc/profile.d/conda.sh
+conda activate ${CONDA_ENV_NAME}
+
+# 执行传入的命令 (默认为 /bin/bash)
+exec "\$@"
+EOF
+
+# 7. 收尾配置
+RUN chmod +x /usr/local/bin/entrypoint.sh \
+    && mkdir -p /gemini/code /gemini/logs /gemini/output \
+    # 在 .bashrc 中自动激活环境，方便 docker exec 进入
+    && echo "source /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc \
+    && echo "conda activate ${CONDA_ENV_NAME}" >> ~/.bashrc
+
+# 8. 暴露端口
+EXPOSE 22 6006 8888
+
+# 9. 设置入口
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["/bin/bash"]

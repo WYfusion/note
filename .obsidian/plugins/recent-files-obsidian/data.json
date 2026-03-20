@@ -1,6 +1,78 @@
 {
   "recentFiles": [
     {
+      "basename": "DPR（Dense Passage Retriever）",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）/DPR（Dense Passage Retriever）.md"
+    },
+    {
+      "basename": "稠密检索",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）/稠密检索.md"
+    },
+    {
+      "basename": "稀疏检索",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/稀疏检索.md"
+    },
+    {
+      "basename": "SPLADE",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/SPLADE.md"
+    },
+    {
+      "basename": "TF-IDF",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/TF-IDF.md"
+    },
+    {
+      "basename": "BM25 (Best Matching 25)",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/BM25 (Best Matching 25).md"
+    },
+    {
+      "basename": "02_Reranker_CrossEncoder",
+      "path": "大语言模型/09_RAG_检索增强生成/检索与重排/02_Reranker_CrossEncoder.md"
+    },
+    {
+      "basename": "03_学习路线_从入门到精通",
+      "path": "大语言模型/01_概览与学习路线/03_学习路线_从入门到精通.md"
+    },
+    {
+      "basename": "04_核心术语表与缩写",
+      "path": "大语言模型/01_概览与学习路线/04_核心术语表与缩写.md"
+    },
+    {
+      "basename": "02_LLM任务全景与能力边界",
+      "path": "大语言模型/01_概览与学习路线/02_LLM任务全景与能力边界.md"
+    },
+    {
+      "basename": "01_已有前置与本章边界",
+      "path": "大语言模型/01_概览与学习路线/01_已有前置与本章边界.md"
+    },
+    {
+      "basename": "语音系统架构",
+      "path": "语音/语音系统架构.drawio"
+    },
+    {
+      "basename": "评估指标",
+      "path": "课本/机器学习/评估指标.md"
+    },
+    {
+      "basename": "02_PPO_for_LLM",
+      "path": "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/02_PPO_for_LLM.md"
+    },
+    {
+      "basename": "索引_分布式与并行",
+      "path": "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/索引_分布式与并行.md"
+    },
+    {
+      "basename": "UV",
+      "path": "01工具/UV.md"
+    },
+    {
+      "basename": "Ubuntu文件夹挂载到Windows",
+      "path": "01工具/挂载/Ubuntu文件夹挂载到Windows.md"
+    },
+    {
+      "basename": "Windows文件挂载到Windows",
+      "path": "01工具/挂载/Windows文件挂载到Windows.md"
+    },
+    {
       "basename": "本地ollama部署",
       "path": "09大语言模型/13_系统工程与部署_MLOps/ollama部署/本地ollama部署.md"
     },
@@ -127,78 +199,6 @@
     {
       "basename": "02_Reranker_CrossEncoder",
       "path": "09大语言模型/09_RAG_检索增强生成/检索与重排/02_Reranker_CrossEncoder.md"
-    },
-    {
-      "basename": "01_召回_BM25_Dense_Hybrid",
-      "path": "09大语言模型/09_RAG_检索增强生成/检索与重排/01_召回_BM25_Dense_Hybrid.md"
-    },
-    {
-      "basename": "01_RAG评估_命中率_忠实度_幻觉",
-      "path": "09大语言模型/09_RAG_检索增强生成/评估与调优/01_RAG评估_命中率_忠实度_幻觉.md"
-    },
-    {
-      "basename": "02_Chunking策略_滑窗_语义分块",
-      "path": "09大语言模型/09_RAG_检索增强生成/索引与向量库/02_Chunking策略_滑窗_语义分块.md"
-    },
-    {
-      "basename": "01_Embedding模型选择与对齐",
-      "path": "09大语言模型/09_RAG_检索增强生成/索引与向量库/01_Embedding模型选择与对齐.md"
-    },
-    {
-      "basename": "01_语音表征_离散化_Codec",
-      "path": "09大语言模型/11_多模态与跨模态/语音语言模型SLM/01_语音表征_离散化_Codec.md"
-    },
-    {
-      "basename": "索引_语音语言模型SLM",
-      "path": "09大语言模型/11_多模态与跨模态/语音语言模型SLM/索引_语音语言模型SLM.md"
-    },
-    {
-      "basename": "01_短期记忆_对话摘要_Context管理",
-      "path": "09大语言模型/10_Agent与工具调用/记忆与状态/01_短期记忆_对话摘要_Context管理.md"
-    },
-    {
-      "basename": "01_FunctionCalling_JSONSchema",
-      "path": "09大语言模型/10_Agent与工具调用/函数调用与结构化输出/01_FunctionCalling_JSONSchema.md"
-    },
-    {
-      "basename": "索引_函数调用与结构化输出",
-      "path": "09大语言模型/10_Agent与工具调用/函数调用与结构化输出/索引_函数调用与结构化输出.md"
-    },
-    {
-      "basename": "索引_规划_反思_自一致性",
-      "path": "09大语言模型/10_Agent与工具调用/规划_反思_自一致性/索引_规划_反思_自一致性.md"
-    },
-    {
-      "basename": "索引_RAG_检索增强生成",
-      "path": "09大语言模型/09_RAG_检索增强生成/索引_RAG_检索增强生成.md"
-    },
-    {
-      "basename": "01_RAG总体架构_数据流",
-      "path": "09大语言模型/09_RAG_检索增强生成/01_RAG总体架构_数据流.md"
-    },
-    {
-      "basename": "02_PagedAttention_vLLM思路",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/02_PagedAttention_vLLM思路.md"
-    },
-    {
-      "basename": "01_KVCache_原理与显存",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/KVCache与加速/01_KVCache_原理与显存.md"
-    },
-    {
-      "basename": "索引_长上下文方法",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/索引_长上下文方法.md"
-    },
-    {
-      "basename": "02_检索增强_RAG与长上下文的关系",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/02_检索增强_RAG与长上下文的关系.md"
-    },
-    {
-      "basename": "01_RoPE扩展_NTK_Scaling",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/长上下文方法/01_RoPE扩展_NTK_Scaling.md"
-    },
-    {
-      "basename": "索引_解码策略",
-      "path": "09大语言模型/08_推理与解码_上下文_长序列/解码策略/索引_解码策略.md"
     }
   ],
   "omittedPaths": [],
