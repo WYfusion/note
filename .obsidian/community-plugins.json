@@ -1,6 +1,5 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-icon-folder",
   "dataview",
   "drawio-obsidian",
   "file-explorer-note-count",
@@ -10,6 +9,6 @@
   "table-editor-obsidian",
   "quick-explorer",
   "mermaid-tools",
-  "obsidian-tikzjax",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "github-copilot"
 ]

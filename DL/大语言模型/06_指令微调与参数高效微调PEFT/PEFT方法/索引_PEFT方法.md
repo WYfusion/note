@@ -24,7 +24,7 @@ PEFT 方法仅更新部分权重。它们会冻结模型中的大部分层，只
 - **提示调优** ——模型架构保持不变，而是通过调整输入（提示）来获得更好的性能。这可以通过向提示嵌入添加可训练参数，或者保持输入不变并重新训练嵌入权重来实现。 软提示 就是一种典型的技术。
 ## 目录
 
-### [01_LoRA_QLoRA.md](./01_LoRA_QLoRA.md)
+### [01_LoRA_QLoRA.md](01_LoRA_QLoRA.md)
 - **LoRA (Low-Rank Adaptation)**：
   - 原理：$W = W_0 + BA$，冻结预训练权重，训练低秩矩阵。
   - 优势：显存占用低，无推理延迟（可合并权重）。
@@ -44,7 +44,7 @@ PEFT 方法仅更新部分权重。它们会冻结模型中的大部分层，只
   - **TTS风格控制**：使用Prefix Token控制说话人情感/音色（如VALL-E中的Prompt）。
   - **多任务适配**：不同Prefix对应ASR、翻译、TTS等不同任务头。
 
-### [03_Adapter_Tuning.md](./03_Adapter_Tuning.md)
+### [03_Adapter_Tuning.md](03_Adapter_Tuning.md)
 - **Adapter Tuning**：
   - 架构：在Transformer层间插入“降维-非线性-升维”的瓶颈模块。
   - 优劣：参数少，但增加推理延迟（串行计算）。
@@ -52,7 +52,7 @@ PEFT 方法仅更新部分权重。它们会冻结模型中的大部分层，只
   - 机制：两阶段学习，先学单任务Adapter，再学Fusion Layer组合它们。
   - 语音应用：多语种ASR的动态切换。
 
-### [04_IA3.md](./04_IA3.md)
+### [04_IA3.md](04_IA3.md)
 - **IA3**：
   - 原理：通过可学习向量对 K, V, FFN 激活值进行缩放 (Rescaling)。
   - 特点：参数量极小 (0.01%)，模拟 In-Context Learning 机制。

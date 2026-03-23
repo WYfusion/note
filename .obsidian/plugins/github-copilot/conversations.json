@@ -1,0 +1,29 @@
+{
+  "conversations": [
+    {
+      "id": "1774169171006",
+      "title": "@obsidian://open?vault=note&fi...",
+      "messages": [
+        {
+          "id": "1774169171006",
+          "content": "@obsidian://open?vault=note&file=DL%2FTTS%2FQwen3%20TTS%2FQwen3%E6%A8%A1%E5%9E%8B%E9%AA%A8%E6%9E%B6%2FMimi%20%E9%9F%B3%E9%A2%91%E7%BC%96%E8%A7%A3%E7%A0%81%E5%99%A8%E6%9E%B6%E6%9E%84%E8%AF%A6%E8%A7%A3  干练精准不罗嗦的补充解释好RVQ 工作原理，要求有充分的数学公式、图进行解释说明",
+          "role": "user",
+          "timestamp": 1774169171006
+        },
+        {
+          "id": "chatcmpl-DM8jjO27ieDGe1PKv0zpwwHmiOYyn",
+          "content": "下面是一段可直接粘进你这篇笔记（Obsidian / Markdown）的「干练、公式密集、含示意图」补充：RVQ（Residual Vector Quantization）工作原理。你可按需改标题层级。\n\n---\n\n## RVQ（Residual Vector Quantization）工作原理（数学化说明）\n\nRVQ 的目标：把连续特征向量（如声学编码器输出）用**多级码本**逐层逼近，从而以较低比特率表示，同时尽量保真。\n\n设输入向量为  \n\\[\n\\mathbf{x}\\in\\mathbb{R}^{D}\n\\]\nRVQ 使用 \\(K\\) 个码本（或称 \\(K\\) 个量化 stage），第 \\(k\\) 个码本为  \n\\[\n\\mathcal{C}^{(k)}=\\{\\mathbf{e}^{(k)}_{1},\\dots,\\mathbf{e}^{(k)}_{M}\\},\\quad \\mathbf{e}^{(k)}_{m}\\in\\mathbb{R}^{D}\n\\]\n其中 \\(M\\) 是每级码本大小（码字个数），\\(D\\) 是向量维度。\n\n### 1) 逐级残差量化：核心递推\n\n初始化残差：\n\\[\n\\mathbf{r}^{(0)}=\\mathbf{x}\n\\]\n\n第 \\(k\\) 级从码本中选择与当前残差最近的码字（最近邻 / argmin）：\n\\[\ni_k=\\arg\\min_{m\\in\\{1,\\dots,M\\}}\\left\\|\\mathbf{r}^{(k-1)}-\\mathbf{e}^{(k)}_{m}\\right\\|_2^2\n\\]\n并取量化输出：\n\\[\n\\mathbf{q}^{(k)}=\\mathbf{e}^{(k)}_{i_k}\n\\]\n\n更新残差：\n\\[\n\\mathbf{r}^{(k)}=\\mathbf{r}^{(k-1)}-\\mathbf{q}^{(k)}\n\\]\n\n最终重构为各级码字之和：\n\\[\n\\hat{\\mathbf{x}}=\\sum_{k=1}^{K}\\mathbf{q}^{(k)}\n\\]\n最终残差就是误差项：\n\\[\n\\mathbf{r}^{(K)}=\\mathbf{x}-\\hat{\\mathbf{x}}\n\\]\n\n**一句话**：第 1 级抓主干（粗量化），后续级只负责补偿“没量化到的残差”。\n\n---\n\n### 2) 训练目标（重构误差 / MSE）\n\n常见损失（每个向量）：\n\\[\n\\mathcal{L}_{\\text{recon}}=\\left\\|\\mathbf{x}-\\sum_{k=1}^{K}\\mathbf{q}^{(k)}\\right\\|_2^2\n\\]\n如果是序列（时间帧 \\(t=1..T\\)）：\n\\[\n\\mathcal{L}_{\\text{recon}}=\\frac{1}{T}\\sum_{t=1}^{T}\\left\\|\\mathbf{x}_t-\\sum_{k=1}^{K}\\mathbf{q}^{(k)}_t\\right\\|_2^2\n\\]\n\n> 在神经音频编解码器（如 Mimi / Encodec 类）中，\\(\\mathbf{x}_t\\) 通常来自 encoder 的 latent，decoder 用 \\(\\hat{\\mathbf{x}}_t\\) 还原波形或频域表示。\n\n---\n\n### 3) 比特率与码率（RVQ 为什么能控码率）\n\n每一级输出一个离散索引 \\(i_k\\in[1,M]\\)，若不做熵编码，理论比特数：\n\\[\n\\text{bits/frame}=K\\cdot \\log_2 M\n\\]\n\n若帧率为 \\(F\\)（frames/s），则比特率：\n\\[\n\\text{bps}=F\\cdot K\\cdot \\log_2 M\n\\]\n\n因此 RVQ 的“码率旋钮”很直接：**增大 \\(K\\)** 或 **增大 \\(M\\)** 就提高码率/质量；反之降低。\n\n---\n\n### 4) 直观结构图（残差逐级逼近）\n\n```text\nx = r0\n |-- stage1: pick e1 from C(1) close to r0\n |        q1 = e1\n |        r1 = r0 - q1\n |\n |-- stage2: pick e2 from C(2) close to r1\n |        q2 = e2\n |        r2 = r1 - q2\n |\n ...\n |\n |-- stageK: pick eK from C(K) close to r(K-1)\n          qK = eK\n          rK = r(K-1) - qK\n\nrecon: x_hat = q1 + q2 + ... + qK\nerror: rK = x - x_hat\n```\n\n---\n\n### 5) 为什么比“单一码本 VQ”更强\n\n单一 VQ：\n\\[\n\\hat{\\mathbf{x}}=\\mathbf{e}_{\\arg\\min_m\\|\\mathbf{x}-\\mathbf{e}_m\\|^2}\n\\]\n要提高精度只能暴力增大 \\(M\\)（码本很大，搜索/训练更难）。\n\nRVQ 等价于用 \\(K\\) 个中等大小码本做“加法组合”来逼近：\n\\[\n\\hat{\\mathbf{x}}=\\sum_{k=1}^K \\mathbf{e}^{(k)}_{i_k}\n\\]\n组合数近似为 \\(M^K\\)（离散组合空间巨大），但每一步只做一次最近邻，所以实现与训练都更可控。\n\n---\n\n### 6) 训练中的离散选择：直通估计（STE）常用写法\n\n选择操作 \\(i_k=\\arg\\min(\\cdot)\\) 不可导，常用 Straight-Through Estimator：  \n前向仍取最近码字，反向把量化当作恒等映射近似传梯度。\n\n形式上可写为（示意）：\n\\[\n\\mathbf{q}^{(k)}=\\text{sg}(\\mathbf{e}^{(k)}_{i_k}-\\mathbf{r}^{(k-1)})+\\mathbf{r}^{(k-1)}\n\\]\n其中 \\(\\text{sg}(\\cdot)\\) 表示 stop-gradient（阻断梯度），从而反传时\n\\[\n\\frac{\\partial \\mathbf{q}^{(k)}}{\\partial \\mathbf{r}^{(k-1)}}\\approx \\mathbf{I}\n\\]\n\n（不同实现细节会略有差异，但核心都是“前向离散、反向近似可导”。）\n\n---\n\n### 7)（可选）码本更新的“码本损失”提示\n\n一些实现会给码本额外约束（如 VQ-VAE 风格）：\n\\[\n\\mathcal{L}=\\mathcal{L}_{\\text{recon}}+\\sum_{k}\\left(\n\\|\\text{sg}(\\mathbf{r}^{(k-1)})-\\mathbf{q}^{(k)}\\|_2^2\n+\\beta\\|\\mathbf{r}^{(k-1)}-\\text{sg}(\\mathbf{q}^{(k)})\\|_2^2\n\\right)\n\\]\n用于稳定码本学习、避免码本塌缩/不更新。\n\n---\n\n## 一句话总结（可放在段末）\n\nRVQ = “多级码本逐层量化残差”：  \n\\[\n\\mathbf{x}\\approx \\mathbf{e}^{(1)}_{i_1}+\\mathbf{e}^{(2)}_{i_2}+\\cdots+\\mathbf{e}^{(K)}_{i_K}\n\\]\n用 \\(K\\) 个小/中等码本实现近似 \\(M^K\\) 的组合表达能力，并可通过 \\(K\\) 精确调码率。\n\n---\n\n如果你把你笔记里 Mimi 的 latent 形状写出来（例如 \\(B\\times T\\times D\\)、帧率 \\(F\\)、每级码本大小 \\(M\\)、stage 数 \\(K\\)），我可以再帮你把上面的公式直接替换成**和 Mimi 维度/码率对应的具体数值版**，并补一张“encoder→RVQ→decoder”总图。",
+          "role": "assistant",
+          "timestamp": 1774169195594
+        }
+      ],
+      "createdAt": 1774169171006,
+      "updatedAt": 1774169195594,
+      "model": {
+        "label": "GPT-5.2",
+        "value": "gpt-5.2"
+      }
+    }
+  ],
+  "activeConversationId": "1774169171006"
+}

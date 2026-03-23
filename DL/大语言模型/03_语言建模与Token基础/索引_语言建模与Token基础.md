@@ -11,8 +11,8 @@
 - [中文分词与多语言挑战](./Tokenizer与分词/05_中文分词与多语言挑战.md)
 
 ## Embedding 与位置编码
-- [Word_Embedding回顾](./Embedding与位置编码/01_Word_Embedding回顾.md)
-- [位置编码_绝对_相对_RoPE_ALiBi](./Embedding与位置编码/02_位置编码_绝对_相对_RoPE_ALiBi.md)
+- [Word_Embedding回顾](01_Word_Embedding回顾.md)
+- [位置编码_绝对_相对_RoPE_ALiBi](02_位置编码_绝对_相对_RoPE_ALiBi.md)
 
 ## 多模态 Token 化
 - [视觉Token_Patch与ViT](./多模态Token化/01_视觉Token_Patch与ViT.md)

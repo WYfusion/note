@@ -4,41 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "8d71ed01e88a6e82",
+        "id": "36c5d4ad5db81a7c",
         "type": "tabs",
         "children": [
           {
-            "id": "9dd785692546dde6",
+            "id": "b693f97bed69e2cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/稀疏检索.md",
+                "file": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/W&B + Prometheus 监控搭建实战.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "稀疏检索"
-            }
-          },
-          {
-            "id": "fd34dc98dbe56c80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）/DPR（Dense Passage Retriever）.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "DPR（Dense Passage Retriever）"
+              "title": "W&B + Prometheus 监控搭建实战"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -57,7 +41,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -97,15 +81,15 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 413.5004062652588
+    "width": 478
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -121,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md",
+                "file": "DL/大语言模型/09_RAG_检索增强生成/RAG总体架构_数据流.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -131,7 +115,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "03-Ollama完整部署实战 的反向链接列表"
+              "title": "RAG总体架构_数据流 的反向链接列表"
             }
           },
           {
@@ -140,12 +124,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01工具/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md",
+                "file": "DL/大语言模型/09_RAG_检索增强生成/RAG总体架构_数据流.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "03-Ollama完整部署实战 的出链列表"
+              "title": "RAG总体架构_数据流 的出链列表"
             }
           },
           {
@@ -201,9 +185,19 @@
               "icon": "spreadsheet",
               "title": "Advanced Tables"
             }
+          },
+          {
+            "id": "a81fc5c5c0432659",
+            "type": "leaf",
+            "state": {
+              "type": "github-copilot-chat-view",
+              "state": {},
+              "icon": "bot-message-square",
+              "title": "Copilot Chat"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -212,6 +206,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "mermaid-tools:Open Mermaid Toolbar": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -222,48 +217,50 @@
       "random-note:开始漫游笔记": false,
       "workspaces:管理工作区布局": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fd34dc98dbe56c80",
+  "active": "b693f97bed69e2cc",
   "lastOpenFiles": [
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）/稠密检索.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）/DPR（Dense Passage Retriever）.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/稀疏检索.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/SPLADE.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/01_召回_BM25_Dense_Hybrid.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/TF-IDF.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/融合策略（Fusion）",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/延迟交互（Late Interaction）",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/精排器（Reranker）",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稠密检索（Dense Retrieval）",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）/BM25 (Best Matching 25).md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/02_Reranker_CrossEncoder.md",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索/未命名",
-    "大语言模型/09_RAG_检索增强生成/检索与重排/稀疏检索（Sparse Retrieval）",
-    "大语言模型/01_概览与学习路线/03_学习路线_从入门到精通.md",
-    "大语言模型/01_概览与学习路线/04_核心术语表与缩写.md",
-    "大语言模型/01_概览与学习路线/02_LLM任务全景与能力边界.md",
-    "大语言模型/01_概览与学习路线/01_已有前置与本章边界.md",
-    "课本/机器学习/评估指标.md",
-    "09大语言模型/07_对齐_偏好学习_RLHF与变体/算法与训练/02_PPO_for_LLM.md",
-    "09大语言模型/05_预训练_数据_规模化训练/分布式与并行/索引_分布式与并行.md",
-    "01工具/UV.md",
-    "01工具/挂载/Ubuntu文件夹挂载到Windows.md",
-    "01工具/挂载/Windows文件挂载到Windows.md",
-    "09大语言模型/13_系统工程与部署_MLOps/ollama部署/本地ollama部署.md",
-    "01工具/Anaconda/创建环境.md",
-    "01工具/Anaconda/删除环境.md",
-    "01工具/Docker/02-基础概念/01-Docker简单使用.md",
-    "fastapi/00-总览.md",
-    "fastapi/03Agent应用/14-Agent部署.md",
-    "fastapi/03Agent应用/multi_agent.py",
-    "fastapi/03Agent应用/13-多Agent协作.md",
-    "fastapi/03Agent应用/mcp_integration.py",
-    "fastapi/03Agent应用/12-MCP集成.md",
-    "fastapi/03Agent应用/streaming.py",
-    "fastapi/03Agent应用/tools.py",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/10 监控机制与告警体系.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/梯度范数监控 Python 实现.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/7 梯度范数监控与判别.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/4 Warmup 策略.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/Warmup 与 Scheduler 实现示例.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/6 异常 Batch 定位.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/异常 Batch 定位 Python 实战.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/LLM 训练工程详解：预训练 微调 对齐.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/15 一句话原则.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/14 标准排障流程.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/13 预训练 微调 对齐差异速记.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/12 常用默认值速查.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/8 数据问题 vs 超参问题 vs 实现问题.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/5 Loss Spike 诊断.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/3 梯度噪声.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/吞吐优化技术栈 Python 实战.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/11 Tokens 吞吐量优化.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/W&B + Prometheus 监控搭建实战.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/混合精度训练排障实战.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/9 训练崩溃救援.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/LR Scaling 与 Scheduler 实现.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/2 学习率（LR）调优.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/分布式 Sharded Checkpoint 实战.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/1 Checkpoint 与回滚机制.md",
+    "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/01_LoRA_QLoRA.md",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制",
+    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐",
+    "DL/大语言模型/06_指令微调与参数高效微调PEFT/索引_指令微调与参数高效微调.md",
+    "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT 参数高效微调方案族/LoRA 系列详解",
+    "DL/TTS/Qwen3 TTS/Qwen3模型骨架/Untitled Diagram.svg",
+    "概念/论文/自看论文/Multi-Head State Space Model for Speech Recognition语音识别的多头部状态空间模型/Stacked & Multi-Head Extension.png",
+    "DL/03模型/LSTM/LSTM.png",
     "02模型/自监督预训练/自监督预训练.canvas",
     "assets/Pasted image 20260109094448.png",
     "assets/Pasted image 20260106210102.png",
@@ -272,9 +269,6 @@
     "Pasted image 20251230105831.png",
     "assets/Pasted image 20251230105320.png",
     "assets/Pasted image 20251230105309.png",
-    "assets/Pasted image 20251230105231.png",
-    "assets/Pasted image 20251230105224.png",
-    "assets/Pasted image 20251230105200.png",
     "语音/语音识别框架/语音识别基本框架.canvas",
     "课本/最优化/最优性理论/未命名.canvas",
     "论文/知识点/统计/未命名.canvas",

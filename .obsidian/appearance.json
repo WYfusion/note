@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "Primary",
   "theme": "moonstone",
   "accentColor": "#1e526c",
-  "baseFontSize": 22,
+  "baseFontSize": 19,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "preview-origin",

@@ -5,6 +5,9 @@
 ## 1. 文本去噪任务 (T5 / BART)
 
 ### 1.1 Span Corruption (T5)
+
+^60fffe
+
 *   **操作**: 随机选中一段文本（Span），将其替换为一个特殊的 Sentinel Token（如 `<extra_id_0>`）。
 *   **输入**: `The cat is <extra_id_0> the mat.`
 *   **目标**: `<extra_id_0> sitting on <extra_id_1>`
