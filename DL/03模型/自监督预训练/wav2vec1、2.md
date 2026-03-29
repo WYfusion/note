@@ -1,4 +1,4 @@
-# 深度学习笔记：wav2vec 与 wav2vec 2.0 详解
+﻿# 深度学习笔记：wav2vec 与 wav2vec 2.0 详解
 
 ## 1. 背景与意义：为什么要搞 "wav2vec"？
 
@@ -94,25 +94,25 @@ $$ \mathcal{L}_k = -\sum_{i=1}^{T-k} \left( \log \sigma\!\left(\mathbf{z}_{i+k}^
 1) Contrastive Loss（对比损失） 给定以被 mask 的时间步 $t$ 为中心的上下文网络输出 $\mathbf{c}_t$，模型需要在候选集合 $\tilde{\mathbf{q}}\in\mathbf{Q}_t$（大小为 $K+1$）中识别真实的量化潜表示 $\mathbf{q}_t$。候选集合包含正样本 $\mathbf{q}_t$ 和 $K$ 个干扰样本（负样本）。 $$ \mathcal{L}_m = -\log \frac{\exp\!\left(\mathrm{sim}(\mathbf{c}_t,\mathbf{q}_t)/\kappa\right)} {\sum\limits_{\tilde{\mathbf{q}}\in \mathbf{Q}_t}\exp\!\left(\mathrm{sim}(\mathbf{c}_t,\tilde{\mathbf{q}})/\kappa\right)} $$ 其中余弦相似度定义为： $$ \mathrm{sim}(\mathbf{a},\mathbf{b}) = \frac{\mathbf{a}^\top\mathbf{b}}{\lVert\mathbf{a}\rVert\,\lVert\mathbf{b}\rVert} $$
 2) Diversity Loss（多样性损失） 对比任务依赖量化码本（codebook）提供正负样本表示。为鼓励模型更均匀地使用每个码本的条目，定义多样性损失为（最大化平均 softmax 分布的熵；以“最小化负熵”的形式写入损失）： $$ \mathcal{L}_d = \frac{1}{GV}\sum_{g=1}^{G}-H(\bar{\mathbf{p}}_g) = \frac{1}{GV}\sum_{g=1}^{G}\sum_{v=1}^{V}\bar{p}_{g,v}\log \bar{p}_{g,v} $$
 #### 参数与符号说明
-- **总损失：**$\mathcal{L}\in\mathbb{R}$，预训练最小化目标： $$ \mathcal{L}=\mathcal{L}_m+\alpha\,\mathcal{L}_d $$ 
-- **权重系数：**$\alpha\in\mathbb{R}_{\ge 0}$，用于平衡对比损失与多样性损失（文中说明为 tuned hyperparameter）。 
-对比损失相关 
-- **时间索引：**$t\in\{1,\dots,T\}$，表示序列中的时间步（被 mask 的位置之一）。 
-- **上下文表示：**$\mathbf{c}_t\in\mathbb{R}^{d}$，上下文网络（context network）在时间步 $t$ 的输出表示。 
-- **量化潜表示（正样本）：**$\mathbf{q}_t\in\mathbb{R}^{d}$，对应时间步 $t$ 的真实量化潜在语音表示（true quantized latent speech representation）。 
+- **总损失：**$\mathcal{L}\in\mathbb{R}$，预训练最小化目标： $$ \mathcal{L}=\mathcal{L}_m+\alpha\,\mathcal{L}_d $$
+- **权重系数：**$\alpha\in\mathbb{R}_{\ge 0}$，用于平衡对比损失与多样性损失（文中说明为 tuned hyperparameter）。
+对比损失相关
+- **时间索引：**$t\in\{1,\dots,T\}$，表示序列中的时间步（被 mask 的位置之一）。
+- **上下文表示：**$\mathbf{c}_t\in\mathbb{R}^{d}$，上下文网络（context network）在时间步 $t$ 的输出表示。
+- **量化潜表示（正样本）：**$\mathbf{q}_t\in\mathbb{R}^{d}$，对应时间步 $t$ 的真实量化潜在语音表示（true quantized latent speech representation）。
 - **候选集合：**$\mathbf{Q}_t$，量化候选表示集合： $$ \mathbf{Q}_t=\{\mathbf{q}_t\}\cup\{\tilde{\mathbf{q}}_{t,1},\dots,\tilde{\mathbf{q}}_{t,K}\},\qquad |\mathbf{Q}_t|=K+1 $$ 其中 $\tilde{\mathbf{q}}$ 表示干扰样本（distractors / negatives）。
-- **负样本数量：**$K\in\mathbb{N}$，每个被 mask 的时间步用于对比的负样本个数；因此候选总数为 $K+1$。 
-- **负样本采样方式**：干扰样本从**同一条语音**的其他被 mask 时间步中**均匀采样**（文中描述）。 
-- **温度参数：**$\kappa\in\mathbb{R}_{>0}$（注意：论文里常用 $\kappa$ 或 $\tau$ 表示 temperature；此处与原文一致写为 $\kappa$），用于缩放相似度 logits： $$ \exp(\mathrm{sim}(\cdot,\cdot)/\kappa) $$ $\kappa$ 越小分布越尖锐，越强调 hardest negative。 
-- **相似度函数：**$\mathrm{sim}(\mathbf{a},\mathbf{b})$ 使用余弦相似度： $$ \mathrm{sim}(\mathbf{a},\mathbf{b})=\frac{\mathbf{a}^\top\mathbf{b}}{\lVert\mathbf{a}\rVert\,\lVert\mathbf{b}\rVert} $$ 其中 $\lVert\cdot\rVert$ 为 $\ell_2$ 范数。 
-- **对比损失：**$\mathcal{L}_m\in\mathbb{R}$，等价于在候选集合 $\mathbf{Q}_t$ 上做 softmax 分类并取负对数似然，使正样本 $\mathbf{q}_t$ 的概率最大。 多样性损失相关 
-- **码本个数：**$G\in\mathbb{N}$，表示使用的 codebook 组数（groups）。 
-- **每个码本条目数：**$V\in\mathbb{N}$，每个 codebook 中可选的离散条目（entries）的数量。 
-- **平均 softmax 分布：**$\bar{\mathbf{p}}_g\in\mathbb{R}^{V}$，第 $g$ 个 codebook 在一个 batch（跨多条 utterances）上、对条目选择概率的平均分布： $$ \bar{\mathbf{p}}_g=\big(\bar{p}_{g,1},\dots,\bar{p}_{g,V}\big),\qquad \sum_{v=1}^{V}\bar{p}_{g,v}=1,\ \bar{p}_{g,v}\ge 0 $$ 文中说该 softmax 分布不包含 gumbel noise，也不包含 temperature（即用于统计“使用频率”的分布是普通 softmax 概率）。 
-- **熵：**$H(\bar{\mathbf{p}}_g)$ 为离散分布熵： $$ H(\bar{\mathbf{p}}_g)=-\sum_{v=1}^{V}\bar{p}_{g,v}\log \bar{p}_{g,v} $$ 
+- **负样本数量：**$K\in\mathbb{N}$，每个被 mask 的时间步用于对比的负样本个数；因此候选总数为 $K+1$。
+- **负样本采样方式**：干扰样本从**同一条语音**的其他被 mask 时间步中**均匀采样**（文中描述）。
+- **温度参数：**$\kappa\in\mathbb{R}_{>0}$（注意：论文里常用 $\kappa$ 或 $\tau$ 表示 temperature；此处与原文一致写为 $\kappa$），用于缩放相似度 logits： $$ \exp(\mathrm{sim}(\cdot,\cdot)/\kappa) $$ $\kappa$ 越小分布越尖锐，越强调 hardest negative。
+- **相似度函数：**$\mathrm{sim}(\mathbf{a},\mathbf{b})$ 使用余弦相似度： $$ \mathrm{sim}(\mathbf{a},\mathbf{b})=\frac{\mathbf{a}^\top\mathbf{b}}{\lVert\mathbf{a}\rVert\,\lVert\mathbf{b}\rVert} $$ 其中 $\lVert\cdot\rVert$ 为 $\ell_2$ 范数。
+- **对比损失：**$\mathcal{L}_m\in\mathbb{R}$，等价于在候选集合 $\mathbf{Q}_t$ 上做 softmax 分类并取负对数似然，使正样本 $\mathbf{q}_t$ 的概率最大。 多样性损失相关
+- **码本个数：**$G\in\mathbb{N}$，表示使用的 codebook 组数（groups）。
+- **每个码本条目数：**$V\in\mathbb{N}$，每个 codebook 中可选的离散条目（entries）的数量。
+- **平均 softmax 分布：**$\bar{\mathbf{p}}_g\in\mathbb{R}^{V}$，第 $g$ 个 codebook 在一个 batch（跨多条 utterances）上、对条目选择概率的平均分布： $$ \bar{\mathbf{p}}_g=\big(\bar{p}_{g,1},\dots,\bar{p}_{g,V}\big),\qquad \sum_{v=1}^{V}\bar{p}_{g,v}=1,\ \bar{p}_{g,v}\ge 0 $$ 文中说该 softmax 分布不包含 gumbel noise，也不包含 temperature（即用于统计“使用频率”的分布是普通 softmax 概率）。
+- **熵：**$H(\bar{\mathbf{p}}_g)$ 为离散分布熵： $$ H(\bar{\mathbf{p}}_g)=-\sum_{v=1}^{V}\bar{p}_{g,v}\log \bar{p}_{g,v} $$
 - **多样性损失：**$\mathcal{L}_d\in\mathbb{R}$，对所有 codebook 的平均负熵（或等价的 $\sum \bar{p}\log \bar{p}$ 形式）： $$ \mathcal{L}_d=\frac{1}{GV}\sum_{g=1}^{G}\sum_{v=1}^{V}\bar{p}_{g,v}\log \bar{p}_{g,v} $$ 最小化 $\mathcal{L}_d$ 等价于最大化熵，从而鼓励 $\bar{\mathbf{p}}_g$ 更接近均匀分布（更均匀使用码本条目）。
-- **通俗解释：** 
-$\mathcal{L}_m$：在每个被 mask 的时间步 $t$，让模型从 $K+1$ 个量化候选里挑出真正属于该位置的 $\mathbf{q}_t$（其余为同一句话中其他位置的干扰量化表示）。 
+- **通俗解释：**
+$\mathcal{L}_m$：在每个被 mask 的时间步 $t$，让模型从 $K+1$ 个量化候选里挑出真正属于该位置的 $\mathbf{q}_t$（其余为同一句话中其他位置的干扰量化表示）。
 $\mathcal{L}_d$：防止模型总是偏好少数几个码本条目，鼓励“用得更均匀”，让离散表征更有信息量。
 
 ### 3.4 效果与突破

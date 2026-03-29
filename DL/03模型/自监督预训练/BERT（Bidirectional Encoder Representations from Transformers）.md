@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -207,3 +207,4 @@ BERT 在学习的过程中就学到了上下文的信息。所以说 BERT 所抽
 - Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *NAACL*
 - Lewis, M., et al. (2020). BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension. *ACL*
 - Song, K., et al. (2019). MASS: Masked Sequence to Sequence Pre-training for Language Generation. *ICML*
+

@@ -1,4 +1,4 @@
-# Mossformer模型总体架构
+﻿# Mossformer模型总体架构
 采用的是时域分离的方法，即 **编码** ——> **掩码** ——> **解码** 的流程
 ![[Pasted image 20250508214334.png|600]]
 输入序列$\mathbf{X}\in\mathbb{R}^{B\times1\times T}$
@@ -56,4 +56,4 @@ $$\begin{aligned}&\mathbf{O^{\prime}}=\phi(\mathbf{U}\otimes\mathbf{V^{\prime}})
 为了计算局部二次注意力机制，我们将 $𝐕$ 、 $𝐔$ 、 $𝐐$ 和 $𝐊$ 分成 $H$ 个大小为 $P$ 的互不重叠的块，其中 $S<H×P$ 时使用零填充。$\mathbf{U}_h\in\mathbb{R}^{B \times S\times2N/P}$ 和 $\mathbf{V}_h\in\mathbb{R}^{B \times S\times2N/P}$ ，$\mathrm{Q}_h\in\mathbb{R}^{B \times S\times D/P}$ 和键$\mathrm{K}_h\in\mathbb{R}^{B \times S\times D/P}$因此，二次注意力机制会独立地应用于每个块，如下所示：$$\mathbf{V}_{\mathrm{local},h}^{^{\prime}}=\mathrm{ReLU}^2\left(\gamma\mathbf{Q}_h\mathbf{K}_h^T\right)\mathbf{V}_h,\mathbf{U}_{\mathrm{local},h}^{^{\prime}}=\mathrm{ReLU}^2\left(\gamma\mathbf{Q}_h\mathbf{K}_h^T\right)\mathbf{U}_h$$其中 $γ=1/P$ 是缩放因子。$\mathbf{Q}_h\mathbf{K}_h^T$为了优化性能，我们采用平方 $ReLU$ 代替 $MHSA$ 中的 $softmax$ [12](https://ar5iv.labs.arxiv.org/html/2302.11824?immersive_translate_auto_translate=1#bib.bib12)  。注意， $𝐐_h​𝐊_h^T$ 只需计算一次，因为它由 $𝐕_{{local},h^′}$ 和 $𝐔_{{local},h^′}$ 共享。我们将 $𝐕^′_{{local},h}$ 和 $𝐔^′_{{local},h}$ 的所有输出沿时间维度连接起来，形成完整序列： $𝐕_{local}^′=[𝐕^′_{{local},1},…,𝐕^′_{{local},H}]$ 和 $𝐔_{local}^′=[𝐔^′_{{local},1},…,𝐔^′_{{local},H}]$。局部注意力和全局注意力加在一起，形成 [[Mossformer模型#^e4fc62|公式内]] 最终的联合注意力 $𝐕^′$ 和 $𝐔^′$ ：$$\mathbf{V}^{^{\prime}}=\mathbf{V}_{\mathrm{local}}^{^{\prime}}+\mathbf{V}_{\mathrm{global}}^{^{\prime}},\quad\mathbf{U}^{^{\prime}}=\mathbf{U}_{\mathrm{local}}^{^{\prime}}+\mathbf{U}_{\mathrm{global}}^{^{\prime}}$$
 
 
- 
+

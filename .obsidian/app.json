@@ -1,5 +1,11 @@
 {
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "visible",
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "promptDelete": false,
+  "showUnsupportedFiles": false,
+  "deleteUnlinkedAttachments": "never",
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": false,
+  "newFileLocation": "current"
 }

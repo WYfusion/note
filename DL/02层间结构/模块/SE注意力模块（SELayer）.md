@@ -1,4 +1,4 @@
-SE（Squeeze-and-Excitation）注意力模块由 **SENet**（2018, Hu et al.）提出，用于建模通道间依赖关系。
+﻿SE（Squeeze-and-Excitation）注意力模块由 **SENet**（2018, Hu et al.）提出，用于建模通道间依赖关系。
 
 ---
 
@@ -96,7 +96,7 @@ class SELayer(nn.Module):
             nn.Linear(channel // reduction, channel, bias=False),
             nn.Sigmoid()
         )
-    
+
     def forward(self, x):
         b, c, _, _ = x.size()
         # Squeeze
@@ -117,3 +117,4 @@ class SELayer(nn.Module):
 | **即插即用**         | 可嵌入任意 CNN 架构（ResNet、Inception 等）    |
 | **性能提升显著**     | ImageNet 分类 Top-1 错误率降低约 0.5-1%        |
 | **通道自适应**       | 自动学习通道重要性，增强有用特征、抑制无用特征 |
+

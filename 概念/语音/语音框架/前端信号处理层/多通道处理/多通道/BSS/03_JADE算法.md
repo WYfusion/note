@@ -1,4 +1,4 @@
-# JADE 算法
+﻿# JADE 算法
 
 ## 1. 算法概述
 
@@ -139,7 +139,7 @@ $$\mathcal{J}(\mathbf{U}) = \sum_{k=1}^{K} \|\text{diag}(\mathbf{U}^T\mathbf{Q}_
 
 使用一系列 Givens 旋转来逐步对角化：
 
-$$\mathbf{G}_{pq}(\theta) = \begin{pmatrix} 
+$$\mathbf{G}_{pq}(\theta) = \begin{pmatrix}
 \mathbf{I} & & & \\
 & \cos\theta & \cdots & \sin\theta \\
 & \vdots & \ddots & \vdots \\
@@ -272,3 +272,4 @@ $$\mathbf{R}(\tau) = E[\mathbf{x}(t)\mathbf{x}(t-\tau)^T]$$
 
 扩展到复数域，用于频域 BSS：
 $$\text{cum}(z_i, z_j^*, z_k, z_l^*) = E[z_i z_j^* z_k z_l^*] - E[z_i z_j^*]E[z_k z_l^*] - E[z_i z_l^*]E[z_k z_j^*]$$
+

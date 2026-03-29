@@ -1,5 +1,5 @@
-
-#### 在 WSL 中安装 Miniconda 
+﻿
+#### 在 WSL 中安装 Miniconda
 
 如果你尚未安装 `conda`，可以通过以下步骤在 WSL 中安装 Miniconda（推荐）。
 

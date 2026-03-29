@@ -1,4 +1,4 @@
-需要在VSCode中安装 **Remote - SSH** 扩展
+﻿需要在VSCode中安装 **Remote - SSH** 扩展
 
 主要参考：[Windows安装和启动SSH服务_windows 安装ssh-CSDN博客](https://blog.csdn.net/qq_33594636/article/details/128849482)
 被控制端需要安装OpenSSH.Server，最好把客户端和服务端都安装好。
@@ -23,14 +23,14 @@ powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1
 
 1. 修改 `/etc/ssh/sshd_config`，添加 `Port` 行：
 ```shell
-Port 22     # 保留默认端口 
+Port 22     # 保留默认端口
 Port 2222   # 新增端口
 ```
 ### 配置防火墙（开放 SSH 端口）
 
 #### 1. 开放默认端口（22）
 ```powershell
-# 允许入站 TCP 流量到 22 端口 
+# 允许入站 TCP 流量到 22 端口
 New-NetFirewallRule -Name "OpenSSH-Server" -DisplayName "OpenSSH Server (sshd)" -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
 
@@ -52,7 +52,7 @@ New-NetFirewallRule -Name "SSH-AltPort" -DisplayName "SSH Alternate Port" -Enabl
 
 3. **检查端口监听**：
 ```Powershell
-#查看指定端口是否处于监听状态 
+#查看指定端口是否处于监听状态
 Get-NetTCPConnection -LocalPort 22 -State Listen
 ```
 - 若端口未显示，可能服务未正确启动或防火墙规则未生效
@@ -116,7 +116,7 @@ type C:\Users\dell\.ssh\authorized_keys  # Windows
 ```
 
 #### 权限验证：
-- 目录权限：    
+- 目录权限：
 ```powershell
 chmod 700 ~/.ssh            # Linux
 icacls "C:\Users\dell\.ssh" /inheritance:r /grant:r "dell:(F)"  # Windows
@@ -144,7 +144,7 @@ sudo systemctl restart sshd  # Linux系统
 Restart-Service sshd        # Windows系统（若目标主机为Windows）
 ```
 
-**本地回环测试** 在目标主机上执行本地 SSH 连接测试：  
+**本地回环测试** 在目标主机上执行本地 SSH 连接测试：
 ```Powershell
 ssh -v -i C:\Users\dell\.ssh\id_rsa dell@localhost
 ```

@@ -1,4 +1,4 @@
-# 空间相关矩阵 (Spatial Covariance Matrix, SCM)
+﻿# 空间相关矩阵 (Spatial Covariance Matrix, SCM)
 
 空间相关矩阵（在文献中也常称为**空间协方差矩阵**或**跨谱密度矩阵 Cross-spectral Density, CSD**）是多通道信号处理中的核心数学工具。它描述了麦克风阵列中不同麦克风接收到的信号之间的相关性，包含了关于声源数量、位置以及噪声场特性的丰富信息。
 
@@ -29,15 +29,15 @@ $$
 
 其中：
 - **信号SCM**:
-  $$ 
-  \mathbf{\Phi}_{ss}(f) = E\{ (\mathbf{d}S)(\mathbf{d}S)^H \} = \mathbf{d}(f) E\{|S(f,t)|^2\} \mathbf{d}^H(f) = \phi_{ss}(f) \mathbf{d}(f) \mathbf{d}^H(f) 
-  $$ 
+  $$
+  \mathbf{\Phi}_{ss}(f) = E\{ (\mathbf{d}S)(\mathbf{d}S)^H \} = \mathbf{d}(f) E\{|S(f,t)|^2\} \mathbf{d}^H(f) = \phi_{ss}(f) \mathbf{d}(f) \mathbf{d}^H(f)
+  $$
   这里 $\phi_{ss}(f)$ 是纯净语音信号的功率谱。可见，对于单个声源，其SCM是一个**秩为1**的矩阵。这个特性在声源分离和DOA估计中非常重要。
 
 - **噪声SCM**:
-  $$ 
-  \mathbf{\Phi}_{nn}(f) = E\{ \mathbf{V}(f, t) \mathbf{V}^H(f, t) \} 
-  $$ 
+  $$
+  \mathbf{\Phi}_{nn}(f) = E\{ \mathbf{V}(f, t) \mathbf{V}^H(f, t) \}
+  $$
   噪声SCM的结构取决于噪声场的空间特性。
     - **空间白噪声 (Spatially White Noise)**: 噪声来自四面八方且互不相关。此时 $\mathbf{\Phi}_{nn}(f) = \phi_{nn}(f) \mathbf{I}$，其中 $\mathbf{I}$ 是单位矩阵。
     - **扩散噪声场 (Diffuse Noise Field)**: 在一个理想的混响环境中，噪声SCM的 $(p, q)$ 元素可以由 sinc 函数 $\text{sinc}(2\pi f d_{pq}/c)$ 描述，其中 $d_{pq}$ 是麦克风 $p$ 和 $q$ 之间的距离，$c$ 是声速。
@@ -46,15 +46,15 @@ $$
 
 在实际应用中，我们无法得到真实的期望值，因此需要从有限的观测数据中估计SCM。常用的方法是使用**时间平滑**：
 
-$$ 
-\hat{\mathbf{\Phi}}_{xx}(f) = \frac{1}{N} \sum_{t=1}^{N} \mathbf{X}(f, t) \mathbf{X}^H(f, t) 
-$$ 
+$$
+\hat{\mathbf{\Phi}}_{xx}(f) = \frac{1}{N} \sum_{t=1}^{N} \mathbf{X}(f, t) \mathbf{X}^H(f, t)
+$$
 
 为了获得更平滑的估计，通常采用**递归平滑（一阶IIR滤波器）**，前后时间点的叠加，将随机噪声平均掉了，同时语音分量由于较为恒定逐渐叠加变大，因此相当于突出了语音抑制了随机噪声：
 
-$$ 
-\hat{\mathbf{\Phi}}_{xx}(f, t) = \alpha \hat{\mathbf{\Phi}}_{xx}(f, t-1) + (1-\alpha) \mathbf{X}(f, t) \mathbf{X}^H(f, t) 
-$$ 
+$$
+\hat{\mathbf{\Phi}}_{xx}(f, t) = \alpha \hat{\mathbf{\Phi}}_{xx}(f, t-1) + (1-\alpha) \mathbf{X}(f, t) \mathbf{X}^H(f, t)
+$$
 
 其中 $\alpha$ 是平滑因子，取值范围在 (0, 1) 之间。
 
@@ -68,3 +68,4 @@ SCM是自适应波束形成算法的基石，例如：
 - **噪声估计**: 在语音活动检测 (VAD) 的辅助下，我们可以在没有语音的时刻更新噪声SCM $\mathbf{\Phi}_{nn}$，然后在有语音的时刻使用它进行降噪。
 
 **总结**: SCM将多通道信号从简单的时域波形转化为一个包含丰富空间结构信息的矩阵。如何从含噪数据中鲁棒地估计信号和噪声的SCM，并有效利用其结构特性，是整个多通道语音处理领域研究的核心问题之一。
+

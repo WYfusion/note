@@ -1,4 +1,4 @@
-# MUSIC 算法
+﻿# MUSIC 算法
 
 ## 1. 概述
 
@@ -76,7 +76,7 @@ class MUSIC:
         self.K = n_sources
         self.fs = fs
         self.c = c
-    
+
     def steering_vector(self, theta, phi, f):
         k = 2 * np.pi * f / self.c
         direction = np.array([
@@ -87,29 +87,29 @@ class MUSIC:
         delays = self.mic_positions @ direction
         d = np.exp(-1j * k * delays)
         return d
-    
+
     def estimate_doa(self, X, f):
         P, T = X.shape
         R_X = (X @ X.conj().T) / T
         eigenvalues, eigenvectors = np.linalg.eigh(R_X)
         idx = eigenvalues.argsort()[::-1]
         U_N = eigenvectors[:, idx[self.K:]]
-        
+
         theta_grid = np.linspace(-np.pi, np.pi, 360)
         spectrum = np.zeros(len(theta_grid))
-        
+
         for i, theta in enumerate(theta_grid):
             d = self.steering_vector(theta, 0, f)
             denominator = np.abs(d.conj() @ U_N @ U_N.conj().T @ d)
             spectrum[i] = 1.0 / (denominator + 1e-10)
-        
+
         from scipy.signal import find_peaks
         peaks_idx, _ = find_peaks(spectrum, distance=10)
         if len(peaks_idx) > self.K:
             peak_heights = spectrum[peaks_idx]
             top_k_idx = np.argsort(peak_heights)[-self.K:]
             peaks_idx = peaks_idx[top_k_idx]
-        
+
         doa_estimates = theta_grid[peaks_idx]
         return doa_estimates, spectrum
 ```
@@ -184,3 +184,4 @@ MUSIC的估计方差在高SNR下接近Cramér-Rao下界。
 2. Krim, H., & Viberg, M. (1996). "Two decades of array signal processing research." IEEE SP Magazine.
 
 3. Van Trees, H. L. (2002). "Optimum Array Processing." Wiley.
+

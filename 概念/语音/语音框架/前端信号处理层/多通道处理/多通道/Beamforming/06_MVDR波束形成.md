@@ -1,4 +1,4 @@
-# MVDR 波束形成
+﻿# MVDR 波束形成
 
 ## 1. 概述
 
@@ -177,7 +177,7 @@ $$\mathbf{R}_X \leftarrow \frac{\mathbf{R}_X}{\text{tr}(\mathbf{R}_X)}$$
 
 2. 估计协方差矩阵
    R_X = (1/T) * Σ_t X(f,t) * X^H(f,t)
-   
+
 3. 对角加载
    R_X = R_X + ε*I
 
@@ -202,10 +202,10 @@ $$\mathbf{R}_X \leftarrow \frac{\mathbf{R}_X}{\text{tr}(\mathbf{R}_X)}$$
 for each frame t:
   // 更新协方差
   R_X = α*R_X + (1-α)*X(t)*X^H(t)
-  
+
   // 计算权重
   w = (R_X^(-1) * d) / (d^H * R_X^(-1) * d)
-  
+
   // 波束形成
   Y(t) = w^H * X(t)
 end
@@ -221,65 +221,65 @@ import numpy as np
 def mvdr_beamformer(X, d, epsilon=1e-6):
     """
     MVDR 波束形成器
-    
+
     参数:
         X: 输入信号 [P, T] (麦克风数, 时间帧数)
         d: 导向矢量 [P, 1]
         epsilon: 对角加载系数
-    
+
     返回:
         Y: 输出信号 [T]
         w: MVDR 权重 [P]
     """
     P, T = X.shape
-    
+
     # 估计协方差矩阵
     R_X = (X @ X.conj().T) / T
-    
+
     # 对角加载
     R_X += epsilon * np.eye(P)
-    
+
     # 计算 MVDR 权重
     R_inv_d = np.linalg.solve(R_X, d)
     w = R_inv_d / (d.conj().T @ R_inv_d)
-    
+
     # 应用波束形成
     Y = w.conj().T @ X
-    
+
     return Y, w
 
 
 def mvdr_online(X, d, alpha=0.95, epsilon=1e-6):
     """
     在线 MVDR 波束形成器
-    
+
     参数:
         X: 输入信号 [P, T]
         d: 导向矢量 [P]
         alpha: 遗忘因子
         epsilon: 对角加载系数
-    
+
     返回:
         Y: 输出信号 [T]
     """
     P, T = X.shape
-    
+
     # 初始化
     R_X = epsilon * np.eye(P, dtype=complex)
     Y = np.zeros(T, dtype=complex)
-    
+
     for t in range(T):
         # 更新协方差
         x_t = X[:, t:t+1]
         R_X = alpha * R_X + (1 - alpha) * (x_t @ x_t.conj().T)
-        
+
         # 计算权重
         R_inv_d = np.linalg.solve(R_X, d)
         w = R_inv_d / (d.conj().T @ R_inv_d)
-        
+
         # 波束形成
         Y[t] = w.conj().T @ x_t
-    
+
     return Y
 ```
 
@@ -333,3 +333,4 @@ $$\mathbf{w} = \frac{(\mathbf{R}_X + \mu\mathbf{I})^{-1} \mathbf{d}}{\mathbf{d}^
 ### 10.3 子空间 MVDR
 
 利用信号子空间和噪声子空间的正交性。
+

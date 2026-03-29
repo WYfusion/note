@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -185,3 +185,4 @@ $$
 
 - Mirza, M., & Osindero, S. (2014). Conditional Generative Adversarial Nets. *arXiv preprint arXiv:1411.1784*
 - Isola, P., et al. (2017). Image-to-Image Translation with Conditional Adversarial Networks. *CVPR* (pix2pix)
+

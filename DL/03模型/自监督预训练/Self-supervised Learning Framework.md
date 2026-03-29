@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -293,3 +293,4 @@ $$
 - He, K., et al. (2020). Momentum Contrast for Unsupervised Visual Representation Learning. *CVPR* (MoCo)
 - Chen, T., et al. (2020). A Simple Framework for Contrastive Learning of Visual Representations. *ICML* (SimCLR)
 - Devlin, J., et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *NAACL*
+

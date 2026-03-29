@@ -1,4 +1,4 @@
-## Windows安装UV
+﻿## Windows安装UV
 推荐退出各种安全中心
 ```bash
 iwr -useb https://astral.sh/uv/install.ps1 | iex
@@ -94,7 +94,7 @@ requires-python = ">=3.12"
 dependencies = [
     "numpy>=1.21.0",
     "torch>=2.0.0,<2.8.0",
-    "torchvision", 
+    "torchvision",
     "torchaudio",
 ]
 

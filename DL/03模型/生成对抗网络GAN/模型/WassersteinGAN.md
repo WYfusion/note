@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -165,3 +165,4 @@ $$
 
 - Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein GAN. *ICML*
 - Gulrajani, I., et al. (2017). Improved Training of Wasserstein GANs. *NeurIPS* (WGAN-GP)
+

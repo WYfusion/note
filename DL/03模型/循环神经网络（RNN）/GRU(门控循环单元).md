@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -167,3 +167,4 @@ GRU 在以下场景中表现出色：
 ## 参考资料
 
 - Cho, K., Van Merriënboer, B., Gulcehre, C., et al. (2014). Learning phrase representations using RNN encoder-decoder for statistical machine translation. *arXiv preprint arXiv:1406.1078*
+

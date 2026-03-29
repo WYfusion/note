@@ -1,4 +1,4 @@
-# Conv-TasNet 卷积时域分离网络
+﻿# Conv-TasNet 卷积时域分离网络
 
 ## 1. 概述
 
@@ -194,7 +194,7 @@ class Encoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.conv = nn.Conv1d(1, N, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         # x: [B, T]
         x = x.unsqueeze(1)  # [B, 1, T]
@@ -210,28 +210,28 @@ class ConvBlock(nn.Module):
         self.conv1 = nn.Conv1d(B, H, 1)
         self.prelu1 = nn.PReLU()
         self.norm1 = nn.GroupNorm(1, H)  # 等价于 LayerNorm
-        
+
         # Depthwise Conv
         padding = (P - 1) * dilation // 2
-        self.dwconv = nn.Conv1d(H, H, P, dilation=dilation, 
+        self.dwconv = nn.Conv1d(H, H, P, dilation=dilation,
                                 padding=padding, groups=H)
         self.prelu2 = nn.PReLU()
         self.norm2 = nn.GroupNorm(1, H)
-        
+
         self.conv2 = nn.Conv1d(H, B, 1)
-        
+
     def forward(self, x):
         # x: [B, B_ch, K]
         residual = x
-        
+
         x = self.conv1(x)
         x = self.prelu1(self.norm1(x))
-        
+
         x = self.dwconv(x)
         x = self.prelu2(self.norm2(x))
-        
+
         x = self.conv2(x)
-        
+
         return x + residual
 ```
 
@@ -242,12 +242,12 @@ class TCN(nn.Module):
     def __init__(self, B, H, P, X, R):
         super().__init__()
         self.blocks = nn.ModuleList()
-        
+
         for r in range(R):
             for x in range(X):
                 dilation = 2 ** x
                 self.blocks.append(ConvBlock(B, H, P, dilation))
-                
+
     def forward(self, x):
         for block in self.blocks:
             x = block(x)
@@ -266,22 +266,22 @@ class SeparationNet(nn.Module):
         self.mask_conv = nn.Conv1d(B, N * C, 1)
         self.C = C
         self.N = N
-        
+
     def forward(self, w):
         # w: [B, N, K]
         batch_size = w.shape[0]
-        
+
         x = self.norm(w)
         x = self.bottleneck(x)  # [B, B_ch, K]
         x = self.tcn(x)  # [B, B_ch, K]
         x = self.mask_conv(x)  # [B, N*C, K]
-        
+
         # Reshape to [B, C, N, K]
         x = x.view(batch_size, self.C, self.N, -1)
-        
+
         # Softmax over sources
         masks = F.softmax(x, dim=1)
-        
+
         return masks
 ```
 
@@ -292,7 +292,7 @@ class Decoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.deconv = nn.ConvTranspose1d(N, 1, L, stride=L//2, bias=False)
-        
+
     def forward(self, d):
         # d: [B, N, K]
         return self.deconv(d).squeeze(1)  # [B, T]
@@ -308,23 +308,23 @@ class ConvTasNet(nn.Module):
         self.separator = SeparationNet(N, B, H, P, X, R, C)
         self.decoder = Decoder(N, L)
         self.C = C
-        
+
     def forward(self, x):
         # x: [B, T]
-        
+
         # 编码
         w = self.encoder(x)  # [B, N, K]
-        
+
         # 分离
         masks = self.separator(w)  # [B, C, N, K]
-        
+
         # 解码
         outputs = []
         for i in range(self.C):
             d = masks[:, i] * w  # [B, N, K]
             s = self.decoder(d)  # [B, T]
             outputs.append(s)
-        
+
         return torch.stack(outputs, dim=1)  # [B, C, T]
 ```
 
@@ -341,19 +341,19 @@ def si_snr_loss(estimate, target, eps=1e-8):
     # 零均值
     estimate = estimate - estimate.mean(dim=-1, keepdim=True)
     target = target - target.mean(dim=-1, keepdim=True)
-    
+
     # 投影
     dot = (estimate * target).sum(dim=-1, keepdim=True)
     s_target = dot * target / (target.pow(2).sum(dim=-1, keepdim=True) + eps)
-    
+
     # 噪声
     e_noise = estimate - s_target
-    
+
     # SI-SNR
     si_snr = 10 * torch.log10(
         s_target.pow(2).sum(dim=-1) / (e_noise.pow(2).sum(dim=-1) + eps) + eps
     )
-    
+
     return -si_snr.mean()
 ```
 
@@ -375,13 +375,13 @@ scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
 for epoch in range(epochs):
     for batch in dataloader:
         mixture, sources = batch
-        
+
         # 前向传播
         estimates = model(mixture)
-        
+
         # PIT 损失
         loss = pit_si_snr_loss(estimates, sources)
-        
+
         # 反向传播
         optimizer.zero_grad()
         loss.backward()
@@ -458,3 +458,4 @@ class AttentionBlock(nn.Module):
         super().__init__()
         self.attention = nn.MultiheadAttention(B, num_heads=8)
 ```
+

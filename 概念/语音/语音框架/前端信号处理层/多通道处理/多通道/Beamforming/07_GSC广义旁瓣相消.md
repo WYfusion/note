@@ -1,4 +1,4 @@
-# GSC 广义旁瓣相消器
+﻿# GSC 广义旁瓣相消器
 
 ## 1. 概述
 
@@ -157,9 +157,9 @@ P_Y &= \mathbb{E}[|Y|^2] \\
 
 展开输出功率：
 $$\begin{aligned}
-P_Y &= \mathbf{w}_q^H \mathbf{R}_{xx} \mathbf{w}_q 
-- \mathbf{w}_q^H \mathbf{R}_{xx} \mathbf{B}\mathbf{w}_a 
-- \mathbf{w}_a^H \mathbf{B}^H \mathbf{R}_{xx} \mathbf{w}_q 
+P_Y &= \mathbf{w}_q^H \mathbf{R}_{xx} \mathbf{w}_q
+- \mathbf{w}_q^H \mathbf{R}_{xx} \mathbf{B}\mathbf{w}_a
+- \mathbf{w}_a^H \mathbf{B}^H \mathbf{R}_{xx} \mathbf{w}_q
 + \mathbf{w}_a^H \mathbf{B}^H \mathbf{R}_{xx} \mathbf{B}\mathbf{w}_a
 \end{aligned}$$
 
@@ -382,29 +382,29 @@ def gsc_process(x_multichannel, w_q, B, mu=0.1, eps=1e-6):
     # STFT
     X = stft(x_multichannel)  # [M, F, T]
     M, F, T = X.shape
-    
+
     # 初始化自适应滤波器
     w_a = np.zeros((M-1, F), dtype=complex)
     Y = np.zeros((F, T), dtype=complex)
-    
+
     for t in range(T):
         for f in range(F):
             # 固定波束形成
             Z = w_q[:, f].conj() @ X[:, f, t]
-            
+
             # 阻塞矩阵
             U = B[:, :, f].conj().T @ X[:, f, t]  # [M-1]
-            
+
             # 自适应滤波
             Y_a = w_a[:, f].conj() @ U
-            
+
             # 相减得到输出
             Y[f, t] = Z - Y_a
-            
+
             # NLMS 更新
             norm_U = np.sum(np.abs(U)**2)
             w_a[:, f] += mu / (norm_U + eps) * U * np.conj(Y[f, t])
-    
+
     # ISTFT
     y = istft(Y)
     return y
@@ -462,3 +462,4 @@ def gsc_process(x_multichannel, w_q, B, mu=0.1, eps=1e-6):
 1. Griffiths, L. J., & Jim, C. W. (1982). An alternative approach to linearly constrained adaptive beamforming. *IEEE Trans. Antennas Propag.*
 2. Hoshuyama, O., et al. (1999). A robust adaptive beamformer for microphone arrays with a blocking matrix using constrained adaptive filters. *IEEE Trans. Signal Process.*
 3. Gannot, S., et al. (2001). Signal enhancement using beamforming and nonstationarity with applications to speech. *IEEE Trans. Signal Process.*
+

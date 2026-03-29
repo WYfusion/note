@@ -1,4 +1,4 @@
-# 模型参数量 (Parameters)
+﻿# 模型参数量 (Parameters)
 
 参数量决定了模型的大小（硬盘占用）以及在推理和训练时对内存（显存）的需求。它是衡量模型空间复杂度的核心指标。
 
@@ -8,12 +8,12 @@
 
 ### 计算公式
 
-$$ 
-\text{Params} = K \times C_{in} \times C_{out} + C_{out} \quad (\text{if bias=True}) 
+$$
+\text{Params} = K \times C_{in} \times C_{out} + C_{out} \quad (\text{if bias=True})
 $$
 或者提取公因式：
-$$ 
-\text{Params} = (K \times C_{in} + 1) \times C_{out} 
+$$
+\text{Params} = (K \times C_{in} + 1) \times C_{out}
 $$
 
 ### 符号说明
@@ -35,8 +35,8 @@ $$
 全连接层的参数量取决于输入向量的长度和输出向量的长度。
 
 ### 计算公式
-$$ 
-\text{Params} = I \times O + O \quad (\text{if bias=True}) 
+$$
+\text{Params} = I \times O + O \quad (\text{if bias=True})
 $$
 
 ### 符号说明
@@ -51,14 +51,15 @@ $$
 分组卷积将输入通道分成 $g$ 组，每组独立进行卷积。这大大减少了参数量。
 
 ### 计算公式
-$$ 
-\text{Params} = K \times \frac{C_{in}}{g} \times C_{out} 
+$$
+\text{Params} = K \times \frac{C_{in}}{g} \times C_{out}
 $$
 或者写作：
-$$ 
-\text{Params} = \frac{1}{g} \times (K \times C_{in} \times C_{out}) 
+$$
+\text{Params} = \frac{1}{g} \times (K \times C_{in} \times C_{out})
 $$
 
 ### 特性
 - 当 $g=1$ 时，为常规卷积。
 - 当 $g=C_{in}$ 且 $C_{out}=C_{in}$ 时，即为 **深度卷积 (Depthwise Convolution)**。此时参数量极小：$K \times 1 \times C_{out}$。
+

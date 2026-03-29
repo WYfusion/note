@@ -1,4 +1,4 @@
-# lftp 高并发文件传输工具指南
+﻿# lftp 高并发文件传输工具指南
 
 **lftp** 是一款功能强大的命令行文件传输客户端。它专为**高性能传输**设计，相比于普通的 `sftp` 或 `scp`，lftp 最大的核心优势在于其**多线程并发**能力。
 
@@ -154,7 +154,7 @@ set ftp:charset utf-8
 ### 8.2 忽略 SSH Host Key 检查
 在内网测试环境或频繁重装的服务器上，可能会遇到 SSH Key 变动导致无法连接。可以使用以下配置跳过确认：
 ```bash
-lftp -e "set sftp:auto-confirm yes; open sftp://user@host..." 
+lftp -e "set sftp:auto-confirm yes; open sftp://user@host..."
 ```
 
 ### 8.3 书签功能

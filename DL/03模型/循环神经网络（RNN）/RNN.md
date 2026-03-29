@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -216,3 +216,4 @@ Bidirectional RNN 同时捕捉前后文信息。
 
 - Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press
 - Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*
+

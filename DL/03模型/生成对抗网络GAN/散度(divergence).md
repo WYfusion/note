@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -191,3 +191,4 @@ $$
 
 - Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein GAN. *ICML*
 - Goodfellow, I., et al. (2014). Generative Adversarial Nets. *NeurIPS*
+

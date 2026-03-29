@@ -1,4 +1,4 @@
-养成实现一个新功能在需要在新的分支中实现的好习惯，避免分支冲突
+﻿养成实现一个新功能在需要在新的分支中实现的好习惯，避免分支冲突
 ```bash
 git version
 ```
@@ -46,7 +46,7 @@ ssh-keygen -t rsa -b 4096 -C "fusion_wy@163.com"
 
 #### 2. 将 SSH 公钥添加到 GitHub 账户
 
-1. 打开生成的 
+1. 打开生成的
 
    ```bash
    id_rsa.pub
@@ -194,7 +194,7 @@ git branch -D feature-1 feature-2 # 强制删除多个
 ```
 
 ```bash
-git push origin --delete <branch_name> 
+git push origin --delete <branch_name>
 ```
 
 ```bash
@@ -269,3 +269,4 @@ bak/*    # 会进入bak文件夹内部查看子项，便于后续排除不想放
 !bak/test/ # 该文件依旧会被记录，也即排除在Gitignore的记录中
 !bak/sub/ # 同理，该操作会直接排除该子项文件夹于gitignore中
 ```
+

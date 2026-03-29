@@ -1,14 +1,13 @@
 [
-  "obsidian-excalidraw-plugin",
   "dataview",
   "drawio-obsidian",
   "file-explorer-note-count",
   "recent-files-obsidian",
   "better-export-pdf",
   "advanced-canvas",
-  "table-editor-obsidian",
   "quick-explorer",
+  "obsidian-importer",
+  "obsidian-icon-folder",
   "mermaid-tools",
-  "obsidian-style-settings",
-  "github-copilot"
+  "obsidian-style-settings"
 ]

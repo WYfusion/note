@@ -1,4 +1,4 @@
-# 计算量 (FLOPs)
+﻿# 计算量 (FLOPs)
 
 **FLOPs** (Floating Point Operations) 指的是浮点运算次数，通常用来衡量算法或模型的**时间复杂度**。在深度学习中，它直接关系到模型的推理速度和训练时间。
 
@@ -10,8 +10,8 @@
 
 ### 计算公式
 
-$$ 
-\text{FLOPs} = H_{out} \times W_{out} \times C_{out} \times (k_h \times k_w \times C_{in}) 
+$$
+\text{FLOPs} = H_{out} \times W_{out} \times C_{out} \times (k_h \times k_w \times C_{in})
 $$
 
 ### 符号推导与说明
@@ -24,9 +24,9 @@ $$
 - **卷积核**: $(5 \times 5)$, 输出通道 $32$
 - **输出尺寸**: 假设 padding 使得输出尺寸保持 $28 \times 28$
 - **计算量**:
-  $$ 
-  28 \times 28 \times 32 \times (5 \times 5 \times 192) \approx 1.2 \times 10^8 \text{ (1.2亿次)} 
-  $$ 
+  $$
+  28 \times 28 \times 32 \times (5 \times 5 \times 192) \approx 1.2 \times 10^8 \text{ (1.2亿次)}
+  $$
 
 ---
 
@@ -36,12 +36,12 @@ $$
 
 ### 计算公式
 
-$$ 
-\text{FLOPs} = H_{out} \times W_{out} \times C_{out} \times (k_h \times k_w \times \frac{C_{in}}{g}) 
+$$
+\text{FLOPs} = H_{out} \times W_{out} \times C_{out} \times (k_h \times k_w \times \frac{C_{in}}{g})
 $$
 即：
-$$ 
-\text{FLOPs}_{group} = \frac{\text{FLOPs}_{std}}{g} 
+$$
+\text{FLOPs}_{group} = \frac{\text{FLOPs}_{std}}{g}
 $$
 
 ### 特性
@@ -57,7 +57,8 @@ $$
 全连接层的计算量相当于一次大型矩阵乘法。
 
 ### 计算公式
-$$ 
-\text{FLOPs} = I \times O 
-$$ 
+$$
+\text{FLOPs} = I \times O
+$$
 其中 $I$ 为输入节点数，$O$ 为输出节点数。每个输出节点都需要与所有输入节点进行加权求和。
+

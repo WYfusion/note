@@ -1,4 +1,4 @@
-# Dual-Path RNN 双路径循环网络
+﻿# Dual-Path RNN 双路径循环网络
 
 ## 1. 概述
 
@@ -68,16 +68,16 @@
 def segment(x, K, P):
     # x: [B, N, L]
     B, N, L = x.shape
-    
+
     # 填充
     pad_len = (K - P) - (L - K) % P
     x = F.pad(x, (0, pad_len))
-    
+
     # 分割
     S = (x.shape[-1] - K) // P + 1
     segments = x.unfold(-1, K, P)  # [B, N, S, K]
     segments = segments.permute(0, 1, 3, 2)  # [B, N, K, S]
-    
+
     return segments
 ```
 
@@ -89,15 +89,15 @@ def segment(x, K, P):
 def overlap_add(segments, P):
     # segments: [B, N, K, S]
     B, N, K, S = segments.shape
-    
+
     # 输出长度
     L = P * (S - 1) + K
     output = torch.zeros(B, N, L)
-    
+
     for s in range(S):
         start = s * P
         output[:, :, start:start+K] += segments[:, :, :, s]
-    
+
     return output
 ```
 
@@ -136,24 +136,24 @@ class IntraRNN(nn.Module):
         self.rnn = nn.LSTM(N, hidden_size, batch_first=True, bidirectional=True)
         self.fc = nn.Linear(hidden_size * 2, N)
         self.norm = nn.GroupNorm(1, N)
-        
+
     def forward(self, x):
         # x: [B, N, K, S]
         B, N, K, S = x.shape
-        
+
         # 重排为 [B*S, K, N]
         x = x.permute(0, 3, 2, 1).reshape(B * S, K, N)
-        
+
         # RNN
         residual = x
         x, _ = self.rnn(x)  # [B*S, K, hidden*2]
         x = self.fc(x)  # [B*S, K, N]
         x = x + residual
-        
+
         # 重排回 [B, N, K, S]
         x = x.reshape(B, S, K, N).permute(0, 3, 2, 1)
         x = self.norm(x)
-        
+
         return x
 ```
 
@@ -170,24 +170,24 @@ class InterRNN(nn.Module):
         self.rnn = nn.LSTM(N, hidden_size, batch_first=True, bidirectional=True)
         self.fc = nn.Linear(hidden_size * 2, N)
         self.norm = nn.GroupNorm(1, N)
-        
+
     def forward(self, x):
         # x: [B, N, K, S]
         B, N, K, S = x.shape
-        
+
         # 重排为 [B*K, S, N]
         x = x.permute(0, 2, 3, 1).reshape(B * K, S, N)
-        
+
         # RNN
         residual = x
         x, _ = self.rnn(x)  # [B*K, S, hidden*2]
         x = self.fc(x)  # [B*K, S, N]
         x = x + residual
-        
+
         # 重排回 [B, N, K, S]
         x = x.reshape(B, K, S, N).permute(0, 3, 1, 2)
         x = self.norm(x)
-        
+
         return x
 ```
 
@@ -199,7 +199,7 @@ class DualPathBlock(nn.Module):
         super().__init__()
         self.intra_rnn = IntraRNN(N, hidden_size)
         self.inter_rnn = InterRNN(N, hidden_size)
-        
+
     def forward(self, x):
         # x: [B, N, K, S]
         x = self.intra_rnn(x)
@@ -258,7 +258,7 @@ class Encoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.conv = nn.Conv1d(1, N, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         return F.relu(self.conv(x.unsqueeze(1)))
 
@@ -267,7 +267,7 @@ class Decoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.deconv = nn.ConvTranspose1d(N, 1, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         return self.deconv(x).squeeze(1)
 ```
@@ -281,44 +281,44 @@ class SeparationNet(nn.Module):
         self.K = K
         self.P = K // 2
         self.num_sources = num_sources
-        
+
         self.norm = nn.GroupNorm(1, N)
         self.bottleneck = nn.Conv1d(N, N, 1)
-        
+
         self.blocks = nn.ModuleList([
             DualPathBlock(N, hidden_size) for _ in range(num_blocks)
         ])
-        
+
         self.mask_conv = nn.Conv2d(N, N * num_sources, 1)
-        
+
     def forward(self, w):
         # w: [B, N, L]
         B, N, L = w.shape
-        
+
         # 预处理
         x = self.norm(w)
         x = self.bottleneck(x)
-        
+
         # 分割
         x = segment(x, self.K, self.P)  # [B, N, K, S]
-        
+
         # Dual-Path 处理
         for block in self.blocks:
             x = block(x)
-        
+
         # 生成掩码
         x = self.mask_conv(x)  # [B, N*C, K, S]
         x = x.view(B, self.num_sources, N, self.K, -1)  # [B, C, N, K, S]
-        
+
         # 重叠相加
         masks = []
         for c in range(self.num_sources):
             m = overlap_add(x[:, c], self.P)[:, :, :L]  # [B, N, L]
             masks.append(m)
-        
+
         masks = torch.stack(masks, dim=1)  # [B, C, N, L]
         masks = F.relu(masks)
-        
+
         return masks
 ```
 
@@ -326,30 +326,30 @@ class SeparationNet(nn.Module):
 
 ```python
 class DPRNN(nn.Module):
-    def __init__(self, N=64, L=2, hidden_size=128, num_blocks=6, 
+    def __init__(self, N=64, L=2, hidden_size=128, num_blocks=6,
                  K=250, num_sources=2):
         super().__init__()
         self.encoder = Encoder(N, L)
         self.separator = SeparationNet(N, hidden_size, num_blocks, K, num_sources)
         self.decoder = Decoder(N, L)
         self.num_sources = num_sources
-        
+
     def forward(self, x):
         # x: [B, T]
-        
+
         # 编码
         w = self.encoder(x)  # [B, N, L]
-        
+
         # 分离
         masks = self.separator(w)  # [B, C, N, L]
-        
+
         # 解码
         outputs = []
         for c in range(self.num_sources):
             d = masks[:, c] * w
             s = self.decoder(d)
             outputs.append(s)
-        
+
         return torch.stack(outputs, dim=1)  # [B, C, T]
 ```
 
@@ -395,13 +395,13 @@ def dynamic_mixing(sources, snr_range=(-5, 5)):
     # 随机 SNR
     snr = torch.rand(1) * (snr_range[1] - snr_range[0]) + snr_range[0]
     scale = 10 ** (snr / 20)
-    
+
     # 缩放第二个源
     sources[1] = sources[1] * scale
-    
+
     # 混合
     mixture = sources.sum(dim=0)
-    
+
     return mixture, sources
 ```
 
@@ -489,3 +489,4 @@ class MultiScaleDPRNN(nn.Module):
 | 计算效率 | 高 | 中 | 低 |
 | 参数量 | 5M | 2.6M | 26M |
 | SI-SNRi | 15.3 | 18.8 | 20.4 |
+

@@ -1,4 +1,4 @@
-WSL是**Windows 提供的一种工具**，允许用户在 Windows 上运行原生的 Linux 二进制程序（如 Bash 脚本、GNU 工具、Linux 命令行工具等），而无需安装双系统或虚拟机。同时VMware无法使用本机显卡，但是使用WSL可以直接使用显卡。不过WSL是纯命令行，也有一些GUI的组件可用，但不推荐。
+﻿WSL是**Windows 提供的一种工具**，允许用户在 Windows 上运行原生的 Linux 二进制程序（如 Bash 脚本、GNU 工具、Linux 命令行工具等），而无需安装双系统或虚拟机。同时VMware无法使用本机显卡，但是使用WSL可以直接使用显卡。不过WSL是纯命令行，也有一些GUI的组件可用，但不推荐。
 
 [VScode](https://code.visualstudio.com/docs/remote/wsl)
 
@@ -90,7 +90,7 @@ cd /mnt/e/202409_202508/code/
 
 默认安装的是 Ubuntu
 
-#### 在 WSL 中安装 Miniconda 
+#### 在 WSL 中安装 Miniconda
 如果你尚未安装 `conda`，可以通过以下步骤在 WSL 中安装 Miniconda（推荐）。
 1. **下载 Miniconda 安装脚本**：在 WSL 中运行以下命令下载 Miniconda 安装脚本：
 

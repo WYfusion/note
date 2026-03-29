@@ -1,4 +1,4 @@
-相比于传统的 `Conv2d`，`StdConv2d` 会对卷积层的权重进行标准化处理，确保权重具有更稳定的分布，从而加速训练并提高模型的收敛效果。
+﻿相比于传统的 `Conv2d`，`StdConv2d` 会对卷积层的权重进行标准化处理，确保权重具有更稳定的分布，从而加速训练并提高模型的收敛效果。
 
 ## **核心思想**
 
@@ -32,7 +32,7 @@ $${\Large \displaystyle \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (w_i - \mu)^2 
 
 **3. 可学习的缩放和偏移参数**
 
-- 类似于 `Batch Normalization` 的缩放（`γ`）和偏移（`β`），`StdConv2d` 通常会引入可学习的缩放参数 
+- 类似于 `Batch Normalization` 的缩放（`γ`）和偏移（`β`），`StdConv2d` 通常会引入可学习的缩放参数
 
   scale 和偏移参数 bias，对输出进行线性变换：
 
@@ -58,3 +58,4 @@ class SimpleCNN(nn.Module):
         x = self.fc(x)
         return x
 ```
+

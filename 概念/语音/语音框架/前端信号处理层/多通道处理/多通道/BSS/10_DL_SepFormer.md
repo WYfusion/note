@@ -1,4 +1,4 @@
-# SepFormer Transformer 分离网络
+﻿# SepFormer Transformer 分离网络
 
 ## 1. 概述
 
@@ -118,25 +118,25 @@ class IntraTransformer(nn.Module):
         )
         self.transformer = nn.TransformerEncoder(encoder_layer, num_layers)
         self.norm = nn.LayerNorm(d_model)
-        
+
     def forward(self, x):
         # x: [B, N, K, S]
         B, N, K, S = x.shape
-        
+
         # 重排为 [B*S, K, N]
         x = x.permute(0, 3, 2, 1).reshape(B * S, K, N)
-        
+
         # 位置编码
         x = self.pos_enc(x)
-        
+
         # Transformer
         residual = x
         x = self.transformer(x)
         x = self.norm(x + residual)
-        
+
         # 重排回 [B, N, K, S]
         x = x.reshape(B, S, K, N).permute(0, 3, 2, 1)
-        
+
         return x
 ```
 
@@ -157,25 +157,25 @@ class InterTransformer(nn.Module):
         )
         self.transformer = nn.TransformerEncoder(encoder_layer, num_layers)
         self.norm = nn.LayerNorm(d_model)
-        
+
     def forward(self, x):
         # x: [B, N, K, S]
         B, N, K, S = x.shape
-        
+
         # 重排为 [B*K, S, N]
         x = x.permute(0, 2, 3, 1).reshape(B * K, S, N)
-        
+
         # 位置编码
         x = self.pos_enc(x)
-        
+
         # Transformer
         residual = x
         x = self.transformer(x)
         x = self.norm(x + residual)
-        
+
         # 重排回 [B, N, K, S]
         x = x.reshape(B, K, S, N).permute(0, 3, 1, 2)
-        
+
         return x
 ```
 
@@ -183,7 +183,7 @@ class InterTransformer(nn.Module):
 
 ```python
 class SepFormerBlock(nn.Module):
-    def __init__(self, d_model, nhead, dim_feedforward, 
+    def __init__(self, d_model, nhead, dim_feedforward,
                  num_intra_layers, num_inter_layers):
         super().__init__()
         self.intra_transformer = IntraTransformer(
@@ -192,7 +192,7 @@ class SepFormerBlock(nn.Module):
         self.inter_transformer = InterTransformer(
             d_model, nhead, dim_feedforward, num_inter_layers
         )
-        
+
     def forward(self, x):
         x = self.intra_transformer(x)
         x = self.inter_transformer(x)
@@ -215,13 +215,13 @@ class PositionalEncoding(nn.Module):
         pe = torch.zeros(max_len, d_model)
         position = torch.arange(0, max_len).unsqueeze(1).float()
         div_term = torch.exp(
-            torch.arange(0, d_model, 2).float() * 
+            torch.arange(0, d_model, 2).float() *
             (-math.log(10000.0) / d_model)
         )
         pe[:, 0::2] = torch.sin(position * div_term)
         pe[:, 1::2] = torch.cos(position * div_term)
         self.register_buffer('pe', pe.unsqueeze(0))
-        
+
     def forward(self, x):
         # x: [B, L, D]
         return x + self.pe[:, :x.size(1)]
@@ -234,7 +234,7 @@ class LearnablePositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=5000):
         super().__init__()
         self.pe = nn.Parameter(torch.randn(1, max_len, d_model) * 0.02)
-        
+
     def forward(self, x):
         return x + self.pe[:, :x.size(1)]
 ```
@@ -250,7 +250,7 @@ class Encoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.conv = nn.Conv1d(1, N, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         return F.relu(self.conv(x.unsqueeze(1)))
 
@@ -259,7 +259,7 @@ class Decoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.deconv = nn.ConvTranspose1d(N, 1, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         return self.deconv(x).squeeze(1)
 ```
@@ -275,51 +275,51 @@ class SeparationNet(nn.Module):
         self.K = K
         self.P = K // 2
         self.num_sources = num_sources
-        
+
         self.norm = nn.LayerNorm(N)
         self.linear = nn.Linear(N, d_model)
-        
+
         self.blocks = nn.ModuleList([
             SepFormerBlock(d_model, nhead, dim_feedforward,
                           num_intra_layers, num_inter_layers)
             for _ in range(num_blocks)
         ])
-        
+
         self.output_linear = nn.Linear(d_model, N * num_sources)
-        
+
     def forward(self, w):
         # w: [B, N, L]
         B, N, L = w.shape
-        
+
         # 分割
         x = segment(w, self.K, self.P)  # [B, N, K, S]
         S = x.shape[-1]
-        
+
         # 线性变换
         x = x.permute(0, 2, 3, 1)  # [B, K, S, N]
         x = self.norm(x)
         x = self.linear(x)  # [B, K, S, d_model]
         x = x.permute(0, 3, 1, 2)  # [B, d_model, K, S]
-        
+
         # SepFormer 块
         for block in self.blocks:
             x = block(x)
-        
+
         # 输出
         x = x.permute(0, 2, 3, 1)  # [B, K, S, d_model]
         x = self.output_linear(x)  # [B, K, S, N*C]
         x = x.view(B, self.K, S, self.num_sources, N)
         x = x.permute(0, 3, 4, 1, 2)  # [B, C, N, K, S]
-        
+
         # 重叠相加
         masks = []
         for c in range(self.num_sources):
             m = overlap_add(x[:, c], self.P)[:, :, :L]
             masks.append(m)
-        
+
         masks = torch.stack(masks, dim=1)  # [B, C, N, L]
         masks = F.relu(masks)
-        
+
         return masks
 ```
 
@@ -339,23 +339,23 @@ class SepFormer(nn.Module):
         )
         self.decoder = Decoder(N, L)
         self.num_sources = num_sources
-        
+
     def forward(self, x):
         # x: [B, T]
-        
+
         # 编码
         w = self.encoder(x)  # [B, N, L]
-        
+
         # 分离
         masks = self.separator(w)  # [B, C, N, L]
-        
+
         # 解码
         outputs = []
         for c in range(self.num_sources):
             d = masks[:, c] * w
             s = self.decoder(d)
             outputs.append(s)
-        
+
         return torch.stack(outputs, dim=1)  # [B, C, T]
 ```
 
@@ -441,12 +441,12 @@ def augment(mixture, sources):
     speed_factor = random.uniform(0.95, 1.05)
     mixture = torchaudio.functional.speed(mixture, speed_factor)
     sources = [torchaudio.functional.speed(s, speed_factor) for s in sources]
-    
+
     # 随机增益
     gain = random.uniform(0.8, 1.2)
     mixture = mixture * gain
     sources = [s * gain for s in sources]
-    
+
     return mixture, sources
 ```
 
@@ -495,27 +495,27 @@ class LinearAttention(nn.Module):
         super().__init__()
         self.nhead = nhead
         self.d_head = d_model // nhead
-        
+
         self.q_proj = nn.Linear(d_model, d_model)
         self.k_proj = nn.Linear(d_model, d_model)
         self.v_proj = nn.Linear(d_model, d_model)
         self.out_proj = nn.Linear(d_model, d_model)
-        
+
     def forward(self, x):
         B, L, D = x.shape
-        
+
         Q = F.elu(self.q_proj(x)) + 1  # 非负
         K = F.elu(self.k_proj(x)) + 1
         V = self.v_proj(x)
-        
+
         # 线性注意力: O(L*D^2) 而非 O(L^2*D)
         KV = torch.einsum('bld,ble->bde', K, V)
         Z = torch.einsum('bld,bd->bl', K, torch.ones(B, D))
-        
+
         out = torch.einsum('bld,bde->ble', Q, KV) / (
             torch.einsum('bld,bd->bl', Q, Z).unsqueeze(-1) + 1e-6
         )
-        
+
         return self.out_proj(out)
 ```
 
@@ -569,3 +569,4 @@ class MultiResSepFormer(nn.Module):
 - 更高效的注意力机制
 - 流式处理支持
 - 多模态融合（视听分离）
+

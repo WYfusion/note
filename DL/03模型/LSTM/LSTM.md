@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -157,3 +157,4 @@ $$
 
 - Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*, 9(8), 1735-1780
 - D2L.AI: [LSTM](https://zh.d2l.ai/chapter_recurrent-modern/lstm.html)
+

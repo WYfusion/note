@@ -1,8 +1,8 @@
 {
-  "cssTheme": "Primary",
-  "theme": "moonstone",
+  "cssTheme": "halcyon",
+  "theme": "obsidian",
   "accentColor": "#1e526c",
-  "baseFontSize": 19,
+  "baseFontSize": 20,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "preview-origin",

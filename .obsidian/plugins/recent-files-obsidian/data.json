@@ -1,204 +1,200 @@
 {
   "recentFiles": [
     {
-      "basename": "W&B + Prometheus 监控搭建实战",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/W&B + Prometheus 监控搭建实战.md"
+      "basename": "1 参数量的理论化表达",
+      "path": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md"
     },
     {
-      "basename": "10 监控机制与告警体系",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/10 监控机制与告警体系.md"
+      "basename": "1 Dense Transformer 参数推导详解",
+      "path": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md"
     },
     {
-      "basename": "梯度范数监控 Python 实现",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/梯度范数监控 Python 实现.md"
+      "basename": "AGENTS",
+      "path": "AGENTS.md"
     },
     {
-      "basename": "7 梯度范数监控与判别",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/7 梯度范数监控与判别.md"
+      "basename": "01_TokenMixing与ChannelMixing如何分工",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_TransformerBlock做了什么/01_TokenMixing与ChannelMixing如何分工.md"
     },
     {
-      "basename": "4 Warmup 策略",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/4 Warmup 策略.md"
+      "basename": "02_EncoderDecoder数据流与CrossAttention位置",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_整体数据流与张量形状/02_EncoderDecoder数据流与CrossAttention位置.md"
     },
     {
-      "basename": "Warmup 与 Scheduler 实现示例",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/Warmup 与 Scheduler 实现示例.md"
+      "basename": "01_DecoderOnly数据流与张量形状",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_整体数据流与张量形状/01_DecoderOnly数据流与张量形状.md"
     },
     {
-      "basename": "6 异常 Batch 定位",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/6 异常 Batch 定位.md"
+      "basename": "04_归一化与前馈层",
+      "path": "DL/03模型/Transformer/04_模块与整体结构/04_归一化与前馈层.md"
     },
     {
-      "basename": "异常 Batch 定位 Python 实战",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/异常 Batch 定位 Python 实战.md"
+      "basename": "05_位置编码的原因-置换等变性",
+      "path": "DL/03模型/Transformer/02_输入表示/05_位置编码的原因-置换等变性.md"
     },
     {
-      "basename": "LLM 训练工程详解：预训练 微调 对齐",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/LLM 训练工程详解：预训练 微调 对齐.md"
+      "basename": "07_局部与截断注意力",
+      "path": "DL/03模型/Transformer/03_注意力机制/07_局部与截断注意力.md"
     },
     {
-      "basename": "15 一句话原则",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/15 一句话原则.md"
+      "basename": "03_位置编码到底补回了什么",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/03_位置编码到底补回了什么.md"
     },
     {
-      "basename": "14 标准排障流程",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/14 标准排障流程.md"
+      "basename": "02_Learnable位置编码为什么更容易记住训练长度",
+      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码/02_Learnable位置编码为什么更容易记住训练长度.md"
     },
     {
-      "basename": "13 预训练 微调 对齐差异速记",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/13 预训练 微调 对齐差异速记.md"
+      "basename": "01_绝对位置编码_Sinusoidal_Learnable",
+      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码_Sinusoidal_Learnable.md"
     },
     {
-      "basename": "12 常用默认值速查",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/12 常用默认值速查.md"
+      "basename": "01_Sinusoidal位置编码的频率直觉",
+      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码/01_Sinusoidal位置编码的频率直觉.md"
     },
     {
-      "basename": "8 数据问题 vs 超参问题 vs 实现问题",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/8 数据问题 vs 超参问题 vs 实现问题.md"
+      "basename": "02_Pooling与CLS为何导致置换不变",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/02_Pooling与CLS为何导致置换不变.md"
     },
     {
-      "basename": "5 Loss Spike 诊断",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/5 Loss Spike 诊断.md"
+      "basename": "01_置换等变性_形式化证明",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/01_置换等变性_形式化证明.md"
     },
     {
-      "basename": "3 梯度噪声",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/3 梯度噪声.md"
+      "basename": "03_局部性与顺序归纳偏置到底失去了什么",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_为什么需要Transformer/03_局部性与顺序归纳偏置到底失去了什么.md"
     },
     {
-      "basename": "吞吐优化技术栈 Python 实战",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/吞吐优化技术栈 Python 实战.md"
+      "basename": "02_并行化为什么不是唯一优势",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_为什么需要Transformer/02_并行化为什么不是唯一优势.md"
     },
     {
-      "basename": "11 Tokens 吞吐量优化",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/11 Tokens 吞吐量优化.md"
+      "basename": "多阶段向量微调与进阶技术",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/多阶段向量微调与进阶技术.md"
     },
     {
-      "basename": "混合精度训练排障实战",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/混合精度训练排障实战.md"
+      "basename": "向量模型对比学习微调实战",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/对比学习与损失函数详解/向量模型对比学习微调实战.md"
     },
     {
-      "basename": "9 训练崩溃救援",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/9 训练崩溃救援.md"
-    },
-    {
-      "basename": "LR Scaling 与 Scheduler 实现",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/LR Scaling 与 Scheduler 实现.md"
-    },
-    {
-      "basename": "2 学习率（LR）调优",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/2 学习率（LR）调优.md"
-    },
-    {
-      "basename": "分布式 Sharded Checkpoint 实战",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/分布式 Sharded Checkpoint 实战.md"
-    },
-    {
-      "basename": "1 Checkpoint 与回滚机制",
-      "path": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/1 Checkpoint 与回滚机制.md"
-    },
-    {
-      "basename": "01_LoRA_QLoRA",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/01_LoRA_QLoRA.md"
-    },
-    {
-      "basename": "04_IA3",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT 参数高效微调方案族/04_IA3.md"
-    },
-    {
-      "basename": "01_SFT总览_目标与范式",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/01_SFT总览_目标与范式.md"
-    },
-    {
-      "basename": "多模态 LLM 微调",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/5多模态 LLM 微调/多模态 LLM 微调.md"
-    },
-    {
-      "basename": "微调数据构造",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/6微调数据构造/微调数据构造.md"
-    },
-    {
-      "basename": "语音与音频 LLM 微调",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/4语音与音频 LLM 微调/语音与音频 LLM 微调.md"
+      "basename": "对比学习与损失函数详解",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/对比学习与损失函数详解/对比学习与损失函数详解.md"
     },
     {
       "basename": "向量模型微调",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/向量模型微调.md"
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/向量模型微调.md"
     },
     {
-      "basename": "文本 LLM 微调",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/文本 LLM 微调.md"
+      "basename": "3Instruction Task SFT 监督微调",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/3Instruction Task SFT 监督微调.md"
     },
     {
-      "basename": "LLM 微调技术全景指南 7e735b1a7eeb413cbd143fbfc5ec23cd",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/LLM 微调技术全景指南 7e735b1a7eeb413cbd143fbfc5ec23cd.md"
+      "basename": "2Continued Pretraining（CPT DAPT TAPT）",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/2Continued Pretraining（CPT DAPT TAPT）.md"
     },
     {
-      "basename": "Qwen3-TTS 训练数据集与方法原理",
-      "path": "DL/TTS/Qwen3 TTS/Qwen3-TTS 训练数据集与方法原理.md"
+      "basename": "1Full Fine-tuning 全参数微调",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/1Full Fine-tuning 全参数微调.md"
     },
     {
-      "basename": "Qwen3-TTS Technical Report",
-      "path": "DL/TTS/Qwen3 TTS/Qwen3-TTS Technical Report.md"
+      "basename": "索引_注意力机制",
+      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/索引_注意力机制.md"
     },
     {
-      "basename": "Qwen3-TTS 评价指标详解",
-      "path": "DL/TTS/Qwen3 TTS/Qwen3-TTS 评价指标详解.md"
+      "basename": "02_无位置信息的SelfAttention为何顺序失明_置换等变性与置换不变性",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_无位置信息的SelfAttention为何顺序失明_置换等变性与置换不变性.md"
     },
     {
-      "basename": "02_模板化_ChatML_系统提示词",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/SFT数据与格式/02_模板化_ChatML_系统提示词.md"
+      "basename": "0文本 LLM 微调",
+      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/0文本 LLM 微调.md"
     },
     {
-      "basename": "索引_PEFT方法",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/索引_PEFT方法.md"
+      "basename": "1. 2xx 成功类与 1xx 信息类详解",
+      "path": "后端/状态码/HTTP 后端状态码清单/1 状态码分类全景与设计哲学/1. 2xx 成功类与 1xx 信息类详解.md"
     },
     {
-      "basename": "03_Adapter_Tuning",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/03_Adapter_Tuning.md"
+      "basename": "1. 状态码分类全景与设计哲学",
+      "path": "后端/状态码/HTTP 后端状态码清单/1. 状态码分类全景与设计哲学.md"
     },
     {
-      "basename": "02_PromptTuning_PrefixTuning_P_Tuning",
-      "path": "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/02_PromptTuning_PrefixTuning_P_Tuning.md"
+      "basename": "HTTP 后端状态码清单索引",
+      "path": "后端/状态码/HTTP 后端状态码清单索引.md"
     },
     {
-      "basename": "03_优化器与数值稳定_AdamW_Lion_FusedAdam",
-      "path": "DL/大语言模型/05_预训练_数据_规模化训练/03_优化器与数值稳定_AdamW_Lion_FusedAdam.md"
+      "basename": "4. 使用注意事项与反模式",
+      "path": "后端/状态码/HTTP 后端状态码清单/4. 使用注意事项与反模式.md"
     },
     {
-      "basename": "02_ScalingLaws_Chinchilla_计算预算",
-      "path": "DL/大语言模型/05_预训练_数据_规模化训练/02_ScalingLaws_Chinchilla_计算预算.md"
+      "basename": "01_缩放点积注意力_为什么是点积_为什么要除以根号dk",
+      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/01_缩放点积注意力_为什么是点积_为什么要除以根号dk.md"
     },
     {
-      "basename": "4上下文压缩（Context Compression）",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG核心模块/4上下文压缩（Context Compression）.md"
+      "basename": "02_AttentionMask_Causal_Padding_CrossAttention",
+      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/02_AttentionMask_Causal_Padding_CrossAttention.md"
     },
     {
-      "basename": "Mimi 音频编解码器架构详解",
-      "path": "DL/TTS/Qwen3 TTS/Qwen3模型骨架/Mimi 音频编解码器架构详解.md"
+      "basename": "03_残差路径_初始化_DeepNorm",
+      "path": "DL/05大语言模型/04_Transformer核心结构/04_块结构与稳定训练/03_残差路径_初始化_DeepNorm.md"
     },
     {
-      "basename": "工程实践与避坑",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/工程实践与避坑.md"
+      "basename": "02_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP",
+      "path": "DL/05大语言模型/04_Transformer核心结构/04_块结构与稳定训练/02_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP.md"
     },
     {
-      "basename": "RAG总体架构_数据流",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG总体架构_数据流.md"
+      "basename": "04_KVCache_Prefill_Decode_PagedAttention",
+      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/04_KVCache_Prefill_Decode_PagedAttention.md"
     },
     {
-      "basename": "6校验与引用（Verification、Citation、Guardrails）",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG核心模块/6校验与引用（Verification、Citation、Guardrails）.md"
+      "basename": "03_多头注意力为什么有效_MHA_MQA_GQA_MLA",
+      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/03_多头注意力为什么有效_MHA_MQA_GQA_MLA.md"
     },
     {
-      "basename": "7记忆与反馈（Memory 、Cache、Feedback Loop）",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG核心模块/7记忆与反馈（Memory 、Cache、Feedback Loop）.md"
+      "basename": "04_一个TransformerBlock到底在做什么_信息混合与特征变换",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_一个TransformerBlock到底在做什么_信息混合与特征变换.md"
     },
     {
-      "basename": "精排重排（Reranking）",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG核心模块/3精排重排/精排重排（Reranking）.md"
+      "basename": "03_Transformer整体数据流_张量形状_EncoderDecoder",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_Transformer整体数据流_张量形状_EncoderDecoder.md"
     },
     {
-      "basename": "BGE-Reranker",
-      "path": "DL/大语言模型/09_RAG_检索增强生成/RAG核心模块/3精排重排/BGE-Reranker.md"
+      "basename": "01_Transformer究竟解决了什么问题_相对RNN_CNN的优势与代价",
+      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_Transformer究竟解决了什么问题_相对RNN_CNN的优势与代价.md"
+    },
+    {
+      "basename": "Dot-product",
+      "path": "概念/运算/Dot-product.md"
+    },
+    {
+      "basename": "Additive",
+      "path": "概念/运算/Additive.md"
+    },
+    {
+      "basename": "内积",
+      "path": "概念/运算/内积.md"
+    },
+    {
+      "basename": "门控线性单元GLU",
+      "path": "DL/01NN系列/01卷积/门控线性单元GLU.md"
+    },
+    {
+      "basename": "索引_文本嵌入",
+      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/1文本嵌入/索引_文本嵌入.md"
+    },
+    {
+      "basename": "3_视频嵌入",
+      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/2多模态嵌入/3_视频嵌入.md"
+    },
+    {
+      "basename": "索引_多模态嵌入",
+      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/2多模态嵌入/索引_多模态嵌入.md"
+    },
+    {
+      "basename": "3 搜索引擎向量扩展",
+      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/3向量数据库与检索引擎/3 搜索引擎向量扩展.md"
+    },
+    {
+      "basename": "2 专用向量数据库实战",
+      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/3向量数据库与检索引擎/2 专用向量数据库实战.md"
     }
   ],
   "omittedPaths": [],

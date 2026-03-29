@@ -1,4 +1,4 @@
-## STFT公式
+﻿## STFT公式
 $$\mathrm{X}(k)=\sum_{n=0}^{N-1}x(n)e^{-j\frac{2\pi kn}{N}}=\sum_{n=0}^{N-1}x(n)W_N^{nk}$$
 stft写成矩阵形式：
 $$\mathrm{X=}[x(0),x(1),...,x(N-1)]\begin{bmatrix}\mathrm{W}_N^{0*0}&\mathrm{W}_N^{0*1}&.&\mathrm{W}_N^{0*(N-1)}\\\mathrm{W}_N^{1*0}&\mathrm{W}_N^{1*1}&.&\mathrm{W}_N^{1*(N-1)}\\.&.&.&.\\W_N^{(N-1)*0}&\mathrm{W}_N^{(N-1)*1}&.&\mathrm{W}_N^{(N-1)*(N-1)}\end{bmatrix}$$
@@ -65,7 +65,7 @@ $$[\mathrm{T,N\_fft}]=[\mathrm{T,N\_fft}]\times[\mathrm{N\_fft,N\_fft}]$$
 
 
 #### stft的nfft够大且窗移够小，是否能实现一个高质量的时间、频率分辩率？
-不能。  
+不能。
 在 STFT 里，时间分辨率 Δt 和频率分辨率 Δf 被“窗口”一次性锁死，二者满足
 $Δt · Δf ≥ 1/(4π)$
 这个不等式与 nfft、窗移、采样率都无关——它只取决于窗函数的形状和长度。

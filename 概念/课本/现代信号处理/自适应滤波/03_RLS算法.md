@@ -1,4 +1,4 @@
-# RLS递归最小二乘算法
+﻿# RLS递归最小二乘算法
 
 ## 1. 引言
 
@@ -122,13 +122,13 @@ $$\begin{aligned}
 对于 n = 1, 2, 3, ...：
     1. 计算增益向量:
        k(n) = P(n-1)x(n) / [λ + x^T(n)P(n-1)x(n)]
-    
+
     2. 计算先验误差:
        ξ(n) = d(n) - w^T(n-1)x(n)
-    
+
     3. 更新权值:
        w(n) = w(n-1) + k(n)ξ(n)
-    
+
     4. 更新逆相关矩阵:
        P(n) = λ⁻¹[P(n-1) - k(n)x^T(n)P(n-1)]
 ```
@@ -247,3 +247,4 @@ $$J(n) = \sum_{i=1}^{n} \lambda^{n-i} |e(i)|^2 + \delta\|\mathbf{w}\|^2$$
 1. Haykin, S. (2002). *Adaptive Filter Theory* (4th ed.). Prentice Hall.
 2. Sayed, A. H. (2008). *Adaptive Filters*. Wiley-IEEE Press.
 3. Ljung, L., & Söderström, T. (1983). *Theory and Practice of Recursive Identification*. MIT Press.
+

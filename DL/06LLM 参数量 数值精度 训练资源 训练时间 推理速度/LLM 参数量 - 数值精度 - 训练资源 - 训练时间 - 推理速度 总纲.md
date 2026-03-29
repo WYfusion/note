@@ -1,0 +1,139 @@
+## 0. 目标
+
+统一回答 5 个核心问题：
+
+|#|问题|核心变量|
+|---|---|---|
+|1|模型有多大|参数量 $N$|
+|2|每个参数怎么表示|精度 / 量化 $b$|
+|3|训练要多少资源|算力、显存、网络、存储|
+|4|训练要多久|总 FLOPs / 有效吞吐|
+|5|推理有多快|权重读取 + KV cache + 解码串行性|
+
+---
+
+## 1. 核心变量与量纲
+
+### 1.1 记号表
+
+|符号|含义|备注|
+|---|---|---|
+|$N$|参数量|泛称|
+|$N_{total}$|总参数量|MoE 含全部 expert|
+|$N_{active}$|每 token 实际参与计算的参数量|MoE 仅含激活 expert|
+|$D$|训练 token 数||
+|$L$|层数||
+|$d$|隐藏维||
+|$V$|词表大小||
+|$S$|训练序列长度||
+|$T$|推理时当前上下文长度||
+|$B$|batch / 并发请求数||
+|$h, h_{kv}$|query head 数 / KV head 数|GQA/MQA 下 $h_{kv} < h$|
+|$d_{head}$|每头维度||
+|$b_w, b_a, b_g, b_{opt}, b_{kv}$|权重/激活/梯度/优化器/KV 的 bit 数||
+|$G$|加速器数量||
+|$F_{peak}$|单卡峰值 FLOPs/s||
+|$\eta$|系统有效利用率|MFU / HFU 均可归入|
+
+### 1.2 第一原则
+
+> [!important]
+> 
+> **参数量 ≠ 训练 FLOPs ≠ 显存占用 ≠ 推理速度**
+
+决策必须同时看：$N_{total}$、$N_{active}$、$D$、$b$、$S/T$、KV cache、$eta$、互联/调度/I/O
+
+---
+
+## 2~8 & 10：各主题详解 → 子页面
+
+以下每个主题在独立的 L2 子页面中展开，L2 内部继续分裂为 L3 → L4 → … 的细化层级：
+
+|序号|L2 子页面|核心关切|
+|---|---|---|
+|1|**[[1 参数量的理论化表达]]**|Dense 近似 $12Ld^2+Vd$、MoE $N_{total}$ vs $N_{active}$|
+|2|**[[2 Scaling Law 与训练最优分配]]**|Kaplan → Chinchilla → 推理感知 Scaling|
+|3|**[[3 数值精度与量化]]**|四层精度对象、FP32→4-bit 全景、选择原则|
+|4|**[[4 存储、显存与 KV Cache 数学分解]]**|$M_{weight}$、$M_{train}$、$M_{KV}$ 公式化|
+|5|**[[5 训练 FLOPs、资源与时间]]**|$6ND$ 近似、MoE 修正、$eta$ 瓶颈|
+|6|**[[6 推理速度：数学化分解]]**|Prefill vs Decode、延迟公式、TTFT/TPOT|
+|7|**[[7 核心工程方案总览]]**|并行策略 / 显存优化 / Attention kernel / 量化 / 解码加速|
+|8|**[[8 综合使用流程]]**|七步决策链：目标 → 范式 → 预算 → 精度 → 并行 → Serving → Pareto|
+
+---
+
+## 9. 最常见混淆点
+
+### 9.1 参数量大 ≠ 训练一定贵
+
+- **Dense**：通常近似成立（FLOPs ∝ $N$）
+
+- **MoE**：**不成立**，必须区分 $N_{total}$ 与 $N_{active}$；DeepSeek-V3 拥有 671B 总参数但每 token 仅激活约 37B
+
+### 9.2 量化后更小 ≠ 一定更快
+
+- 若瓶颈在 KV cache / 带宽 / 调度，权重量化收益有限
+
+- 真实收益取决于硬件原生支持 + kernel 成熟度 + 是否也降低了 KV 精度
+
+### 9.3 训练最优 ≠ 部署最优
+
+- Chinchilla-optimal（纯训练 loss 最优）**不是** inference-optimal
+
+- 2024+ 趋势：考虑部署推理成本后，倾向 **更小模型 + 更多 token 训练**
+
+### 9.4 显存不够 ≠ 只能减模型
+
+可选方案：ZeRO/FSDP → TP/PP/CP → checkpointing → LoRA/QLoRA → offload → quantized states
+
+### 9.5 推理慢 ≠ 算力不够
+
+常见真因：KV cache 太大 → decode 串行 → memory bandwidth 不足 → scheduler 不好 → batch 策略不好
+
+---
+
+## 11. 一页式结论
+
+### 11.1 理论核心
+
+- **参数量** 决定容量与基础 FLOPs
+
+- **训练 token 数** 决定是否"喂够数据"
+
+- **精度/量化** 决定存储、显存、吞吐、稳定性
+
+- **训练时间** 本质是 $C_{train} / (G \cdot F_{peak} \cdot \eta)$
+
+- **推理速度** 本质是 GEMM + KV cache + 串行 decode + 调度
+
+### 11.2 工程核心
+
+|场景|主战场技术栈|
+|---|---|
+|**预训练**|BF16/FP8 + ZeRO/FSDP + TP/PP/CP + FlashAttention + checkpointing|
+|**微调**|LoRA / QLoRA（资源紧）；全参 BF16（资源足）|
+|**推理**|GQA/MQA + vLLM/PagedAttention + quantization + speculative decoding|
+
+### 11.3 最终判据
+
+> [!important]
+> 
+> 不要单看参数量、不要单看精度 bit 数、不要单看单卡峰值 FLOPs。
+> 
+> 必须**联合评估**：$N_{total}$、$N_{active}$、$D$、$b$、$S/T$、KV、$eta$、互联与调度。
+
+[[3 数值精度与量化]]
+
+[[2 Scaling Law 与训练最优分配]]
+
+[[5 训练 FLOPs、资源与时间]]
+
+[[6 推理速度：数学化分解]]
+
+[[8 综合使用流程]]
+
+[[1 参数量的理论化表达]]
+
+[[4 存储、显存与 KV Cache 数学分解]]
+
+[[7 核心工程方案总览]]

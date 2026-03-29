@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - 机器学习
   - 深度学习
@@ -196,3 +196,4 @@ $$
 
 - Chen, R. T., et al. (2018). Neural Ordinary Differential Equations. *NeurIPS*
 - Grathwohl, W., et al. (2019). FFJORD: Free-form Jacobian of Reversible Dynamics. *ICML*
+

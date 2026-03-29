@@ -1,4 +1,4 @@
-# LMS自适应算法
+﻿# LMS自适应算法
 
 ## 1. 引言
 
@@ -129,10 +129,10 @@ $$\boxed{\mathbf{w}(n+1) = \mathbf{w}(n) + \mu \cdot e(n) \cdot \mathbf{x}(n)}$$
 对于每个时刻 n = 0, 1, 2, ...：
     1. 计算滤波器输出:
        y(n) = w^T(n) · x(n)
-    
+
     2. 计算误差:
        e(n) = d(n) - y(n)
-    
+
     3. 更新滤波器系数:
        w(n+1) = w(n) + μ · e(n) · x(n)
 ```
@@ -259,3 +259,4 @@ $$\mathbf{w}(n+1) = \mathbf{w}(n) + \mu \cdot \text{sign}(e(n)) \cdot \text{sign
 1. Widrow, B., & Hoff, M. E. (1960). Adaptive switching circuits. *IRE WESCON Convention Record*, 4, 96-104.
 2. Haykin, S. (2002). *Adaptive Filter Theory* (4th ed.). Prentice Hall.
 3. Sayed, A. H. (2008). *Adaptive Filters*. Wiley-IEEE Press.
+

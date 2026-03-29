@@ -1,4 +1,4 @@
-# TasNet 时域音频分离网络
+﻿# TasNet 时域音频分离网络
 
 ## 1. 概述
 
@@ -198,7 +198,7 @@ class Encoder(nn.Module):
         super().__init__()
         # N: 编码维度, L: 窗口长度
         self.conv = nn.Conv1d(1, N, L, stride=L//2, bias=False)
-        
+
     def forward(self, x):
         # x: [B, T]
         x = x.unsqueeze(1)  # [B, 1, T]
@@ -213,28 +213,28 @@ class SeparationNet(nn.Module):
     def __init__(self, N, hidden_size, num_layers, num_sources):
         super().__init__()
         self.norm = nn.LayerNorm(N)
-        self.lstm = nn.LSTM(N, hidden_size, num_layers, 
+        self.lstm = nn.LSTM(N, hidden_size, num_layers,
                            batch_first=True, bidirectional=True)
         self.fc = nn.Linear(hidden_size * 2, N * num_sources)
         self.num_sources = num_sources
         self.N = N
-        
+
     def forward(self, w):
         # w: [B, N, K]
         B, N, K = w.shape
-        
+
         # LayerNorm
         w = w.transpose(1, 2)  # [B, K, N]
         w = self.norm(w)
-        
+
         # LSTM
         h, _ = self.lstm(w)  # [B, K, hidden*2]
-        
+
         # FC + Sigmoid
         m = torch.sigmoid(self.fc(h))  # [B, K, N*C]
         m = m.view(B, K, self.num_sources, N)  # [B, K, C, N]
         m = m.permute(0, 2, 3, 1)  # [B, C, N, K]
-        
+
         return m
 ```
 
@@ -245,7 +245,7 @@ class Decoder(nn.Module):
     def __init__(self, N, L):
         super().__init__()
         self.deconv = nn.ConvTranspose1d(N, 1, L, stride=L//2, bias=False)
-        
+
     def forward(self, d):
         # d: [B, N, K]
         s = self.deconv(d)  # [B, 1, T]
@@ -256,31 +256,31 @@ class Decoder(nn.Module):
 
 ```python
 class TasNet(nn.Module):
-    def __init__(self, N=256, L=40, hidden_size=500, 
+    def __init__(self, N=256, L=40, hidden_size=500,
                  num_layers=4, num_sources=2):
         super().__init__()
         self.encoder = Encoder(N, L)
-        self.separator = SeparationNet(N, hidden_size, 
+        self.separator = SeparationNet(N, hidden_size,
                                        num_layers, num_sources)
         self.decoder = Decoder(N, L)
         self.num_sources = num_sources
-        
+
     def forward(self, x):
         # x: [B, T] 混合信号
-        
+
         # 编码
         w = self.encoder(x)  # [B, N, K]
-        
+
         # 分离
         masks = self.separator(w)  # [B, C, N, K]
-        
+
         # 解码
         outputs = []
         for i in range(self.num_sources):
             d = masks[:, i] * w  # [B, N, K]
             s = self.decoder(d)  # [B, T]
             outputs.append(s)
-        
+
         return torch.stack(outputs, dim=1)  # [B, C, T]
 ```
 
@@ -292,63 +292,63 @@ class TasNet(nn.Module):
 def si_snr(estimate, target, eps=1e-8):
     """
     计算 SI-SNR
-    
+
     参数:
         estimate: 估计信号 [B, T]
         target: 目标信号 [B, T]
-    
+
     返回:
         si_snr: [B]
     """
     # 零均值
     estimate = estimate - estimate.mean(dim=-1, keepdim=True)
     target = target - target.mean(dim=-1, keepdim=True)
-    
+
     # s_target = <s', s> / ||s||^2 * s
     dot = (estimate * target).sum(dim=-1, keepdim=True)
     s_target_energy = (target ** 2).sum(dim=-1, keepdim=True) + eps
     proj = dot * target / s_target_energy
-    
+
     # e_noise = s' - s_target
     noise = estimate - proj
-    
+
     # SI-SNR
     si_snr = 10 * torch.log10(
         (proj ** 2).sum(dim=-1) / ((noise ** 2).sum(dim=-1) + eps) + eps
     )
-    
+
     return si_snr
 
 
 def pit_loss(estimates, targets):
     """
     排列不变训练损失
-    
+
     参数:
         estimates: [B, C, T]
         targets: [B, C, T]
-    
+
     返回:
         loss: 标量
     """
     from itertools import permutations
-    
+
     B, C, T = estimates.shape
-    
+
     # 计算所有排列的损失
     perms = list(permutations(range(C)))
     losses = []
-    
+
     for perm in perms:
         loss = 0
         for i, j in enumerate(perm):
             loss -= si_snr(estimates[:, i], targets[:, j])
         losses.append(loss / C)
-    
+
     # 选择最小损失
     losses = torch.stack(losses, dim=1)  # [B, num_perms]
     min_loss = losses.min(dim=1)[0]  # [B]
-    
+
     return min_loss.mean()
 ```
 
@@ -373,3 +373,4 @@ def pit_loss(estimates, targets):
 - **Conv-TasNet**：用 TCN 替代 LSTM
 - **Dual-Path RNN**：处理长序列
 - **SepFormer**：使用 Transformer
+

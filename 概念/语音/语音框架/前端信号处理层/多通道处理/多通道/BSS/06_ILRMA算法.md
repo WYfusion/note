@@ -1,4 +1,4 @@
-# ILRMA 独立低秩矩阵分析
+﻿# ILRMA 独立低秩矩阵分析
 
 ## 1. 算法概述
 
@@ -138,16 +138,16 @@ $$\sum_f \frac{b_{nfk}}{\lambda_{nft}} = \sum_f \frac{b_{nfk} P_{nft}}{\lambda_{
    H_n = rand(K, T), ∀n  (随机正数)
 
 2. for iter = 1 to max_iter:
-     
+
      // 计算分离信号
      Ŝ(f,t) = W(f)·X(f,t), ∀f,t
-     
+
      // 计算功率谱
      P_n(f,t) = |Ŝ_n(f,t)|², ∀n,f,t
-     
+
      // 计算方差模型
      λ_n(f,t) = Σ_k b_{nfk}·h_{nkt}, ∀n,f,t
-     
+
      // 更新 NMF 参数
      for n = 1 to N:
        // 更新 H_n
@@ -158,10 +158,10 @@ $$\sum_f \frac{b_{nfk}}{\lambda_{nft}} = \sum_f \frac{b_{nfk} P_{nft}}{\lambda_{
            h_{nkt} *= sqrt(numer/denom)
          end
        end
-       
+
        // 重新计算 λ
        λ_n(f,t) = Σ_k b_{nfk}·h_{nkt}
-       
+
        // 更新 B_n
        for f = 1 to F:
          for k = 1 to K:
@@ -170,11 +170,11 @@ $$\sum_f \frac{b_{nfk}}{\lambda_{nft}} = \sum_f \frac{b_{nfk} P_{nft}}{\lambda_{
            b_{nfk} *= sqrt(numer/denom)
          end
        end
-       
+
        // 重新计算 λ
        λ_n(f,t) = Σ_k b_{nfk}·h_{nkt}
      end
-     
+
      // 更新解混矩阵 W(f)
      for n = 1 to N:
        for f = 1 to F:
@@ -183,7 +183,7 @@ $$\sum_f \frac{b_{nfk}}{\lambda_{nft}} = \sum_f \frac{b_{nfk} P_{nft}}{\lambda_{
          w_n(f) /= sqrt(w_n^H(f)·V_n(f)·w_n(f))
        end
      end
-     
+
    end
 
 3. // 投影回原始尺度
@@ -312,13 +312,13 @@ import numpy as np
 def ilrma(X, n_sources, n_bases=10, n_iter=100, eps=1e-8):
     """
     ILRMA 算法
-    
+
     参数:
         X: 观测信号 [F, M, T]
         n_sources: 源数量 N
         n_bases: NMF 基数量 K
         n_iter: 迭代次数
-    
+
     返回:
         S: 分离信号 [F, N, T]
         W: 解混矩阵 [F, N, M]
@@ -328,41 +328,41 @@ def ilrma(X, n_sources, n_bases=10, n_iter=100, eps=1e-8):
     F, M, T = X.shape
     N = n_sources
     K = n_bases
-    
+
     # 初始化
     W = np.stack([np.eye(N, M, dtype=complex) for _ in range(F)])
     B = np.random.rand(N, F, K) + eps
     H = np.random.rand(N, K, T) + eps
-    
+
     for iteration in range(n_iter):
         # 分离信号
         S = np.einsum('fnm,fmt->fnt', W, X)
-        
+
         # 功率谱
         P = np.abs(S)**2  # [F, N, T]
         P = P.transpose(1, 0, 2)  # [N, F, T]
-        
+
         # 方差模型 λ = B @ H
         Lambda = np.einsum('nfk,nkt->nft', B, H) + eps  # [N, F, T]
-        
+
         # 更新 NMF 参数
         for n in range(N):
             # 更新 H
             numer_H = np.einsum('fk,ft->kt', B[n], P[n] / Lambda[n]**2)
             denom_H = np.einsum('fk,ft->kt', B[n], 1.0 / Lambda[n])
             H[n] *= np.sqrt(numer_H / (denom_H + eps))
-            
+
             # 重新计算 Lambda
             Lambda[n] = B[n] @ H[n] + eps
-            
+
             # 更新 B
             numer_B = np.einsum('kt,ft->fk', H[n], P[n] / Lambda[n]**2)
             denom_B = np.einsum('kt,ft->fk', H[n], 1.0 / Lambda[n])
             B[n] *= np.sqrt(numer_B / (denom_B + eps))
-            
+
             # 重新计算 Lambda
             Lambda[n] = B[n] @ H[n] + eps
-        
+
         # 更新 W (IP 方法)
         Lambda = Lambda.transpose(1, 0, 2)  # [F, N, T]
         for n in range(N):
@@ -370,15 +370,16 @@ def ilrma(X, n_sources, n_bases=10, n_iter=100, eps=1e-8):
                 # 加权协方差
                 weight = 1.0 / Lambda[f, n, :]  # [T]
                 V = np.einsum('mt,t,nt->mn', X[f], weight, X[f].conj()) / T
-                
+
                 # IP 更新
                 WV = W[f] @ V
                 w = np.linalg.solve(WV, np.eye(N)[:, n])
                 w /= np.sqrt(w.conj() @ V @ w + eps)
                 W[f, n, :] = w.conj()
-    
+
     # 最终分离
     S = np.einsum('fnm,fmt->fnt', W, X)
-    
+
     return S, W, B, H
 ```
+

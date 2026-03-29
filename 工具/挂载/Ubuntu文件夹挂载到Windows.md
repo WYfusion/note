@@ -1,4 +1,4 @@
-一般流程如下
+﻿一般流程如下
 # Ubuntu端
 ## 安装 Samba 服务
 ```bash
@@ -37,13 +37,13 @@ sudo systemctl restart smbd
 ## 访问共享路径
 下面二选一
 ### 图形界面映射网络驱动器
-打开「此电脑」→点击「计算机」选项卡→选择「映射网络驱动器」  
+打开「此电脑」→点击「计算机」选项卡→选择「映射网络驱动器」
 ![[Pasted image 20250607214642.png|400]]
     `\\<Ubuntu_IP>\shared_folder`（例如 `\\192.168.1.100\dataset`）。
     `\\172.22.210.39\BirdDB`
     wj_synology
     WJwj503a
-    
+
 ### 命令行快速挂载
 按下`Win+R`输入`cmd`，执行命令：
 ```bash
@@ -51,3 +51,4 @@ net use Z: \\192.168.1.100\dataset /user:用户名 密码 /persistent:yes
 ```
 ## 输入认证信息
 弹出登录窗口时，输入 Ubuntu 端配置的 Samba 用户名和密码即可
+

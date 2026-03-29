@@ -1,4 +1,4 @@
----
+﻿---
 name: obsidian-markdown
 description: 优化的Obsidian Markdown语法，专注于学习笔记的高效编写和知识管理。包含wikilinks、嵌入、提示框、属性等Obsidian特有语法，提升笔记可读性和知识连接性。
 ---
@@ -66,7 +66,7 @@ class SimpleNet(nn.Module):
         super().__init__()
         self.fc1 = nn.Linear(784, 128)
         self.fc2 = nn.Linear(128, 10)
-    
+
     def forward(self, x):
         x = torch.relu(self.fc1(x))
         return self.fc2(x)
@@ -104,7 +104,7 @@ class SimpleNet(nn.Module):
 ### 标题层次
 ```markdown
 # 一级标题 - 笔记主题
-## 二级标题 - 主要章节  
+## 二级标题 - 主要章节
 ### 三级标题 - 具体内容
 #### 四级标题 - 细节说明
 ```
@@ -262,7 +262,7 @@ tag:#project status:done
 > [!note] 📝 笔记
 > 这是重要的学习要点
 
-> [!info] ℹ️ 信息  
+> [!info] ℹ️ 信息
 > 补充说明和背景知识
 
 > [!tip] 💡 技巧
@@ -299,7 +299,7 @@ tag:#project status:done
 ```markdown
 > [!example] 💡 示例
 > 这里是一个具体的应用示例
-> 
+>
 > > [!note] 关键点
 > > 示例中的关键注意事项
 ```
@@ -309,7 +309,7 @@ tag:#project status:done
 > [!important] 🎯 学习重点
 > 这是本章的核心概念
 
-> [!caution] ⚠️ 易错点  
+> [!caution] ⚠️ 易错点
 > 常见的错误和误区
 
 > [!help] 🆘 需要帮助
@@ -555,11 +555,11 @@ created: 2024-01-15
 modified: 2024-01-20
 
 # 学习管理
-tags: 
+tags:
   - #机器学习
   - #深度学习
   - #概念
-aliases: 
+aliases:
   - "神经网络"
   - "NN基础"
 status: 学习中
@@ -574,7 +574,7 @@ next_review: 2024-01-25
 
 # 关联信息
 prerequisites: "[[数学基础]]"
-related: 
+related:
   - "[[深度学习概述]]"
   - "[[激活函数]]"
 dependencies: "[[线性代数]]"
@@ -601,7 +601,7 @@ cssclasses:
 # 学科分类
 #机器学习 #深度学习 #强化学习 #自然语言处理
 
-# 内容类型  
+# 内容类型
 #概念 #算法 #实现 #理论 #实践
 
 # 难度等级
@@ -656,11 +656,11 @@ Obsidian supports HTML within Markdown:
 ````markdown
 ---
 title: "反向传播算法"
-tags: 
+tags:
   - #机器学习
   - #深度学习
   - #算法
-aliases: 
+aliases:
   - "BP算法"
   - "Backpropagation"
 status: 已掌握
@@ -668,7 +668,7 @@ difficulty: 进阶
 progress: 100
 rating: 5
 prerequisites: "[[神经网络基础]]"
-related: 
+related:
   - "[[梯度下降]]"
   - "[[激活函数]]"
 created: 2024-01-15
@@ -714,17 +714,17 @@ def forward(X, W1, b1, W2, b2):
 ```python
 def backward(X, y, z1, a1, z2, y_hat, W2):
     m = X.shape[0]
-    
+
     # 输出层梯度
     dz2 = y_hat - y
     dW2 = (1/m) * np.dot(a1.T, dz2)
     db2 = (1/m) * np.sum(dz2, axis=0, keepdims=True)
-    
+
     # 隐藏层梯度
     dz1 = np.dot(dz2, W2.T) * sigmoid_derivative(z1)
     dW1 = (1/m) * np.dot(X.T, dz1)
     db1 = (1/m) * np.sum(dz1, axis=0, keepdims=True)
-    
+
     return dW1, db1, dW2, db2
 ```
 
@@ -840,3 +840,4 @@ print(f"准确率: {accuracy(y, predictions):.2f}")
 - [Embed files](https://help.obsidian.md/embeds)
 - [Callouts](https://help.obsidian.md/callouts)
 - [Properties](https://help.obsidian.md/properties)
+

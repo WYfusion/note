@@ -1,4 +1,4 @@
-# SFTP 安全文件传输与自动化指南
+﻿# SFTP 安全文件传输与自动化指南
 
 **SFTP** (SSH File Transfer Protocol) 是一种运行在 **SSH** (Secure Shell) 协议之上的安全文件传输协议。
 与传统的 FTP 不同，SFTP 对所有的传输命令和数据进行加密，能有效防止密码窃听和中间人攻击。
@@ -70,7 +70,7 @@ sftp -P 2222 user@192.168.1.100
 2.  **单行命令示例**：
     ```bash
     # 语法：sshpass -p '密码' sftp [参数] user@host
-    
+
     # 示例：自动登录并下载文件
     sshpass -p 'MySecretPass' sftp -oBatchMode=no -P 22 user@192.168.1.100 <<< "get remote_file.txt"
     sshpass -p 'your_password' sftp -oStrictHostKeyChecking=no -P 2222 a5000@172.22.62.21

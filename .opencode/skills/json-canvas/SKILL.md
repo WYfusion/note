@@ -1,4 +1,4 @@
----
+﻿---
 name: json-canvas
 description: 优化的JSON Canvas可视化系统，专为学习笔记的知识图谱设计。提供思维导图、概念关系图、学习路径图等可视化功能，帮助构建直观的知识结构。
 ---
@@ -626,7 +626,7 @@ Note: Specific color values for presets are intentionally undefined, allowing ap
       "width": 210,
       "height": 60,
       "file": "神经网络基础.md",
-      "subpath": "#核心概念"
+      "subpath": ""
     },
     {
       "id": "backprop",
@@ -957,7 +957,7 @@ This format is a 16-character lowercase hex string (64-bit random value).
 // 标准间距配置
 {
   "节点间距": "60-100px",
-  "分组内边距": "30-50px", 
+  "分组内边距": "30-50px",
   "层次间距": "150-200px",
   "网格对齐": "20px倍数"
 }
@@ -978,7 +978,7 @@ This format is a 16-character lowercase hex string (64-bit random value).
 #### 🛤️ 学习路径图
 ```json
 {
-  "布局": "线性流程式", 
+  "布局": "线性流程式",
   "阶段": "基础→进阶→高级→实践",
   "连接": "前置关系、依赖关系",
   "标记": "完成状态、掌握程度"
@@ -1012,7 +1012,7 @@ This format is a 16-character lowercase hex string (64-bit random value).
 {
   "颜色方案": {
     "核心概念": "6 (紫色)",
-    "理论基础": "4 (绿色)", 
+    "理论基础": "4 (绿色)",
     "实践应用": "1 (红色)",
     "资源链接": "3 (黄色)",
     "疑问问题": "2 (橙色)",
@@ -1060,7 +1060,7 @@ $$数学表达式$$
 {
   "分组类型": {
     "阶段分组": "📖 基础阶段 / ⚙️ 核心算法 / 🚀 进阶主题",
-    "主题分组": "🧠 概念理论 / 💻 实践应用 / 📚 学习资源", 
+    "主题分组": "🧠 概念理论 / 💻 实践应用 / 📚 学习资源",
     "状态分组": "✅ 已完成 / 🔄 进行中 / 📋 待开始",
     "类型分组": "🔧 工具方法 / 📊 数据分析 / 🎯 应用场景"
   }
@@ -1074,7 +1074,7 @@ $$数学表达式$$
 {
   "每周检查": [
     "更新学习进度状态",
-    "添加新发现的概念关联", 
+    "添加新发现的概念关联",
     "修正过时的信息链接"
   ],
   "每月整理": [
@@ -1111,3 +1111,4 @@ $$数学表达式$$
 
 - [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/)
 - [JSON Canvas GitHub](https://github.com/obsidianmd/jsoncanvas)
+

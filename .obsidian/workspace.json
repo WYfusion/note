@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "36c5d4ad5db81a7c",
+        "id": "2655f073953479fc",
         "type": "tabs",
         "children": [
           {
-            "id": "b693f97bed69e2cc",
+            "id": "dfca7088e0eeda8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/W&B + Prometheus 监控搭建实战.md",
+                "file": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "W&B + Prometheus 监控搭建实战"
+              "title": "1 参数量的理论化表达"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 478
+    "width": 417.5
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -177,27 +177,19 @@
             }
           },
           {
-            "id": "11a13f5c328d2206",
+            "id": "ab670675d423ef77",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "a81fc5c5c0432659",
-            "type": "leaf",
-            "state": {
-              "type": "github-copilot-chat-view",
-              "state": {},
-              "icon": "bot-message-square",
-              "title": "Copilot Chat"
+              "type": "footnotes",
+              "state": {
+                "file": "DL/大语言模型/03_语言建模与Token基础/Embedding与位置编码/1文本嵌入/索引_文本嵌入.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "脚注"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -206,58 +198,57 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "bases:新建数据库": false,
-      "switcher:打开快速切换": false,
+      "mermaid-tools:Open Mermaid Toolbar": true,
+      "bases:新建数据库": true,
+      "switcher:打开快速切换": true,
+      "obsidian-importer:Open Importer": false,
       "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
+      "canvas:新建白板": true,
+      "templates:插入模板": true,
+      "command-palette:打开命令面板": true,
+      "markdown-importer:打开 Markdown 格式转换器": true,
       "random-note:开始漫游笔记": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "workspaces:管理工作区布局": true
     }
   },
-  "active": "b693f97bed69e2cc",
+  "active": "4c09073e6e73543a",
   "lastOpenFiles": [
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/10 监控机制与告警体系.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/梯度范数监控 Python 实现.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别/7 梯度范数监控与判别.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/4 Warmup 策略.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略/Warmup 与 Scheduler 实现示例.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/6 异常 Batch 定位.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位/异常 Batch 定位 Python 实战.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/LLM 训练工程详解：预训练 微调 对齐.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/15 一句话原则.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/14 标准排障流程.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/13 预训练 微调 对齐差异速记.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/12 常用默认值速查.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/8 数据问题 vs 超参问题 vs 实现问题.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/5 Loss Spike 诊断.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/3 梯度噪声.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/吞吐优化技术栈 Python 实战.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化/11 Tokens 吞吐量优化.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系/W&B + Prometheus 监控搭建实战.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/混合精度训练排障实战.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援/9 训练崩溃救援.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/LR Scaling 与 Scheduler 实现.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优/2 学习率（LR）调优.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/分布式 Sharded Checkpoint 实战.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制/1 Checkpoint 与回滚机制.md",
-    "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT方法/01_LoRA_QLoRA.md",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/9 训练崩溃救援",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/7 梯度范数监控与判别",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/6 异常 Batch 定位",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/4 Warmup 策略",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/2 学习率（LR）调优",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/11 Tokens 吞吐量优化",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/10 监控机制与告警体系",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐/1 Checkpoint 与回滚机制",
-    "DL/大语言模型/LLM 训练工程详解：预训练 微调 对齐",
-    "DL/大语言模型/06_指令微调与参数高效微调PEFT/索引_指令微调与参数高效微调.md",
-    "DL/大语言模型/06_指令微调与参数高效微调PEFT/PEFT 参数高效微调方案族/LoRA 系列详解",
+    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md",
+    "AGENTS.md",
+    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/8 综合使用流程.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md",
+    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/1 FlashAttention 系列.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/LLM 参数量 - 数值精度 - 训练资源 - 训练时间 - 推理速度 总纲.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md",
+    "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_TransformerBlock做了什么/01_TokenMixing与ChannelMixing如何分工.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/6 Continuous Batching 与调度.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/2 GQA - MQA 注意力头优化.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/4 Speculative Decoding.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/5 LoRA - QLoRA 微调方案.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/3 PagedAttention 与 vLLM.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解/2 KV Cache 工程与优化.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解/1 训练显存七项分解详解.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/2 MoE 参数结构与 N_active 解析.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/2 推理瓶颈诊断：Compute-bound vs Memory-bound.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/1 Prefill 与 Decode 深度解析.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/3 吞吐与时延工程权衡.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/3 训练效率瓶颈诊断.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/1 分布式并行策略：TP - PP - FSDP - ZeRO - CP - EP.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/2 MFU 与 HFU：系统效率度量.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配/2 推理感知 Scaling 与 TCO 优化.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配/1 Kaplan vs Chinchilla 详细对比.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化/3 训练时低精度：Mixed Precision 与 FP8 Training.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化/4 超低精度前沿：FP4 - NVFP4 - MXFP4.md",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配",
+    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化",
+    "DL/05参数量估计/私人与共享",
+    "DL/05参数量估计",
     "DL/TTS/Qwen3 TTS/Qwen3模型骨架/Untitled Diagram.svg",
     "概念/论文/自看论文/Multi-Head State Space Model for Speech Recognition语音识别的多头部状态空间模型/Stacked & Multi-Head Extension.png",
     "DL/03模型/LSTM/LSTM.png",

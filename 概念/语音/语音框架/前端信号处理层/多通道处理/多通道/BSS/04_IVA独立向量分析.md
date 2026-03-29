@@ -1,4 +1,4 @@
-# IVA 独立向量分析
+﻿# IVA 独立向量分析
 
 ## 1. 从 ICA 到 IVA
 
@@ -140,27 +140,27 @@ $$\mathbf{W}(f) \leftarrow \mathbf{W}(f) + \eta \cdot \Delta\mathbf{W}(f)$$
      for f = 1 to F:
        Ŝ(f,t) = W(f)·X(f,t), ∀t
      end
-     
+
      // 计算源向量范数
      for n = 1 to N:
        for t = 1 to T:
          r_n(t) = sqrt(Σ_f |Ŝ_n(f,t)|²)
        end
      end
-     
+
      // 计算非线性函数
      for f = 1 to F:
        for t = 1 to T:
          φ_n(f,t) = Ŝ_n(f,t) / r_n(t), ∀n
        end
      end
-     
+
      // 更新解混矩阵
      for f = 1 to F:
        ΔW(f) = [I - (1/T)Σ_t φ(f,t)·Ŝ^H(f,t)]·W(f)
        W(f) = W(f) + η·ΔW(f)
      end
-     
+
    until 收敛
 
 3. return W(f), Ŝ(f,t)
@@ -289,25 +289,26 @@ $$\phi_n(f,t) = \frac{\hat{S}_n(f,t)}{\|\mathbf{s}_n(t)\| + \epsilon}$$
 def iva_separation(mixed_signals, n_sources, n_fft=1024):
     # STFT
     X = stft(mixed_signals, n_fft)  # [F, M, T]
-    
+
     # 初始化
     W = [np.eye(n_sources) for _ in range(n_freq)]
-    
+
     # IVA 迭代
     for iteration in range(max_iter):
         # 分离
         S = [W[f] @ X[f] for f in range(n_freq)]
-        
+
         # 计算范数
         r = np.sqrt(np.sum(np.abs(S)**2, axis=0))  # [N, T]
-        
+
         # 更新
         for f in range(n_freq):
             phi = S[f] / (r + eps)
             grad = np.eye(n_sources) - np.mean(phi @ S[f].conj().T, axis=-1)
             W[f] += learning_rate * grad @ W[f]
-    
+
     # iSTFT
     separated = [istft(S[:, n, :]) for n in range(n_sources)]
     return separated
 ```
+
