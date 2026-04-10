@@ -20,7 +20,7 @@ updated: 2026-03-29
 > - 为什么 Transformer 能让远距离信息交换变短路径，但默认又不懂顺序？
 > - 为什么 attention 选择点积、softmax 和缩放，而不是别的组合？
 > - 为什么位置编码不是“补一个 embedding”那么简单，而是在改注意力几何？
-> - 为什么 Pre-Norm、RMSNorm、SwiGLU、GQA、FlashAttention 会成为现代大模型的高频配置？
+> - 为什么 Pre-Norm、RMSNorm、SwiGLU、[[06_分组注意力GQA|GQA]]、FlashAttention 会成为现代大模型的高频配置？
 > - 为什么很多“高效 attention”论文没有真正取代 dense attention？
 
 ## 知识地图

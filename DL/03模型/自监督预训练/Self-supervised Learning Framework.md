@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - 机器学习
   - 深度学习
@@ -8,9 +8,6 @@ tags:
 created: 2025-01-18
 modified: 2025-01-18
 difficulty: 中高
-related:
-  - [[自监督预训练/BERT（Bidirectional Encoder Representations from Transformers）]]
-  - [[Transformer]]
 ---
 
 ```dataview

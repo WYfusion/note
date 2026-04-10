@@ -36,5 +36,5 @@ Whisper 的强项来自音频 encoder 和转录训练目标，而不是单靠“
 ## 相关链接
 
 - [[01_EncoderDecoder为什么天然适合条件生成|Encoder-Decoder 为什么天然适合条件生成]]
-- [[02_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
-- [[05_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]
+- [[00_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
+- [[00_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]

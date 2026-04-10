@@ -36,5 +36,5 @@ Token 化方式直接决定序列长度、局部结构保留程度和后续 atte
 ## 相关链接
 
 - [[02_语音_视觉_视频为什么需要不同结构适配|语音、视觉、视频为什么需要不同结构适配]]
-- [[05_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]
-- [[03_长上下文工程_Chunking_Streaming_RingAttention|长上下文工程]]
+- [[00_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]
+- [[00_长上下文工程_Chunking_Streaming_RingAttention|长上下文工程]]

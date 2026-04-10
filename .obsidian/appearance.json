@@ -2,7 +2,7 @@
   "cssTheme": "halcyon",
   "theme": "obsidian",
   "accentColor": "#1e526c",
-  "baseFontSize": 20,
+  "baseFontSize": 19,
   "baseFontSizeAction": true,
   "enabledCssSnippets": [
     "preview-origin",

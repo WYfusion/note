@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - LLM/多模态
 aliases:
@@ -184,7 +184,7 @@ def adaptive_patch_size(image):
 **相关主题**：
 - [[../02_离散视觉Token_VQVAE与dVAE|离散视觉 Token]] — 基于学习的视觉 Token 化
 - [[../03_音频Token_AudioCodec与Whisper|音频 Token (Codec)]] — 其他模态的 Token 化
--[[01_缩放点积注意力_为什么是点积_为什么要除以根号dk|缩放点积注意力]]] — Self-Attention 机制
+[[00_缩放点积注意力_为什么是点积_为什么要除以根号dk|缩放点积注意力]]]] — Self-Attention 机制
 
 **延伸阅读**：
 - [[../../11_多模态与跨模态/索引_多模态与跨模态|多模态大模型]] — 完整多模态架构

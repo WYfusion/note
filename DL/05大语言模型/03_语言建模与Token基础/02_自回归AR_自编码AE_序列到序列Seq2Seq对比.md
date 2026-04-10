@@ -207,11 +207,11 @@ $$e_{tj} = v_a^T \tanh(W_a s_{t-1} + U_a h_j)$$
 **相关主题**：
 -[[索引_Transformer核心结构|Transformer 核心结构]]] — 三大范式的统一
 - [[../04_Transformer核心结构/模型家族/索引_模型家族|模型家族]] — Encoder-only/Decoder-only/Encoder-Decoder 详细对比
--[[01_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]] — 注意力的数学基础
--[[03_多头注意力为什么有效_MHA_MQA_GQA_MLA|Multi-Head Attention]]] — 注意力如何统一不同范式
+[[00_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]]] — 注意力的数学基础
+[[00_多头注意力为什么有效_MHA_MQA_GQA_MLA|Multi-Head Attention]]]] — 注意力如何统一不同范式
 
 **延伸阅读**：
--[[01_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]] — 注意力的数学基础
+[[00_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]]] — 注意力的数学基础
 - [[../11_多模态与跨模态/语音语言模型SLM/01_语音表征_离散化_Codec|语音表征]] — 语音领域的 AE 模型（Wav2Vec）
 
 

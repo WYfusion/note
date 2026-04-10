@@ -1,4 +1,4 @@
-﻿# Ollama + Docker 完整部署实战
+# Ollama + Docker 完整部署实战
 
 本文将介绍如何使用 Docker 部署 Ollama，并结合 Open WebUI 搭建一套完整的本地大模型对话系统。
 

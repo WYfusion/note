@@ -45,6 +45,6 @@ $$
 ## 相关链接
 
 - [[02_残差_Norm_FFN在Block内如何串起来|残差、Norm、FFN 在 Block 内如何串起来]]
-- [[02_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP|FFN 与 GLU]]
-- [[04_一个TransformerBlock到底在做什么_信息混合与特征变换|一个 Transformer Block 在做什么]]
+- [[00_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP|FFN 与 GLU]]
+- [[00_一个TransformerBlock到底在做什么_信息混合与特征变换|一个 Transformer Block 在做什么]]
 

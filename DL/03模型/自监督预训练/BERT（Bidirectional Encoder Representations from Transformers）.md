@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - 机器学习
   - 深度学习
@@ -8,11 +8,6 @@ tags:
   - NLP
 created: 2025-01-18
 modified: 2025-01-18
-difficulty: 中高
-related:
-  - [[Transformer]]
-  - [[自监督预训练/Self-supervised Learning Framework]]
-  - [[Transformer/00_阅读指引]]
 ---
 
 > [!summary] 核心思想

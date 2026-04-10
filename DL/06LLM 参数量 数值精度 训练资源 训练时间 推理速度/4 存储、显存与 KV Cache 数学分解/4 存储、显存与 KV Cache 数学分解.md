@@ -63,7 +63,7 @@ $$M_{KV} \approx B \times T \times L \times 2 \times h_{kv} \times d_{head} \tim
 
 - $2$：K 和 V 各一份
 
-- $h_{kv}$：KV head 数（GQA/MQA 直接降低此项）
+- $h_{kv}$：KV head 数（[[06_分组注意力GQA|GQA]]/[[05_多查询注意力MQA|MQA]] 直接降低此项）
 
 - $d_{head}$：每头维度
 
@@ -75,7 +75,7 @@ $M_{KV} = 32 \times 4096 \times 80 \times 2 \times 8 \times 128 \times \frac{16}
 
 > [!important]
 > 
-> **长上下文 / 大并发时，KV cache 往往比权重更先炸显存。** 这就是 GQA/MQA、KV 量化、PagedAttention 的核心驱动力。
+> **长上下文 / 大并发时，KV cache 往往比权重更先炸显存。** 这就是 [[06_分组注意力GQA|GQA]]/[[05_多查询注意力MQA|MQA]]、KV 量化、PagedAttention 的核心驱动力。
 
 ---
 
@@ -83,7 +83,7 @@ $M_{KV} = 32 \times 4096 \times 80 \times 2 \times 8 \times 128 \times \frac{16}
 
 - [[1 训练显存七项分解详解]] — 每项的精确计算 + ZeRO 各 Stage 如何分片
 
-- [[2 KV Cache 工程与优化]] — GQA/MQA 降 KV、KV 量化、PagedAttention 虚拟内存
+- [[2 KV Cache 工程与优化]] — [[06_分组注意力GQA|GQA]]/[[05_多查询注意力MQA|MQA]] 降 KV、KV 量化、PagedAttention 虚拟内存
 
 [[1 训练显存七项分解详解]]
 

@@ -44,6 +44,6 @@ $$
 ## 相关链接
 
 - [[02_EncoderDecoder数据流与CrossAttention位置|Encoder-Decoder 数据流与 Cross-Attention 位置]]
-- [[04_KVCache_Prefill_Decode_PagedAttention|KV Cache]]
--[[03_DecoderOnly_GPT_LLaMA_Qwen|Decoder-Only]]]
+-[[00_KVCache_Prefill_Decode_PagedAttention|KV Cache]]]
+[[00_DecoderOnly_GPT_LLaMA_Qwen|Decoder-Only]]]]
 

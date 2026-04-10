@@ -48,6 +48,6 @@ ASR 任务里，若把长音频帧直接塞进单路 Decoder-only，训练和推
 ## 相关链接
 
 - [[01_DecoderOnly数据流与张量形状|Decoder-Only 数据流与张量形状]]
-- [[02_AttentionMask_Causal_Padding_CrossAttention|Attention Mask]]
-- [[02_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
+- [[00_AttentionMask_Causal_Padding_CrossAttention|Attention Mask]]
+- [[00_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
 

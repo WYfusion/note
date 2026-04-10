@@ -36,5 +36,5 @@ ViT 的关键动作是把图像切成 patch，把每个 patch 当成一个 token
 ## 相关链接
 
 - [[01_BERT式双向编码器适合什么任务|BERT 式双向编码器适合什么任务]]
-- [[05_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]
+- [[00_跨模态Transformer_语音_视觉_视频的结构适配|跨模态 Transformer]]
 - [[01_绝对位置编码_Sinusoidal_Learnable|绝对位置编码]]

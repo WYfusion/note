@@ -9,7 +9,7 @@
 - **显存计算公式**：$\text{Size}_{KV} = 2 \times L \times N_{head} \times d_{head} \times S \times B \times P_{bytes}$。
 - **语音挑战**：
   - 30秒音频 $\approx$ 2250 Token，KV Cache 达 1.1GB（vs 文本 60MB）。
-  - MQA/GQA、Window Attention、KV Cache 量化等优化策略。
+  - [[05_多查询注意力MQA|MQA]]/[[06_分组注意力GQA|GQA]]、Window Attention、KV Cache 量化等优化策略。
 
 ### [02_PagedAttention_vLLM思路.md](02_PagedAttention_vLLM思路.md)
 - **PagedAttention**：借鉴操作系统分页机制，解决显存碎片化。

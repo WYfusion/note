@@ -16,24 +16,24 @@
 
 ### 1.1 记号表
 
-|符号|含义|备注|
-|---|---|---|
-|$N$|参数量|泛称|
-|$N_{total}$|总参数量|MoE 含全部 expert|
-|$N_{active}$|每 token 实际参与计算的参数量|MoE 仅含激活 expert|
-|$D$|训练 token 数||
-|$L$|层数||
-|$d$|隐藏维||
-|$V$|词表大小||
-|$S$|训练序列长度||
-|$T$|推理时当前上下文长度||
-|$B$|batch / 并发请求数||
-|$h, h_{kv}$|query head 数 / KV head 数|GQA/MQA 下 $h_{kv} < h$|
-|$d_{head}$|每头维度||
-|$b_w, b_a, b_g, b_{opt}, b_{kv}$|权重/激活/梯度/优化器/KV 的 bit 数||
-|$G$|加速器数量||
-|$F_{peak}$|单卡峰值 FLOPs/s||
-|$\eta$|系统有效利用率|MFU / HFU 均可归入|
+| 符号                               | 含义                       | 备注                                                       |
+| -------------------------------- | ------------------------ | -------------------------------------------------------- |
+| $N$                              | 参数量                      | 泛称                                                       |
+| $N_{total}$                      | 总参数量                     | MoE 含全部 expert                                           |
+| $N_{active}$                     | 每 token 实际参与计算的参数量       | MoE 仅含激活 expert                                          |
+| $D$                              | 训练 token 数               |                                                          |
+| $L$                              | 层数                       |                                                          |
+| $d$                              | 隐藏维                      |                                                          |
+| $V$                              | 词表大小                     |                                                          |
+| $S$                              | 训练序列长度                   |                                                          |
+| $T$                              | 推理时当前上下文长度               |                                                          |
+| $B$                              | batch / 并发请求数            |                                                          |
+| $h, h_{kv}$                      | query head 数 / KV head 数 | [[06_分组注意力GQA\|GQA]]/[[05_多查询注意力MQA\|MQA]]下 $h_{kv} < h$ |
+| $d_{head}$                       | 每头维度                     |                                                          |
+| $b_w, b_a, b_g, b_{opt}, b_{kv}$ | 权重/激活/梯度/优化器/KV 的 bit 数  |                                                          |
+| $G$                              | 加速器数量                    |                                                          |
+| $F_{peak}$                       | 单卡峰值 FLOPs/s             |                                                          |
+| $\eta$                           | 系统有效利用率                  | MFU / HFU 均可归入                                           |
 
 ### 1.2 第一原则
 
@@ -108,11 +108,11 @@
 
 ### 11.2 工程核心
 
-|场景|主战场技术栈|
-|---|---|
-|**预训练**|BF16/FP8 + ZeRO/FSDP + TP/PP/CP + FlashAttention + checkpointing|
-|**微调**|LoRA / QLoRA（资源紧）；全参 BF16（资源足）|
-|**推理**|GQA/MQA + vLLM/PagedAttention + quantization + speculative decoding|
+| 场景      | 主战场技术栈                                                                            |     |
+| ------- | --------------------------------------------------------------------------------- | --- |
+| **预训练** | BF16/FP8 + ZeRO/FSDP + TP/PP/CP + FlashAttention + checkpointing                  |     |
+| **微调**  | LoRA / QLoRA（资源紧）；全参 BF16（资源足）                                                    |     |
+| **推理**  | [[06_分组注意力GQA\|GQA]]/[[05_多查询注意力MQA|MQA]] + vLLM/PagedAttention + quantization + speculative decoding |     |
 
 ### 11.3 最终判据
 
@@ -129,8 +129,6 @@
 [[5 训练 FLOPs、资源与时间]]
 
 [[6 推理速度：数学化分解]]
-
-[[8 综合使用流程]]
 
 [[1 参数量的理论化表达]]
 

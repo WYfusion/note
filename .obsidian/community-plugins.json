@@ -6,8 +6,9 @@
   "better-export-pdf",
   "advanced-canvas",
   "quick-explorer",
-  "obsidian-importer",
   "obsidian-icon-folder",
   "mermaid-tools",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "code-space",
+  "obsidian-importer"
 ]

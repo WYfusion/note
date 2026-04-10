@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md",
+                "file": "DL/TTS/Qwen3 TTS/Qwen3-TTS 模型组件架构细节/DiT（Diffusion Transformer）在语音合成中的应用详解.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "1 参数量的理论化表达"
+              "title": "DiT（Diffusion Transformer）在语音合成中的应用详解"
+            }
+          },
+          {
+            "id": "83dfd5b0e691a6e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "后端/Docker/03-镜像/01-镜像创建查询删除.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "01-镜像创建查询删除"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -54,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 417.5
+    "width": 396.5
   },
   "right": {
     "id": "746e333d50bfaf6b",
@@ -105,17 +121,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DL/大语言模型/09_RAG_检索增强生成/RAG总体架构_数据流.md",
-                "collapseAll": true,
-                "extraContext": true,
+                "file": "后端/Docker/03-镜像/01-镜像创建查询删除.md",
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "RAG总体架构_数据流 的反向链接列表"
+              "title": "01-镜像创建查询删除 的反向链接列表"
             }
           },
           {
@@ -124,12 +140,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DL/大语言模型/09_RAG_检索增强生成/RAG总体架构_数据流.md",
+                "file": "DL/TTS/TTS 评测基准全景指南/5-客观评价指标体系详解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "RAG总体架构_数据流 的出链列表"
+              "title": "5-客观评价指标体系详解 的出链列表"
             }
           },
           {
@@ -182,14 +198,23 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "DL/大语言模型/03_语言建模与Token基础/Embedding与位置编码/1文本嵌入/索引_文本嵌入.md"
+                "file": "后端/Docker/03-镜像/01-镜像创建查询删除.md"
               },
               "icon": "lucide-file-signature",
               "title": "脚注"
             }
+          },
+          {
+            "id": "110f92fa9a62cc67",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -198,57 +223,59 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "mermaid-tools:Open Mermaid Toolbar": true,
+      "code-space:打开 Code Space 主面板": false,
       "bases:新建数据库": true,
       "switcher:打开快速切换": true,
-      "obsidian-importer:Open Importer": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": true,
       "templates:插入模板": true,
       "command-palette:打开命令面板": true,
       "markdown-importer:打开 Markdown 格式转换器": true,
       "random-note:开始漫游笔记": false,
-      "workspaces:管理工作区布局": true
+      "workspaces:管理工作区布局": true,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "4c09073e6e73543a",
+  "active": "83dfd5b0e691a6e4",
   "lastOpenFiles": [
-    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md",
-    "AGENTS.md",
-    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/8 综合使用流程.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md",
-    "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/1 FlashAttention 系列.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/LLM 参数量 - 数值精度 - 训练资源 - 训练时间 - 推理速度 总纲.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md",
-    "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_TransformerBlock做了什么/01_TokenMixing与ChannelMixing如何分工.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/6 Continuous Batching 与调度.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/2 GQA - MQA 注意力头优化.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/4 Speculative Decoding.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/5 LoRA - QLoRA 微调方案.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览/3 PagedAttention 与 vLLM.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解/2 KV Cache 工程与优化.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解/1 训练显存七项分解详解.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/2 MoE 参数结构与 N_active 解析.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/2 推理瓶颈诊断：Compute-bound vs Memory-bound.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/1 Prefill 与 Decode 深度解析.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解/3 吞吐与时延工程权衡.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/3 训练效率瓶颈诊断.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/1 分布式并行策略：TP - PP - FSDP - ZeRO - CP - EP.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间/2 MFU 与 HFU：系统效率度量.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配/2 推理感知 Scaling 与 TCO 优化.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配/1 Kaplan vs Chinchilla 详细对比.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化/3 训练时低精度：Mixed Precision 与 FP8 Training.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化/4 超低精度前沿：FP4 - NVFP4 - MXFP4.md",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/7 核心工程方案总览",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/4 存储、显存与 KV Cache 数学分解",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/6 推理速度：数学化分解",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/5 训练 FLOPs、资源与时间",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/2 Scaling Law 与训练最优分配",
-    "DL/LLM 参数量 数值精度 训练资源 训练时间 推理速度/3 数值精度与量化",
-    "DL/05参数量估计/私人与共享",
-    "DL/05参数量估计",
+    "sync.ffs_lock",
+    "后端/状态码/HTTP 后端状态码清单索引.md",
+    "后端/状态码/README.md",
+    "后端/Docker/03-镜像/01-镜像创建查询删除.md",
+    "后端/Docker/03-镜像/02-Dockerfile语法速查.md",
+    "后端/Docker/04-容器/01-容器命令.md",
+    "后端/Docker/02-基础概念/02-OCI与运行时.md",
+    "后端/Docker/02-基础概念/01-Docker简单使用.md",
+    "后端/Docker/01-安装与环境/02-Docker安装-Linux.md",
+    "后端/Docker/01-安装与环境/03-Docker版本与组件.md",
+    "后端/Docker/02-基础概念/03-命名空间与Cgroups速记.md",
+    "后端/Docker/03-镜像/03-多阶段构建与精简镜像.md",
+    "后端/Docker/03-镜像/04-构建缓存与BuildKit.md",
+    "后端/Docker/03-镜像/07-镜像安全与扫描.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/1 Docker 基础对象：必须讲清的边界.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/2 Dockerfile：当前应掌握的完整知识框架.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/10 AI - Agent - LLM 项目中的 Docker 推荐做法.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/8 项目设置推荐：当前最稳的工程化组织方式.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/4 挂载：Mount - Volume - Bind - tmpfs 一定要分清.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/3 Docker Compose：当前推荐的项目主入口.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/0 总体定位：建立正确心智模型.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）.md",
+    "后端/Docker/Docker.md",
+    "后端/Docker/07-Compose/02-compose.yaml规范与最佳实践.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/11 反模式清单 · 12 学习顺序 · 13 最终结论.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）/9 开发 - 测试 - 生产 三态推荐.md",
+    "后端/Docker/Docker 完整体系笔记（2026 口径）",
+    "Notion/私人与共享",
+    "Notion",
+    "DL/03模型/自监督预训练/自监督预训练.canvas",
+    "论文库/Qwen3-TTS Technical Report/Qwen3-TTS 模型组件架构细节",
+    "论文库/Qwen3-TTS Technical Report/TTS 评测基准全景指南",
+    "论文库/FreeVC Towards High-Quality Text-Free One-Shot Voi",
+    "论文库/R-VC Rhythm Controllable Zero-Shot Voice Conversio",
+    "论文库/Seed-VC Zero-shot Voice Conversion with Diffusion",
+    "论文库/Qwen3-TTS Technical Report",
+    "论文库/LM-VC Zero-shot Voice Conversion via Speech Genera",
     "DL/TTS/Qwen3 TTS/Qwen3模型骨架/Untitled Diagram.svg",
     "概念/论文/自看论文/Multi-Head State Space Model for Speech Recognition语音识别的多头部状态空间模型/Stacked & Multi-Head Extension.png",
     "DL/03模型/LSTM/LSTM.png",

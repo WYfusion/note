@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - 机器学习
   - 深度学习
@@ -15,7 +15,7 @@ related:
   - [[生成对抗网络GAN/散度(divergence)]]
 ---
 
-# Gumbel-Softmax（又名 Concrete）笔记
+# Gumbel-Softmax（又名 Concrete）
 
 ## 0. 一句话直觉
 

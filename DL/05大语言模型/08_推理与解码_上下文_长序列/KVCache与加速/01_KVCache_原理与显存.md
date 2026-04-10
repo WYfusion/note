@@ -44,6 +44,6 @@ $$ \text{Size}_{KV} = 2 \times L \times N_{head} \times d_{head} \times S \times
 
 ### 3.3 优化策略
 针对 Audio LLM 的 KV Cache 优化至关重要：
-1.  **MQA / GQA (Multi-Query / Grouped-Query Attention)**：减少 Key/Value 的头数，直接成倍减少 KV Cache 大小。
+1.  **[[05_多查询注意力MQA|MQA]] / [[06_分组注意力GQA|GQA]] (Multi-Query / [[06_分组注意力GQA|Grouped-Query Attention]])**：减少 Key/Value 的头数，直接成倍减少 KV Cache 大小。
 2.  **Window Attention**：只缓存最近 N 个 Token 的 KV（滑动窗口），适合流式语音生成。
 3.  **KV Cache Quantization**：将 KV Cache 量化为 INT8 或 FP8，减少一半显存。

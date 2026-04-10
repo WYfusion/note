@@ -11,19 +11,19 @@
 |矩阵|维度|参数量|说明|
 |---|---|---|---|
 |$W_Q$|$d \times d$|$d^2$|Query 投影|
-|$W_K$|$d \times (h_{kv} \cdot d_{head})$|$d \cdot h_{kv} \cdot d_{head}$|Key 投影（GQA 时 $h_{kv} < h$）|
+|$W_K$|$d \times (h_{kv} \cdot d_{head})$|$d \cdot h_{kv} \cdot d_{head}$|Key 投影（[[06_分组注意力|GQA]] 时 $h_{kv} < h$）|
 |$W_V$|$d \times (h_{kv} \cdot d_{head})$|$d \cdot h_{kv} \cdot d_{head}$|Value 投影|
 |$W_O$|$d \times d$|$d^2$|Output 投影|
 
 **MHA**（$h_{kv} = h$, $d = h cdot d_{head}$）时：$N_{attn} = 4d^2$
 
-**GQA**（$h_{kv} < h$）时：
+**[[06_分组注意力GQA|GQA]]**（$h_{kv} < h$）时：
 
 $$N_{attn} = d^2 + 2d \cdot h_{kv} \cdot d_{head} + d^2 = 2d^2 + 2d \cdot h_{kv} \cdot d_{head}$$
 
 > [!important]
 > 
-> 当 $h_{kv} = h$（MHA）时退化为 $4d^2$；当 $h_{kv} = 1$（MQA）时为 $2d^2 + 2d cdot d_{head} approx 2d^2$。但对**总参数量**影响不大，因 MLP 仍为主项。
+> 当 $h_{kv} = h$（MHA）时退化为 $4d^2$；当 $h_{kv} = 1$（[[05_多查询注意力MQA|MQA]]）时为 $2d^2 + 2d cdot d_{head} approx 2d^2$。但对**总参数量**影响不大，因 MLP 仍为主项。
 
 ### MLP（SwiGLU 变体）
 

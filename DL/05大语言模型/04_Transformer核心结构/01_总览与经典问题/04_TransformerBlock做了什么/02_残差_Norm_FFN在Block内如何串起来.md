@@ -1,4 +1,4 @@
-﻿---
+---
 tags:
   - LLM/架构
   - LLM/训练
@@ -46,7 +46,7 @@ $$
 
 ## 相关链接
 
--[[01_AddNorm_PreNorm_PostNorm_LayerNorm_RMSNorm|Norm 与残差骨架]]]
--[[03_残差路径_初始化_DeepNorm|残差路径与 DeepNorm]]]
-- [[04_一个TransformerBlock到底在做什么_信息混合与特征变换|一个 Transformer Block 在做什么]]
+- [[00_AddNorm_PreNorm_PostNorm_LayerNorm_RMSNorm|Norm 与残差骨架]]
+- [[00_残差路径_初始化_DeepNorm|残差路径与 DeepNorm]]
+- [[00_一个TransformerBlock到底在做什么_信息混合与特征变换|一个 Transformer Block 在做什么]]
 

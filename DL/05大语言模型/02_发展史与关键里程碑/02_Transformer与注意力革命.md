@@ -38,7 +38,7 @@ updated: 2026-03-28
 
 ## 2. 核心组件：Scaled Dot-Product Attention
 
-Transformer 通过 *[[01_缩放点积注意力_为什么是点积_为什么要除以根号dk|Self-Attention]]]**  彻底解决了上述问题。
+Transformer 通过 [[00_缩放点积注意力_为什么是点积_为什么要除以根号dk|Self-Attention]]]]**  彻底解决了上述问题。
 
 ### 2.1 Q, K, V 的定义
 
@@ -248,8 +248,8 @@ Feed-Forward + LayerNorm
 
 **相关主题**：
 -[[索引_Transformer核心结构|Transformer 核心结构]]] — 详细技术解析
--[[01_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]] — 核心注意力详解
--[[03_多头注意力为什么有效_MHA_MQA_GQA_MLA|Multi-Head Attention]]] — 多头注意力详解
+[[00_缩放点积注意力_为什么是点积_为什么要除以根号dk|Scaled Dot-Product Attention]]]] — 核心注意力详解
+[[00_多头注意力为什么有效_MHA_MQA_GQA_MLA|Multi-Head Attention]]]] — 多头注意力详解
 -[[03_RoPE_ALiBi_为什么主流模型偏向这两类方案|RoPE 相对位置编码]]] — 现代位置编码
 
 **延伸阅读**：

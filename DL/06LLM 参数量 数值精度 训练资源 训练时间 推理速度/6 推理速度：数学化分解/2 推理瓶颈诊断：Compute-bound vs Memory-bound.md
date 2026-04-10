@@ -37,7 +37,7 @@ $$\text{Attainable FLOPs/s} = \min(F_{peak}, \text{AI} \times \text{BW})$$
 |Decode B=1|~1|Memory|量化权重、增大 batch|
 |Decode B=32|~32|Memory → 过渡|Continuous batching|
 |Decode B=256|~256|Compute|算力优化|
-|长上下文 decode|低（KV 读取大）|KV-bandwidth|GQA、KV 量化|
+|长上下文 decode|低（KV 读取大）|KV-bandwidth|[[06_分组注意力|GQA]]、KV 量化|
 
 > [!important]
 > 
@@ -53,7 +53,7 @@ $$\text{Attainable FLOPs/s} = \min(F_{peak}, \text{AI} \times \text{BW})$$
 
 1. **KV 量化**：压缩 KV cache 带宽需求
 
-1. **GQA/MQA**：减少 KV head 数
+1. **[[06_分组注意力GQA|GQA]]/[[05_多查询注意力MQA|MQA]]**：减少 KV head 数
 
 1. **增大 batch**：提高 arithmetic intensity
 

@@ -35,5 +35,5 @@ Encoder 负责构建条件表示，Decoder 在 causal 约束下通过 cross-atte
 ## 相关链接
 
 - [[02_T5_BART_Whisper的差异到底在哪里|T5、BART、Whisper 的差异到底在哪里]]
-- [[02_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
-- [[03_Transformer整体数据流_张量形状_EncoderDecoder|整体数据流与张量形状]]
+- [[00_EncoderDecoder_T5_BART_Whisper|Encoder-Decoder]]
+- [[00_Transformer整体数据流_张量形状_EncoderDecoder|整体数据流与张量形状]]

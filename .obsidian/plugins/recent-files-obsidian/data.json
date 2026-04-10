@@ -1,200 +1,204 @@
 {
   "recentFiles": [
     {
-      "basename": "1 参数量的理论化表达",
-      "path": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 参数量的理论化表达.md"
-    },
-    {
-      "basename": "1 Dense Transformer 参数推导详解",
-      "path": "DL/06LLM 参数量 数值精度 训练资源 训练时间 推理速度/1 参数量的理论化表达/1 Dense Transformer 参数推导详解.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "AGENTS.md"
-    },
-    {
-      "basename": "01_TokenMixing与ChannelMixing如何分工",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_TransformerBlock做了什么/01_TokenMixing与ChannelMixing如何分工.md"
-    },
-    {
-      "basename": "02_EncoderDecoder数据流与CrossAttention位置",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_整体数据流与张量形状/02_EncoderDecoder数据流与CrossAttention位置.md"
-    },
-    {
-      "basename": "01_DecoderOnly数据流与张量形状",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_整体数据流与张量形状/01_DecoderOnly数据流与张量形状.md"
-    },
-    {
-      "basename": "04_归一化与前馈层",
-      "path": "DL/03模型/Transformer/04_模块与整体结构/04_归一化与前馈层.md"
-    },
-    {
-      "basename": "05_位置编码的原因-置换等变性",
-      "path": "DL/03模型/Transformer/02_输入表示/05_位置编码的原因-置换等变性.md"
-    },
-    {
-      "basename": "07_局部与截断注意力",
-      "path": "DL/03模型/Transformer/03_注意力机制/07_局部与截断注意力.md"
-    },
-    {
-      "basename": "03_位置编码到底补回了什么",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/03_位置编码到底补回了什么.md"
-    },
-    {
-      "basename": "02_Learnable位置编码为什么更容易记住训练长度",
-      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码/02_Learnable位置编码为什么更容易记住训练长度.md"
-    },
-    {
-      "basename": "01_绝对位置编码_Sinusoidal_Learnable",
-      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码_Sinusoidal_Learnable.md"
-    },
-    {
-      "basename": "01_Sinusoidal位置编码的频率直觉",
-      "path": "DL/05大语言模型/04_Transformer核心结构/03_位置编码与长上下文/01_绝对位置编码/01_Sinusoidal位置编码的频率直觉.md"
-    },
-    {
-      "basename": "02_Pooling与CLS为何导致置换不变",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/02_Pooling与CLS为何导致置换不变.md"
-    },
-    {
-      "basename": "01_置换等变性_形式化证明",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_顺序失明与置换性/01_置换等变性_形式化证明.md"
-    },
-    {
-      "basename": "03_局部性与顺序归纳偏置到底失去了什么",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_为什么需要Transformer/03_局部性与顺序归纳偏置到底失去了什么.md"
-    },
-    {
-      "basename": "02_并行化为什么不是唯一优势",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_为什么需要Transformer/02_并行化为什么不是唯一优势.md"
-    },
-    {
-      "basename": "多阶段向量微调与进阶技术",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/多阶段向量微调与进阶技术.md"
-    },
-    {
-      "basename": "向量模型对比学习微调实战",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/对比学习与损失函数详解/向量模型对比学习微调实战.md"
-    },
-    {
-      "basename": "对比学习与损失函数详解",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/对比学习与损失函数详解/对比学习与损失函数详解.md"
-    },
-    {
-      "basename": "向量模型微调",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/2向量模型微调/向量模型微调.md"
-    },
-    {
-      "basename": "3Instruction Task SFT 监督微调",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/3Instruction Task SFT 监督微调.md"
-    },
-    {
-      "basename": "2Continued Pretraining（CPT DAPT TAPT）",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/2Continued Pretraining（CPT DAPT TAPT）.md"
-    },
-    {
-      "basename": "1Full Fine-tuning 全参数微调",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/1Full Fine-tuning 全参数微调.md"
-    },
-    {
-      "basename": "索引_注意力机制",
-      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/索引_注意力机制.md"
-    },
-    {
-      "basename": "02_无位置信息的SelfAttention为何顺序失明_置换等变性与置换不变性",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/02_无位置信息的SelfAttention为何顺序失明_置换等变性与置换不变性.md"
-    },
-    {
-      "basename": "0文本 LLM 微调",
-      "path": "DL/05大语言模型/06_指令微调与参数高效微调PEFT/1文本 LLM 微调/0文本 LLM 微调.md"
-    },
-    {
-      "basename": "1. 2xx 成功类与 1xx 信息类详解",
-      "path": "后端/状态码/HTTP 后端状态码清单/1 状态码分类全景与设计哲学/1. 2xx 成功类与 1xx 信息类详解.md"
-    },
-    {
-      "basename": "1. 状态码分类全景与设计哲学",
-      "path": "后端/状态码/HTTP 后端状态码清单/1. 状态码分类全景与设计哲学.md"
+      "basename": "01-镜像创建查询删除",
+      "path": "后端/Docker/03-镜像/01-镜像创建查询删除.md"
     },
     {
       "basename": "HTTP 后端状态码清单索引",
       "path": "后端/状态码/HTTP 后端状态码清单索引.md"
     },
     {
-      "basename": "4. 使用注意事项与反模式",
-      "path": "后端/状态码/HTTP 后端状态码清单/4. 使用注意事项与反模式.md"
+      "basename": "README",
+      "path": "后端/状态码/README.md"
     },
     {
-      "basename": "01_缩放点积注意力_为什么是点积_为什么要除以根号dk",
-      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/01_缩放点积注意力_为什么是点积_为什么要除以根号dk.md"
+      "basename": "02-Dockerfile语法速查",
+      "path": "后端/Docker/03-镜像/02-Dockerfile语法速查.md"
     },
     {
-      "basename": "02_AttentionMask_Causal_Padding_CrossAttention",
-      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/02_AttentionMask_Causal_Padding_CrossAttention.md"
+      "basename": "01-容器命令",
+      "path": "后端/Docker/04-容器/01-容器命令.md"
     },
     {
-      "basename": "03_残差路径_初始化_DeepNorm",
-      "path": "DL/05大语言模型/04_Transformer核心结构/04_块结构与稳定训练/03_残差路径_初始化_DeepNorm.md"
+      "basename": "02-OCI与运行时",
+      "path": "后端/Docker/02-基础概念/02-OCI与运行时.md"
     },
     {
-      "basename": "02_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP",
-      "path": "DL/05大语言模型/04_Transformer核心结构/04_块结构与稳定训练/02_FFN_GELU_GEGLU_SwiGLU_为什么Attention后还要MLP.md"
+      "basename": "01-Docker简单使用",
+      "path": "后端/Docker/02-基础概念/01-Docker简单使用.md"
     },
     {
-      "basename": "04_KVCache_Prefill_Decode_PagedAttention",
-      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/04_KVCache_Prefill_Decode_PagedAttention.md"
+      "basename": "02-Docker安装-Linux",
+      "path": "后端/Docker/01-安装与环境/02-Docker安装-Linux.md"
     },
     {
-      "basename": "03_多头注意力为什么有效_MHA_MQA_GQA_MLA",
-      "path": "DL/05大语言模型/04_Transformer核心结构/02_注意力机制/03_多头注意力为什么有效_MHA_MQA_GQA_MLA.md"
+      "basename": "03-Docker版本与组件",
+      "path": "后端/Docker/01-安装与环境/03-Docker版本与组件.md"
     },
     {
-      "basename": "04_一个TransformerBlock到底在做什么_信息混合与特征变换",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/04_一个TransformerBlock到底在做什么_信息混合与特征变换.md"
+      "basename": "03-命名空间与Cgroups速记",
+      "path": "后端/Docker/02-基础概念/03-命名空间与Cgroups速记.md"
     },
     {
-      "basename": "03_Transformer整体数据流_张量形状_EncoderDecoder",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/03_Transformer整体数据流_张量形状_EncoderDecoder.md"
+      "basename": "03-多阶段构建与精简镜像",
+      "path": "后端/Docker/03-镜像/03-多阶段构建与精简镜像.md"
     },
     {
-      "basename": "01_Transformer究竟解决了什么问题_相对RNN_CNN的优势与代价",
-      "path": "DL/05大语言模型/04_Transformer核心结构/01_总览与经典问题/01_Transformer究竟解决了什么问题_相对RNN_CNN的优势与代价.md"
+      "basename": "04-构建缓存与BuildKit",
+      "path": "后端/Docker/03-镜像/04-构建缓存与BuildKit.md"
     },
     {
-      "basename": "Dot-product",
-      "path": "概念/运算/Dot-product.md"
+      "basename": "07-镜像安全与扫描",
+      "path": "后端/Docker/03-镜像/07-镜像安全与扫描.md"
     },
     {
-      "basename": "Additive",
-      "path": "概念/运算/Additive.md"
+      "basename": "1 Docker 基础对象：必须讲清的边界",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/1 Docker 基础对象：必须讲清的边界.md"
     },
     {
-      "basename": "内积",
-      "path": "概念/运算/内积.md"
+      "basename": "2 Dockerfile：当前应掌握的完整知识框架",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/2 Dockerfile：当前应掌握的完整知识框架.md"
     },
     {
-      "basename": "门控线性单元GLU",
-      "path": "DL/01NN系列/01卷积/门控线性单元GLU.md"
+      "basename": "10 AI - Agent - LLM 项目中的 Docker 推荐做法",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/10 AI - Agent - LLM 项目中的 Docker 推荐做法.md"
     },
     {
-      "basename": "索引_文本嵌入",
-      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/1文本嵌入/索引_文本嵌入.md"
+      "basename": "8 项目设置推荐：当前最稳的工程化组织方式",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/8 项目设置推荐：当前最稳的工程化组织方式.md"
     },
     {
-      "basename": "3_视频嵌入",
-      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/2多模态嵌入/3_视频嵌入.md"
+      "basename": "4 挂载：Mount - Volume - Bind - tmpfs 一定要分清",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/4 挂载：Mount - Volume - Bind - tmpfs 一定要分清.md"
     },
     {
-      "basename": "索引_多模态嵌入",
-      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/2多模态嵌入/索引_多模态嵌入.md"
+      "basename": "3 Docker Compose：当前推荐的项目主入口",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/3 Docker Compose：当前推荐的项目主入口.md"
     },
     {
-      "basename": "3 搜索引擎向量扩展",
-      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/3向量数据库与检索引擎/3 搜索引擎向量扩展.md"
+      "basename": "0 总体定位：建立正确心智模型",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）/0 总体定位：建立正确心智模型.md"
     },
     {
-      "basename": "2 专用向量数据库实战",
-      "path": "DL/05大语言模型/03_语言建模与Token基础/Embedding与位置编码/3向量数据库与检索引擎/2 专用向量数据库实战.md"
+      "basename": "Docker 完整体系笔记（2026 口径）",
+      "path": "后端/Docker/Docker 完整体系笔记（2026 口径）.md"
+    },
+    {
+      "basename": "Docker",
+      "path": "后端/Docker/Docker.md"
+    },
+    {
+      "basename": "02-compose.yaml规范与最佳实践",
+      "path": "后端/Docker/07-Compose/02-compose.yaml规范与最佳实践.md"
+    },
+    {
+      "basename": "01-DockerCompose快速上手",
+      "path": "后端/Docker/07-Compose/01-DockerCompose快速上手.md"
+    },
+    {
+      "basename": "00-术语表",
+      "path": "后端/Docker/00-术语表.md"
+    },
+    {
+      "basename": "03-Ollama完整部署实战",
+      "path": "后端/Docker/12-使用ollama部署大模型/03-Ollama完整部署实战.md"
+    },
+    {
+      "basename": "02-ollama镜像、容器获取",
+      "path": "后端/Docker/12-使用ollama部署大模型/02-ollama镜像、容器获取.md"
+    },
+    {
+      "basename": "01-NVIDIA Container Toolkit的缺失",
+      "path": "后端/Docker/12-使用ollama部署大模型/01-NVIDIA Container Toolkit的缺失.md"
+    },
+    {
+      "basename": "01-Docker到Kubernetes概念映射",
+      "path": "后端/Docker/11-与K8s云原生衔接（可选）/01-Docker到Kubernetes概念映射.md"
+    },
+    {
+      "basename": "02-containerd与镜像概念",
+      "path": "后端/Docker/11-与K8s云原生衔接（可选）/02-containerd与镜像概念.md"
+    },
+    {
+      "basename": "01-Docker安装-Windows-WSL2",
+      "path": "后端/Docker/01-安装与环境/01-Docker安装-Windows-WSL2.md"
+    },
+    {
+      "basename": "04-镜像加速与代理",
+      "path": "后端/Docker/01-安装与环境/04-镜像加速与代理.md"
+    },
+    {
+      "basename": "1-评测数据集与测试集",
+      "path": "DL/TTS/TTS 评测基准全景指南/1-评测数据集与测试集.md"
+    },
+    {
+      "basename": "0-TTS 评测基准全景指南",
+      "path": "DL/TTS/TTS 评测基准全景指南/0-TTS 评测基准全景指南.md"
+    },
+    {
+      "basename": "Git",
+      "path": "工具/同步传输工具/Git.md"
+    },
+    {
+      "basename": "1. Speculative Decoding 原理与 EAGLE 实现详解",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/6 推理加速详解：不改或少改主模型/1. Speculative Decoding 原理与 EAGLE 实现详解.md"
+    },
+    {
+      "basename": "0. 推理加速详解：不改或少改主模型",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/6 推理加速详解：不改或少改主模型/0. 推理加速详解：不改或少改主模型.md"
+    },
+    {
+      "basename": "01_Prefill与Decode为什么成本完全不同",
+      "path": "DL/05大语言模型/04_Transformer核心结构/04_注意力机制/03_KVCache/01_Prefill与Decode为什么成本完全不同.md"
+    },
+    {
+      "basename": "1. LLMLingua 系列压缩算法与 RAG Context Selection 实践",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/5 上下文工程详解：最常被低估但 ROI 最高/1. LLMLingua 系列压缩算法与 RAG Context Selection 实践.md"
+    },
+    {
+      "basename": "0. 上下文工程详解：最常被低估但 ROI 最高",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/5 上下文工程详解：最常被低估但 ROI 最高/0. 上下文工程详解：最常被低估但 ROI 最高.md"
+    },
+    {
+      "basename": "1. Ring Attention 通信模型与 Striped Attention 实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/4 分布式长上下文 Exact Attention 详解/1. Ring Attention 通信模型与 Striped Attention 实现.md"
+    },
+    {
+      "basename": "0. 分布式长上下文 Exact Attention 详解",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/4 分布式长上下文 Exact Attention 详解/0. 分布式长上下文 Exact Attention 详解.md"
+    },
+    {
+      "basename": "2. Nyströmformer 与 Performer (FAVOR+) 原理与实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/3 线性 低秩 核方法近似注意力详解/2. Nyströmformer 与 Performer (FAVOR+) 原理与实现.md"
+    },
+    {
+      "basename": "1. Linformer 低秩投影原理与实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/3 线性 低秩 核方法近似注意力详解/1. Linformer 低秩投影原理与实现.md"
+    },
+    {
+      "basename": "0. 线性 - 低秩 - 核方法近似注意力详解",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/3 线性 低秩 核方法近似注意力详解/0. 线性 - 低秩 - 核方法近似注意力详解.md"
+    },
+    {
+      "basename": "1. Sliding Window Attention (Longformer) 原理与实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/2 局部 滑窗 分块 稀疏注意力详解/1. Sliding Window Attention (Longformer) 原理与实现.md"
+    },
+    {
+      "basename": "0. 局部 - 滑窗 - 分块 - 稀疏注意力详解",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/2 局部 滑窗 分块 稀疏注意力详解/0. 局部 - 滑窗 - 分块 - 稀疏注意力详解.md"
+    },
+    {
+      "basename": "2. FlashAttention-2-3 改进细节与工程实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/2. FlashAttention-2-3 改进细节与工程实现.md"
+    },
+    {
+      "basename": "1. Online Softmax 与 Tiling 数学推导及实现",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/1. Online Softmax 与 Tiling 数学推导及实现.md"
+    },
+    {
+      "basename": "0. FlashAttention 系详解：Exact Attention 的工程优化",
+      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/0. FlashAttention 系详解：Exact Attention 的工程优化.md"
     }
   ],
   "omittedPaths": [],

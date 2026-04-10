@@ -12,7 +12,7 @@ $$M_{KV} = B \times T \times L \times 2 \times h_{kv} \times d_{head} \times \fr
 
 |杠杆|方法|效果|
 |---|---|---|
-|$h_{kv}$ ↓|GQA / MQA|KV 直接按 $h_{kv}/h$ 缩小|
+|$h_{kv}$ ↓|GQA / [[05_多查询注意力MQA|MQA]]|KV 直接按 $h_{kv}/h$ 缩小|
 |$b_{kv}$ ↓|KV 量化（INT8 / FP8 / INT4）|2-4x 压缩|
 |$T$ ↓|滑动窗口 / KV 稀疏 / 蒸馏|限制有效上下文长度|
 |碎片 ↓|PagedAttention / vLLM|消除内存碎片，提高利用率|
@@ -20,9 +20,9 @@ $$M_{KV} = B \times T \times L \times 2 \times h_{kv} \times d_{head} \times \fr
 
 ---
 
-## GQA / MQA 降低 KV
+## GQA / [[05_多查询注意力MQA|MQA]] 降低 KV
 
-### 从 MHA 到 GQA 到 MQA
+### 从 MHA 到 GQA 到 [[05_多查询注意力MQA|MQA]]
 
 ```mermaid
 graph LR
@@ -34,7 +34,7 @@ graph LR
         A2["Q:32 heads"] --> B2["K:8 heads"]
         A2 --> C2["V:8 heads"]
     end
-    subgraph "MQA: h_kv = 1"
+    subgraph "[[05_多查询注意力MQA|MQA]]: h_kv = 1"
         A3["Q:32 heads"] --> B3["K:1 head"]
         A3 --> C3["V:1 head"]
     end
@@ -44,7 +44,7 @@ graph LR
 |---|---|---|---|---|
 |MHA|$h$|1x|基线|GPT-3, LLaMA-1|
 |GQA|$h/g$|$1/g$|极小|LLaMA-2-70B (g=8)|
-|MQA|$1$|$1/h$|略有|Falcon, PaLM-2|
+|[[05_多查询注意力MQA|MQA]]|$1$|$1/h$|略有|Falcon, PaLM-2|
 
 ---
 

@@ -1,10 +1,10 @@
 ## 概述
 
-GQA（Grouped Query Attention）和 MQA（Multi-Query Attention）通过减少 KV head 数来降低 KV cache 和 decode 带宽压力，是当前主流 LLM 的标配。
+[[06_分组注意力GQA|GQA]]（Grouped Query Attention）和 [[05_多查询注意力MQA|MQA]]（Multi-Query Attention）通过减少 KV head 数来降低 KV cache 和 decode 带宽压力，是当前主流 LLM 的标配。
 
 ---
 
-## 从 MHA 到 GQA 到 MQA
+## 从 MHA 到 GQA 到 [[05_多查询注意力MQA|MQA]]
 
 ### MHA（Multi-Head Attention）
 
@@ -12,13 +12,13 @@ $$h_{kv} = h, \quad \text{KV cache} \propto h \cdot d_{head} \cdot T$$
 
 每个 query head 有独立的 K、V head。
 
-### GQA（Grouped Query Attention）
+### [[06_分组注意力GQA|GQA]]（Grouped Query Attention）
 
 $$h_{kv} = h / g, \quad \text{KV cache} \propto (h/g) \cdot d_{head} \cdot T$$
 
 每 $g$ 个 query head 共享 1 个 KV head。
 
-### MQA（Multi-Query Attention）
+### [[05_多查询注意力MQA|MQA]]（Multi-Query Attention）
 
 $$h_{kv} = 1, \quad \text{KV cache} \propto d_{head} \cdot T$$
 
@@ -31,19 +31,19 @@ $$h_{kv} = 1, \quad \text{KV cache} \propto d_{head} \cdot T$$
 |方案|KV cache 缩减|质量影响|decode 带宽节省|代表模型|
 |---|---|---|---|---|
 |MHA|基准|基准|基准|GPT-3, LLaMA-1|
-|GQA-4|4x|极小|~4x|LLaMA-2-70B (g=8)|
-|GQA-8|8x|很小|~8x|Qwen-2.5-7B (h=28,h_kv=4)|
-|MQA|$h$x|可测量但小|$h$x|Falcon-40B, PaLM-2|
+|[[06_分组注意力|GQA]]-4|4x|极小|~4x|LLaMA-2-70B (g=8)|
+|[[06_分组注意力|GQA]]-8|8x|很小|~8x|Qwen-2.5-7B (h=28,h_kv=4)|
+|[[05_多查询注意力MQA|MQA]]|$h$x|可测量但小|$h$x|Falcon-40B, PaLM-2|
 
 > [!important]
 > 
-> **为什么 GQA 成为主流**：MQA 在极端情况下会损失一些质量（所有 head 共享同一 KV），GQA 在质量和效率间取得了极好的平衡——几乎无损地获得大幅 KV 缩减。
+> **为什么 [[06_分组注意力GQA|GQA]] 成为主流**：[[05_多查询注意力MQA|MQA]] 在极端情况下会损失一些质量（所有 head 共享同一 KV），[[06_分组注意力GQA|GQA]] 在质量和效率间取得了极好的平衡——几乎无损地获得大幅 KV 缩减。
 
 ---
 
 ## 对参数量的影响
 
-GQA/MQA 减少的是 KV 投影矩阵，但 MLP 仍为参数主项：
+[[06_分组注意力GQA|GQA]]/[[05_多查询注意力MQA|MQA]] 减少的是 KV 投影矩阵，但 MLP 仍为参数主项：
 
 $$\Delta N_{attn} = 2(h - h_{kv}) \cdot d_{head} \cdot d \cdot L$$
 
