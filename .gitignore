@@ -8,6 +8,7 @@
 !.obsidian/themes
 !.obsidian/snippets
 !.obsidian/plugins
+.obsidian/plugins/recent-files-obsidian
 .trash/
 
 # 忽略同步文件
