@@ -3,9 +3,11 @@
 .tmp.drivedownload/
 
 # 忽略Obsidian配置和缓存文件
-.obsidian/workspace.json
-.obsidian/cache/
-.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/*
+!.obsidian/icons
+!.obsidian/themes
+!.obsidian/snippets
+!.obsidian/plugins
 .trash/
 
 # 忽略同步文件
@@ -29,3 +31,5 @@ Thumbs.db
 .vscode
 .opencode
 .stfolder
+AGENTS.md
+.stignore
