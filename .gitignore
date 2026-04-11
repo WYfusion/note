@@ -8,11 +8,8 @@
 !.obsidian/themes/
 !.obsidian/snippets/
 !.obsidian/plugins/
-!.obsidian/app.json
-!.obsidian/appearance.json
 !.obsidian/core-plugins.json
 !.obsidian/community-plugins.json
-!.obsidian/hotkeys.json
 !.obsidian/canvas.json
 
 # Obsidian：严格忽略会因浏览页面频繁变化的状态文件
@@ -24,6 +21,9 @@
 .obsidian/backlink.json
 .obsidian/page-preview.json
 .obsidian/types.json
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
 .obsidian/* (conflict *).json
 .obsidian/plugins/recent-files-obsidian/
 .trash/
