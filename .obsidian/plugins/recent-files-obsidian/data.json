@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "工具/同步传输工具/git/Git.md"
+    },
+    {
+      "basename": "1 核心底层逻辑剖析",
+      "path": "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/1 核心底层逻辑剖析.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "AGENTS.md"
+    },
+    {
       "basename": "01-镜像创建查询删除",
       "path": "后端/Docker/03-镜像/01-镜像创建查询删除.md"
     },
@@ -137,10 +149,6 @@
       "path": "DL/TTS/TTS 评测基准全景指南/0-TTS 评测基准全景指南.md"
     },
     {
-      "basename": "Git",
-      "path": "工具/同步传输工具/Git.md"
-    },
-    {
       "basename": "1. Speculative Decoding 原理与 EAGLE 实现详解",
       "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/6 推理加速详解：不改或少改主模型/1. Speculative Decoding 原理与 EAGLE 实现详解.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "2. FlashAttention-2-3 改进细节与工程实现",
       "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/2. FlashAttention-2-3 改进细节与工程实现.md"
-    },
-    {
-      "basename": "1. Online Softmax 与 Tiling 数学推导及实现",
-      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/1. Online Softmax 与 Tiling 数学推导及实现.md"
-    },
-    {
-      "basename": "0. FlashAttention 系详解：Exact Attention 的工程优化",
-      "path": "DL/05大语言模型/04_Transformer核心结构/06_高效 Transformer（偏加速 可跑快）/1 FlashAttention 系详解：Exact Attention 的工程优化/0. FlashAttention 系详解：Exact Attention 的工程优化.md"
     }
   ],
   "omittedPaths": [],

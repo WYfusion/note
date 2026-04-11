@@ -13,32 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DL/TTS/Qwen3 TTS/Qwen3-TTS 模型组件架构细节/DiT（Diffusion Transformer）在语音合成中的应用详解.md",
+                "file": "工具/同步传输工具/git/Git.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DiT（Diffusion Transformer）在语音合成中的应用详解"
-            }
-          },
-          {
-            "id": "83dfd5b0e691a6e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "后端/Docker/03-镜像/01-镜像创建查询删除.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "01-镜像创建查询删除"
+              "title": "Git"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,12 +221,23 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "83dfd5b0e691a6e4",
+  "active": "4c09073e6e73543a",
   "lastOpenFiles": [
+    "工具/同步传输工具/git",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/1 核心底层逻辑剖析.md",
+    "AGENTS.md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/5 异常处理与最终验证推送.md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/4 Phase 3 — 防御机制建立与现场恢复.md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/3 Phase 2 — 时光倒流与切除手术.md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)/2 Phase 1 — 绝对冻结当前工作环境.md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP).md",
+    "工具/同步传输工具/git/Git 历史大文件切除与本地状态保护标准流程 (SOP)",
+    "Notion/私人与共享",
+    "Notion",
+    "后端/Docker/03-镜像/01-镜像创建查询删除.md",
     "sync.ffs_lock",
     "后端/状态码/HTTP 后端状态码清单索引.md",
     "后端/状态码/README.md",
-    "后端/Docker/03-镜像/01-镜像创建查询删除.md",
     "后端/Docker/03-镜像/02-Dockerfile语法速查.md",
     "后端/Docker/04-容器/01-容器命令.md",
     "后端/Docker/02-基础概念/02-OCI与运行时.md",
@@ -258,24 +253,13 @@
     "后端/Docker/Docker 完整体系笔记（2026 口径）/10 AI - Agent - LLM 项目中的 Docker 推荐做法.md",
     "后端/Docker/Docker 完整体系笔记（2026 口径）/8 项目设置推荐：当前最稳的工程化组织方式.md",
     "后端/Docker/Docker 完整体系笔记（2026 口径）/4 挂载：Mount - Volume - Bind - tmpfs 一定要分清.md",
-    "后端/Docker/Docker 完整体系笔记（2026 口径）/3 Docker Compose：当前推荐的项目主入口.md",
-    "后端/Docker/Docker 完整体系笔记（2026 口径）/0 总体定位：建立正确心智模型.md",
-    "后端/Docker/Docker 完整体系笔记（2026 口径）.md",
-    "后端/Docker/Docker.md",
-    "后端/Docker/07-Compose/02-compose.yaml规范与最佳实践.md",
-    "后端/Docker/Docker 完整体系笔记（2026 口径）/11 反模式清单 · 12 学习顺序 · 13 最终结论.md",
-    "后端/Docker/Docker 完整体系笔记（2026 口径）/9 开发 - 测试 - 生产 三态推荐.md",
     "后端/Docker/Docker 完整体系笔记（2026 口径）",
-    "Notion/私人与共享",
-    "Notion",
     "DL/03模型/自监督预训练/自监督预训练.canvas",
     "论文库/Qwen3-TTS Technical Report/Qwen3-TTS 模型组件架构细节",
     "论文库/Qwen3-TTS Technical Report/TTS 评测基准全景指南",
     "论文库/FreeVC Towards High-Quality Text-Free One-Shot Voi",
     "论文库/R-VC Rhythm Controllable Zero-Shot Voice Conversio",
     "论文库/Seed-VC Zero-shot Voice Conversion with Diffusion",
-    "论文库/Qwen3-TTS Technical Report",
-    "论文库/LM-VC Zero-shot Voice Conversion via Speech Genera",
     "DL/TTS/Qwen3 TTS/Qwen3模型骨架/Untitled Diagram.svg",
     "概念/论文/自看论文/Multi-Head State Space Model for Speech Recognition语音识别的多头部状态空间模型/Stacked & Multi-Head Extension.png",
     "DL/03模型/LSTM/LSTM.png",
