@@ -3,12 +3,12 @@
 .tmp.drivedownload/
 
 # 忽略Obsidian配置和缓存文件
+.obsidian/plugins/recent-files-obsidian
 .obsidian/*
 !.obsidian/icons
 !.obsidian/themes
 !.obsidian/snippets
 !.obsidian/plugins
-.obsidian/plugins/recent-files-obsidian
 .trash/
 
 # 忽略同步文件
