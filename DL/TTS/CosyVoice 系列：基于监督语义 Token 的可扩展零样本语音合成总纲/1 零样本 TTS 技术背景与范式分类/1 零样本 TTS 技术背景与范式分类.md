@@ -102,8 +102,8 @@ graph LR
 
 ### 子页面导航
 
-[[1.1.1 Codec Language Model 范式（VALL-E 系列）]]
+[[1.1 Codec Language Model 范式（VALL-E 系列）]]
 
-[[1.1.2 Feature Diffusion - Flow Matching 范式（Voicebox - F5-TTS）]]
+[[1.2 Feature Diffusion - Flow Matching 范式（Voicebox - F5-TTS）]]
 
-[[1.1.3 Hybrid 两阶段范式（CosyVoice - Seed-TTS）]]
+[[1.3 Hybrid 两阶段范式（CosyVoice - Seed-TTS）]]

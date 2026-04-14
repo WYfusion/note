@@ -1,4 +1,4 @@
-﻿## 首先是cuda，安装版本12.8
+## 首先是cuda，安装版本12.8
 ```bash
 conda install cuda-toolkit=12.8 cuda-nvcc=12.8 cuda-compiler=12.8 -c nvidia
 ```

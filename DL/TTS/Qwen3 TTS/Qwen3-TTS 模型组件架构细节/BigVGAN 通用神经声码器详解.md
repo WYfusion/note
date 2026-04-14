@@ -2,7 +2,7 @@
 
 ---
 
-## 1. BigVGAN 是什么？
+## 1. [[3. BigVGAN 架构与原理|BigVAN]] 是什么？
 
 > [!important]
 > 

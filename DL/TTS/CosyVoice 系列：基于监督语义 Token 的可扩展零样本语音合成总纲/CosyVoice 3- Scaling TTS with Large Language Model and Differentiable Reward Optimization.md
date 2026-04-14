@@ -8,12 +8,12 @@
 核心思路: CosyVoice 3 是一款针对多语言语音合成的系统，采用了可微分奖励优化（DiffRO）和 FSQ-MinMo 多任务 Tokenizer，旨在实现更高的内容一致性和自然度。该系统使用 1.5B 参数的大语言模型，训练数据扩展至 1M 小时，支持 9 种语言和 18 种方言。实验结果显示，CosyVoice 3 在多个评估指标上超越了前代产品和人类录音，特别是在中文和英文的字符错误率（CER）和词错误率（WER）方面表现优异。
 ---
 ## 1. 论文概述
-
+![[Pasted image 20260412155459.png]]
 CosyVoice 3（Fun-CosyVoice 3.0）是 CosyVoice 系列的第三代，目标是实现**野外（in-the-wild）场景下的零样本多语言语音合成**，在内容一致性、说话人相似度和韵律自然度上全面超越前代。
 
 > [!important]
 > 
-> **核心亮点**：提出 **DiffRO（可微分奖励优化）** 后训练方法；FSQ-MinMo 多任务 Tokenizer（ASR/LID/SER/AED/SA 五任务联合监督）；1.5B 参数 LLM + DiT 声学模型；训练数据扩展到 **1M 小时 · 9 语言 · 18 方言**；CER 降至 1.90%（接近人类录音 1.43%）。
+> **核心亮点**：提出 **DiffRO（可微分奖励优化）** 后训练方法；FSQ-MinMo 多任务 Tokenizer（ASR/LID/SER/AED/SA 自动语音识别、语言识别、语音情感识别、音频事件检测和说话人分析 五任务联合监督）；1.5B 参数 LLM + DiT 声学模型；训练数据扩展到 **1M 小时 · 9 语言 · 18 方言**；CER 降至 1.90%（接近人类录音 1.43%）。
 
 ---
 
@@ -98,7 +98,7 @@ graph LR
     style S1 fill:\#3498db,color:\#fff
     style S2 fill:\#e74c3c,color:\#fff
     style S3 fill:\#2ecc71,color:\#fff
-    style S4 fill:\#f39c12,color:#fff
+    style S4 fill:\#f39c12,color:\#fff
 ```
 
 ### 3.4 扩展功能
