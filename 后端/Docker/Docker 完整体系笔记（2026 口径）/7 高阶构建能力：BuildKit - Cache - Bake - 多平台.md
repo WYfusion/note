@@ -34,18 +34,7 @@
 
 ### 1.2 并行构建流程
 
-```mermaid
-flowchart LR
-    subgraph SERIAL["传统 builder：严格顺序"]
-        S1["stage 1"] --> S2["stage 2"] --> S3["stage 3"] --> S4["stage 4"]
-    end
-    subgraph PARALLEL["BuildKit：按依赖图并行"]
-        P1["base"] --> P2["frontend builder"]
-        P1 --> P3["backend builder"]
-        P2 --> P4["runtime"]
-        P3 --> P4
-    end
-```
+![[7 高阶构建能力：BuildKit - Cache - Bake - 多平台 - 1.2 并行构建流程 - 图 01 .excalidraw|800]]
 
 ---
 
@@ -140,17 +129,7 @@ models/
 
 ### 3.1 为什么需要 Bake
 
-```mermaid
-flowchart LR
-    subgraph SHELL["传统方式：shell 脚本"]
-        SH1["docker build -f api/Dockerfile -t api ."]
-        SH2["docker build -f worker/Dockerfile -t worker ."]
-        SH3["docker build -f web/Dockerfile -t web ."]
-    end
-    subgraph BAKE["Bake 方式"]
-        BK["docker buildx bake<br>并行 + 声明式 + 可复用"]
-    end
-```
+![[7 高阶构建能力：BuildKit - Cache - Bake - 多平台 - 3.1 为什么需要 Bake - 图 02 .excalidraw|800]]
 
 ### 3.2 基本用法
 

@@ -1,4 +1,4 @@
-﻿需要在VSCode中安装 **Remote - SSH** 扩展
+需要在VSCode中安装 **Remote - SSH** 扩展
 
 主要参考：[Windows安装和启动SSH服务_windows 安装ssh-CSDN博客](https://blog.csdn.net/qq_33594636/article/details/128849482)
 被控制端需要安装OpenSSH.Server，最好把客户端和服务端都安装好。
@@ -219,3 +219,13 @@ ssh rtx5090
 
 ### 若复制私钥公钥到其他主机上
 Windows的私钥权限必须**仅用户**且权限是*只勾选***读取**就行
+
+
+移除其他用户以及确保自己账户有效
+```powershell
+icacls C:\Users\31530\.ssh\config /grant 31530:F
+```
+
+```powershell
+icacls C:\Users\31530\.ssh\config /remove "BUILTIN\Users"
+```

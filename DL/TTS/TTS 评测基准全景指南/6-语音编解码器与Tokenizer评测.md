@@ -3,19 +3,8 @@
 ---
 
 ## 一、Codec 在 TTS 中的角色
+![[DrCodec 在 TTS 中的角色.excalidraw|800]]
 
-```mermaid
-graph LR
-    A["原始波形"] --> B["Encoder"]
-    B --> C["RVQ 量化器"]
-    C --> D["离散 Token"]
-    D --> E["LM 建模"]
-    D --> F["Decoder"]
-    F --> G["重建波形"]
-    
-    style D fill:\#f9f,stroke:#333
-    style E fill:\#bbf,stroke:#333
-```
 
 > [!important]
 > 

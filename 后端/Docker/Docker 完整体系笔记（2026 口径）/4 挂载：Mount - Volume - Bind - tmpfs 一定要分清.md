@@ -22,22 +22,7 @@
 > 
 > 容器的文件系统由**镜像只读层 + 容器可写层**组成。可写层随容器删除而消失——这意味着容器内产生的所有数据（数据库文件、用户上传、日志、缓存）默认是**短暂的**。**挂载（Mount）** 是 Docker 提供的机制，将宿主机或 Docker 管理的存储区域映射到容器内路径，使数据可以**持久化、共享、独立于容器生命周期**。
 
-```mermaid
-flowchart TB
-    subgraph CONTAINER["容器"]
-        RO["镜像只读层"] --> RW["容器可写层<br>⚠️ 随容器删除而消失"]
-        RW -.->|"数据丢失"| DEL["docker rm"]
-    end
-    subgraph MOUNT["挂载"]
-        VOL["Volume<br>Docker 管理"]
-        BIND["Bind Mount<br>宿主机路径"]
-        TMPFS["tmpfs<br>内存文件系统"]
-    end
-    MOUNT -->|"映射到容器内路径"| CONTAINER
-    VOL -.->|"持久化 ✓"| PERSIST["数据独立于容器"]
-    BIND -.->|"持久化 ✓"| PERSIST
-    TMPFS -.->|"不持久化 ✗"| EPHEMERAL["容器停止即丢弃"]
-```
+![[2026-04-18 20.43.47Docker 挂载.excalidraw|1200]]
 
 ---
 
@@ -160,18 +145,7 @@ services:
 
 ## 4. 选型决策树
 
-```mermaid
-flowchart TD
-    START["需要为容器提供<br>外部存储/数据"] --> Q1{"数据需要持久化吗？"}
-    Q1 -->|"不需要"| TMPFS["✅ tmpfs<br>临时/敏感/高速"]
-    Q1 -->|"需要"| Q2{"需要与宿主机<br>特定路径联动吗？"}
-    Q2 -->|"是（开发/调试）"| BIND["✅ Bind Mount<br>源码热更新 / 配置调试"]
-    Q2 -->|"否"| VOL["✅ Volume<br>生产持久化首选"]
-    
-    style TMPFS fill:\#e8f4f8
-    style BIND fill:\#fff3cd
-    style VOL fill:\#d4edda
-```
+![[2026-04-18 20.44.52docker挂载决策树.excalidraw|500]]
 
 > [!important]
 > 
@@ -229,16 +203,7 @@ flowchart TD
 > 
 > **代码、配置、状态、缓存、机密要分开挂**——不要把所有东西混在一个挂载点里。每种数据有不同的生命周期、访问模式和安全需求。
 
-```mermaid
-flowchart LR
-    subgraph MOUNTS["推荐挂载分类"]
-        CODE["代码<br>bind mount :ro"]
-        CONFIG["配置<br>bind mount :ro 或 configs"]
-        STATE["状态/数据<br>volume"]
-        CACHE["缓存<br>volume 或 tmpfs"]
-        SECRET["机密<br>secrets"]
-    end
-```
+![[4 挂载：Mount - Volume - Bind - tmpfs 一定要分清 - 6.1 分类挂载 .excalidraw|800]]
 
 ### 6.2 安全原则
 

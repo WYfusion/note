@@ -22,25 +22,7 @@
 > 
 > Docker 网络模式（Network Driver）决定了容器如何与其他容器、宿主机、外部网络通信。不同模式提供不同级别的隔离和连通性。**选择网络模式 = 选择隔离与连通的平衡点**。
 
-```mermaid
-flowchart TD
-    START["选择网络模式"] --> Q1{"单机还是多机？"}
-    Q1 -->|"单机"| Q2{"需要网络隔离吗？"}
-    Q1 -->|"多机"| OVERLAY["overlay"]
-    Q2 -->|"需要（默认）"| BRIDGE["✅ user-defined bridge<br>首选"]
-    Q2 -->|"完全不需要网络"| NONE["none"]
-    Q2 -->|"需要共享宿主机网络栈"| HOST["host<br>慎用"]
-    Q2 -->|"需要容器有独立 LAN 地址"| Q3{"二层还是三层？"}
-    Q3 -->|"二层"| MACVLAN["macvlan"]
-    Q3 -->|"三层"| IPVLAN["ipvlan"]
-    
-    style BRIDGE fill:\#d4edda
-    style HOST fill:\#fff3cd
-    style NONE fill:\#e8f4f8
-    style OVERLAY fill:\#e8f4f8
-    style MACVLAN fill:\#f8d7da
-    style IPVLAN fill:\#f8d7da
-```
+![[2026-04-18 20.46.20Docker网络.excalidraw|1000]]
 
 |网络模式|本质|典型场景|推荐度|
 |---|---|---|---|
@@ -61,19 +43,7 @@ flowchart TD
 > 
 > **bridge 网络（桥接网络）** 在宿主机上创建一个**虚拟网桥（Virtual Bridge）**，每个加入该网络的容器获得一个虚拟网卡（veth pair），通过网桥互相通信。容器与外部网络的通信通过 **NAT（网络地址转换）** 和**端口发布**实现。
 
-```mermaid
-flowchart TB
-    subgraph HOST["宿主机"]
-        BR["docker0 / br-xxx<br>虚拟网桥"] 
-        subgraph NET["user-defined bridge: app-net"]
-            C1["api 容器<br>172.18.0.2"] --- BR2["br-app"]
-            C2["db 容器<br>172.18.0.3"] --- BR2
-            C3["redis 容器<br>172.18.0.4"] --- BR2
-        end
-        BR2 -->|"NAT + 端口发布"| ETH["宿主机网卡<br>eth0"]
-    end
-    ETH --> EXT["外部网络"]
-```
+![[5 网络：Docker 网络模式与选择准则 - 2.1 工作原理 - 图 01 .excalidraw|800]]
 
 ### 2.2 默认 bridge vs 用户自定义 bridge
 
@@ -289,31 +259,7 @@ services:
 
 ### 8.1 分层网络架构
 
-```mermaid
-flowchart TB
-    subgraph FRONTEND["frontend 网络"]
-        GW["gateway / nginx"]
-    end
-    subgraph BACKEND["backend 网络"]
-        API["api"]
-        WORKER["worker"]
-    end
-    subgraph DATA["data 网络"]
-        DB["postgresql"]
-        REDIS["redis"]
-        VDB["vector-db"]
-    end
-    subgraph OBS["observability 网络"]
-        PROM["prometheus"]
-        GRAF["grafana"]
-    end
-    
-    GW -->|"frontend + backend"| API
-    API -->|"backend + data"| DB
-    API -->|"backend + data"| REDIS
-    WORKER -->|"backend + data"| DB
-    PROM -->|"observability + backend"| API
-```
+![[5 网络：Docker 网络模式与选择准则 - 8.1 分层网络架构 - 图 02 .excalidraw|800]]
 
 ```YAML
 networks:

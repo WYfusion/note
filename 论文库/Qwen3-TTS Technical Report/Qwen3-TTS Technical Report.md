@@ -16,7 +16,7 @@
 ---
 [[论文库/Qwen3-TTS Technical Report/Qwen3-TTS 评价指标详解|Qwen3-TTS 评价指标详解]]
 
-[[TTS 评测基准全景指南]]
+[[论文库/Qwen3-TTS Technical Report/TTS 评测基准全景指南]]
 
 [[论文库/Qwen3-TTS Technical Report/Qwen3-TTS 训练数据集与方法原理|Qwen3-TTS 训练数据集与方法原理]]
 

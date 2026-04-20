@@ -25,15 +25,7 @@
 ### 1.2 分层存储机制（Layered Storage）
 
 镜像由多个**只读层（Read-only Layer）**叠加而成，每一条 Dockerfile 指令生成一层：
-
-```mermaid
-graph TD
-    L1["Layer 1: FROM debian:bookworm-slim<br>基础 OS 文件系统"] --> L2["Layer 2: RUN apt-get install python3<br>+python3 二进制与依赖库"]
-    L2 --> L3["Layer 3: COPY requirements.txt .<br>+requirements.txt 文件"]
-    L3 --> L4["Layer 4: RUN pip install -r requirements.txt<br>+Python 包"]
-    L4 --> L5["Layer 5: COPY . /app<br>+应用源代码"]
-    L5 --> META["元数据层<br>ENTRYPOINT / CMD / ENV / EXPOSE / USER / WORKDIR"]
-```
+![[2026-04-18 20.36.05docker分层存储.excalidraw|200]]
 
 **层的核心特性**：
 
@@ -104,30 +96,11 @@ graph TD
 > 
 > **容器（Container）** 是镜像的**运行实例**——在镜像的只读层之上叠加一个**可写层（Writable Layer）**，加上命名空间（Namespace）和控制组（Cgroup）隔离，形成一个独立的进程运行环境。
 
-```mermaid
-graph TD
-    subgraph CONTAINER["容器"]
-        WL["可写层 Writable Layer"] 
-        WL --> RL["只读镜像层 Read-only Layers"]
-    end
-    NS["Namespace 隔离<br>PID / NET / MNT / UTS"] --- CONTAINER
-    CG["Cgroup 资源限制<br>CPU / Memory / IO"] --- CONTAINER
-```
+![[1 Docker 基础对象：必须讲清的边界 - 2.1 本质 - 图 01.excalidraw|800]]
 
 ### 2.2 生命周期
 
-```mermaid
-stateDiagram-v2
-    [*] --> Created: docker create / docker compose create
-    Created --> Running: docker start / docker compose up
-    Running --> Paused: docker pause
-    Paused --> Running: docker unpause
-    Running --> Stopped: docker stop (SIGTERM → SIGKILL)
-    Stopped --> Running: docker start
-    Stopped --> Removed: docker rm
-    Running --> Removed: docker rm -f
-    Removed --> [*]
-```
+![[2026-04-18 20.39.32容器生命周期.excalidraw|600]]
 
 **关键细节**：
 
@@ -172,15 +145,7 @@ stateDiagram-v2
 > 
 > Docker 采用**客户端-服务器架构（Client-Server Architecture）**：`docker` CLI 是客户端，`dockerd`（Docker daemon，Docker 守护进程）是服务端。两者通过 Unix socket 或 TCP 通信。
 
-```mermaid
-flowchart LR
-    CLI["docker CLI<br>（客户端）"] -->|"Unix Socket<br>/var/run/docker.sock"| DAEMON["dockerd<br>（守护进程/服务端）"]
-    CLI2["远程 CLI"] -->|"SSH / TLS"| DAEMON
-    DAEMON --> CONTAINERD["containerd"]
-    CONTAINERD --> RUNC["runc"]
-    RUNC --> C1["Container 1"]
-    RUNC --> C2["Container 2"]
-```
+![[1 Docker 基础对象：必须讲清的边界 - 3.1 架构：客户端-服务器模型 - 图 02.excalidraw|800]]
 
 **关键理解**：
 

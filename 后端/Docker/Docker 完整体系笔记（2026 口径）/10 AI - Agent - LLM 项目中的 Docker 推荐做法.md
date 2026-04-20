@@ -26,50 +26,20 @@
 > 
 > AI/LLM 项目的服务拆分核心原则：**按职责隔离、按资源需求分离**。GPU 密集的模型推理服务与 CPU 密集的业务逻辑服务不应混在同一个容器中——它们的基础镜像、资源需求、扩缩容策略完全不同。
 
-```mermaid
-flowchart TB
-    subgraph PUBLIC["public 网络"]
-        GW["gateway<br>Nginx / Caddy"]
-    end
-    subgraph APP["app 网络"]
-        API["api / agent<br>业务逻辑"]
-        WORKER["worker<br>异步任务"]
-        MODEL["model-serving<br>GPU 推理"]
-    end
-    subgraph DATA["data 网络"]
-        PG["postgres"]
-        REDIS["redis"]
-        VDB["vector-db<br>Qdrant / Milvus"]
-        OBJ["object-storage<br>MinIO（可选）"]
-    end
-    subgraph OBS["observability 网络"]
-        PROM["prometheus"]
-        GRAFANA["grafana"]
-    end
-    GW --> API
-    API --> WORKER
-    API --> MODEL
-    API --> PG
-    API --> REDIS
-    API --> VDB
-    WORKER --> PG
-    WORKER --> REDIS
-    WORKER --> MODEL
-    MODEL --> OBJ
-```
+![[10 AI - Agent - LLM 项目中的 Docker 推荐做法 - 1. 服务拆分建议 - 图 01 .excalidraw|800]]
 
 ### 1.1 典型服务清单
 
-|服务|职责|资源需求|典型镜像|
-|---|---|---|---|
-|`gateway`|反向代理、TLS 终止、限流|CPU 低|nginx / caddy|
-|`api` / `agent`|业务逻辑、API 路由、Agent 编排|CPU 中|自定义 Python/Node|
-|`worker`|异步任务（文档解析、embedding、批处理）|CPU 中~高|自定义 Python|
-|`model-serving`|GPU 模型推理（LLM / TTS / VC）|**GPU**|vLLM / TGI / Triton / 自定义|
-|`vector-db`|向量索引与检索|CPU/内存|qdrant / milvus / weaviate|
-|`postgres`|关系型数据存储|CPU/IO|postgres:16-alpine|
-|`redis`|缓存、消息队列、session|内存|redis:7-alpine|
-|`observability`|监控、日志、追踪|CPU 低~中|prometheus / grafana / loki|
+| 服务              | 职责                       | 资源需求    | 典型镜像                        |
+| --------------- | ------------------------ | ------- | --------------------------- |
+| `gateway`       | 反向代理、TLS 终止、限流           | CPU 低   | nginx / caddy               |
+| `api` / `agent` | 业务逻辑、API 路由、Agent 编排     | CPU 中   | 自定义 Python/Node             |
+| `worker`        | 异步任务（文档解析、embedding、批处理） | CPU 中~高 | 自定义 Python                  |
+| `model-serving` | GPU 模型推理（LLM / TTS / VC） | **GPU** | vLLM / TGI / Triton / 自定义   |
+| `vector-db`     | 向量索引与检索                  | CPU/内存  | qdrant / milvus / weaviate  |
+| `postgres`      | 关系型数据存储                  | CPU/IO  | postgres:16-alpine          |
+| `redis`         | 缓存、消息队列、session          | 内存      | redis:7-alpine              |
+| `observability` | 监控、日志、追踪                 | CPU 低~中 | prometheus / grafana / loki |
 
 ---
 
@@ -182,19 +152,7 @@ services:
 
 ### 4.3 CPU vs GPU 镜像分离
 
-```mermaid
-flowchart LR
-    subgraph CPU["CPU 服务"]
-        A["python:3.12-slim<br>~150MB"]
-        B["api / worker"]
-    end
-    subgraph GPU["GPU 服务"]
-        C["nvidia/cuda:12.x<br>~3GB+"]
-        D["model-serving"]
-    end
-    A --> B
-    C --> D
-```
+![[10 AI - Agent - LLM 项目中的 Docker 推荐做法 - 4.3 CPU vs GPU 镜像分离 - 图 02 .excalidraw|800]]
 
 ---
 
@@ -222,16 +180,7 @@ flowchart LR
 
 ### 5.2 Agent 沙箱架构
 
-```mermaid
-flowchart TB
-    API["api 服务<br>安全基线"] -->|"受控调用"| SANDBOX["沙箱容器<br>强隔离"]
-    API -->|"正常访问"| DATA["数据层"]
-    SANDBOX -.->|"❌ 无权访问"| DATA
-    SANDBOX -.->|"❌ 无 docker.sock"| DOCKER["Docker daemon"]
-    
-    style SANDBOX fill:\#ffe0e0
-    style DATA fill:\#d4edda
-```
+![[10 AI - Agent - LLM 项目中的 Docker 推荐做法 - 5.2 Agent 沙箱架构 - 图 03 .excalidraw|800]]
 
 ---
 

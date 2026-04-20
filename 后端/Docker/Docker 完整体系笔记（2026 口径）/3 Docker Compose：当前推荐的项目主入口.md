@@ -24,20 +24,7 @@
 
 **为什么重要**：真实项目不是单容器能解决的——Web、API、DB、缓存、队列、模型服务需要统一编排。Compose 用一个 YAML 文件声明所有服务及其拓扑、依赖、网络、存储，`docker compose up` 一条命令启动整个项目。
 
-```mermaid
-flowchart TB
-    CY["compose.yaml"] -->|定义| S1["service: api"]
-    CY -->|定义| S2["service: worker"]
-    CY -->|定义| S3["service: db"]
-    CY -->|定义| S4["service: redis"]
-    CY -->|定义| NET["networks"]
-    CY -->|定义| VOL["volumes"]
-    CY -->|定义| SEC["secrets"]
-    S1 --- NET
-    S2 --- NET
-    S3 --- VOL
-    S4 --- VOL
-```
+![[2026-04-18 20.41.40docker compose.excalidraw|1200]]
 
 > [!important]
 > 
@@ -204,12 +191,7 @@ docker compose --profile debug --profile observability up
 > 
 > **工程判断**：1 项目 = 1 主 `compose.yaml`。按场景叠加覆盖文件，通过 `-f` 合并，不要复制粘贴多个近似文件。
 
-```mermaid
-flowchart LR
-    BASE["compose.yaml<br>基础拓扑"] -->|merge| DEV["compose.dev.yaml<br>bind mount / watch / debug"]
-    BASE -->|merge| PROD["compose.prod.yaml<br>安全加固 / 固定 tag"]
-    BASE -->|merge| GPU["compose.gpu.yaml<br>GPU 设备 / 模型服务"]
-```
+![[3 Docker Compose：当前推荐的项目主入口 - 5.1 核心思路 - 图 01 .excalidraw|800]]
 
 ```Bash
 # 开发环境
@@ -282,20 +264,7 @@ services:
 
 ### 6.2 正确方案：depends_on + healthcheck + condition
 
-```mermaid
-sequenceDiagram
-    participant DC as docker compose
-    participant DB as db 容器
-    participant API as api 容器
-    DC->>DB: 启动 db
-    loop 健康检查
-        DC->>DB: healthcheck 探针
-        DB-->>DC: unhealthy / healthy
-    end
-    Note over DB: DB ready ✓
-    DC->>API: 启动 api（depends_on: db: service_healthy）
-    API->>DB: 连接数据库 ✓
-```
+![[3 Docker Compose：当前推荐的项目主入口 - 6.2 正确方案：depends_on + healthcheck + condition - 图 02 .excalidraw|800]]
 
 ```YAML
 services:

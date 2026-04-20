@@ -19,8 +19,8 @@
   "autosave": true,
   "autosaveIntervalDesktop": 60000,
   "autosaveIntervalMobile": 30000,
-  "drawingFilenamePrefix": "Drawing ",
-  "drawingEmbedPrefixWithFilename": true,
+  "drawingFilenamePrefix": "",
+  "drawingEmbedPrefixWithFilename": false,
   "drawingFilnameEmbedPostfix": " ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "useExcalidrawExtension": true,
@@ -37,27 +37,27 @@
   "previewMatchObsidianTheme": false,
   "width": "400",
   "height": "",
-  "overrideObsidianFontSize": false,
+  "overrideObsidianFontSize": true,
   "dynamicStyling": "colorful",
   "isLeftHanded": false,
   "desktopUIMode": "tray",
-  "tabletUIMode": "compact",
+  "tabletUIMode": "tray",
   "phoneUIMode": "mobile",
   "iframeMatchExcalidrawTheme": true,
-  "matchTheme": false,
-  "matchThemeAlways": false,
-  "matchThemeTrigger": false,
-  "defaultMode": "normal",
+  "matchTheme": true,
+  "matchThemeAlways": true,
+  "matchThemeTrigger": true,
+  "defaultMode": "view-mobile",
   "defaultPenMode": "never",
   "penModeDoubleTapEraser": true,
   "penModeSingleFingerPanning": true,
   "penModeCrosshairVisible": true,
-  "panWithRightMouseButton": false,
+  "panWithRightMouseButton": true,
   "renderImageInMarkdownReadingMode": false,
   "renderImageInHoverPreviewForMDNotes": false,
   "renderImageInMarkdownToPDF": false,
-  "allowPinchZoom": false,
-  "allowWheelZoom": false,
+  "allowPinchZoom": true,
+  "allowWheelZoom": true,
   "zoomToFitOnOpen": true,
   "zoomToFitOnResize": true,
   "zoomToFitMaxLevel": 2,
@@ -113,7 +113,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.21.2",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.22.0",
     "libraryItems": [
       {
         "status": "unpublished",
@@ -56494,8 +56494,111 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
-  "scriptEngineSettings": {},
-  "previousRelease": "2.21.2",
+  "scriptEngineSettings": {
+    "Downloaded/Mindmap format": {
+      "MindMap Format": {
+        "value": "Excalidraw/MindMap Format",
+        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
+      },
+      "default gap": {
+        "value": 10,
+        "description": "Interval size of element"
+      },
+      "curve length": {
+        "value": 40,
+        "description": "The length of the curve part in the mind map line"
+      },
+      "length between element and line": {
+        "value": 50,
+        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
+      }
+    },
+    "Downloaded/Fixed vertical distance": {
+      "Prompt for spacing?": true,
+      "Default spacing": {
+        "value": 10,
+        "description": "Fixed vertical spacing between elements"
+      },
+      "Remember last spacing?": true
+    },
+    "Downloaded/Auto Layout": {
+      "Layout Options JSON": {
+        "height": "450px",
+        "value": "{\n      \"org.eclipse.elk.layered.crossingMinimization.semiInteractive\": \"true\",\n      \"org.eclipse.elk.layered.considerModelOrder.components\": \"FORCE_MODEL_ORDER\"\n}",
+        "description": "You can use layout options to configure the layout algorithm. A list of all options and further details of their exact effects is available in <a href=\"http://www.eclipse.org/elk/reference.html\" rel=\"nofollow\">ELK's documentation</a>."
+      }
+    },
+    "Downloaded/Mindmap Builder": {
+      "Layout Config": {
+        "value": {
+          "GAP_X": 120,
+          "GAP_Y": 25,
+          "GAP_MULTIPLIER": 0.6,
+          "ROOT_RADIUS_FACTOR": 0.8,
+          "MIN_RADIUS": 350,
+          "RADIAL_ASPECT_RATIO": 0.7,
+          "RADIAL_POLE_GAP_BONUS": 2,
+          "RADIAL_START_ANGLE": 280,
+          "RADIAL_MAX_SWEEP": 340,
+          "DIRECTIONAL_ARC_SPAN_RADIANS": 1,
+          "GAP_MULTIPLIER_DIRECTIONAL": 1.5,
+          "RADIUS_PADDING_PER_NODE": 7,
+          "VERTICAL_SUBTREE_WIDTH_BLEND_SINGLE": 0.35,
+          "VERTICAL_SUBTREE_WIDTH_BLEND_DUAL": 0.6,
+          "VERTICAL_SUBTREE_SMOOTH_THRESHOLD_MULTIPLIER": 6,
+          "VERTICAL_SUBTREE_SMOOTH_MIN_SCALE": 240,
+          "HORIZONTAL_L1_SOFTCAP_THRESHOLD": 560,
+          "HORIZONTAL_L1_COMPRESSION_MIN_SCALE": 240,
+          "VERTICAL_COMPACT_PARENT_CHILD_GAP_RATIO": 0.55,
+          "DIRECTIONAL_CROSS_AXIS_RATIO": 0.2,
+          "INDICATOR_OFFSET": 10,
+          "INDICATOR_OPACITY": 40,
+          "CONTAINER_PADDING": 10,
+          "MAX_SEGMENT_LENGTH": 80,
+          "MANUAL_GAP_MULTIPLIER": 1.3,
+          "MANUAL_JITTER_RANGE": 300
+        },
+        "hidden": true
+      },
+      "Preferred Zoom Level": {
+        "value": "High",
+        "hidden": false
+      },
+      "Growth Mode": {
+        "value": "Right-facing",
+        "hidden": false
+      },
+      "Group Branches": {
+        "value": true,
+        "hidden": false
+      },
+      "Rounded Corners": {
+        "value": true,
+        "hidden": false
+      },
+      "Arrow Stroke Style": {
+        "value": false,
+        "hidden": false
+      },
+      "Max Text Width": {
+        "value": 340,
+        "hidden": false
+      },
+      "Base Stroke Width": {
+        "value": 11,
+        "hidden": false
+      },
+      "Custom Palette": {
+        "value": {
+          "enabled": false,
+          "random": false,
+          "colors": []
+        },
+        "hidden": true
+      }
+    }
+  },
+  "previousRelease": "2.22.0",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -56851,8 +56954,8 @@
   },
   "markdownNodeOneClickEditing": false,
   "canvasImmersiveEmbed": true,
-  "startupScriptPath": "",
-  "aiEnabled": true,
+  "startupScriptPath": "Excalidraw/ExcalidrawStartup",
+  "aiEnabled": false,
   "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
   "openAIDefaultTextModelMaxTokens": 4096,
@@ -57183,6 +57286,6 @@
     "alignment": "center",
     "margin": "normal"
   },
-  "disableContextMenu": false,
+  "disableContextMenu": true,
   "defaultTrayMode": false
 }

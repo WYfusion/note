@@ -18,16 +18,7 @@
 > 
 > **Dockerfile（Docker 构建文件）** 是一份**声明式的构建脚本**，定义了从基础镜像到最终镜像的每一步操作。它的职责是且仅是：**单镜像的构建逻辑**。
 
-```mermaid
-flowchart LR
-    DF["Dockerfile"] -->|"负责"| A["单镜像构建逻辑"]
-    DF -.-x|"不负责"| B["多服务拓扑"]
-    DF -.-x|"不负责"| C["运行时编排"]
-    DF -.-x|"不负责"| D["环境矩阵"]
-    B -.-> COMPOSE["→ Compose"]
-    C -.-> COMPOSE
-    D -.-> BAKE["→ Compose / CI / Bake"]
-```
+![[2 Dockerfile：当前应掌握的完整知识框架 - 1. Dockerfile 的职责边界 - 图 01.excalidraw|800]]
 
 |维度|Dockerfile 负责|Dockerfile 不负责|
 |---|---|---|
@@ -89,18 +80,7 @@ CMD ["app.py"]
 
 **结构要点解析**：
 
-```mermaid
-flowchart TD
-    S1["# syntax=...<br>声明 BuildKit frontend"] --> S2["FROM ... AS builder<br>构建阶段"] 
-    S2 --> S3["COPY 依赖声明文件<br>利用层缓存"]
-    S3 --> S4["RUN 安装依赖<br>cache mount 加速"]
-    S4 --> S5["COPY 源代码<br>高频变动放后面"]
-    S5 --> S6["RUN 构建/编译"]
-    S6 --> S7["FROM ... AS runtime<br>运行时阶段"]
-    S7 --> S8["COPY --from=builder<br>只复制产物"]
-    S8 --> S9["USER 非 root"]
-    S9 --> S10["ENTRYPOINT + CMD"]
-```
+![[2 Dockerfile：当前应掌握的完整知识框架 - 10. 启动命令 - 图 2.excalidraw|800]]
 
 ---
 
@@ -245,16 +225,7 @@ CMD ["main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ### 4.2 标准模式
 
-```mermaid
-flowchart LR
-    subgraph BUILDER["builder 阶段"]
-        B1["基础镜像 + 编译工具"] --> B2["安装依赖"] --> B3["编译/打包"]
-    end
-    subgraph RUNTIME["runtime 阶段"]
-        R1["最小基础镜像"] --> R2["COPY --from=builder 产物"] --> R3["设置 USER/CMD"]
-    end
-    BUILDER -->|"只复制产物"| RUNTIME
-```
+![[2 Dockerfile：当前应掌握的完整知识框架 - 4.2 标准模式 - 图 03.excalidraw|800]]
 
 ### 4.3 多语言示例
 
@@ -434,21 +405,7 @@ Dockerfile*
 > 
 > **层缓存黄金法则**：变动频率低的操作放前面，变动频率高的操作放后面。这样当源代码变更时，前面的依赖安装层可以命中缓存，不需要重新执行。
 
-```mermaid
-flowchart TD
-    L1["① 基础镜像 FROM<br>几乎不变"] --> L2["② 系统包安装 RUN apt-get<br>很少变"]
-    L2 --> L3["③ 依赖声明文件 COPY requirements.txt<br>偶尔变"]
-    L3 --> L4["④ 依赖安装 RUN pip install<br>依赖变时重建"]
-    L4 --> L5["⑤ 源代码 COPY . .<br>频繁变"]
-    L5 --> L6["⑥ 构建 RUN build<br>代码变时重建"]
-    
-    style L1 fill:\#d4edda
-    style L2 fill:\#d4edda
-    style L3 fill:\#fff3cd
-    style L4 fill:\#fff3cd
-    style L5 fill:\#f8d7da
-    style L6 fill:\#f8d7da
-```
+![[2 Dockerfile：当前应掌握的完整知识框架 - 6.2 层顺序优化 - 图 04.excalidraw|800]]
 
 ### 6.3 安全实践清单
 

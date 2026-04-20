@@ -1,0 +1,19 @@
+{
+  "extensions": "py, c, cpp, h, hpp, js, ts, jsx, tsx, json, mjs, cjs, css, scss, sass, less, html, htm, rs, go, java, sql, php, rb, sh, yaml, xml, cs, yml",
+  "showLineNumbers": true,
+  "editorFontSize": 14,
+  "embedFontSize": 12,
+  "maxEmbedLines": 20,
+  "newFileFolderPath": "",
+  "newFileLocationMode": "custom",
+  "dashboardState": {
+    "searchQuery": "",
+    "filterExt": [],
+    "filterFolder": [],
+    "sortBy": "date",
+    "sortDesc": true
+  },
+  "enableExternalMounts": true,
+  "externalMounts": [],
+  "externalMountLinkType": "auto"
+}
