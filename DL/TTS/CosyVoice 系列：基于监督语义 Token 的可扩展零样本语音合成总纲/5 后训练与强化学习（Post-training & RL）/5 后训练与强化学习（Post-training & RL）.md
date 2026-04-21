@@ -23,20 +23,15 @@ $$\theta^* = \arg\max_\theta \; \mathbb{E}_{x \sim \pi_\theta} \left[ R(x) \righ
 
 ## 两代后训练演进
 
-```mermaid
-graph LR
-    V2["v2: DPO + ASR Reward<br>偏好对采样 + 冻结 ASR 后端"] -->|"可微分化 + 多任务"| V3["v3: DiffRO<br>Token2Text 奖励 + MTR"]
-    style V2 fill:\#3498db,color:\#fff
-    style V3 fill:\#e74c3c,color:\#fff
-```
+![[5 后训练与强化学习（Post-training & RL） - 两代后训练演进 - 图 01.excalidraw|800]]
 
 ### v2: DPO 方案
 
 1. 从当前模型采样多个候选语音
 
-1. 用 ASR 模型评分，构造 (win, lose) 偏好对
+2. 用 ASR 模型评分，构造 (win, lose) 偏好对
 
-1. 用 DPO 损失优化 LM
+3. 用 DPO 损失优化 LM
 
 $$\mathcal{L}_{\text{DPO}} = -\log \sigma \left( \beta \log \frac{\pi_\theta(y_w)}{\pi_{\text{ref}}(y_w)} - \beta \log \frac{\pi_\theta(y_l)}{\pi_{\text{ref}}(y_l)} \right)$$
 
@@ -44,19 +39,7 @@ $$\mathcal{L}_{\text{DPO}} = -\log \sigma \left( \beta \log \frac{\pi_\theta(y_w
 
 **关键突破**：直接从 neural codec token 预测奖励，而非从合成语音，消除 vocoder 的计算开销。
 
-```mermaid
-graph LR
-    LM["🧠 LM"] -->|"Gumbel Softmax"| TOK["🔢 Soft Tokens"]
-    TOK --> R_ASR["R_ASR: Token2Text"]
-    TOK --> R_SER["R_SER: 情感识别"]
-    TOK --> R_MOS["R_MOS: 质量评估"]
-    TOK --> R_AED["R_AED: 声学事件"]
-    R_ASR --> LOSS["∑ Reward - β·KL"]
-    R_SER --> LOSS
-    R_MOS --> LOSS
-    R_AED --> LOSS
-    style TOK fill:\#FF6B6B,color:\#fff
-```
+![[5 后训练与强化学习（Post-training & RL） - v3 DiffRO 方案（核心创新） - 图 02.excalidraw|800]]
 
 DiffRO 的三大技术组件：
 

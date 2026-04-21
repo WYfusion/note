@@ -10,19 +10,11 @@
 
 1. **语义信息不足**：无监督 token 缺乏显式的文本对齐，导致内容一致性差
 
-1. **说话人信息泄漏**：codec token 编码了音色信息，影响零样本转换
+2. **说话人信息泄漏**：codec token 编码了音色信息，影响零样本转换
 
 CosyVoice 的解决方案：将 **向量量化层插入 ASR 编码器中间层**，用语音识别损失监督训练：
 
-```mermaid
-graph LR
-    S["🎤 Speech"] --> EL["Encoder前半部分"]
-    EL --> VQ["VQ / FSQ"]
-    VQ --> ER["Encoder后半部分"]
-    ER --> ASR["📝 ASR Loss"]
-    VQ --> TOK["🔢 Discrete Tokens"]
-    style VQ fill:\#FF6B6B,color:\#fff
-```
+![[2 监督语义语音 Tokenizer（三代演进） - 为什么需要监督语义 Token？ - 图 01.excalidraw|800]]
 
 关键洞察：量化层作为 **信息瓶颈**，迫使编码器丢弃说话人信息、保留语义信息：
 
@@ -42,14 +34,7 @@ $$\mathcal{L} = \mathcal{L}_{\text{ASR}}(\text{Decoder}(\text{Quantize}(\text{En
 
 ### 演进逻辑
 
-```mermaid
-graph TD
-    V1["v1: VQ + SenseVoice<br>Codebook 利用率 23%"] -->|"Codebook Collapse 问题"| V2["v2: FSQ + SenseVoice-Large<br>Codebook 利用率 100%"]
-    V2 -->|"副语言信息不足"| V3["v3: FSQ + MinMo<br>多任务监督"]
-    style V1 fill:\#95a5a6,color:\#fff
-    style V2 fill:\#3498db,color:\#fff
-    style V3 fill:\#e74c3c,color:\#fff
-```
+![[2 监督语义语音 Tokenizer（三代演进） - 演进逻辑 - 图 02.excalidraw|400]]
 
 ---
 

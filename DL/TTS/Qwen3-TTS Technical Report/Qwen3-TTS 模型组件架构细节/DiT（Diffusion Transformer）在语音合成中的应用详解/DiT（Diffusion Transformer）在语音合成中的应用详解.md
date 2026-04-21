@@ -66,9 +66,9 @@ DiT 如何告诉 Transformer "当前是第几步去噪"以及"要生成什么内
 
 1. 将时间步 $t$ 和条件信息（如语音 token 序列）编码为一个条件向量
 
-1. 用这个条件向量**动态调制** Transformer 每一层的 LayerNorm 参数（scale 和 shift）
+2. 用这个条件向量**动态调制** Transformer 每一层的 LayerNorm 参数（scale 和 shift）
 
-1. 初始化时 scale 为 0（"Zero" 的含义），使模型开始时表现为恒等映射，训练更稳定
+3. 初始化时 scale 为 0（"Zero" 的含义），使模型开始时表现为恒等映射，训练更稳定
 
 > [!important]
 > 
@@ -143,13 +143,13 @@ Qwen3-TTS 的 DiT 做了专门的流式优化：
 
 1. LM 骨干生成语音 token（每秒 25 个）
 
-1. 每累积 **8 个 token**（1 个 chunk = 320ms），触发 DiT 处理
+2. 每累积 **8 个 token**（1 个 chunk = 320ms），触发 DiT 处理
 
-1. DiT 使用 Flow Matching 框架，在约 10-20 步内完成去噪
+3. DiT 使用 Flow Matching 框架，在约 10-20 步内完成去噪
 
-1. 输出当前 chunk 对应的 **320ms Mel 频谱图**
+4. 输出当前 chunk 对应的 **320ms Mel 频谱图**
 
-1. Mel 频谱图送入下游 BigVGAN 声码器转换为音频波形
+5. Mel 频谱图送入下游 BigVGAN 声码器转换为音频波形
 
 ---
 

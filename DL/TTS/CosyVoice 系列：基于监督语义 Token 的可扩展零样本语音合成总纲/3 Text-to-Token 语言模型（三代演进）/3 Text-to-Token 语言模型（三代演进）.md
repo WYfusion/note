@@ -16,20 +16,13 @@ $$p(\mathbf{s} | \text{text}, \text{prompt}) = \prod_{t=1}^{T} p(s_t | s_{<t}, \
 
 1. **内容映射**：文本到语义 token 的对齐
 
-1. **韵律建模**：通过自回归生成捕获停顿、语速、语调
+2. **韵律建模**：通过自回归生成捕获停顿、语速、语调
 
-1. **说话人克隆**：通过 In-Context Learning 复制目标音色
+3. **说话人克隆**：通过 In-Context Learning 复制目标音色
 
 ## 三代 LM 架构演进
 
-```mermaid
-graph TD
-    V1["v1: Text Encoder + 独立 LM + x-vector"] -->|"移除 TE & Spk Emb<br>简化架构"| V2["v2: Qwen2.5-0.5B LLM backbone"]
-    V2 -->|"0.5B → 1.5B<br>四阶段训练"| V3["v3: 1.5B LLM"]
-    style V1 fill:\#95a5a6,color:\#fff
-    style V2 fill:\#3498db,color:\#fff
-    style V3 fill:\#e74c3c,color:\#fff
-```
+![[3 Text-to-Token 语言模型（三代演进） - 三代 LM 架构演进 - 图 01.excalidraw|400]]
 
 ### 架构对比
 
@@ -44,21 +37,7 @@ graph TD
 
 ### v1 → v2 的关键简化
 
-```mermaid
-graph LR
-    subgraph "v1 架构"
-        T1["Text"] --> TE["Text Encoder"]
-        TE --> LM1["独立 LM"]
-        XV["x-vector"] --> LM1
-        P1["Prompt Tokens"] --> LM1
-        LM1 --> S1["Semantic Tokens"]
-    end
-    subgraph "v2 架构"
-        T2["Text Tokens"] --> LLM["Qwen2.5-0.5B"]
-        P2["Prompt Tokens"] --> LLM
-        LLM --> S2["Semantic Tokens"]
-    end
-```
+![[3 Text-to-Token 语言模型（三代演进） - v1 → v2 的关键简化 - 图 02.excalidraw|400]]
 
 v2 的简化带来三大收益：
 

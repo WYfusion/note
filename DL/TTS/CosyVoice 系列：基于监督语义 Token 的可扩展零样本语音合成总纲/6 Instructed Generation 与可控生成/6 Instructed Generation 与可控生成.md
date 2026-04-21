@@ -8,19 +8,7 @@
 
 CosyVoice 的可控生成分为 **粗粒度** 和 **细粒度** 两个层次：
 
-```mermaid
-graph TB
-    CG["🎛️ 可控生成"] --> COARSE["粗粒度: 自然语言指令"]
-    CG --> FINE["细粒度: 副语言标记"]
-    COARSE --> C1["情感控制: '用开心的语气说'"]
-    COARSE --> C2["语速控制: '请说得慢一些'"]
-    COARSE --> C3["口音控制: '用广东话说'"]
-    COARSE --> C4["角色扮演: '小女孩声音'"]
-    FINE --> F1["\[laughter\] 笑声"]
-    FINE --> F2["\[breath\] 呼吸"]
-    FINE --> F3["<strong> 重读</strong>"]
-    FINE --> F4["<laughter> 边笑边说</laughter>"]
-```
+![[6 Instructed Generation 与可控生成 - 可控生成的两个层次 - 图 01.excalidraw|800]]
 
 ### 指令格式
 
@@ -57,13 +45,7 @@ graph TB
 
 用 LLM 做文本归一化（Text Normalization）数据增强，实现端到端原始文本输入：
 
-```mermaid
-graph LR
-    RAW["原始文本<br>'3月14号'"] --> LLM["LLM TN"]
-    LLM --> NORM["归一化文本<br>'三月十四号'"]
-    NORM --> TTS["🎤 CosyVoice"]
-    RAW --> TTS
-```
+![[6 Instructed Generation 与可控生成 - 自训练文本归一化（Self-training TN） - 图 02.excalidraw|800]]
 
 ---
 

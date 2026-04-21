@@ -149,9 +149,9 @@ DPO 的限制：
 
 1. 依赖预收集的偏好对，与当前策略存在**分布偏移**
 
-1. 人工标注成本高，难规模化
+2. 人工标注成本高，难规模化
 
-1. 奖励信号二元化（胜负），丢弃了程度信息
+3. 奖励信号二元化（胜负），丢弃了程度信息
 
 GSPO（与 GRPO 同源）的核心改进：
 
@@ -317,10 +317,10 @@ def gspo_loss(
 
 1. Rafailov et al. _Direct Preference Optimization: Your Language Model is Secretly a Reward Model_. NeurIPS 2023.
 
-1. Shao et al. _DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models_ (GRPO). 2024.
+2. Shao et al. _DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models_ (GRPO). 2024.
 
-1. Schulman et al. _Proximal Policy Optimization Algorithms_. 2017.
+3. Schulman et al. _Proximal Policy Optimization Algorithms_. 2017.
 
-1. Ouyang et al. _Training Language Models to Follow Instructions with Human Feedback_. NeurIPS 2022.
+4. Ouyang et al. _Training Language Models to Follow Instructions with Human Feedback_. NeurIPS 2022.
 
-1. Qwen Team. _Qwen2.5 Technical Report_ (GSPO 前身方法).
+5. Qwen Team. _Qwen2.5 Technical Report_ (GSPO 前身方法).

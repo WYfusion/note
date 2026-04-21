@@ -86,13 +86,13 @@ $$\mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t, \mathbf{x}_0, \mathbf{x}_1} 
 
 1. 采样数据点 $\mathbf{x}_1$（Mel 帧）
 
-1. 采样噪声 $\mathbf{x}_0 \sim \mathcal{N}(0, \mathbf{I})$
+2. 采样噪声 $\mathbf{x}_0 \sim \mathcal{N}(0, \mathbf{I})$
 
-1. 采样时间 $t \sim \mathcal{U}[0,1]$
+3. 采样时间 $t \sim \mathcal{U}[0,1]$
 
-1. 构造插值 $\mathbf{x}_t = (1-t)\mathbf{x}_0 + t\mathbf{x}_1$
+4. 构造插值 $\mathbf{x}_t = (1-t)\mathbf{x}_0 + t\mathbf{x}_1$
 
-1. 计算损失 $\| v_\theta(\mathbf{x}_t, t, \mathbf{c}) - (\mathbf{x}_1 - \mathbf{x}_0) \|^2$
+5. 计算损失 $\| v_\theta(\mathbf{x}_t, t, \mathbf{c}) - (\mathbf{x}_1 - \mathbf{x}_0) \|^2$
 
 ![[2026-04-18 09.59.05流式匹配.excalidraw|600]]
 

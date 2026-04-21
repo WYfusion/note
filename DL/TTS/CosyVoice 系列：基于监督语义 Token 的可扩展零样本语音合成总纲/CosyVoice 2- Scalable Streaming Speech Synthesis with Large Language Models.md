@@ -95,9 +95,9 @@ $$L_{\text{TTS}} = M \cdot (d_{\text{lm}} + d_{\text{fm}} + d_{\text{voc}}) \app
 
 1. 从当前模型采样多个候选语音
 
-1. 用冻结 ASR 模型评分，构造偏好对
+2. 用冻结 ASR 模型评分，构造偏好对
 
-1. DPO 损失优化 LM
+3. DPO 损失优化 LM
 
 $$\mathcal{L}_{\text{DPO}} = -\log \sigma \left( \beta \left[ \log \frac{\pi_\theta(y_w)}{\pi_{\text{ref}}(y_w)} - \log \frac{\pi_\theta(y_l)}{\pi_{\text{ref}}(y_l)} \right] \right)$$
 

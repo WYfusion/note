@@ -463,10 +463,10 @@ $$\text{PESQ}(K) \approx \text{PESQ}_\infty - \alpha \cdot e^{-\beta K}$$
 
 1. van den Oord et al. _Neural Discrete Representation Learning_ (VQ-VAE). NeurIPS 2017.
 
-1. Zeghidour et al. _SoundStream: An End-to-End Neural Audio Codec_. IEEE/ACM TASLP, 2022—RVQ 在音频上的开创性应用。
+2. Zeghidour et al. _SoundStream: An End-to-End Neural Audio Codec_. IEEE/ACM TASLP, 2022—RVQ 在音频上的开创性应用。
 
-1. Défossez et al. _High Fidelity Neural Audio Compression_ (EnCodec). 2022.
+3. Défossez et al. _High Fidelity Neural Audio Compression_ (EnCodec). 2022.
 
-1. Mentzer et al. _Finite Scalar Quantization: VQ-VAE Made Simple_ (FSQ). 2023.
+4. Mentzer et al. _Finite Scalar Quantization: VQ-VAE Made Simple_ (FSQ). 2023.
 
-1. Yu et al. _Language Model Beats Diffusion — Tokenizer is Key to Visual Generation_ (LFQ). 2023.
+5. Yu et al. _Language Model Beats Diffusion — Tokenizer is Key to Visual Generation_ (LFQ). 2023.

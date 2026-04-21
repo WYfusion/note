@@ -2,7 +2,7 @@
 
 ---
 
-## 1. BigVGAN 是什么？
+## 1. [[3. BigVGAN 架构与原理|bigVGAN]] 是什么？
 
 > [!important]
 > 
@@ -192,13 +192,13 @@ NVIDIA 后续发布了 BigVGAN v2，进一步提升了性能：
 
 1. DiT 生成 320ms 的 Mel 频谱图（一个 chunk）
 
-1. BigVGAN 接收 Mel 频谱图，转换为时域音频波形
+2. BigVGAN 接收 Mel 频谱图，转换为时域音频波形
 
-1. BigVGAN 也采用**因果/流式设计**，与 DiT 配合实现低延迟输出
+3. BigVGAN 也采用**因果/流式设计**，与 DiT 配合实现低延迟输出
 
-1. BigVGAN 的**右上下文需求约 130ms**——意味着它需要"多看" 130ms 的未来频谱才能输出当前帧
+4. BigVGAN 的**右上下文需求约 130ms**——意味着它需要"多看" 130ms 的未来频谱才能输出当前帧
 
-1. 首个 chunk：DiT 输出 320ms Mel，减去 BigVGAN 的 130ms 右上下文 → 首包约 **190ms** 可播放音频
+5. 首个 chunk：DiT 输出 320ms Mel，减去 BigVGAN 的 130ms 右上下文 → 首包约 **190ms** 可播放音频
 
 ---
 

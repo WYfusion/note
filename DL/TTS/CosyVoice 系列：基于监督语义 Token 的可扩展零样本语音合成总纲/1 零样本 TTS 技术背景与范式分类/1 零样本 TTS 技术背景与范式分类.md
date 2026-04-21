@@ -22,22 +22,7 @@ $$\hat{y} = f_{\text{TTS}}(\text{text}, \text{prompt}_{\text{speech}}) \quad \te
 
 ## 三大范式分类
 
-```mermaid
-graph TB
-    ROOT["🎤 零样本 TTS 范式"] --> A["🔢 Codec LM 范式"]
-    ROOT --> B["🌊 Feature Diffusion 范式"]
-    ROOT --> C["🔗 Hybrid 两阶段范式"]
-    A --> A1["VALL-E / VALL-E X"]
-    A --> A2["SoundStorm"]
-    A --> A3["MaskGCT"]
-    B --> B1["Voicebox"]
-    B --> B2["E2 TTS"]
-    B --> B3["F5-TTS"]
-    C --> C1["Seed-TTS"]
-    C --> C2["CosyVoice 系列"]
-    C --> C3["VEVO"]
-    style C2 fill:\#4A90D9,color:\#fff
-```
+![[1 零样本 TTS 技术背景与范式分类 - 三大范式分类 - 图 01.excalidraw|800]]
 
 ### 范式一：Codec Language Model
 
@@ -67,15 +52,7 @@ $$dx_t = v_\theta(x_t, t, \text{cond}) \, dt \quad \text{(Flow Matching ODE)}$$
 
 **核心思想**：结合前两者优势——粗粒度语义 LM + 细粒度声学生成模型协同工作。
 
-```mermaid
-graph LR
-    TXT["文本"] --> LM["Stage 1: LM<br>语义 Token 生成"]
-    LM --> TOK["离散 Token"]
-    TOK --> FM["Stage 2: FM/Diffusion<br>声学特征生成"]
-    FM --> SPK["语音"]
-    style LM fill:\#4A90D9,color:\#fff
-    style FM fill:\#7B68EE,color:\#fff
-```
+![[1 零样本 TTS 技术背景与范式分类 - 范式三：Hybrid 两阶段（CosyVoice 所属） - 图 02.excalidraw|800]]
 
 - **优势**：语义建模与声学生成解耦，各自可独立优化；兼顾韵律控制与音质
 

@@ -78,14 +78,7 @@ $$\mathcal{L}_{\text{CFM}} = \mathbb{E}_{t, x_0, x_1} \left\| v_\theta(x_t, t, \
 
 ## 三代 FM 架构演进
 
-```mermaid
-graph TD
-    V1["v1: Conv-Transformer UNet<br>~100M 参数 · 非因果"] -->|"流式化需求"| V2["v2: Chunk-aware Causal FM<br>统一四种 Mask · 流式 150ms"]
-    V2 -->|"DiT 替代 UNet"| V3["v3: Diffusion Transformer<br>~300M 参数"]
-    style V1 fill:\#95a5a6,color:\#fff
-    style V2 fill:\#3498db,color:\#fff
-    style V3 fill:\#e74c3c,color:\#fff
-```
+![[4 条件流匹配模型（Conditional Flow Matching） - 三代 FM 架构演进.excalidraw|400]]
 
 |**维度**|**v1**|**v2**|**v3**|
 |---|---|---|---|

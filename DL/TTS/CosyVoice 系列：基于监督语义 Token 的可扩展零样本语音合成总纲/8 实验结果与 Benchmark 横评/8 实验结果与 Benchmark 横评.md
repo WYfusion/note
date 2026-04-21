@@ -30,13 +30,7 @@
 
 ## 三代性能演进趋势
 
-```mermaid
-xychart-beta
-    title "SEED-TTS-Eval CER 演进 (↓)"
-    x-axis ["v1", "v2", "v3", "Human"]
-    y-axis "CER (%)" 0 --> 5
-    bar [4.07, 2.57, 1.90, 1.43]
-```
+![[2026-04-21 21.16.24.excalidraw|1200]]
 
 ---
 

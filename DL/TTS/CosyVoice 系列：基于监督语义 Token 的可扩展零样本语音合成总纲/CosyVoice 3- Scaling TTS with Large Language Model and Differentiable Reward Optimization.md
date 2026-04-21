@@ -82,9 +82,9 @@ $$\mathcal{L}_{\text{DiffRO}} = -\sum_i \lambda_i R_i(\hat{\mathbf{e}}) + \beta 
 
 1. **Gumbel Softmax**：使离散 token 采样可微分
 
-1. **Token2Text 奖励**：直接从 token 预测文本，无需合成语音 + vocoder
+2. **Token2Text 奖励**：直接从 token 预测文本，无需合成语音 + vocoder
 
-1. **Token 级 KL 约束**：逐时间步精细控制，优于序列级 KL
+3. **Token 级 KL 约束**：逐时间步精细控制，优于序列级 KL
 
 **多任务奖励 (MTR)**：$R_{text{ASR}}$ + $R_{\text{SER}}$ + $R_{\text{MOS}}$ + $R_{text{AED}}$，同时优化"说对 + 说得好听 + 有感情 + 自然"。
 

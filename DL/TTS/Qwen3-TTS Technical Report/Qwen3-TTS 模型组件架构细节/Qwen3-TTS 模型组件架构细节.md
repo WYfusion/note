@@ -12,11 +12,11 @@
 
 1. 输入文本 → Qwen Tokenizer → 文本 token 序列
 
-1. （可选）参考语音 → Speaker Encoder → Speaker Embedding
+2. （可选）参考语音 → Speaker Encoder → Speaker Embedding
 
-1. 文本 token + Speaker Embedding → Qwen3 LM 骨干 → 预测语音 token
+3. 文本 token + Speaker Embedding → Qwen3 LM 骨干 → 预测语音 token
 
-1. 语音 token → Code2Wav 模块（Tokenizer 对应的解码器）→ 音频波形
+4. 语音 token → Code2Wav 模块（Tokenizer 对应的解码器）→ 音频波形
 
 整个过程是**流式**的：LM 每生成一个（或一组）语音 token，解码器就可以立即将其转换为音频输出。
 
