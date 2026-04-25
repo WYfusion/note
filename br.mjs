@@ -53,7 +53,7 @@ Options:
 
 Behavior:
   - Recursively scans all .excalidraw.md files under --root
-  - Replaces literal <br> tags with real line breaks
+  - Replaces literal <br> tags and \\n escapes with real line breaks
   - Writes files in place unless --dry-run is set`);
 }
 
@@ -80,7 +80,9 @@ function collectExcalidrawMarkdownFiles(rootDir) {
 }
 
 function normalizeExcalidrawMarkdown(content) {
-  return content.replace(/<br\s*\/?>(\s*)/gi, "\n$1");
+  return content
+    .replace(/<br\s*\/?>(\s*)/gi, "\n$1")
+    .replace(/\\r\\n|\\n/g, "\n");
 }
 
 function processFile(filePath, args) {
