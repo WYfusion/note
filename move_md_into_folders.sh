@@ -2,20 +2,21 @@
 set -euo pipefail
 
 DRY_RUN=0
-OVERWRITE=0
+OVERWRITE=1
 START_DIR=""
 
 usage(){
   cat <<EOF
-Usage: $0 -p DIR [--dry-run] [--overwrite]
+Usage: $0 [DIR] [-p DIR] [--dry-run] [--overwrite]
 
-递归遍历指定目录下的所有子目录；对每个子目录 name，查找其同级的 name.md，
-若存在则将该 md 移入对应的子目录下（不会创建缺失的同名文件夹）。
+递归遍历指定目录下的所有子目录；对每个子目录 name，查找其同级的 name.md（或者 Notion 风格格式：带点的数字前缀等），
+若存在则将该 md 移入对应的子目录下（不会创建缺失的同名文件夹）。默认开启 --overwrite。
 
 Options:
-  -p, --path DIR      起始目录（必需）
+  [DIR]               可以直接输入路径作为参数
+  -p, --path DIR      起始目录
   -n, --dry-run       仅打印操作，不做实际移动
-  -o, --overwrite     若目标已存在则覆盖
+  -o, --overwrite     若目标已存在则默认覆盖（现已是默认行为）
   -h, --help          显示帮助
 EOF
   exit 1
@@ -36,7 +37,12 @@ while [ $# -gt 0 ]; do
     -h|--help)
       usage; shift ;;
     *)
-      echo "Unknown arg: $1" >&2; usage ;;
+      if [ -z "$START_DIR" ]; then
+        START_DIR="$1"; shift
+      else
+        echo "Unknown arg: $1" >&2; usage
+      fi
+      ;;
   esac
 done
 
@@ -54,9 +60,38 @@ fi
 find "${START_DIR}" -type d -print0 | while IFS= read -r -d '' dir; do
   parent=$(dirname -- "$dir")
   name=$(basename -- "$dir")
-  candidate="$parent/$name.md"
+  
+  # 候选1：精确匹配
+  candidate1="$parent/$name.md"
+  
+  # 候选2：Notion导出引起的差异（顶级目录：例如文件夹 "1 xxx" -> 文件 "1. xxx.md"）
+  candidate2=""
+  if [[ "$name" =~ ^([0-9]+)\ (.*)$ ]]; then
+    candidate2="$parent/${BASH_REMATCH[1]}. ${BASH_REMATCH[2]}.md"
+  fi
 
-  if [ -f "$candidate" ]; then
+  # 候选3：Notion 子层级导出差异（例如文件夹 "2 1 xxx" -> 文件 "2.1 xxx.md"）
+  candidate3="${parent}/${name/ /.}.md"
+  
+  # 候选4：Notion 更深层级导出差异（将所有的前置数字间的空格替换为点号，目前暂时用替换第一个空格的方法基本能覆盖大部分）
+  candidate4=""
+  if [[ "$name" =~ ^([0-9]+)\ ([0-9]+)\ (.*)$ ]]; then
+    candidate4="$parent/${BASH_REMATCH[1]}.${BASH_REMATCH[2]} ${BASH_REMATCH[3]}.md"
+  fi
+  
+  # 寻找实际存在的文件
+  candidate=""
+  if [ -f "$candidate1" ]; then
+    candidate="$candidate1"
+  elif [ -n "$candidate2" ] && [ -f "$candidate2" ]; then
+    candidate="$candidate2"
+  elif [ -n "$candidate3" ] && [ -f "$candidate3" ]; then
+    candidate="$candidate3"
+  elif [ -n "$candidate4" ] && [ -f "$candidate4" ]; then
+    candidate="$candidate4"
+  fi
+
+  if [ -n "$candidate" ]; then
     target="$dir/$(basename -- "$candidate")"
 
     if [ -f "$target" ] && [ "$OVERWRITE" -ne 1 ]; then
